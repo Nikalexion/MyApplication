@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tainiesGR_array">
+        <item>Η νεράιδα και το παλικάρι</item>
+        <item>Το πιό λαμπρό αστέρι</item>
+        <item>Η κόρη μου η σοσιαλίστρια</item>
+        <item>Η Αρχόντισσα και ο Αλήτης</item>
+        <item>Κλεφτρόνι και τζέντλεμαν</item>
+        <item>Τρελός είμαι ό,τι θέλω κάνω</item>
+        <item>Ένας άλλος κόσμος</item>
+        <item>Ο Θεός αγαπάει το χαβιάρι</item>
+        <item>Δυο μέρες μόνο</item>
+        <item>Ουζερί Τσιτσάνης</item>
+        <item>Η Ρόζα της Σμύρνης</item>
+    </string-array>
+
+    <string-array name="tainiesENG_array">
+        <item>The Revenant</item>
+        <item>Kung fu panda</item>
+        <item>Raiders of the Lost Ark</item>
+        <item>The Martian</item>
+        <item>Terminator</item>
+        <item>Django Unchained</item>
+        <item>Gravity</item>
+        <item>Avatar</item>
+        <item>Titanic</item>
+        <item>The Avengers</item>
+        <item>Fast and Furious</item>
+        <item>Avengers: Age of Ultron</item>
+        <item>Frozen</item>
+        <item>Iron Man</item>
+        <item>Minions</item>
+        <item>Captain America: Civil War</item>
+        <item>Skyfall</item>
+        <item>Transformers</item>
+        <item>Toy Story</item>
+        <item>Jurassic Park</item>
+        <item>Zootopia</item>
+        <item>The Dark Knight</item>
+        <item>Despicable Me</item>
+        <item>The Jungle Book</item>
+        <item>The Hobbit</item>
+        <item>Shrek</item>
+        <item>The Secret Life of Pets</item>
+        <item>Batman v Superman: Dawn of Justice</item>
+        <item>Spider-Man</item>
+        <item>Spectre</item>
+        <item>Star Wars: Episode I – The Phantom Menace</item>
+        <item>Star Wars: Episode II – Attack of the Clones</item>
+        <item>Star Wars: Episode III – Revenge of the Sith</item>
+        <item>Star Wars: Episode IV – A New Hope</item>
+        <item>Star Wars: Episode V – The Empire Strikes Back</item>
+        <item>Star Wars: Episode VI – Return of the Jedi</item>
+        <item>Star Wars: Episode VII – The Force Awakens</item>
+        <item>Rogue One: A Star Wars Story</item>
+        <item>Ο Χάρι Πότερ και η Φιλοσοφική Λίθος</item>
+        <item>Ο Χάρι Πότερ και η Κάμαρα με τα Μυστικά </item>
+        <item>Ο Χάρι Πότερ και ο Αιχμάλωτος του Αζκαμπάν</item>
+        <item>Ο Χάρι Πότερ και το Κύπελλο της Φωτιάς </item>
+        <item>Ο Χάρι Πότερ και το Τάγμα του Φοίνικα</item>
+        <item>Ο Χάρι Πότερ και ο Ημίαιμος Πρίγκιψ </item>
+        <item>Ο Χάρι Πότερ και οι Κλήροι του Θανάτου</item>
+        <item>Ο άρχοντας των δαχτυλιδιών: Η συντροφιά του δαχτυλιδιού</item>
+        <item>Ο άρχοντας των δαχτυλιδιών: Η επιστροφή του βασιλιά</item>
+        <item>Ο άρχοντας των δαχτυλιδιών: Οι δύο πύργοι</item>
+        <item>The Matrix</item>
+        <item>The Matrix Reloaded</item>
+        <item>The Matrix Revolutions</item>
+        <item>10.000 π.Χ.</item>
+        <item>2012</item>
+        <item>Εφιάλτης στο δρόμο με τις λεύκες</item>
+        <item>Η Αλίκη στη χώρα των θαυμάτων</item>
+        <item>American Beauty</item>
+        <item>American Pie</item>
+        <item>American Pie: Beta House</item>
+        <item>American Pie: The Naked Mile</item>
+        <item>American Psycho</item>
+        <item>Batman Begins</item>
+        <item>Casino Royale</item>
+        <item>Η πόλη του Θεού</item>
+        <item>Crazy, Stupid, Love</item>
+        <item>District 9</item>
+        <item>EuroTrip</item>
+        <item>Μάτια ερμητικά κλειστά</item>
+        <item>Βλέπω το θάνατό σου</item>
+        <item>Ψάχνοντας τον Νέμο</item>
+        <item>Finding Dory</item>
+        <item>Παρασκευή και 13</item>
+        <item>Get Smart</item>
+        <item>Hancock</item>
+        <item>Hannibal</item>
+        <item>Hitman: Εκτελεστής 47</item>
+        <item>Hostel</item>
+        <item>Το Σπίτι του Θανάτου</item>
+        <item>Inception</item>
+        <item>Ημέρα ανεξαρτησίας</item>
+        <item>Killer Elite</item>
+        <item>Κινγκ Κονγκ</item>
+        <item>Memento</item>
+        <item>Οι άνδρες με τα μαύρα</item>
+        <item>Mirrors</item>
+        <item>Mission: Impossible</item>
+        <item>New York</item>
+        <item>Μια νύχτα στο μουσείο</item>
+        <item>Το άρωμα: Η ιστορία ενός δολοφόνου</item>
+        <item>Οι πειρατές της Καραϊβικής</item>
+        <item>Population 436</item>
+        <item>Δημόσιος κίνδυνος</item>
+        <item>Ο πλανήτης των πιθήκων</item>
+        <item>RocknRolla</item>
+        <item>Scream</item>
+        <item>Ο Γιος του Τσάκι</item>
+        <item>Ο εκτελεστής</item>
+        <item>Shutter Island</item>
+        <item>Silent Hill</item>
+        <item>Ice Age</item>
+        <item>Ο μύθος του ακέφαλου καβαλάρη</item>
+        <item>The Bank Job: Το μεγάλο κόλπο</item>
+        <item>Χωρίς ταυτότητα</item>
+        <item>Κώδικας Da Vinci</item>
+        <item>The Day After Tomorrow</item>
+        <item>The Departed</item>
+        <item>Η Κάθοδος</item>
+        <item>The Dirty Picture</item>
+        <item>Ο εξορκιστής</item>
+        <item>Οι αναλώσιμοι</item>
+        <item>Fast and Furious: Tokyo Drift</item>
+        <item>Η κατάρα</item>
+        <item>The Grudge</item>
+        <item>The Hangover</item>
+        <item>Η μούμια</item>
+        <item>Το ημερολόγιο</item>
+        <item>The Others</item>
+        <item>The Prestige</item>
+        <item>The Ring</item>
+        <item>The Ruins</item>
+        <item>Τελευταία έξοδος: Ρίτα Χέιγουορθ</item>
+        <item>The Shining</item>
+        <item>Η σιωπή των αμνών</item>
+        <item>The Social Network</item>
+        <item>Αδιέξοδο</item>
+        <item>X-Men</item>
+        <item>X-Men: First Class</item>
+        <item>Η βασίλισσα του χιονιού</item>
+        <item>Ο Λύκος της Wall Street</item>
+        <item>12 Χρόνια Σκλάβος</item>
+        <item>Όσα Παίρνει ο Άνεμος</item>
+        <item>Η γέφυρα των κατασκόπων</item>
+        <item>The magnificent Seven</item>
+        <item>Το Σινικό Τείχος</item>
+        <item>Hail, Caesar!</item>
+    </string-array>
+
+    <string-array name="paidika_array">
+        <item>Σταχτοπούτα</item>
+        <item>Η Χιονάτη και οι 7 νάνοι</item>
+        <item>Η κοκκινοσκουφίτσα</item>
+        <item>Ο Βασιλιάς των λιονταριών</item>
+        <item>Η Πεντάμορφη και το Τέρας</item>
+        <item>Πινόκιο</item>
+        <item>Η ωραία κοιμωμένη</item>
+        <item>Αλαντίν</item>
+        <item>Πίτερ Παν</item>
+    </string-array>
+
+    <string-array name="parimies_array">
+        <item>Ο διάβολος έχει πολλά ποδάρια</item>
+        <item>Καλιο 5 και στο χέρι παρά 10 και καρτέρει</item>
+        <item>Η καλή η μέρα από το πρωΐ φαίνεται</item>
+        <item>Στου κουφού την πόρτα όσο θέλεις βρόντα</item>
+        <item>Το καλό το παλικάρι ξέρει κι άλλο μονοπάτι</item>
+        <item>Όσα φέρνει η ώρα δεν τα φέρνει ο χρόνος</item>
+        <item>Εδώ σε θέλω κάβουρα να περπατάς στα κάρβουνα</item>
+        <item>Αγαπά ο Θεός τον κλέφτη, αγαπά και τον νοικοκύρη</item>
+        <item>Αγέρας και γυναίκα δεν κλειδώνονται</item>
+        <item>Αλλού παπάς, κι αλλού τα ράσα του</item>
+        <item>Ανεμομαζώματα, ανεμοσκορπίσματα</item>
+        <item>Άνθρωπος αγράμματος, ξύλο απελέκητο</item>
+        <item>Απ αγκάθι βγαίνει ρόδο κι από ρόδο βγαίνει αγκάθι</item>
+        <item>Βουνό με βουνό δεν σμίγει</item>
+        <item>Για χάρη του βασιλικού ποτίζεται και η γλάστρα</item>
+        <item>Γιάννης κερνά, Γιάννης πίνει</item>
+        <item>Δάσκαλε που δίδασκες και νόμο δεν εκράτεις</item>
+        <item>Δεν έχει η γλώσσα κόκαλα και κόκαλα τσακίζει</item>
+        <item>Δυο καρπούζια σε μια μασχάλη δεν κρατιούνται</item>
+        <item>Έβαλε την αλεπού να φυλά τα πρόβατα</item>
+        <item>Έγιναν από δυο χωριά χωριάτες</item>
+        <item>Εγώ το λέω στο σκύλο μου, κι ο σκύλος στην ουρά του</item>
+        <item>Εδώ καράβια πνίγονται, βαρκούλες αρμενίζουν</item>
+        <item>Είναι διαβόλου κάλτσα</item>
+        <item>Εκεί που μας χρωστούσανε, μας πήραν και το βόδι</item>
+        <item>Εκύλισε ο τέντζερης και βρήκε το καπάκι</item>
+        <item>Εμπρός γκρεμός και πίσω ρέμα</item>
+        <item>Ζήσε Μάη μου να φας τριφύλλι</item>
+        <item>Μοναχός σου ούτε στον παράδεισο</item>
+        <item>Τάζει λαγούς με πετραχήλια</item>
+        <item>Δώσε τόπο στην οργή</item>
+        <item>Ήρθαν τ` άγρια να διώξουν τα ήμερα</item>
+        <item>Λείπει ο γάτος, χορεύουν τα ποντίκια</item>
+        <item>Δύσκολα νιάτα, καλά γεράματα</item>
+        <item>Μαθημένα τα βουνά απ΄τα χιόνια</item>
+        <item>Όσα δεν φτάνει η αλεπού τα κάνει κρεμαστάρια</item>
+        <item>Σαν την καλαμιά στον κάμπο</item>
+        <item>Γαϊδουρινή υπομονή</item>
+        <item>Αν έχεις τύχη διάβαινε και ρυζικό περπάτα</item>
+        <item>Μόνο του σπανού τα γένια δε γίνονται</item>
+        <item>Δυο γάιδαροι μαλώνανε σε ξένο αχυρώνα</item>
+        <item>Τρώγοντας έρχεται η όρεξη</item>
+        <item>Γυρεύεις ψύλλους στα άχυρα</item>
+        <item>Φάγαμε το βόδι κι έμεινε η ουρά</item>
+        <item>Η φτώχεια θέλει καλοπέραση</item>
+        <item>Ένα μήλο την ημέρα τον γιατρό τον κάνει πέρα</item>
+        <item>Ό,τι λάμπει δεν είναι χρυσός</item>
+        <item>Όποιος σκάβει τον λάκο του αλλουνού, πέφτει ο ίδιος μέσα</item>
+        <item>Νηστικό αρκούδι δε χορεύει </item>
+        <item>Το αίμα νερό δε γίνεται </item>
+        <item>Το έξυπνο πουλί από τη μύτη πιάνεται </item>
+        <item>Μην παίζεις με τη φωτιά </item>
+        <item>Όπου ακούς πολλά κεράσια, κράτα μικρό καλάθι</item>
+        <item>Στερνή μου γνώση να σ΄είχα πρώτα</item>
+        <item>Τα ράσα δεν κάνουν τον παπά</item>
+        <item>Είπε ο γάιδαρος τον πετεινό κεφάλα</item>
+        <item>Σκυλί που γαβγίζει δεν δαγκώνει</item>
+        <item>Τα σιγανά ποτάμια να φοβάσαι</item>
+        <item>Άλλος έχει τ΄όνομα κι άλλος τη χάρη</item>
+        <item>Γελάει καλύτερα όποιος γελάει τελευταίος</item>
+        <item>Φασούλι το φασούλι γεμίζει το σακούλι</item>
+        <item>Ο πεινασμένος καρβέλια ονειρεύεται</item>
+        <item>Ο πνιγμένος απ΄τα μαλλιά πιάνεται</item>
+        <item>Όποιος ανακατεύεται με τα πίτουρα τον τρωνε οι κότες</item>
+        <item>Κι ο άγιος φοβέρα θέλει</item>
+        <item>Η γριά η κότα έχει το ζουμί</item>
+        <item>Άνοιξε η γη και τον κατάπιε</item>
+        <item>Βάστα με να σε βαστώ να ανεβούμε στο βουνό</item>
+        <item>Ζωή και κότα</item>
+        <item>Ζωή χαρισάμενη</item>
+        <item>Κακό σκυλί ψόφο δεν έχει</item>
+        <item>Ή στραβός είναι ο γιαλός ή στραβά αρμενίζουμε</item>
+        <item>Η εκδίκηση είναι ένα πιάτο που τρώγεται κρύο</item>
+        <item>Η ελπίδα πεθαίνει τελευταία</item>
+        <item>Τί κάνει νιάου νιάου στα κεραμύδια</item>
+        <item>Από την πόλη έρχομαι και στην κορφή κανέλα</item>
+        <item>Τρία πουλάκια κάθονταν</item>
+        <item>Παν μέτρον άριστον</item>
+        <item>Εν οίδα ότι ουδέν οίδα</item>
+        <item>Να ζει κανείς ή να μη ζει?</item>
+        <item>Ό,τι δε σε σκοτώνει σε κάνει πιο δυνατό</item>
+        <item>Νους υγιής εν σώματι υγιεί</item>
+        <item>Όλοι για έναν κι ένας για όλους</item>
+        <item>Ο χρόνος είναι χρήμα</item>
+        <item>Κάλλιο αργά παρά ποτέ</item>
+        <item>Η εκδίκηση είναι γλυκιά</item>
+        <item>Και οι τοίχοι έχουν αυτιά</item>
+        <item>Η τύχη βοηθάει τον τολμηρό</item>
+        <item>Το μήλο κάτω απ’ τη μηλιά θα πέσει</item>
+        <item>Όπως έστρωσες θα κοιμηθείς</item>
+        <item>Στη βράση κολλάει το σίδερο</item>
+        <item>Από μικρό κι από τρελό μαθαίνεις την αλήθεια</item>
+    </string-array>
+
+    <string-array name="tvGR_array">
+        <item>Δέκα μικροί Μήτσοι</item>
+        <item>Εργαζόμενη γυναίκα</item>
+        <item>Μάμα μία</item>
+        <item>Σ`αγαπώ μ`αγαπάς</item>
+        <item>Βέρα στο δεξί</item>
+        <item>10η εντολή</item>
+        <item>Και οι παντρεμένοι έχουν ψυχή</item>
+        <item>Παρά πέντε</item>
+        <item>Σαββατογεννημένες</item>
+        <item>Δίδυμα φεγγάρια</item>
+        <item>Μπρούσκο</item>
+        <item>Εγκλήματα</item>
+        <item>Ντόλτσε Βίτα</item>
+        <item>Τί ψυχή θα παραδώσεις μωρή</item>
+        <item>Οι τρεις Χάριτες</item>
+        <item>Ευτυχισμένοι μαζί</item>
+        <item>Το νησί</item>
+        <item>Αναστασία</item>
+        <item>Λάμψη</item>
+        <item>Μαύρα μεσάνυχτα</item>
+        <item>Λατρεμένοι μου γείτονες</item>
+        <item>LAPD</item>
+        <item>Μαρία η άσχημη</item>
+        <item>Φίλα το βάτραχό σου</item>
+        <item>Οι σμμαθητές</item>
+        <item>Μαζί σου</item>
+        <item>Το σόι σου</item>
+        <item>Λόλα</item>
+        <item>Είσαι το ταίρι μου</item>
+        <item>Κάπου σε ξέρω</item>
+        <item>Οι στάβλοι της Εριέττας Ζαΐμη</item>
+        <item>Χορεύοντας στη σιωπή</item>
+        <item>Η Νταντά</item>
+        <item>Λένη</item>
+        <item>Το καφέ της Χαράς</item>
+        <item>Κωνσταντίνου και Ελένης</item>
+        <item>Singles</item>
+        <item>Επτά θανάσιμες πεθερές</item>
+        <item>Πενήντα πενήντα</item>
+        <item>Φιλοδοξίες</item>
+        <item>Οι ατρόμητοι</item>
+        <item>Δυο ξένοι</item>
+        <item>Το κόκκινο δωμάτιο</item>
+        <item>Ταμάμ</item>
+        <item>Ζωή μου</item>
+        <item>Η πολυκατοικία</item>
+        <item>9 μήνες</item>
+        <item>Οι βασιλιάδες</item>
+        <item>Οι συμμαθητές</item>
+        <item>Στο καλό γλυκιά μου συμπεθέρα</item>
+        <item>Τα πέντε κλειδιά</item>
+        <item>Η λέξη που δε λες</item>
+        <item>Λόγια του αέρα</item>
+        <item>Μην αρχίζεις τη μουρμούρα</item>
+        <item>Δικαίωση</item>
+        <item>Εθνική Ελλάδος</item>
+        <item>Κάτω Παρτάλι</item>
+        <item>Κλεμμένα όνειρα</item>
+        <item>Μοντέρνα οικογένεια</item>
+        <item>Ρουά ματ</item>
+        <item>Οικογενειακές ιστορίες</item>
+        <item>Η μηχανή του χρόνου</item>
+        <item>Chef στον αέρα</item>
+        <item>Deal</item>
+        <item>Rising star</item>
+        <item>ΣουΚου</item>
+        <item>Στην υγειά μας ρε παιδιά</item>
+        <item>Υγεία πάνω απ΄όλα</item>
+        <item>60΄Ελλάδα</item>
+        <item>Γλυκές αλχημίες</item>
+        <item>ΑΜΑΝ τα καθάρματα</item>
+        <item>Ράδιο αρβύλα</item>
+        <item>Αλ Τσαντίρι News</item>
+        <item>Ελληνοφρένεια</item>
+        <item>Τροχός της τύχης</item>
+        <item>Ποιός θέλει να γίνει εκατομμυριούχος</item>
+        <item>Ο πιο αδύναμος κρίκος</item>
+        <item>Taxi Girl</item>
+        <item>Ραντεβού στα Τυφλά </item>
+        <item>Μια τρύπα στο νερό</item>
+        <item>Η εκδίκηση της ξανθιάς</item>
+        <item>Είσαι πιο έξυπνος από ένα δεκάχρονο?</item>
+        <item>Η μαμά μου μαγειρεύει καλύτερα από τη δική σου</item>
+        <item>Πάμε πακέτο</item>
+        <item>Κάντο όπως ο Άκης</item>
+        <item>Σπίτι μου σπιτάκι μου</item>
+        <item>Άκου τι είπαν</item>
+        <item>Όλα τρέλα</item>
+        <item>Πλάκα κάνεις</item>
+        <item>The voice</item>
+        <item>Ελένη</item>
+        <item>Φως στο Τούνελ</item>
+        <item>Όλα για την υγεία μου</item>
+        <item>Φώτης και Μαρία</item>
+        <item>Κάτι ψήνεται</item>
+        <item>Το αλάτι της γης</item>
+        <item>Μπουκιά και συγχώριο</item>
+        <item>Κυριακή στο χωριό</item>
+        <item>Εφιάλτης στην κουζίνα</item>
+        <item>Σπίτι από την αρχή</item>
+        <item>Μες στην καλή χαρά</item>
+        <item>Master Chef</item>
+        <item>Με το δεξί</item>
+        <item>The X Factor</item>
+        <item>Next Top Model</item>
+        <item>Dancing with the stars</item>
+        <item>Αστέρας ραχούλας</item>
+        <item>Έλα στη θέση μου</item>
+        <item>Daddy cool</item>
+        <item>Βαλς με 12 Θεούς</item>
+        <item>Εραστής δυτικών προαστίων</item>
+        <item>Σαράντα κύμματα</item>
+        <item>Για την καρδιά ενός αγγέλου</item>
+        <item>Το κλειδί του παραδείσου</item>
+        <item>Μη μου λες αντίο</item>
+        <item>Της αγάπης μαχαιριά</item>
+        <item>Άγγιγμα ψυχής</item>
+        <item>Με λένε Βαγγέλη</item>
+        <item>Κλινική περίπτωση</item>
+        <item>Η γενιά των 592 ευρώ</item>
+        <item>Η ζωή της άλλης</item>
+        <item>Ονειροπαγίδα</item>
+        <item>Μίλα μου βρώμικα</item>
+        <item>Δεν έχω λόγια</item>
+        <item>Quizdom Τhe Show</item>
+        <item>World Party</item>
+    </string-array>
+
+</resources>
