@@ -17,7 +17,7 @@
     tools:context="com.example.alex.myapplication.Guide">
 
     <TextView
-        android:text="Εδώ θα έχει κείμενο που εξιγεί τους κανόνες του παιχνιδιού"
+        android:text="dokimastiko Εδώ θα έχει κείμενο που εξιγεί τους κανόνες του παιχνιδιού"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
