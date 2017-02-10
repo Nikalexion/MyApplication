@@ -2,6 +2,7 @@ package com.example.alex.myapplication;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -65,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
         int counter = lefta.getInt("lefta", 0);
-        leftakia.setText(Integer.toString(counter));
+        leftakia.setText("Coins: " + Integer.toString(counter));
+        leftakia.setTextColor(Color.YELLOW);
         super.onStart();
 
 
