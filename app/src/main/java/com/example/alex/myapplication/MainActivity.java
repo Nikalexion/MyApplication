@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
         int counter = lefta.getInt("lefta", 0);
-        leftakia.setText("Coins: " + Integer.toString(counter));
+        leftakia.setText(Integer.toString(counter));
         leftakia.setTextColor(Color.YELLOW);
         super.onStart();
 
