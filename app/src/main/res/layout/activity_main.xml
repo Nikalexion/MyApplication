@@ -18,7 +18,8 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.example.alex.myapplication.MainActivity"
         android:elevation="1dp"
-        android:background="@drawable/bc">
+        android:background="@drawable/bc"
+        android:layout_centerInParent="true">
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,31 +36,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="130dp"
-            android:id="@+id/imageView" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:src="@drawable/gold"
             android:adjustViewBounds="true"
             android:maxHeight="30dp"
             android:maxWidth="30dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="22dp"/>
-
-        <Button
-            android:text="shop"
-            android:textColor="#FFFFFF"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/shop"
-            android:background="@drawable/eikona"
-            android:textSize="36sp"
-            android:layout_marginTop="360dp"
-            android:layout_marginLeft="160dp"/>
 
         <Button
             android:text="Κανονες"
@@ -69,7 +51,28 @@
             android:id="@+id/guidelines"
             android:background="@drawable/eikona"
             android:textSize="25sp"
-            android:layout_marginTop="360dp" />
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/shop"
+            android:layout_alignStart="@+id/shop" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="shop"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shop"
+            android:background="@drawable/eikona"
+            android:textSize="30sp"
+            android:layout_above="@+id/guidelines"
+            android:layout_centerHorizontal="true" />
 
         <Button
             android:text="Κατηγοριες"
@@ -78,9 +81,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/epiloges"
             android:background="@drawable/eikona"
-            android:textSize="20sp"
-            android:layout_marginLeft="160dp"
-            android:layout_marginTop="200dp"/>
+            android:textSize="27sp"
+            android:layout_above="@+id/guidelines"
+            android:layout_alignLeft="@+id/shop"
+            android:layout_alignStart="@+id/shop"
+            android:layout_marginBottom="86dp" />
 
         <Button
             android:text="Start"
@@ -90,7 +95,9 @@
             android:id="@+id/starter"
             android:background="@drawable/eikona"
             android:textSize="36sp"
-            android:layout_marginTop="200dp" />
+            android:layout_above="@+id/epiloges"
+            android:layout_alignLeft="@+id/epiloges"
+            android:layout_alignStart="@+id/epiloges" />
 
 
     </RelativeLayout>
