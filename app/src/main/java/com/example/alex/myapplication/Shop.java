@@ -37,7 +37,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
 
         mAd = MobileAds.getRewardedVideoAdInstance(this);
         mAd.setRewardedVideoAdListener(this);
-        loadRewardedVideoAd();
+
 
 
         new1 = (Button) findViewById(R.id.new1);
@@ -83,6 +83,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
                 }
             }
         });
+        loadRewardedVideoAd();
         buttonDisabler();
     }
 
@@ -162,6 +163,9 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     private void loadRewardedVideoAd() {
         if(!mAd.isLoaded()){
             mAd.loadAd("ca-app-pub-5861682469694178/2306813044", new AdRequest.Builder().build());
+        }else{
+            moneyPlus.setEnabled(true);
+            moneyPlus.setText("Bonus Money");
         }
     }
 
@@ -169,6 +173,13 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     public void onRewarded(RewardItem reward) {
         Toast.makeText(this, "onRewarded! currency: " + reward.getType() + "  amount: " +
                 reward.getAmount(), Toast.LENGTH_SHORT).show();
+
+        SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
+        //etoimazo to editor
+        SharedPreferences.Editor lefta_editor = lefta.edit();
+        //ta getType einai "lefta" kai to getAmount einai int posou rithmismeno apo to admob
+        lefta_editor.putInt(reward.getType(), lefta.getInt(reward.getType(), 0) + reward.getAmount());
+        lefta_editor.apply();
     }
 
     @Override
