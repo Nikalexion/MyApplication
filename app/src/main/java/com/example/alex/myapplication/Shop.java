@@ -8,8 +8,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-public class Shop extends AppCompatActivity {
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.reward.RewardItem;
+import com.google.android.gms.ads.reward.RewardedVideoAd;
+import com.google.android.gms.ads.reward.RewardedVideoAdListener;
+
+
+public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
 
     public static final String PREF_LEFTA = "LEFTA";
     public static final String PREF_AGORES = "AGORES";
@@ -18,11 +26,19 @@ public class Shop extends AppCompatActivity {
     private Button new2;
     private Button new3;
     private Button home;
+    private Button moneyPlus;
+    private RewardedVideoAd mAd;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
+
+        mAd = MobileAds.getRewardedVideoAdInstance(this);
+        mAd.setRewardedVideoAdListener(this);
+        loadRewardedVideoAd();
+
 
         new1 = (Button) findViewById(R.id.new1);
         new1.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +70,17 @@ public class Shop extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            }
+        });
+
+        //koumbi gia ta lefta
+        moneyPlus = (Button) findViewById(R.id.moneyPlus);
+        moneyPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                if (mAd.isLoaded()){
+                    mAd.show();
+                }
             }
         });
         buttonDisabler();
@@ -131,4 +158,52 @@ public class Shop extends AppCompatActivity {
         }
 
     }
+
+    private void loadRewardedVideoAd() {
+        if(!mAd.isLoaded()){
+            mAd.loadAd("ca-app-pub-5861682469694178/2306813044", new AdRequest.Builder().build());
+        }
+    }
+
+    @Override
+    public void onRewarded(RewardItem reward) {
+        Toast.makeText(this, "onRewarded! currency: " + reward.getType() + "  amount: " +
+                reward.getAmount(), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRewardedVideoAdLeftApplication() {
+        Toast.makeText(this, "onRewardedVideoAdLeftApplication",
+                Toast.LENGTH_SHORT).show();
+        //den to ipostirizei to unity
+    }
+
+    @Override
+    public void onRewardedVideoAdClosed() {
+        Toast.makeText(this, "onRewardedVideoAdClosed", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRewardedVideoAdFailedToLoad(int errorCode) {
+        Toast.makeText(this, "onRewardedVideoAdFailedToLoad", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRewardedVideoAdLoaded() {
+        Toast.makeText(this, "onRewardedVideoAdLoaded", Toast.LENGTH_SHORT).show();
+        moneyPlus.setEnabled(true);
+        moneyPlus.setText("Bonus Money");
+    }
+
+    @Override
+    public void onRewardedVideoAdOpened() {
+        Toast.makeText(this, "onRewardedVideoAdOpened", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onRewardedVideoStarted() {
+        Toast.makeText(this, "onRewardedVideoStarted", Toast.LENGTH_SHORT).show();
+    }
+
+
 }

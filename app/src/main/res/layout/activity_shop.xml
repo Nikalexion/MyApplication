@@ -18,13 +18,26 @@
         tools:context="com.example.alex.myapplication.Shop">
 
         <Button
+            android:text="Please wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moneyPlus"
+            android:textSize="16sp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:enabled="false" />
+
+        <Button
             android:text="Νεα κατηγορια"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/new1"
             android:textSize="36sp"
-            android:background="@drawable/eikona"
+
             android:layout_marginTop="16dp"
+            android:layout_below="@+id/moneyPlus"
             android:layout_centerHorizontal="true"/>
 
         <Button
@@ -33,7 +46,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/new2"
             android:textSize="36sp"
-            android:background="@drawable/eikona"
+
             android:layout_marginTop="16dp"
             android:layout_below="@+id/new1"
             android:layout_alignLeft="@+id/new1"
@@ -47,7 +60,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/new3"
             android:textSize="36sp"
-            android:background="@drawable/eikona"
+
             android:layout_marginTop="16dp"
             android:layout_below="@+id/new2"
             android:layout_alignLeft="@+id/new2"
@@ -61,10 +74,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/arxiki"
             android:textSize="30sp"
-            android:background="@drawable/eikona"
+
             android:layout_below="@+id/new3"
             android:layout_marginTop="60dp"
             android:layout_centerHorizontal="true" />
+
+
 
     </RelativeLayout>
 </ScrollView>
