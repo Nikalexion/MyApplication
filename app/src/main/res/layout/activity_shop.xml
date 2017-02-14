@@ -6,6 +6,7 @@
     android:fillViewport="true">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/bc"
 
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/activity_shop"
@@ -31,10 +32,10 @@
 
         <Button
             android:text="Νεα κατηγορια"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/new1"
-            android:textSize="36sp"
+            android:textSize="35sp"
 
             android:layout_marginTop="16dp"
             android:layout_below="@+id/moneyPlus"
@@ -42,10 +43,10 @@
 
         <Button
             android:text="Νεα κατηγορια 2"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/new2"
-            android:textSize="36sp"
+            android:textSize="35sp"
 
             android:layout_marginTop="16dp"
             android:layout_below="@+id/new1"
@@ -56,10 +57,10 @@
 
         <Button
             android:text="Νεα κατηγορια 3"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/new3"
-            android:textSize="36sp"
+            android:textSize="35sp"
 
             android:layout_marginTop="16dp"
             android:layout_below="@+id/new2"
