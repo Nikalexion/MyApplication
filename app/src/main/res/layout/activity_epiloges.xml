@@ -143,7 +143,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/arxiki"
             android:textSize="30sp"
-            android:background="@drawable/eikona"
+            android:background="@color/main_btn"
             android:layout_marginTop="16dp"
             android:layout_below="@+id/new3"
             android:layout_alignLeft="@+id/new3"

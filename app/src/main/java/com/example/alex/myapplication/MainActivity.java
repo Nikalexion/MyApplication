@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     public static final String PREF_LEFTA = "LEFTA";
+    public static final String PREF_AGORES = "AGORES";
     private Button starter;
     private Button guidelines;
     private Button epiloges;
@@ -68,9 +69,22 @@ public class MainActivity extends AppCompatActivity {
         int counter = lefta.getInt("lefta", 0);
         leftakia.setText(Integer.toString(counter));
         leftakia.setTextColor(Color.YELLOW);
+        SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
+        if(!(agorasmena.getBoolean("new1",false))&& (counter > 1)) {
+            shop.setBackgroundResource(R.drawable.shop_purchasable);
+        }
+        else if (!(agorasmena.getBoolean("new2",false))&& (counter > 1)) {
+            shop.setBackgroundResource(R.drawable.shop_purchasable);
+        }
+        else if (!(agorasmena.getBoolean("new3",false))&& (counter > 1)) {
+            shop.setBackgroundResource(R.drawable.shop_purchasable);
+        }
+        else{
+            shop.setBackgroundResource(R.drawable.btn_bg);
+        }
+
+
         super.onStart();
-
-
     }
 
 }

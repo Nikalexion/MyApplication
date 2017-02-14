@@ -30,8 +30,14 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     private RewardedVideoAd mAd;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        final SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
+        final SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
 
@@ -39,12 +45,11 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         mAd.setRewardedVideoAdListener(this);
 
 
-
         new1 = (Button) findViewById(R.id.new1);
         new1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                alert(new1);
+                alert(new1,lefta,agorasmena);
             }
         });
 
@@ -52,7 +57,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         new2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                alert(new2);
+                alert(new2,lefta,agorasmena);
             }
         });
 
@@ -60,7 +65,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         new3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                alert(new3);
+                alert(new3,lefta,agorasmena);
             }
         });
 
@@ -83,14 +88,24 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
                 }
             }
         });
+
+        if(!agorasmena.getBoolean("new1",false)&& (lefta.getInt("lefta",0) > 1)) {
+            new1.setBackgroundResource(R.drawable.shop_prasino);
+        }
+        if (!agorasmena.getBoolean("new2",false)&& (lefta.getInt("lefta",0) > 1)) {
+            new2.setBackgroundResource(R.drawable.shop_prasino);
+        }
+        if (!agorasmena.getBoolean("new3",false)&& (lefta.getInt("lefta",0) > 1)) {
+            new3.setBackgroundResource(R.drawable.shop_prasino);
+        }
+
         loadRewardedVideoAd();
         buttonDisabler();
     }
 
-    public void alert(final Button koumbi){
+    public void alert(final Button koumbi,final SharedPreferences lefta,final SharedPreferences agorasmena){
 
-        final SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
-        final SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
+
         final int paliaLefta = lefta.getInt("lefta", 0);
         String temp = "gamithike";
         switch (koumbi.getId()){
@@ -117,6 +132,8 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
                 // User clicked OK button
                 koumbi.setEnabled(false);
 
+                koumbi.setBackgroundResource(R.drawable.shop_btn);
+
                 int neaLefta = paliaLefta - 2;
                 SharedPreferences.Editor lefta_editor = lefta.edit();
                 lefta_editor.putInt("lefta", neaLefta);
@@ -125,6 +142,12 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
                 SharedPreferences.Editor editor = agorasmena.edit();
                 editor.putBoolean(agora, true);
                 editor.apply();
+
+                if(lefta.getInt("lefta",0) < 2) {
+                    new1.setBackgroundResource(R.drawable.shop_btn);
+                    new2.setBackgroundResource(R.drawable.shop_btn);
+                    new3.setBackgroundResource(R.drawable.shop_btn);
+                }
             }
         });
         builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {

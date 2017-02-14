@@ -36,6 +36,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/new1"
             android:textSize="35sp"
+            android:background="@drawable/shop_btn"
 
             android:layout_marginTop="16dp"
             android:layout_below="@+id/moneyPlus"
@@ -47,6 +48,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/new2"
             android:textSize="35sp"
+            android:background="@drawable/shop_btn"
 
             android:layout_marginTop="16dp"
             android:layout_below="@+id/new1"
@@ -61,6 +63,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/new3"
             android:textSize="35sp"
+            android:background="@drawable/shop_btn"
 
             android:layout_marginTop="16dp"
             android:layout_below="@+id/new2"

@@ -20,7 +20,7 @@
         android:layout_marginBottom="26dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/eikona" />
+        android:background="@color/main_btn" />
 
     <Button
         android:text="νεος γυρος"
@@ -31,5 +31,5 @@
         android:layout_marginBottom="36dp"
         android:layout_above="@+id/arxiki"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/eikona" />
+        android:background="@color/main_btn" />
 </RelativeLayout>
