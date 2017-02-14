@@ -2,23 +2,24 @@ package com.example.alex.myapplication;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import java.util.Random;
-import android.os.CountDownTimer;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+
+import java.util.Random;
 
 //ton ads
-import com.google.android.gms.ads.AdRequest;
 //ton fullscreen ads
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.InterstitialAd;
 //ton banner ads
-import com.google.android.gms.ads.AdView;
 
 public class MainGame extends AppCompatActivity {
 
