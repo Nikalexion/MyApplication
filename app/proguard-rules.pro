@@ -32,3 +32,9 @@
    *;
 }
 #Uniti ads END
+
+#na min anisixei gia to picasso giati doulevei kirile mono tou
+-dontwarn com.squareup.picasso.**
+
+#gia na doulevei to olo admob
+-keep class com.google.ads.**
