@@ -387,67 +387,133 @@
         <item>World Party</item>
     </string-array>
 
-    <string-array name="Celebrities_ENG">
-    <item>Albert Einstein</item>
-    <item>Stephen Hawking</item>
-    <item>Edward Norton</item>
-    <item>Emma Stone</item>
-    <item>Leonardo Di Caprio</item>
-    <item>Bradd Pitt</item>
-    <item>Antonio Banderas</item>
-    <item>Johnny Depp</item>
-    <item>Arnold Schwarzenegger</item>
-    <item>Jim Carrey</item>
-    <item>Emma Watson</item>
-    <item>Daniel Radcliffe</item>
-    <item>Tom Cruise</item>
-    <item>Charles Chaplin</item>
-    <item>Morgan Freeman</item>
-    <item>Tom Hanks</item>
-    <item>Hugh Jackman</item>
-    <item>Matt Damon</item>
-    <item>Sylvester Stallone</item>
-    <item>Will Smith</item>
-    <item>Clint Eastwood</item>
-    <item>George Clooney</item>
-    <item>Steven Spielberg</item>
-    <item>Robert De Niro</item>
-    <item>Al Pacino</item>
-    <item>Robert Downey Jr.</item>
-    <item>Liam Neeson</item>
-    <item>Natalie Portman</item>
-    <item>Sean Connery</item>
-    <item>Orlando Bloom</item>
-    <item>Dwayne Johnson</item>
-    <item>Kim Kardashian</item>
-    <item>Jackie Chan</item>
-    <item>Angelina Jolie</item>
-    <item>Scarlett Johansson</item>
-    <item>Heath Ledger</item>
-    <item>Julia Roberts</item>
-    <item>Nicolas Cage</item>
-    <item>Daniel Craig</item>
-    <item>Keanu Reeves</item>
-    <item>Ian McKellen</item>
-    <item>Bruce Willis</item>
-    <item>Samuel L. Jackson</item>
-    <item>Ben Stiller</item>
-    <item>Megan Fox</item>
-    <item>Mel Gibson</item>
-    <item>Vin Diesel</item>
-    <item>Robin Williams</item>
-    <item>Jean-Claude Van Damme</item>
-    <item>Zach Galifianakis</item>
-    <item>Sandra Bullock</item>
-    <item>Bruce Lee</item>
-    <item>Jack Nicholson</item>
-    <item>Jason Statham</item>
-    <item>Jet Li</item>
-    <item>Marlon Brando</item>
-    <item>John Travolta</item>
-    <item>Ben Affleck</item>
-    <item>Jennifer Aniston</item>
+    <string-array name="celebritiesENG_array">
+        <item>Albert Einstein</item>
+        <item>Stephen Hawking</item>
+        <item>Edward Norton</item>
+        <item>Emma Stone</item>
+        <item>Leonardo Di Caprio</item>
+        <item>Bradd Pitt</item>
+        <item>Antonio Banderas</item>
+        <item>Johnny Depp</item>
+        <item>Arnold Schwarzenegger</item>
+        <item>Jim Carrey</item>
+        <item>Emma Watson</item>
+        <item>Daniel Radcliffe</item>
+        <item>Tom Cruise</item>
+        <item>Charles Chaplin</item>
+        <item>Morgan Freeman</item>
+        <item>Tom Hanks</item>
+        <item>Hugh Jackman</item>
+        <item>Matt Damon</item>
+        <item>Sylvester Stallone</item>
+        <item>Will Smith</item>
+        <item>Clint Eastwood</item>
+        <item>George Clooney</item>
+        <item>Steven Spielberg</item>
+        <item>Robert De Niro</item>
+        <item>Al Pacino</item>
+        <item>Robert Downey Jr.</item>
+        <item>Liam Neeson</item>
+        <item>Natalie Portman</item>
+        <item>Sean Connery</item>
+        <item>Orlando Bloom</item>
+        <item>Dwayne Johnson</item>
+        <item>Kim Kardashian</item>
+        <item>Jackie Chan</item>
+        <item>Angelina Jolie</item>
+        <item>Scarlett Johansson</item>
+        <item>Heath Ledger</item>
+        <item>Julia Roberts</item>
+        <item>Nicolas Cage</item>
+        <item>Daniel Craig</item>
+        <item>Keanu Reeves</item>
+        <item>Ian McKellen</item>
+        <item>Bruce Willis</item>
+        <item>Samuel L. Jackson</item>
+        <item>Ben Stiller</item>
+        <item>Megan Fox</item>
+        <item>Mel Gibson</item>
+        <item>Vin Diesel</item>
+        <item>Robin Williams</item>
+        <item>Jean-Claude Van Damme</item>
+        <item>Zach Galifianakis</item>
+        <item>Sandra Bullock</item>
+        <item>Bruce Lee</item>
+        <item>Jack Nicholson</item>
+        <item>Jason Statham</item>
+        <item>Jet Li</item>
+        <item>Marlon Brando</item>
+        <item>John Travolta</item>
+        <item>Ben Affleck</item>
+        <item>Jennifer Aniston</item>
 
+    </string-array>
+
+    <string-array name="charsMovies_array">
+        <item>Δίας</item>
+        <item>Ήρα</item>
+        <item>Κρόνος</item>
+        <item>Ποσειδώνας</item>
+        <item>Άδης</item>
+        <item>Κέρβερος</item>
+        <item>Άρης (Θεός του πολέμοθ)</item>
+        <item>Αφροδίτη</item>
+        <item>Δήμητρα (Θεά της γεωργίας)</item>
+        <item>Άρτεμις</item>
+        <item>Περσεφόνη</item>
+        <item>Προμηθέας</item>
+        <item>Θησέας</item>
+        <item>Περσέας</item>
+        <item>Μορφέας</item>
+        <item>Έρμης</item>
+        <item>Σφίγγα</item>
+        <item>Μηνόταυρος</item>
+        <item>Σκύλα</item>
+        <item>Χάριβδη</item>
+        <item>Διόνυσος</item>
+        <item>Ήφαιστος</item>
+        <item>Αθηνά</item>
+        <item>Ηρακλής</item>
+        <item>Πήγασος</item>
+        <item>Ιάσωνας</item>
+        <item>Λερναία Ύδρα</item>
+        <item>Προκρούστης</item>
+        <item>Αιγέας</item>
+        <item>Άτλας</item>
+        <item>Μάγισσα Κίρκη</item>
+        <item>Οδυσσέας</item>
+        <item>Τηλέμαχος</item>
+        <item>Αχιλλέας</item>
+        <item>Κύκλωπας Πολύφημος</item>
+        <item>Ουρανός</item>
+        <item>Γαία</item>
+        <item>Χάροντας</item>
+        <item>Ρα</item>
+        <item>Όσιρις</item>
+        <item>Φοίνικας</item>
+        <item>Ίσιδα</item>
+        <item>Ανούμπις</item>
+        <item>Odin </item>
+        <item>Thor</item>
+        <item>Loky</item>
+        <item>Ίκαρος και Δαίδαλος</item>
+        <item>Μίνωας </item>
+        <item>Πηνελόπη</item>
+        <item>Κάστορας και Πολυδεύκης</item>
+        <item>Χρυσόμαλλο Δέρας</item>
+        <item>Αργώ (Αργοναυτική εκστρατεία)</item>
+        <item>Άδονις</item>
+        <item>Ευρώπη</item>
+        <item>Αριάδνη</item>
+        <item>Νησί των Λοτοφάγων</item>
+        <item>Συμπληγάδες Πέτρες</item>
+        <item>Συρήνες</item>
+        <item>Σταύλοι του Αυγεία</item>
+        <item>Ιόλαος</item>
+        <item>Θεός Ήλιος</item>
+        <item>Fenrir</item>
+        <item>Ymir</item>
 
     </string-array>
 
