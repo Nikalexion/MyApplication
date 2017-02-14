@@ -43,61 +43,62 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="22dp"/>
 
-        <Button
-            android:text="Κανονες"
-            android:textColor="#FFFFFF"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/guidelines"
-            android:background="@drawable/btn_click"
-            android:textSize="25sp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignLeft="@+id/shop"
-            android:layout_alignStart="@+id/shop" />
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/ic_launcher"
             android:id="@+id/imageView"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="150dp"
             android:layout_centerHorizontal="true" />
-
-        <Button
-            android:text="shop"
-            android:textColor="#FFFFFF"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/shop"
-            android:background="@drawable/btn_click"
-            android:textSize="30sp"
-            android:layout_above="@+id/guidelines"
-            android:layout_centerHorizontal="true" />
-
-        <Button
-            android:text="Κατηγοριες"
-            android:textColor="#FFFFFF"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/epiloges"
-            android:background="@drawable/btn_click"
-            android:textSize="27sp"
-            android:layout_above="@+id/guidelines"
-            android:layout_alignLeft="@+id/shop"
-            android:layout_alignStart="@+id/shop"
-            android:layout_marginBottom="86dp" />
 
         <Button
             android:text="Start"
             android:textColor="#FFFFFF"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/starter"
-            android:background="@drawable/btn_click"
-            android:textSize="36sp"
-            android:layout_above="@+id/epiloges"
-            android:layout_alignLeft="@+id/epiloges"
-            android:layout_alignStart="@+id/epiloges" />
+            android:background="@color/main_btn"
+            android:textSize="30sp"
+            android:layout_marginTop="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Κατηγοριες"
+            android:textColor="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/epiloges"
+            android:background="@color/main_btn"
+            android:textSize="30sp"
+            android:layout_below="@+id/starter"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:text="shop"
+            android:textColor="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shop"
+            android:background="@color/main_btn"
+            android:textSize="30sp"
+            android:layout_below="@+id/epiloges"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:text="Κανονες"
+            android:textColor="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/guidelines"
+            android:background="@color/main_btn"
+            android:textSize="30sp"
+            android:layout_below="@+id/shop"
+            android:layout_marginTop="15dp"/>
 
 
     </RelativeLayout>
