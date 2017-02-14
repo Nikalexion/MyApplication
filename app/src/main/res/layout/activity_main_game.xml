@@ -9,7 +9,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.example.alex.myapplication.MainGame">
+    tools:context="com.example.alex.myapplication.MainGame"
+    android:background="@drawable/bc"
+    android:layout_centerInParent="true">
 
     <TextView
         android:text="Τέλος Χρόνου! Η Ομάδα σου έχασε!"

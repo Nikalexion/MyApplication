@@ -9,27 +9,29 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.alex.myapplication.Ending">
+    tools:context="com.example.alex.myapplication.Ending"
+    android:background="@drawable/bc"
+    android:layout_centerInParent="true">
 
     <Button
         android:text="ΑΡΧΙΚΉ"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/arxiki"
         android:textSize="30sp"
         android:layout_marginBottom="26dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@color/main_btn" />
+        android:background="@drawable/btn_bg" />
 
     <Button
         android:text="νεος γυρος"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/neoGame"
         android:textSize="30sp"
         android:layout_marginBottom="36dp"
         android:layout_above="@+id/arxiki"
         android:layout_centerHorizontal="true"
-        android:background="@color/main_btn" />
+        android:background="@drawable/btn_bg" />
 </RelativeLayout>

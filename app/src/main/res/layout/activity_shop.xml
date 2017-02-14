@@ -74,10 +74,11 @@
 
         <Button
             android:text="ΑΡΧΙΚΉ"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/arxiki"
             android:textSize="30sp"
+            android:background="@drawable/btn_bg"
 
             android:layout_below="@+id/new3"
             android:layout_marginTop="60dp"

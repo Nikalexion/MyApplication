@@ -15,7 +15,9 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.example.alex.myapplication.Epiloges">
+        tools:context="com.example.alex.myapplication.Epiloges"
+        android:background="@drawable/bc"
+        android:layout_centerInParent="true">
 
         <CheckBox
             android:text="Ξένες Ταινίες"
@@ -139,11 +141,11 @@
 
         <Button
             android:text="ΑΡΧΙΚΉ"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/arxiki"
             android:textSize="30sp"
-            android:background="@color/main_btn"
+            android:background="@drawable/btn_bg"
             android:layout_marginTop="16dp"
             android:layout_below="@+id/new3"
             android:layout_alignLeft="@+id/new3"
