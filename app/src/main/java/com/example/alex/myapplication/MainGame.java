@@ -43,7 +43,8 @@ public class MainGame extends AppCompatActivity {
     private int min = 5;
     private int max = 8;
     private int gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
-
+    LinearLayout layclick;
+    private boolean stillPlaying = true;
 
     boolean doubleBackToExitPressedOnce = false;
 
@@ -51,11 +52,9 @@ public class MainGame extends AppCompatActivity {
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
             super.onBackPressed();
-            xronos.cancel();
-            telosXronou.cancel();
             return;
         }
-
+        //TODO keimeno sta ellinika
         this.doubleBackToExitPressedOnce = true;
         Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
 
@@ -69,46 +68,13 @@ public class MainGame extends AppCompatActivity {
     }
 
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
 
-        final LinearLayout layclick = (LinearLayout) findViewById(R.id.layouter);
+        layclick = (LinearLayout) findViewById(R.id.layouter);
         layclick.setClickable(true);
-
-        xronos = new CountDownTimer(gameTime, 1000) {
-
-            public void onTick(long millisUntilFinished) {
-            }
-
-            public void onFinish() {
-                layclick.setClickable(false);
-                leksi.setText("Τέλος Χρόνου! Η Ομάδα σου έχασε!");
-                telosXronou.start();
-                xronos.cancel();
-            }
-        }.start();
-
-        telosXronou = new CountDownTimer(3000, 1000) {
-
-            public void onTick(long millisUntilFinished) {
-            }
-
-            public void onFinish() {
-                SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
-                int counter = lefta.getInt("lefta", 0);
-                counter = counter + 5;
-                SharedPreferences.Editor lefta_editor = lefta.edit();
-                lefta_editor.putInt("lefta", counter);
-                lefta_editor.apply();
-                showInterstitial();
-                xronos.cancel();
-            }
-        };
 
         arrayBuilder();
 
@@ -202,6 +168,50 @@ public class MainGame extends AppCompatActivity {
         System.arraycopy(b, 0, c, aLen, bLen);
         return c;
     }
+
+    @Override
+    protected void onResume(){
+        timeCreator(gameTime);
+        super.onResume();
+    }
+    @Override
+    protected void onPause(){
+        xronos.cancel();
+        super.onPause();
+    }
+
+    private void timeCreator(final int timeToFinish){
+
+        xronos = new CountDownTimer(timeToFinish, 1000) {
+            public void onTick(long millisUntilFinished) {
+                gameTime = (int) millisUntilFinished;
+            }
+            public void onFinish() {
+                if (stillPlaying) {
+                    layclick.setClickable(false);
+                    leksi.setText("Τέλος Χρόνου! Η Ομάδα σου έχασε!");
+                    stillPlaying = false;
+                    xronos.cancel();
+                    gameTime = 3*1000;
+                    timeCreator(gameTime);
+                }else{
+                    SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
+                    int counter = lefta.getInt("lefta", 0);
+                    counter = counter + 5;
+                    SharedPreferences.Editor lefta_editor = lefta.edit();
+                    lefta_editor.putInt("lefta", counter);
+                    lefta_editor.apply();
+                    showInterstitial(); //emberiexei to goToNextLevel me ta intent
+                    xronos.cancel();
+                    finish();   //psofaei otan telionei o xronos
+                }
+            }
+        }.start();
+    }
+
+
+
+
 }
 
 

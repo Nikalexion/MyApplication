@@ -24,6 +24,7 @@ public class Ending extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 startActivity(new Intent(getApplicationContext(), MainGame.class));
+                finish();
             }
         });
 
@@ -32,8 +33,9 @@ public class Ending extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                finish();
             }
         });
     }
+
 }

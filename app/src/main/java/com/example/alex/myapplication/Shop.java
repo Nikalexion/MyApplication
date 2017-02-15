@@ -74,7 +74,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                finish();
             }
         });
 
@@ -238,6 +238,5 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     public void onRewardedVideoStarted() {
         Toast.makeText(this, "onRewardedVideoStarted", Toast.LENGTH_SHORT).show();
     }
-
 
 }

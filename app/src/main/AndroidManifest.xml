@@ -29,23 +29,18 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainGame"
-            android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Ending"
-            android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Guide"
-            android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Epiloges"
-            android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Shop"
-            android:noHistory="true"
             android:screenOrientation="portrait" />
         <!-- This meta-data tag is required to use Google Play Services. -->
         <meta-data
