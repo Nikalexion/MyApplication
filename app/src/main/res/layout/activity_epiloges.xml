@@ -19,11 +19,12 @@
         android:background="@drawable/bc"
         android:layout_centerInParent="true">
 
+
         <CheckBox
-            android:text="Ξένες Ταινίες"
+            android:text="Άκυρες λέξεις"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tainiesENG_box"
+            android:id="@+id/random_box"
             android:textSize="36sp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
@@ -31,6 +32,19 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="30dp" />
+
+        <CheckBox
+            android:text="Ξένες Ταινίες"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tainiesENG_box"
+            android:textSize="36sp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/random_box"
+            android:layout_alignLeft="@+id/random_box"
+            android:layout_alignStart="@+id/random_box"
+            android:layout_alignRight="@+id/random_box"
+            android:layout_alignEnd="@+id/random_box" />
 
         <CheckBox
             android:text="Παροιμίες"
@@ -101,10 +115,10 @@
             android:layout_alignEnd="@+id/tvGR_box" />
 
         <CheckBox
-            android:text="Νέα κατηγορία 1"
+            android:text="Μυθολογία"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/new1"
+            android:id="@+id/myths_box"
             android:textSize="36sp"
             android:layout_marginTop="16dp"
             android:layout_below="@+id/tvENG_box"
@@ -112,6 +126,19 @@
             android:layout_alignStart="@+id/tvENG_box"
             android:layout_alignRight="@+id/tvENG_box"
             android:layout_alignEnd="@+id/tvENG_box" />
+
+        <CheckBox
+            android:text="Νέα κατηγορία 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/new1"
+            android:textSize="36sp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/myths_box"
+            android:layout_alignLeft="@+id/myths_box"
+            android:layout_alignStart="@+id/myths_box"
+            android:layout_alignRight="@+id/myths_box"
+            android:layout_alignEnd="@+id/myths_box" />
 
         <CheckBox
             android:text="Νέα κατηγορία 2"

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string-array name="random_array">
+        <item>Ένα</item>
+        <item>Δύο</item>
+    </string-array>
+
+
     <string-array name="tainiesGR_array">
         <item>Η νεράιδα και το παλικάρι</item>
         <item>Το πιό λαμπρό αστέρι</item>

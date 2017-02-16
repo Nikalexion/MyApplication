@@ -18,16 +18,11 @@ import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Random;
 
-//ton ads
-//ton fullscreen ads
-//ton banner ads
-
 public class MainGame extends AppCompatActivity {
 
 
-    // Remove the below line after defining your own ad unit ID.
-    private static final String TOAST_TEXT = "Test ads are being shown. "
-            + "To show live ads, replace the ad unit ID in res/values/strings.xml with your own ad unit ID.";
+    // TODO Remove the below line after defining your own ad unit ID.
+    private static final String TOAST_TEXT = "Test ads are being shown.";
     public static final String PREF_LEFTA = "LEFTA";
     public static final String PREF_EPILOGES = "EPILOGES";
 
@@ -40,8 +35,8 @@ public class MainGame extends AppCompatActivity {
     //i diafimisi
     private InterstitialAd mInterstitialAd;
 
-    private int min = 5;
-    private int max = 8;
+    private int min = 60;
+    private int max = 80;
     private int gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
     LinearLayout layclick;
     private boolean stillPlaying = true;
@@ -135,8 +130,11 @@ public class MainGame extends AppCompatActivity {
 
     private void arrayBuilder(){
         SharedPreferences epiloges = getSharedPreferences(PREF_EPILOGES, 0);
+        if(epiloges.getBoolean("random",true)) {
+            pinakasL = getResources().getStringArray(R.array.random_array);
+        }
         if(epiloges.getBoolean("tainiesENG",true)) {
-            pinakasL = getResources().getStringArray(R.array.tainiesENG_array);
+            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.tainiesENG_array));
         }
         if(epiloges.getBoolean("parimies",true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.parimies_array));
@@ -144,15 +142,18 @@ public class MainGame extends AppCompatActivity {
         if(epiloges.getBoolean("tainiesGR",true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.tainiesGR_array));
         }
-        if(epiloges.getBoolean("padika",true)) {
+        if(epiloges.getBoolean("paidika",true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.paidika_array));
         }
         if(epiloges.getBoolean("tvGR",true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.tvGR_array));
         }
-        //prosorini fix asfalias min ksekinisei to paixnidi xoris pinaka
+        if(epiloges.getBoolean("myths",true)) {
+            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.myths_array));
+        }
+        //TODO prosorino fix asfalias min ksekinisei to paixnidi xoris pinaka
         if(pinakasL == null){
-            pinakasL = getResources().getStringArray(R.array.tainiesENG_array);
+            pinakasL = getResources().getStringArray(R.array.random_array);
         }
     }
 

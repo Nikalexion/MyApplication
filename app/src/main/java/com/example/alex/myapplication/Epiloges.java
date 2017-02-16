@@ -14,12 +14,14 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
 
     public static final String PREF_EPILOGES = "EPILOGES";
     public static final String PREF_AGORES = "AGORES";
+    private CheckBox random;
     private CheckBox tainiesENG;
     private CheckBox parimies;
     private CheckBox tainiesGR;
     private CheckBox paidika;
     private CheckBox tvGR;
     private CheckBox tvENG;
+    private CheckBox myths;
     private CheckBox new1;
     private CheckBox new2;
     private CheckBox new3;
@@ -33,6 +35,10 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
 
         SharedPreferences epiloges = getApplicationContext().getSharedPreferences(PREF_EPILOGES, 0);
         SharedPreferences agores = getApplicationContext().getSharedPreferences(PREF_AGORES, 0);
+
+        random = (CheckBox) findViewById(R.id.random_box);
+        random.setChecked(epiloges.getBoolean("random",true));
+        random.setOnCheckedChangeListener(this);
 
         tainiesENG = (CheckBox) findViewById(R.id.tainiesENG_box);
         tainiesENG.setChecked(epiloges.getBoolean("tainiesENG",true));
@@ -57,6 +63,10 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
         tvENG = (CheckBox) findViewById(R.id.tvENG_box);
         tvENG.setChecked(epiloges.getBoolean("tvENG",true));
         tvENG.setOnCheckedChangeListener(this);
+
+        myths = (CheckBox) findViewById(R.id.myths_box);
+        myths.setChecked(epiloges.getBoolean("myths",true));
+        myths.setOnCheckedChangeListener(this);
 
         new1 = (CheckBox) findViewById(R.id.new1);
         new1.setChecked(epiloges.getBoolean("new1",false));
@@ -94,6 +104,9 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
     public void onCheckedChanged (CompoundButton buttonView, boolean isChecked) {
         // TODO Auto-generated method stub
         switch(buttonView.getId()){
+            case R.id.random_box:
+                saveInSp("random",isChecked);
+                break;
             case R.id.tainiesENG_box:
                 saveInSp("tainiesENG",isChecked);
                 break;
@@ -111,6 +124,9 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
                 break;
             case R.id.tvENG_box:
                 saveInSp("tvENG",isChecked);
+                break;
+            case R.id.myths_box:
+                saveInSp("myths",isChecked);
                 break;
             case R.id.new1:
                 saveInSp("new1",isChecked);
