@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="random_array">
+    <string-array name="categories">
+        <item>random</item>
+        <item>tainiesGR</item>
+        <item>tainiesENG</item>
+
+        <item>parimies</item>
+        <item>paidika</item>
+        <item>tvGR</item>
+
+        <item>famousENG</item>
+        <item>myths</item>
+        <item>food</item>
+
+        <item>animals</item>
+        <item>new1</item>
+        <item>new2</item>
+
+        <item>new3</item>
+    </string-array>
+    <string-array name="category_names">
+        <item>Τυχαίες λέξεις</item>
+        <item>Ελληνικές ταινίες</item>
+        <item>Ξένες Ταινίες</item>
+
+        <item>Παροιμίες</item>
+        <item>Παιδικά</item>
+        <item>Ελληνική τηλεόραση</item>
+
+        <item>Γνωστοί Ξένοι</item>
+        <item>Μυθολογία</item>
+        <item>Φαγώσιμα</item>
+
+        <item>Ζώα</item>
+        <item>new1</item>
+        <item>new2</item>
+
+        <item>new3</item>
+    </string-array>
+
+    <string-array name="random">
         <item>Αεροπλάνο</item>
         <item>Αυτοκίνητο (αμάξι)</item>
         <item>Τρένο</item>
@@ -395,7 +434,7 @@
     </string-array>
 
 
-    <string-array name="tainiesGR_array">
+    <string-array name="tainiesGR">
         <item>Η νεράιδα και το παλικάρι</item>
         <item>Το πιό λαμπρό αστέρι</item>
         <item>Η κόρη μου η σοσιαλίστρια</item>
@@ -409,7 +448,7 @@
         <item>Η Ρόζα της Σμύρνης</item>
     </string-array>
 
-    <string-array name="tainiesENG_array">
+    <string-array name="tainiesENG">
         <item>The Revenant</item>
         <item>Kung fu panda</item>
         <item>Raiders of the Lost Ark</item>
@@ -546,7 +585,7 @@
         <item>Hail, Caesar!</item>
     </string-array>
 
-    <string-array name="paidika_array">
+    <string-array name="paidika">
         <item>Σταχτοπούτα</item>
         <item>Η Χιονάτη και οι 7 νάνοι</item>
         <item>Η κοκκινοσκουφίτσα</item>
@@ -558,7 +597,7 @@
         <item>Πίτερ Παν</item>
     </string-array>
 
-    <string-array name="parimies_array">
+    <string-array name="parimies">
         <item>Ο διάβολος έχει πολλά ποδάρια</item>
         <item>Καλιο 5 και στο χέρι παρά 10 και καρτέρει</item>
         <item>Η καλή η μέρα από το πρωΐ φαίνεται</item>
@@ -701,7 +740,7 @@
             <item>Γουρούνι στο σακί</item>
     </string-array>
 
-    <string-array name="tvGR_array">
+    <string-array name="tvGR">
         <item>Δέκα μικροί Μήτσοι</item>
         <item>Εργαζόμενη γυναίκα</item>
         <item>Μάμα μία</item>
@@ -830,7 +869,7 @@
         <item>World Party</item>
     </string-array>
 
-    <string-array name="celebritiesENG_array">
+    <string-array name="famousENG">
         <item>Albert Einstein</item>
         <item>Stephen Hawking</item>
         <item>Edward Norton</item>
@@ -892,7 +931,7 @@
         <item>Jennifer Aniston</item>
     </string-array>
 
-    <string-array name="myths_array">
+    <string-array name="myths">
         <item>Δίας</item>
         <item>Ήρα</item>
         <item>Κρόνος</item>
@@ -958,7 +997,7 @@
         <item>Ymir</item>
     </string-array>
 
-    <string-array name="food_array">
+    <string-array name="food">
         <item>Μαύρο πιπέρι</item>
         <item>Κόκκινο πιπέρι</item>
         <item>Άσπρο πιπέρι</item>
@@ -1115,7 +1154,7 @@
         <item>Πιπεριές Φλωρίνης</item>
     </string-array>
 
-    <string-array name="animals_array">
+    <string-array name="animals">
         <item>Σκύλος</item>
         <item>Γάτα</item>
         <item>Ποντίκι</item>
@@ -1258,6 +1297,18 @@
         <item>Ξιφίας</item>
         <item>Αλιγάτορας</item>
         <item>Σαλαμάνδρα</item>
+    </string-array>
+
+    <string-array name="new1">
+        <item>test</item>
+    </string-array>
+
+    <string-array name="new2">
+        <item>test</item>
+    </string-array>
+
+    <string-array name="new3">
+        <item>test</item>
     </string-array>
 
 </resources>

@@ -5,10 +5,14 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TableRow;
 
 public class Epiloges extends AppCompatActivity implements OnCheckedChangeListener {
 
@@ -38,60 +42,30 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
         SharedPreferences epiloges = getApplicationContext().getSharedPreferences(PREF_EPILOGES, 0);
         SharedPreferences agores = getApplicationContext().getSharedPreferences(PREF_AGORES, 0);
 
-        random = (CheckBox) findViewById(R.id.random_box);
-        random.setChecked(epiloges.getBoolean("random",true));
-        random.setOnCheckedChangeListener(this);
+        String[] onomataKatigorion = getResources().getStringArray(R.array.category_names);
+        String[] katigories = getResources().getStringArray(R.array.categories);
+        int Array_Count = katigories.length;
 
-        tainiesENG = (CheckBox) findViewById(R.id.tainiesENG_box);
-        tainiesENG.setChecked(epiloges.getBoolean("tainiesENG",true));
-        tainiesENG.setOnCheckedChangeListener(this);
+        LinearLayout my_layout = (LinearLayout)findViewById(R.id.activity_epiloges);
 
-        parimies = (CheckBox) findViewById(R.id.parimies_box);
-        parimies.setChecked(epiloges.getBoolean("parimies",true));
-        parimies.setOnCheckedChangeListener(this);
+        for (int i = 0; i < Array_Count; i++) {
 
-        tainiesGR = (CheckBox) findViewById(R.id.tainiesGR_box);
-        tainiesGR.setChecked(epiloges.getBoolean("tainiesGR",true));
-        tainiesGR.setOnCheckedChangeListener(this);
+            TableRow row =new TableRow(this);
+            row.setId(i);
+            row.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT));
+            CheckBox checkBox = new CheckBox(this);
+            checkBox.setOnCheckedChangeListener(this);
+            checkBox.setId(i);
+            checkBox.setText(onomataKatigorion[i]);
+            checkBox.setChecked(epiloges.getBoolean(katigories[i],false));
+            checkBox.setEnabled(agores.getBoolean(katigories[i],false));
+            row.addView(checkBox);
+            my_layout.addView(row);
+        }
 
-        paidika = (CheckBox) findViewById(R.id.paidika_box);
-        paidika.setChecked(epiloges.getBoolean("paidika",true));
-        paidika.setOnCheckedChangeListener(this);
 
-        tvGR = (CheckBox) findViewById(R.id.tvGR_box);
-        tvGR.setChecked(epiloges.getBoolean("tvGR",true));
-        tvGR.setOnCheckedChangeListener(this);
 
-        tvENG = (CheckBox) findViewById(R.id.tvENG_box);
-        tvENG.setChecked(epiloges.getBoolean("tvENG",true));
-        tvENG.setOnCheckedChangeListener(this);
-
-        myths = (CheckBox) findViewById(R.id.myths_box);
-        myths.setChecked(epiloges.getBoolean("myths",true));
-        myths.setOnCheckedChangeListener(this);
-
-        food = (CheckBox) findViewById(R.id.food_box);
-        food.setChecked(epiloges.getBoolean("food",true));
-        food.setOnCheckedChangeListener(this);
-
-        animals = (CheckBox) findViewById(R.id.animals_box);
-        animals.setChecked(epiloges.getBoolean("animals",true));
-        animals.setOnCheckedChangeListener(this);
-
-        new1 = (CheckBox) findViewById(R.id.new1);
-        new1.setChecked(epiloges.getBoolean("new1",false));
-        new1.setEnabled(agores.getBoolean("new1",false));
-        new1.setOnCheckedChangeListener(this);
-
-        new2 = (CheckBox) findViewById(R.id.new2);
-        new2.setChecked(epiloges.getBoolean("new2",false));
-        new2.setEnabled(agores.getBoolean("new2",false));
-        new2.setOnCheckedChangeListener(this);
-
-        new3 = (CheckBox) findViewById(R.id.new3);
-        new3.setChecked(epiloges.getBoolean("new3",false));
-        new3.setEnabled(agores.getBoolean("new3",false));
-        new3.setOnCheckedChangeListener(this);
+        /* todo na thimithoume na ksanavaloume afto to koumbi gia epistrofi apo edo
 
 
         //To koumbi gia epistrofi sto arxiko menou
@@ -102,6 +76,11 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
                 finish();
             }
         });
+        */
+    }
+
+    public void onCheckedChanged (CompoundButton buttonView, boolean isChecked) {
+        saveInSp(getResources().getStringArray(R.array.categories)[buttonView.getId()],isChecked);
     }
 
     private void saveInSp(String key, boolean value) {
@@ -111,49 +90,5 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
         editor.apply();
     }
 
-    public void onCheckedChanged (CompoundButton buttonView, boolean isChecked) {
-        // TODO Auto-generated method stub
-        switch(buttonView.getId()){
-            case R.id.random_box:
-                saveInSp("random",isChecked);
-                break;
-            case R.id.tainiesENG_box:
-                saveInSp("tainiesENG",isChecked);
-                break;
-            case R.id.parimies_box:
-                saveInSp("parimies",isChecked);
-                break;
-            case R.id.tainiesGR_box:
-                saveInSp("tainiesGR",isChecked);
-                break;
-            case R.id.paidika_box:
-                saveInSp("paidika",isChecked);
-                break;
-            case R.id.tvGR_box:
-                saveInSp("tvGR",isChecked);
-                break;
-            case R.id.tvENG_box:
-                saveInSp("tvENG",isChecked);
-                break;
-            case R.id.myths_box:
-                saveInSp("myths",isChecked);
-                break;
-            case R.id.food_box:
-                saveInSp("food",isChecked);
-                break;
-            case R.id.animals_box:
-                saveInSp("animals",isChecked);
-                break;
-            case R.id.new1:
-                saveInSp("new1",isChecked);
-                break;
-            case R.id.new2:
-                saveInSp("new2",isChecked);
-                break;
-            case R.id.new3:
-                saveInSp("new3",isChecked);
-                break;
-        }
-    }
 
 }

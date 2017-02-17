@@ -73,12 +73,14 @@ public class MainGame extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_game);
+
         mp = MediaPlayer.create(this, R.raw.beep);
         mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
         expl = MediaPlayer.create(this, R.raw.explosion);
         expl.setAudioStreamType(AudioManager.STREAM_MUSIC);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_game);
+
 
         layclick = (LinearLayout) findViewById(R.id.layouter);
         layclick.setClickable(true);
@@ -142,36 +144,21 @@ public class MainGame extends AppCompatActivity {
 
     private void arrayBuilder() {
         SharedPreferences epiloges = getSharedPreferences(PREF_EPILOGES, 0);
-        if (epiloges.getBoolean("random", true)) {
-            pinakasL = getResources().getStringArray(R.array.random_array);
+
+        String[] katigories = getResources().getStringArray(R.array.categories);
+        int Array_Count = katigories.length;
+
+        for (int i = 0; i < Array_Count; i++) {
+            if (epiloges.getBoolean(getResources().getStringArray(R.array.categories)[i], false)) {
+                int getResHelper = getResources().getIdentifier(katigories[i], "array", getPackageName());
+                String[] concatHelper = getResources().getStringArray(getResHelper);
+                pinakasL = concat(pinakasL, concatHelper);
+            }
         }
-        if (epiloges.getBoolean("tainiesENG", true)) {
-            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.tainiesENG_array));
-        }
-        if (epiloges.getBoolean("parimies", true)) {
-            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.parimies_array));
-        }
-        if (epiloges.getBoolean("tainiesGR", true)) {
-            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.tainiesGR_array));
-        }
-        if (epiloges.getBoolean("paidika", true)) {
-            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.paidika_array));
-        }
-        if (epiloges.getBoolean("tvGR", true)) {
-            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.tvGR_array));
-        }
-        if (epiloges.getBoolean("myths", true)) {
-            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.myths_array));
-        }
-        if (epiloges.getBoolean("food", true)) {
-            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.food_array));
-        }
-        if (epiloges.getBoolean("animals", true)) {
-            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.animals_array));
-        }
+
         //TODO prosorino fix asfalias min ksekinisei to paixnidi xoris pinaka
         if (pinakasL == null) {
-            pinakasL = getResources().getStringArray(R.array.random_array);
+            pinakasL = getResources().getStringArray(R.array.random);
         }
     }
 

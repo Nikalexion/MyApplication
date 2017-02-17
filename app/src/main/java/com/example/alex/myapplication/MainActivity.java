@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String PREF_LEFTA = "LEFTA";
     public static final String PREF_AGORES = "AGORES";
+    public static final String PREF_EPILOGES = "EPILOGES";
+
     private Button starter;
     private Button guidelines;
     private Button epiloges;
@@ -48,6 +50,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if(getSharedPreferences(PREF_EPILOGES, 0).getBoolean("protiFora",true)) {
+            SharedPreferences.Editor defaultAgores = getSharedPreferences(PREF_AGORES, 0).edit();
+            SharedPreferences.Editor defaultEpiloges = getSharedPreferences(PREF_EPILOGES, 0).edit();
+
+            defaultEpiloges.putBoolean("protiFora", false);
+            defaultEpiloges.apply();
+
+            String[] katigories = getResources().getStringArray(R.array.categories);
+            for (int i = 0; i < 10; i++) {
+                defaultAgores.putBoolean(katigories[i], true);
+                defaultAgores.apply();
+                defaultEpiloges.putBoolean(katigories[i], true);
+                defaultEpiloges.apply();
+            }
+
+        }
 
         starter = (Button) findViewById(R.id.starter);
         guidelines = (Button) findViewById(R.id.guidelines);
