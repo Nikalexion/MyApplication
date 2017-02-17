@@ -41,8 +41,8 @@ public class MainGame extends AppCompatActivity {
     //i diafimisi
     private InterstitialAd mInterstitialAd;
 
-    private int min = 5;
-    private int max = 8;
+    private int min = 50;
+    private int max = 80;
     private int gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
     private final int startTime = gameTime;
     LinearLayout layclick;
