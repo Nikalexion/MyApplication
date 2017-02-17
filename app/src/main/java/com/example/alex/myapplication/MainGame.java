@@ -186,7 +186,7 @@ public class MainGame extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        timeCreator(gameTime,1000);
+        timeCreator(gameTime);
         super.onResume();
     }
 
@@ -196,8 +196,17 @@ public class MainGame extends AppCompatActivity {
         super.onPause();
     }
 
-    private void timeCreator(final int timeToFinish, final int ticker) {
-
+    private void timeCreator(final int timeToFinish) {
+        int ticker = 1000;
+        if (gameTime < 15000){
+            ticker = 100;
+        }
+        else if (gameTime < 27000){
+            ticker = 300;
+        }
+        else if (gameTime < 40000) {
+            ticker = 600;
+        }
         xronos = new CountDownTimer(timeToFinish, ticker) {
             public void onTick(long millisUntilFinished) {
                 gameTime = (int) millisUntilFinished;
@@ -205,21 +214,21 @@ public class MainGame extends AppCompatActivity {
                 if (gameTime < 15000){
                     if (ligosXronos == 2) {
                         xronos.cancel();
-                        timeCreator(gameTime,100);
+                        timeCreator(gameTime);
                         ligosXronos = 3;
                     }
                 }
                 else if (gameTime < 27000){
                     if (ligosXronos == 1) {
                         xronos.cancel();
-                        timeCreator(gameTime,300);
+                        timeCreator(gameTime);
                         ligosXronos = 2;
                     }
                 }
                 else if (gameTime < 40000) {
                     if (ligosXronos == 0){
                         xronos.cancel();
-                        timeCreator(gameTime,600);
+                        timeCreator(gameTime);
                         ligosXronos = 1;
                     }
                 }
@@ -233,7 +242,7 @@ public class MainGame extends AppCompatActivity {
                     stillPlaying = false;
                     xronos.cancel();
                     gameTime = 3 * 1000;
-                    timeCreator(gameTime,1000);
+                    timeCreator(gameTime);
                 } else {
                     SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
                     int counter = lefta.getInt("lefta", 0);
