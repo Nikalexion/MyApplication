@@ -41,8 +41,8 @@ public class MainGame extends AppCompatActivity {
     //i diafimisi
     private InterstitialAd mInterstitialAd;
 
-    private int min = 50;
-    private int max = 80;
+    private int min = 5;
+    private int max = 8;
     private int gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
     private final int startTime = gameTime;
     LinearLayout layclick;
@@ -239,8 +239,8 @@ public class MainGame extends AppCompatActivity {
             }
 
             public void onFinish() {
-                mp.stop();
                 if (stillPlaying) {
+                    mp.stop();
                     expl.start();
                     layclick.setClickable(false);
                     leksi.setText("Τέλος Χρόνου! Η Ομάδα σου έχασε!");
@@ -249,6 +249,7 @@ public class MainGame extends AppCompatActivity {
                     gameTime = 3 * 1000;
                     timeCreator(gameTime);
                 } else {
+                    expl.stop();
                     SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
                     int counter = lefta.getInt("lefta", 0);
                     counter = counter + 5;
