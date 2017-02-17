@@ -2,8 +2,396 @@
 <resources>
 
     <string-array name="random_array">
-        <item>Ένα</item>
-        <item>Δύο</item>
+        <item>Αεροπλάνο</item>
+        <item>Αυτοκίνητο (αμάξι)</item>
+        <item>Τρένο</item>
+        <item>Ποδήλατο</item>
+        <item>Ζέπελιν</item>
+        <item>Άμαξα</item>
+        <item>Μηχανάκι</item>
+        <item>Μοτοποδήλατο</item>
+        <item>Λείπει</item>
+        <item>Λεωφορείο</item>
+        <item>Τραμ</item>
+        <item>Τρόλεϊ</item>
+        <item>Μετρό</item>
+        <item>Ταξί</item>
+        <item>Πλοίο</item>
+        <item>Καράβι</item>
+        <item>Υπερωκεάνιο</item>
+        <item>Υποβρύχιο</item>
+        <item>Αμαξοστάσιο</item>
+        <item>Στάση λεωφορείου</item>
+        <item>Σταθμός τρένων</item>
+        <item>Αεροδρόμιο</item>
+        <item>Πειρατικό καράβι</item>
+        <item>Υβριδικό αυτοκίνητο (αμάξι)</item>
+        <item>Κερί</item>
+        <item>Τραπέζι</item>
+        <item>Τζάκι</item>
+        <item>Σπίτι</item>
+        <item>Παράθυρο</item>
+        <item>Πέτρα</item>
+        <item>Ξύλο</item>
+        <item>Χώμα</item>
+        <item>Γυαλί</item>
+        <item>Πλαστικό</item>
+        <item>Χέρι</item>
+        <item>Πόδι</item>
+        <item>Μαλλί</item>
+        <item>Κεφάλι</item>
+        <item>Στήθος</item>
+        <item>Γόνατο</item>
+        <item>Καρδιά</item>
+        <item>Πνευμόνια</item>
+        <item>Λαρύγγι</item>
+        <item>Στόμα</item>
+        <item>Νύχι</item>
+        <item>Δάχτυλο</item>
+        <item>Δόντια</item>
+        <item>Φτερό</item>
+        <item>Χαλί</item>
+        <item>Μάρμαρο</item>
+        <item>Πηλός</item>
+        <item>Γρήγορο</item>
+        <item>Αργό</item>
+        <item>Ελαφρύ</item>
+        <item>Βαρύ</item>
+        <item>Κοντός</item>
+        <item>Ψηλός</item>
+        <item>Δευτερόλεπτο</item>
+        <item>Λεπτό</item>
+        <item>Ώρα</item>
+        <item>Μέρα</item>
+        <item>Μήνα</item>
+        <item>Μηνάς</item>
+        <item>Εποχή</item>
+        <item>Χρόνος</item>
+        <item>Δεκαετία</item>
+        <item>Αιώνας</item>
+        <item>Χιλιετία</item>
+        <item>Καλοκαίρι</item>
+        <item>Φθινόπωρο</item>
+        <item>Χειμώνας</item>
+        <item>Άνοιξη</item>
+        <item>Ρολόι</item>
+        <item>Γάντι</item>
+        <item>Κουκούλα</item>
+        <item>Κασκόλ</item>
+        <item>Μπουφάν</item>
+        <item>Παπούτσια</item>
+        <item>Μπλούζα</item>
+        <item>Παντελόνι</item>
+        <item>Ζώνη</item>
+        <item>Τζιν</item>
+        <item>Ψυγείο</item>
+        <item>Μπουκάλι</item>
+        <item>Κρασί</item>
+        <item>Αναψυκτικό</item>
+        <item>Λάμπα</item>
+        <item>Κινητό</item>
+        <item>Tablet</item>
+        <item>Υπολογιστής</item>
+        <item>Συγκρότημα</item>
+        <item>Συναυλία</item>
+        <item>Τραγουδιστής</item>
+        <item>Ντράμερ</item>
+        <item>Κιθαρίστας</item>
+        <item>Τύμπανο</item>
+        <item>Νταούλι</item>
+        <item>Πιάνο</item>
+        <item>Μικρόφωνο</item>
+        <item>Βιολί</item>
+        <item>Βιολοντσέλο</item>
+        <item>Μπάσο</item>
+        <item>Φλογέρα</item>
+        <item>Τρομπέτα</item>
+        <item>Ρόδα</item>
+        <item>Καθρέπτης</item>
+        <item>Φούστα</item>
+        <item>Πουκάμισο</item>
+        <item>Γραβάτα</item>
+        <item>Κοστούμι</item>
+        <item>Καπάκι</item>
+        <item>Τοίχος</item>
+        <item>Πίνακας</item>
+        <item>Μαξιλάρι</item>
+        <item>Καλώδιο</item>
+        <item>Ρεύμα</item>
+        <item>Ηλεκτρισμός</item>
+        <item>Κολώνα</item>
+        <item>Κόλπο</item>
+        <item>Μαχαίρι</item>
+        <item>Πιρούνι</item>
+        <item>Κουτάλι</item>
+        <item>Τσάντα</item>
+        <item>Φρέσκο</item>
+        <item>Φωνή</item>
+        <item>Αγάπη</item>
+        <item>Μισθός</item>
+        <item>Μίσος</item>
+        <item>Πειθώ</item>
+        <item>Πεδίο μάχης</item>
+        <item>Ζώδιο</item>
+        <item>Έκφραση</item>
+        <item>Ζωγραφιά</item>
+        <item>Μαργαριτάρι</item>
+        <item>Διαμάντι</item>
+        <item>Λεφτά</item>
+        <item>Ουράνιο τόξο</item>
+        <item>Μοναδικό</item>
+        <item>Μοναστήρι</item>
+        <item>Γη</item>
+        <item>Έδαφος</item>
+        <item>Κούρεμα</item>
+        <item>Χτένισμα</item>
+        <item>Αστέρι</item>
+        <item>Ήλιος</item>
+        <item>Σκουλαρίκι</item>
+        <item>Δαχτυλίδι</item>
+        <item>Μπρελόκ</item>
+        <item>Κλειδιά</item>
+        <item>Ζήλια</item>
+        <item>Πεινασμένος</item>
+        <item>Γλάστρα</item>
+        <item>Πιάτο</item>
+        <item>Τραπεζομάντιλο</item>
+        <item>Σύννεφο</item>
+        <item>Κεραυνός</item>
+        <item>Σεμεδάκι</item>
+        <item>Ομπρέλα</item>
+        <item>Βροχή</item>
+        <item>Γυαλιά μυωπίας</item>
+        <item>Γυαλιά ηλίου</item>
+        <item>Έρημος</item>
+        <item>Ζούγκλα</item>
+        <item>Ποτάμι</item>
+        <item>Βουνό</item>
+        <item>Χιόνι</item>
+        <item>Άμμος</item>
+        <item>Σούστα</item>
+        <item>Γρύλος</item>
+        <item>Λάδι</item>
+        <item>Πετρέλαιο</item>
+        <item>Βενζινάδικο</item>
+        <item>Αίθουσα</item>
+        <item>Θάλασσα</item>
+        <item>Πανί</item>
+        <item>Κουρτίνα</item>
+        <item>Καθηγητής</item>
+        <item>Μαθητής</item>
+        <item>Χρυσός</item>
+        <item>Τρελός</item>
+        <item>Έξυπνος</item>
+        <item>Ξινό</item>
+        <item>Πικρό</item>
+        <item>Γλυκό</item>
+        <item>Τολμηρός</item>
+        <item>Φόβος</item>
+        <item>Ερημιά</item>
+        <item>Μοναξιά</item>
+        <item>Ατμόσφαιρα</item>
+        <item>Συνωστισμός</item>
+        <item>Σκοτάδι</item>
+        <item>Φως</item>
+        <item>Φωτιά</item>
+        <item>Μπούμερανγκ</item>
+        <item>Έλικας</item>
+        <item>Διαφήμιση</item>
+        <item>Καμινάδα</item>
+        <item>Μύτη</item>
+        <item>Καρέκλα</item>
+        <item>Κάγκελο</item>
+        <item>Πλαστικό φυτό</item>
+        <item>F-16</item>
+        <item>Τραπεζαρία</item>
+        <item>Ντουλάπια</item>
+        <item>Τροφοθήκη</item>
+        <item>Βαρέλι</item>
+        <item>Κουτί</item>
+        <item>Πληκτρολόγιο</item>
+        <item>Οθόνη</item>
+        <item>Ούζο</item>
+        <item>Βότκα</item>
+        <item>Tequila</item>
+        <item>Παλικάρι</item>
+        <item>Νεολαία</item>
+        <item>Μισάωρο</item>
+        <item>Χρονόμετρο</item>
+        <item>Παντόφλες</item>
+        <item>Περίφραξη</item>
+        <item>Σκουπιδοτενεκές</item>
+        <item>Κομοδίνο</item>
+        <item>Κρεβατοκάμαρα</item>
+        <item>Υπνοδωμάτιο</item>
+        <item>Κλιματιστικό</item>
+        <item>Πλυντήριο</item>
+        <item>Κουβάς</item>
+        <item>Σκούπα</item>
+        <item>Φαράσι</item>
+        <item>Λάστιχο ποτίσματος</item>
+        <item>Κατσαρόλα</item>
+        <item>Χύτρα ταχύτητος</item>
+        <item>Τηγάνι</item>
+        <item>Αποχυμωτής</item>
+        <item>Καφετιέρα</item>
+        <item>Κουζινομηχανή</item>
+        <item>Βάζο</item>
+        <item>Κουβέρτα</item>
+        <item>Κεραία</item>
+        <item>Πετσέτα μπάνιου</item>
+        <item>Πετσέτα προσώπου</item>
+        <item>Μπουρνούζι</item>
+        <item>Πλακάκια</item>
+        <item>Δάπεδο</item>
+        <item>Κούπα</item>
+        <item>Σερβίτσιο</item>
+        <item>Σερβίτσιο τσαγιού</item>
+        <item>Σερβίτσιο φαγητού</item>
+        <item>Σερβίτσιο καφέ</item>
+        <item>Πιατέλα</item>
+        <item>Πλαστικό τελάρο</item>
+        <item>Χάρτινο τελάρο</item>
+        <item>Καφάσια</item>
+        <item>Παλέτα</item>
+        <item>Καλάθι</item>
+        <item>Πλαστική σακούλα</item>
+        <item>Χάρτινη σακούλα</item>
+        <item>Αλυσοπρίονο</item>
+        <item>Φρέζα</item>
+        <item>Ψαλίδι</item>
+        <item>Χαρά</item>
+        <item>Λύπη</item>
+        <item>Θυμός</item>
+        <item>Πόνος</item>
+        <item>Ευτυχία</item>
+        <item>Αισιοδοξία</item>
+        <item>Ταραχή</item>
+        <item>Εγωισμός</item>
+        <item>Θλίψη</item>
+        <item>Τρόμος</item>
+        <item>Σθένος</item>
+        <item>Πυγμή</item>
+        <item>Αντοχή</item>
+        <item>Δύναμη</item>
+        <item>Αποχή</item>
+        <item>Κατάληψη</item>
+        <item>Κατάθλιψη</item>
+        <item>Εκτός εαυτού</item>
+        <item>Παζάρι</item>
+        <item>Λαϊκή</item>
+        <item>Μονοκατοικία</item>
+        <item>Πολυκατοικία</item>
+        <item>Οικογένεια</item>
+        <item>Αδερφός</item>
+        <item>Μεζονέτα</item>
+        <item>Οικόπεδο</item>
+        <item>Χωράφι</item>
+        <item>Χωριό</item>
+        <item>Πόλη</item>
+        <item>Χαλίκι</item>
+        <item>Φανάρι</item>
+        <item>Χερούλι πόρτας</item>
+        <item>Χερούλι αυτοκινήτου (αμάξι)</item>
+        <item>Πλαστικό μπουκάλι</item>
+        <item>Γυάλινο μπουκάλι</item>
+        <item>Πλαστικό ποτήρι</item>
+        <item>Γυάλινο ποτήρι</item>
+        <item>Λαμπάδα</item>
+        <item>Πλαστικά μαχαιροπήρουνα</item>
+        <item>Μπαούλο</item>
+        <item>Τάφος</item>
+        <item>Τάφρος</item>
+        <item>Στάχτη</item>
+        <item>Ψησταριά</item>
+        <item>Κεραμίδια</item>
+        <item>Κάρβουνα</item>
+        <item>Αεροπλανοφόρο</item>
+        <item>Αλεξίπτωτο</item>
+        <item>Τιμόνι</item>
+        <item>Χειρόφρενο</item>
+        <item>Πλαστικά αυτοκινήτου</item>
+        <item>Ασφάλεια αυτοκινήτου</item>
+        <item>Ασφάλεια ζωής</item>
+        <item>Ανασφάλεια</item>
+        <item>Εικόνα</item>
+        <item>Φωτογραφία</item>
+        <item>Αφίσα</item>
+        <item>Εκκλησία</item>
+        <item>Μουσείο</item>
+        <item>Βιβλιοθήκη</item>
+        <item>Γυάλα</item>
+        <item>Πινακοθήκη</item>
+        <item>Κρεοπωλείο</item>
+        <item>Νοσοκομείο</item>
+        <item>Κλινική</item>
+        <item>Φορτηγό</item>
+        <item>Νταλίκα</item>
+        <item>Πριόνι</item>
+        <item>Μπουζούκι</item>
+        <item>Μαντολίνο</item>
+        <item>Ποντιακή λύρα</item>
+        <item>Κρητική λύρα</item>
+        <item>Κανονάκι</item>
+        <item>Σαντούρι</item>
+        <item>Τουμπερλέκι</item>
+        <item>Ντέφι</item>
+        <item>Μπαγλαμάς</item>
+        <item>Κλαρίνο</item>
+        <item>Σαξόφωνο</item>
+        <item>Γκάιντα</item>
+        <item>Ακορντεόν</item>
+        <item>Αρμόνιο</item>
+        <item>Όμποε</item>
+        <item>Άρπα</item>
+        <item>Λαούτο</item>
+        <item>Ηλεκτρική κιθάρα</item>
+        <item>Κλασική κιθάρα</item>
+        <item>Ακουστική κιθάρα</item>
+        <item>Αναπηρίας</item>
+        <item>Σπίρτα</item>
+        <item>Τράπουλα</item>
+        <item>Κολώνα της ΔΕΗ</item>
+        <item>Πινακίδα</item>
+        <item>Φωτεινός σηματοδότησης</item>
+        <item>Ομπρέλα θαλάσσης</item>
+        <item>Ομπρέλα βροχής</item>
+        <item>Πετσέτα θαλάσσης</item>
+        <item>Τσάντα θαλάσσης</item>
+        <item>Σάκος</item>
+        <item>Βαλίτσα</item>
+        <item>Πιστολάκι μαλλιών</item>
+        <item>Οδοντόβουρτσα</item>
+        <item>Οδοντόκρεμα</item>
+        <item>Σαμπουάν</item>
+        <item>Κρέμα ημέρας</item>
+        <item>Κρέμα νύχτας</item>
+        <item>Κρέμα χεριών</item>
+        <item>Γαλάκτωμα</item>
+        <item>Φούρνος μικροκυμάτων</item>
+        <item>Κολώνια</item>
+        <item>Άρωμα</item>
+        <item>Αποσμητικό χώρου</item>
+        <item>Αποσμητικό σώματος</item>
+        <item>Σακάκι</item>
+        <item>Υπνόσακος</item>
+        <item>Παιδικό καροτσάκι</item>
+        <item>Παιδικό κρεβάτι</item>
+        <item>Αναπηρικό καροτσάκι</item>
+        <item>Θερμόμετρο</item>
+        <item>Γάζες</item>
+        <item>Επίδεσμος</item>
+        <item>Φάρμακο</item>
+        <item>Καναπές</item>
+        <item>Κακία</item>
+        <item>Φθόνος</item>
+        <item>Κυκλικός κόμβος</item>
+        <item>Κόπος</item>
+        <item>Διαχωριστική γραμμή</item>
+        <item>Χώρος στάθμευσης</item>
+        <item>Παρκόμετρο</item>
+        <item>Σταθμός μετρό</item>
+        <item>Φεγγάρι</item>
     </string-array>
 
 
@@ -502,7 +890,6 @@
         <item>John Travolta</item>
         <item>Ben Affleck</item>
         <item>Jennifer Aniston</item>
-
     </string-array>
 
     <string-array name="myths_array">
@@ -569,7 +956,306 @@
         <item>Θεός Ήλιος</item>
         <item>Fenrir</item>
         <item>Ymir</item>
+    </string-array>
 
+    <string-array name="food_array">
+        <item>Μαύρο πιπέρι</item>
+        <item>Κόκκινο πιπέρι</item>
+        <item>Άσπρο πιπέρι</item>
+        <item>Αλάτι</item>
+        <item>Ρίγανη</item>
+        <item>Κόλιανδρος</item>
+        <item>Κουρκουμάς</item>
+        <item>Μπαχάρι</item>
+        <item>Κανέλα</item>
+        <item>Σουσάμι</item>
+        <item>Τρούφα</item>
+        <item>Μαϊντανός</item>
+        <item>Άνηθος</item>
+        <item>Σκόρδο</item>
+        <item>Κρόκος κοζάνης</item>
+        <item>Κρεμμύδι</item>
+        <item>Μοσχοκάρυδο</item>
+        <item>Μαχλέπι</item>
+        <item>Κακουλέ</item>
+        <item>Σαφράν</item>
+        <item>Κάρι</item>
+        <item>Μαύρο τσάι</item>
+        <item>Πράσινο τσάι</item>
+        <item>Τσάι του βουνού</item>
+        <item>Χαμομήλι</item>
+        <item>Βαλεριάνα</item>
+        <item>Φλαμούρι</item>
+        <item>Τυρί</item>
+        <item>Κασέρι</item>
+        <item>Φέτα</item>
+        <item>Κεφαλοτύρι</item>
+        <item>Γραβιέρα</item>
+        <item>Γάλα</item>
+        <item>Γιαούρτι</item>
+        <item>Μανούρι</item>
+        <item>Κρέμα γάλακτος</item>
+        <item>Χαλούμι</item>
+        <item>Παρμεζάνα</item>
+        <item>Βούτυρο</item>
+        <item>Ελαιόλαδο</item>
+        <item>Σπορέλαιο</item>
+        <item>Ηλιέλαιο</item>
+        <item>Καλαμποκέλαιο</item>
+        <item>Μαρμελάδα</item>
+        <item>Μέλι</item>
+        <item>Ταχίνι</item>
+        <item>Μερέντα</item>
+        <item>Σαλάμι</item>
+        <item>Αλλαντικά</item>
+        <item>Μπριζόλα</item>
+        <item>Πανσέτα</item>
+        <item>Σουβλάκι</item>
+        <item>Χοιρινό κρέας</item>
+        <item>Μοσχαρίσιο κρέας</item>
+        <item>Κοτόπουλο</item>
+        <item>Ψάρι</item>
+        <item>Αυγό</item>
+        <item>Ψωμί</item>
+        <item>Φρυγανιά</item>
+        <item>Μπισκότα</item>
+        <item>Κουλουράκια</item>
+        <item>Τούρτα </item>
+        <item>Φακές</item>
+        <item>Παστουρμάς</item>
+        <item>Τζατζίκι</item>
+        <item>Ταραμάς</item>
+        <item>Τραχανάς</item>
+        <item>Μακαρόνια</item>
+        <item>Σαλάτα κηπουρού</item>
+        <item>Μελιτζανοσαλάτα</item>
+        <item>Τυροκαυτερή</item>
+        <item>Ντολμαδάκια</item>
+        <item>Κουνουπίδι</item>
+        <item>Μπρόκολο</item>
+        <item>Λάχανο</item>
+        <item>Καρότο</item>
+        <item>Λεμόνι</item>
+        <item>Πορτοκαλί</item>
+        <item>Ντομάτα</item>
+        <item>Αγγούρι</item>
+        <item>Φράουλα</item>
+        <item>Δάφνη</item>
+        <item>Δυόσμος</item>
+        <item>Βασιλικός</item>
+        <item>Ρόκα</item>
+        <item>Αντίδια</item>
+        <item>Παντζάρι</item>
+        <item>Ραπανάκια</item>
+        <item>Καφές</item>
+        <item>Ζάχαρη</item>
+        <item>Κακάο</item>
+        <item>Σοκολάτα</item>
+        <item>Φασολάδα</item>
+        <item>Ρεβίθια</item>
+        <item>Παστίτσιο</item>
+        <item>Μουσακάς</item>
+        <item>Παπουτσάκια</item>
+        <item>Κανελλόνια</item>
+        <item>Στιφάδο</item>
+        <item>Γεμιστά</item>
+        <item>Ρύζι</item>
+        <item>Πατάτες τηγανητές</item>
+        <item>Πουρές</item>
+        <item>Κοτόσουπα</item>
+        <item>Ψαρόσουπα</item>
+        <item>Κρεατόσουπα</item>
+        <item>Πατσάς</item>
+        <item>Μπουγάτσα</item>
+        <item>Κρέπα</item>
+        <item>Pizza</item>
+        <item>Τυρόπιτα</item>
+        <item>Σπανακόπιτα</item>
+        <item>Κουλούρι Θεσσαλονίκης</item>
+        <item>Πατάτες γιαχνί</item>
+        <item>Αρακάς</item>
+        <item>Μπάμιες</item>
+        <item>Φασολάκια</item>
+        <item>Κριθαράκι</item>
+        <item>Κοκκινιστό</item>
+        <item>Κεφτεδάκια</item>
+        <item>Μπιφτέκι</item>
+        <item>Μήλο</item>
+        <item>Μανταρίνι</item>
+        <item>Μπανάνα</item>
+        <item>Κεράσι</item>
+        <item>Ακτινίδιο</item>
+        <item>Καρπούζι</item>
+        <item>Πεπόνι</item>
+        <item>Ροδάκινο</item>
+        <item>Νεκταρίνι</item>
+        <item>Σταφύλι</item>
+        <item>Δαμάσκηνο</item>
+        <item>Αχλάδι</item>
+        <item>Βερίκοκο</item>
+        <item>Παγωτό</item>
+        <item>Κυδώνι</item>
+        <item>Ρόδι</item>
+        <item>Σύκο</item>
+        <item>Ελιές</item>
+        <item>Τρίγωνα Πανοράματος</item>
+        <item>Καντάφι</item>
+        <item>Μπακλαβάς</item>
+        <item>Ραβανί</item>
+        <item>Τουλούμπες</item>
+        <item>Ροξάκια</item>
+        <item>Κέικ</item>
+        <item>Τσουρέκι</item>
+        <item>Καζάν ντιπί</item>
+        <item>Καρυδόπιτα</item>
+        <item>Πάστα φλώρα</item>
+        <item>Μιλφέιγ</item>
+        <item>Γαλακτομπούρεκο</item>
+        <item>Πιπεριές</item>
+        <item>Πιπεριές Φλωρίνης</item>
+    </string-array>
+
+    <string-array name="animals_array">
+        <item>Σκύλος</item>
+        <item>Γάτα</item>
+        <item>Ποντίκι</item>
+        <item>Κότα</item>
+        <item>Κόκορας</item>
+        <item>Αγελάδα</item>
+        <item>Γουρούνι</item>
+        <item>Αγριογούρουνο</item>
+        <item>Κατσίκι</item>
+        <item>Πρόβατο</item>
+        <item>Άλογο</item>
+        <item>Γαϊδούρι</item>
+        <item>Ελάφι</item>
+        <item>Βόδι</item>
+        <item>Ζαρκάδι</item>
+        <item>Βουβάλι</item>
+        <item>Λαγός</item>
+        <item>Αρκούδα</item>
+        <item>Κουνέλι</item>
+        <item>Αλεπού</item>
+        <item>Λύκος</item>
+        <item>Τσακάλι</item>
+        <item>Ασβός</item>
+        <item>Κουνάβι</item>
+        <item>Νυφίτσα</item>
+        <item>Νυχτερίδα</item>
+        <item>Κάστορας</item>
+        <item>Σκίουρος</item>
+        <item>Σουρικάτα</item>
+        <item>Αετός</item>
+        <item>Γεράκι</item>
+        <item>Γλάρος</item>
+        <item>Πελαργός</item>
+        <item>Καρακάξα</item>
+        <item>Δεκαοχτούρα</item>
+        <item>Σπουργίτι</item>
+        <item>Χελιδόνι</item>
+        <item>Πάπια</item>
+        <item>Χήνα</item>
+        <item>Περιστέρι</item>
+        <item>Παγώνι</item>
+        <item>Πελεκάνος</item>
+        <item>Flamingo</item>
+        <item>Κύκνος</item>
+        <item>Πέρδικα</item>
+        <item>Μπεκάτσα</item>
+        <item>Ορτύκι</item>
+        <item>Αηδόνι</item>
+        <item>Καρδερίνα</item>
+        <item>Παπαγάλος</item>
+        <item>Τρυποκάρυδος</item>
+        <item>Μαυροπούλι</item>
+        <item>Κοράκι</item>
+        <item>Γύπας</item>
+        <item>Λιοντάρι</item>
+        <item>Ελέφαντας</item>
+        <item>Τίγρης</item>
+        <item>Ύαινα</item>
+        <item>Καμηλοπάρδαλη</item>
+        <item>Πάνθηρας</item>
+        <item>Τσιτάχ</item>
+        <item>Καμήλα</item>
+        <item>Ζέρβα</item>
+        <item>Ιπποπόταμος</item>
+        <item>Ρινόκερος</item>
+        <item>Κροκόδειλος</item>
+        <item>Πούμα</item>
+        <item>Κροταλίας</item>
+        <item>Βόας</item>
+        <item>Οχιά</item>
+        <item>Λαφιάτης</item>
+        <item>Σκορπιός</item>
+        <item>Μαϊμού</item>
+        <item>Πίθηκος</item>
+        <item>Ουρακοτάγκος</item>
+        <item>Χιμπατζής</item>
+        <item>Γορίλας</item>
+        <item>Κοάλα</item>
+        <item>Καγκουρό</item>
+        <item>Πάντα</item>
+        <item>Βασίλη κόμπρα</item>
+        <item>Σαρανταποδαρούσα</item>
+        <item>Κουνούπι</item>
+        <item>Μύγα</item>
+        <item>Μέλισσα</item>
+        <item>Σφίγγα</item>
+        <item>Μυρμήγκι</item>
+        <item>Σκνίπα</item>
+        <item>Κατσαρίδα</item>
+        <item>Τσιμπούρι</item>
+        <item>Βάτραχος</item>
+        <item>Σαλιγκάρι</item>
+        <item>Κάβουρας</item>
+        <item>Καρχαρίας</item>
+        <item>Φάλαινα</item>
+        <item>Δελφίνι</item>
+        <item>Σκυλόψαρο</item>
+        <item>Χελιδονόψαρο</item>
+        <item>Τόνος</item>
+        <item>Φώκια</item>
+        <item>Θαλάσσιος ελέφαντας</item>
+        <item>Πιγκουίνος</item>
+        <item>Πολική αρκούδα</item>
+        <item>Χταπόδι</item>
+        <item>Καλαμάρι</item>
+        <item>Σουπιά</item>
+        <item>Καραβίδα</item>
+        <item>Γαρίδα</item>
+        <item>Μέδουσα</item>
+        <item>Αστακός</item>
+        <item>Μύδια - στρείδια</item>
+        <item>Γαύρος</item>
+        <item>Σαρδέλα</item>
+        <item>Τσιπούρα</item>
+        <item>Συναγρίδα</item>
+        <item>Φαγκρί</item>
+        <item>Μπαρμπούνι</item>
+        <item>Πιράνχας</item>
+        <item>Κολιός</item>
+        <item>Μπακαλιάρος</item>
+        <item>Γλώσσα</item>
+        <item>Μάντα</item>
+        <item>Σαλάχι</item>
+        <item>Χέλι</item>
+        <item>Σμέρνα</item>
+        <item>Ιππόκαμπος</item>
+        <item>Αχινός</item>
+        <item>Χελώνα</item>
+        <item>Σκαντζόχοιρος</item>
+        <item>Δράκαινα</item>
+        <item>Πυγολαμπίδα</item>
+        <item>Τζίτζικας</item>
+        <item>Σκουλήκι</item>
+        <item>Χαμαιλέοντας</item>
+        <item>Σαύρα</item>
+        <item>Ψείρα</item>
+        <item>Ψύλλος</item>
+        <item>Πλαγκτόν</item>
+        <item>Όρκα</item>
+        <item>Ξιφίας</item>
     </string-array>
 
 </resources>

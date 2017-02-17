@@ -22,6 +22,8 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
     private CheckBox tvGR;
     private CheckBox tvENG;
     private CheckBox myths;
+    private CheckBox food;
+    private CheckBox animals;
     private CheckBox new1;
     private CheckBox new2;
     private CheckBox new3;
@@ -67,6 +69,14 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
         myths = (CheckBox) findViewById(R.id.myths_box);
         myths.setChecked(epiloges.getBoolean("myths",true));
         myths.setOnCheckedChangeListener(this);
+
+        food = (CheckBox) findViewById(R.id.food_box);
+        food.setChecked(epiloges.getBoolean("food",true));
+        food.setOnCheckedChangeListener(this);
+
+        animals = (CheckBox) findViewById(R.id.animals_box);
+        animals.setChecked(epiloges.getBoolean("animals",true));
+        animals.setOnCheckedChangeListener(this);
 
         new1 = (CheckBox) findViewById(R.id.new1);
         new1.setChecked(epiloges.getBoolean("new1",false));
@@ -127,6 +137,12 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
                 break;
             case R.id.myths_box:
                 saveInSp("myths",isChecked);
+                break;
+            case R.id.food_box:
+                saveInSp("food",isChecked);
+                break;
+            case R.id.animals_box:
+                saveInSp("animals",isChecked);
                 break;
             case R.id.new1:
                 saveInSp("new1",isChecked);

@@ -35,8 +35,8 @@ public class MainGame extends AppCompatActivity {
     //i diafimisi
     private InterstitialAd mInterstitialAd;
 
-    private int min = 60;
-    private int max = 80;
+    private int min = 5;
+    private int max = 8;
     private int gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
     LinearLayout layclick;
     private boolean stillPlaying = true;
@@ -150,6 +150,12 @@ public class MainGame extends AppCompatActivity {
         }
         if(epiloges.getBoolean("myths",true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.myths_array));
+        }
+        if(epiloges.getBoolean("food",true)) {
+            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.food_array));
+        }
+        if(epiloges.getBoolean("animals",true)) {
+            pinakasL = concat(pinakasL, getResources().getStringArray(R.array.animals_array));
         }
         //TODO prosorino fix asfalias min ksekinisei to paixnidi xoris pinaka
         if(pinakasL == null){

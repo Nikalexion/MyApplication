@@ -42,9 +42,7 @@
             android:layout_marginTop="16dp"
             android:layout_below="@+id/random_box"
             android:layout_alignLeft="@+id/random_box"
-            android:layout_alignStart="@+id/random_box"
-            android:layout_alignRight="@+id/random_box"
-            android:layout_alignEnd="@+id/random_box" />
+            android:layout_alignStart="@+id/random_box" />
 
         <CheckBox
             android:text="Παροιμίες"
@@ -55,9 +53,7 @@
             android:layout_marginTop="16dp"
             android:layout_below="@+id/tainiesENG_box"
             android:layout_alignLeft="@+id/tainiesENG_box"
-            android:layout_alignStart="@+id/tainiesENG_box"
-            android:layout_alignRight="@+id/tainiesENG_box"
-            android:layout_alignEnd="@+id/tainiesENG_box" />
+            android:layout_alignStart="@+id/tainiesENG_box" />
 
         <CheckBox
             android:text="Ελληνικές ταινίες"
@@ -68,9 +64,7 @@
             android:layout_marginTop="16dp"
             android:layout_below="@+id/parimies_box"
             android:layout_alignLeft="@+id/parimies_box"
-            android:layout_alignStart="@+id/parimies_box"
-            android:layout_alignRight="@+id/parimies_box"
-            android:layout_alignEnd="@+id/parimies_box" />
+            android:layout_alignStart="@+id/parimies_box" />
 
 
         <CheckBox
@@ -82,9 +76,7 @@
             android:layout_marginTop="16dp"
             android:layout_below="@+id/tainiesGR_box"
             android:layout_alignLeft="@+id/tainiesGR_box"
-            android:layout_alignStart="@+id/tainiesGR_box"
-            android:layout_alignRight="@+id/tainiesGR_box"
-            android:layout_alignEnd="@+id/tainiesGR_box" />
+            android:layout_alignStart="@+id/tainiesGR_box" />
 
 
 
@@ -97,9 +89,7 @@
             android:layout_marginTop="16dp"
             android:layout_below="@+id/paidika_box"
             android:layout_alignLeft="@+id/paidika_box"
-            android:layout_alignStart="@+id/paidika_box"
-            android:layout_alignRight="@+id/tainiesGR_box"
-            android:layout_alignEnd="@+id/tainiesGR_box" />
+            android:layout_alignStart="@+id/paidika_box" />
 
         <CheckBox
             android:text="Ξένες σειρές"
@@ -110,9 +100,7 @@
             android:layout_marginTop="16dp"
             android:layout_below="@+id/tvGR_box"
             android:layout_alignLeft="@+id/tvGR_box"
-            android:layout_alignStart="@+id/tvGR_box"
-            android:layout_alignRight="@+id/tvGR_box"
-            android:layout_alignEnd="@+id/tvGR_box" />
+            android:layout_alignStart="@+id/tvGR_box" />
 
         <CheckBox
             android:text="Μυθολογία"
@@ -123,9 +111,29 @@
             android:layout_marginTop="16dp"
             android:layout_below="@+id/tvENG_box"
             android:layout_alignLeft="@+id/tvENG_box"
-            android:layout_alignStart="@+id/tvENG_box"
-            android:layout_alignRight="@+id/tvENG_box"
-            android:layout_alignEnd="@+id/tvENG_box" />
+            android:layout_alignStart="@+id/tvENG_box" />
+
+        <CheckBox
+            android:text="Φαγώσιμα"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/food_box"
+            android:textSize="36sp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/myths_box"
+            android:layout_alignLeft="@+id/myths_box"
+            android:layout_alignStart="@+id/myths_box" />
+
+        <CheckBox
+            android:text="Ζώα"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/animals_box"
+            android:textSize="36sp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/food_box"
+            android:layout_alignLeft="@+id/food_box"
+            android:layout_alignStart="@+id/food_box" />
 
         <CheckBox
             android:text="Νέα κατηγορία 1"
@@ -134,11 +142,9 @@
             android:id="@+id/new1"
             android:textSize="36sp"
             android:layout_marginTop="16dp"
-            android:layout_below="@+id/myths_box"
-            android:layout_alignLeft="@+id/myths_box"
-            android:layout_alignStart="@+id/myths_box"
-            android:layout_alignRight="@+id/myths_box"
-            android:layout_alignEnd="@+id/myths_box" />
+            android:layout_below="@+id/animals_box"
+            android:layout_alignLeft="@+id/animals_box"
+            android:layout_alignStart="@+id/animals_box" />
 
         <CheckBox
             android:text="Νέα κατηγορία 2"
@@ -149,9 +155,7 @@
             android:layout_marginTop="16dp"
             android:layout_below="@+id/new1"
             android:layout_alignLeft="@+id/new1"
-            android:layout_alignStart="@+id/new1"
-            android:layout_alignRight="@+id/new1"
-            android:layout_alignEnd="@+id/new1" />
+            android:layout_alignStart="@+id/new1" />
 
         <CheckBox
             android:text="Νέα κατηγορία 3"
@@ -162,9 +166,7 @@
             android:layout_marginTop="16dp"
             android:layout_below="@+id/new2"
             android:layout_alignLeft="@+id/new2"
-            android:layout_alignStart="@+id/new2"
-            android:layout_alignRight="@+id/new2"
-            android:layout_alignEnd="@+id/new2" />
+            android:layout_alignStart="@+id/new2" />
 
         <Button
             android:text="ΑΡΧΙΚΉ"
@@ -176,8 +178,6 @@
             android:layout_marginTop="16dp"
             android:layout_below="@+id/new3"
             android:layout_alignLeft="@+id/new3"
-            android:layout_alignStart="@+id/new3"
-            android:layout_alignRight="@+id/new3"
-            android:layout_alignEnd="@+id/new3" />
+            android:layout_alignStart="@+id/new3" />
     </RelativeLayout>
 </ScrollView>
