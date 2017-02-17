@@ -240,12 +240,12 @@ public class MainGame extends AppCompatActivity {
 
             public void onFinish() {
                 if (stillPlaying) {
+                    xronos.cancel();
                     mp.stop();
                     expl.start();
                     layclick.setClickable(false);
                     leksi.setText("Τέλος Χρόνου! Η Ομάδα σου έχασε!");
                     stillPlaying = false;
-                    xronos.cancel();
                     gameTime = 3 * 1000;
                     timeCreator(gameTime);
                 } else {
