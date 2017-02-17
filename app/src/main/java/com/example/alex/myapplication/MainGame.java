@@ -214,7 +214,9 @@ public class MainGame extends AppCompatActivity {
         xronos = new CountDownTimer(timeToFinish, ticker) {
             public void onTick(long millisUntilFinished) {
                 gameTime = (int) millisUntilFinished;
-                mp.start();
+                if (stillPlaying){
+                    mp.start();
+                }
                 if (gameTime < startTime/4){
                     if (ligosXronos == 2) {
                         xronos.cancel();
