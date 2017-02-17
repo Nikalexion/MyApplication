@@ -36,6 +36,7 @@ public class MainGame extends AppCompatActivity {
     private CountDownTimer xronos;
     private CountDownTimer telosXronou;
     private MediaPlayer mp;
+    private MediaPlayer expl;
     private int ligosXronos = 0;
     //i diafimisi
     private InterstitialAd mInterstitialAd;
@@ -43,6 +44,7 @@ public class MainGame extends AppCompatActivity {
     private int min = 50;
     private int max = 80;
     private int gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
+    private final int startTime = gameTime;
     LinearLayout layclick;
     private boolean stillPlaying = true;
 
@@ -73,6 +75,8 @@ public class MainGame extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         mp = MediaPlayer.create(this, R.raw.beep);
         mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        expl = MediaPlayer.create(this, R.raw.explosion);
+        expl.setAudioStreamType(AudioManager.STREAM_MUSIC);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
 
@@ -198,34 +202,34 @@ public class MainGame extends AppCompatActivity {
 
     private void timeCreator(final int timeToFinish) {
         int ticker = 1000;
-        if (gameTime < 15000){
+        if (gameTime < startTime/4){
             ticker = 100;
         }
-        else if (gameTime < 27000){
+        else if (gameTime < startTime*2/4){
             ticker = 300;
         }
-        else if (gameTime < 40000) {
+        else if (gameTime < startTime*3/4) {
             ticker = 600;
         }
         xronos = new CountDownTimer(timeToFinish, ticker) {
             public void onTick(long millisUntilFinished) {
                 gameTime = (int) millisUntilFinished;
                 mp.start();
-                if (gameTime < 15000){
+                if (gameTime < startTime/4){
                     if (ligosXronos == 2) {
                         xronos.cancel();
                         timeCreator(gameTime);
                         ligosXronos = 3;
                     }
                 }
-                else if (gameTime < 27000){
+                else if (gameTime < startTime*2/4){
                     if (ligosXronos == 1) {
                         xronos.cancel();
                         timeCreator(gameTime);
                         ligosXronos = 2;
                     }
                 }
-                else if (gameTime < 40000) {
+                else if (gameTime < startTime*3/4) {
                     if (ligosXronos == 0){
                         xronos.cancel();
                         timeCreator(gameTime);
@@ -237,6 +241,7 @@ public class MainGame extends AppCompatActivity {
             public void onFinish() {
                 mp.stop();
                 if (stillPlaying) {
+                    expl.start();
                     layclick.setClickable(false);
                     leksi.setText("Τέλος Χρόνου! Η Ομάδα σου έχασε!");
                     stillPlaying = false;
