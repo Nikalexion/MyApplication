@@ -2,9 +2,12 @@ package com.example.alex.myapplication;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -32,11 +35,13 @@ public class MainGame extends AppCompatActivity {
     private String tixeaLeksi;
     private CountDownTimer xronos;
     private CountDownTimer telosXronou;
+    private MediaPlayer mp;
+    private int ligosXronos = 0;
     //i diafimisi
     private InterstitialAd mInterstitialAd;
 
-    private int min = 5;
-    private int max = 8;
+    private int min = 50;
+    private int max = 80;
     private int gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
     LinearLayout layclick;
     private boolean stillPlaying = true;
@@ -46,6 +51,7 @@ public class MainGame extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
+            mp.stop();
             super.onBackPressed();
             return;
         }
@@ -57,7 +63,7 @@ public class MainGame extends AppCompatActivity {
 
             @Override
             public void run() {
-                doubleBackToExitPressedOnce=false;
+                doubleBackToExitPressedOnce = false;
             }
         }, 2000);
     }
@@ -65,6 +71,8 @@ public class MainGame extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mp = MediaPlayer.create(this, R.raw.beep);
+        mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
 
@@ -80,7 +88,7 @@ public class MainGame extends AppCompatActivity {
 
         layclick.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 tixeaLeksi = pinakasL[rgenerator.nextInt(pinakasL.length)];
                 leksi.setText(tixeaLeksi);
             }
@@ -128,80 +136,105 @@ public class MainGame extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), Ending.class));
     }
 
-    private void arrayBuilder(){
+    private void arrayBuilder() {
         SharedPreferences epiloges = getSharedPreferences(PREF_EPILOGES, 0);
-        if(epiloges.getBoolean("random",true)) {
+        if (epiloges.getBoolean("random", true)) {
             pinakasL = getResources().getStringArray(R.array.random_array);
         }
-        if(epiloges.getBoolean("tainiesENG",true)) {
+        if (epiloges.getBoolean("tainiesENG", true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.tainiesENG_array));
         }
-        if(epiloges.getBoolean("parimies",true)) {
+        if (epiloges.getBoolean("parimies", true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.parimies_array));
         }
-        if(epiloges.getBoolean("tainiesGR",true)) {
+        if (epiloges.getBoolean("tainiesGR", true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.tainiesGR_array));
         }
-        if(epiloges.getBoolean("paidika",true)) {
+        if (epiloges.getBoolean("paidika", true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.paidika_array));
         }
-        if(epiloges.getBoolean("tvGR",true)) {
+        if (epiloges.getBoolean("tvGR", true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.tvGR_array));
         }
-        if(epiloges.getBoolean("myths",true)) {
+        if (epiloges.getBoolean("myths", true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.myths_array));
         }
-        if(epiloges.getBoolean("food",true)) {
+        if (epiloges.getBoolean("food", true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.food_array));
         }
-        if(epiloges.getBoolean("animals",true)) {
+        if (epiloges.getBoolean("animals", true)) {
             pinakasL = concat(pinakasL, getResources().getStringArray(R.array.animals_array));
         }
         //TODO prosorino fix asfalias min ksekinisei to paixnidi xoris pinaka
-        if(pinakasL == null){
+        if (pinakasL == null) {
             pinakasL = getResources().getStringArray(R.array.random_array);
         }
     }
 
     private String[] concat(String[] a, String[] b) {
         //fix gia ton proto pinaka pou paei na enothei
-        if(a==null){
+        if (a == null) {
             return b;
         }
         int aLen = a.length;
         int bLen = b.length;
-        String[] c= new String[aLen+bLen];
+        String[] c = new String[aLen + bLen];
         System.arraycopy(a, 0, c, 0, aLen);
         System.arraycopy(b, 0, c, aLen, bLen);
         return c;
     }
 
     @Override
-    protected void onResume(){
-        timeCreator(gameTime);
+    protected void onResume() {
+        timeCreator(gameTime,1000);
         super.onResume();
     }
+
     @Override
-    protected void onPause(){
+    protected void onPause() {
         xronos.cancel();
         super.onPause();
     }
 
-    private void timeCreator(final int timeToFinish){
+    private void timeCreator(final int timeToFinish, final int ticker) {
 
-        xronos = new CountDownTimer(timeToFinish, 1000) {
+        xronos = new CountDownTimer(timeToFinish, ticker) {
             public void onTick(long millisUntilFinished) {
                 gameTime = (int) millisUntilFinished;
+                mp.start();
+                if (gameTime < 15000){
+                    if (ligosXronos == 2) {
+                        xronos.cancel();
+                        timeCreator(gameTime,100);
+                        ligosXronos = 3;
+                    }
+                }
+                else if (gameTime < 27000){
+                    if (ligosXronos == 1) {
+                        xronos.cancel();
+                        timeCreator(gameTime,300);
+                        ligosXronos = 2;
+                    }
+                }
+                else if (gameTime < 40000) {
+                    if (ligosXronos == 0){
+                        xronos.cancel();
+                        timeCreator(gameTime,600);
+                        ligosXronos = 1;
+                    }
+                }
             }
+
             public void onFinish() {
+                mp.stop();
                 if (stillPlaying) {
                     layclick.setClickable(false);
                     leksi.setText("Τέλος Χρόνου! Η Ομάδα σου έχασε!");
                     stillPlaying = false;
                     xronos.cancel();
-                    gameTime = 3*1000;
-                    timeCreator(gameTime);
-                }else{
+                    gameTime = 3 * 1000;
+                    timeCreator(gameTime,1000);
+                } else {
                     SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
                     int counter = lefta.getInt("lefta", 0);
                     counter = counter + 5;
@@ -215,10 +248,10 @@ public class MainGame extends AppCompatActivity {
             }
         }.start();
     }
-
-
-
-
 }
+
+
+
+
 
 

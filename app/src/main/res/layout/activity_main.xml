@@ -53,7 +53,6 @@
 
         <Button
             android:text="Start"
-            android:textColor="#FFFFFF"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/starter"
@@ -65,7 +64,6 @@
 
         <Button
             android:text="Κατηγοριες"
-            android:textColor="#FFFFFF"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/epiloges"
@@ -78,7 +76,6 @@
 
         <Button
             android:text="shop"
-            android:textColor="#FFFFFF"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/shop"
@@ -89,7 +86,6 @@
 
         <Button
             android:text="Κανονες"
-            android:textColor="#FFFFFF"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/guidelines"
