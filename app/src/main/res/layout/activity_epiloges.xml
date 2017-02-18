@@ -5,7 +5,7 @@
     android:layout_height="fill_parent"
     android:fillViewport="true">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/activity_epiloges"
@@ -17,9 +17,10 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.example.alex.myapplication.Epiloges"
         android:background="@drawable/bc"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
-
+<!-- //TODO na anitgrapsoume to palio stil tis efarmogis, meta svisimo afton
         <CheckBox
             android:text="Άκυρες λέξεις"
             android:layout_width="wrap_content"
@@ -179,5 +180,6 @@
             android:layout_below="@+id/new3"
             android:layout_alignLeft="@+id/new3"
             android:layout_alignStart="@+id/new3" />
-    </RelativeLayout>
+            -->
+    </LinearLayout>
 </ScrollView>
