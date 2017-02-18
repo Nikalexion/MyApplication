@@ -188,15 +188,15 @@ public class MainGame extends AppCompatActivity {
     }
 
     private void timeCreator(final int timeToFinish) {
-        int ticker = 1000;
+        int ticker = 2000;
         if (gameTime < startTime/4){
-            ticker = 100;
+            ticker = 500;
         }
         else if (gameTime < startTime*2/4){
-            ticker = 300;
+            ticker = 1000;
         }
         else if (gameTime < startTime*3/4) {
-            ticker = 600;
+            ticker = 1500;
         }
         xronos = new CountDownTimer(timeToFinish, ticker) {
             public void onTick(long millisUntilFinished) {
