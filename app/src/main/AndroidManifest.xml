@@ -9,7 +9,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/eikona"
-        android:label="@string/app_name"
+        android:label="Μιλάς ή Σκας"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">

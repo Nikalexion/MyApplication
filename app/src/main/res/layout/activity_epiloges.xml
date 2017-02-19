@@ -176,10 +176,8 @@
             android:id="@+id/arxiki"
             android:textSize="30sp"
             android:background="@drawable/btn_bg"
-            android:layout_marginTop="16dp"
-            android:layout_below="@+id/new3"
-            android:layout_alignLeft="@+id/new3"
-            android:layout_alignStart="@+id/new3" />
-            -->
+            android:layout_marginTop="480dp"
+            />
+-->
     </LinearLayout>
 </ScrollView>
