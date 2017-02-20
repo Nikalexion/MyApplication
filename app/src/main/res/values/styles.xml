@@ -35,4 +35,8 @@
         <item name="android:windowBackground">@drawable/background_splash</item>
     </style>
 
+    <style name="MyAlertDialogStyle" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth">
+
+    </style>
+
 </resources>

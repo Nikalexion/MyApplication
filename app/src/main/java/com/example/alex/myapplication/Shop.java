@@ -7,8 +7,10 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
@@ -121,8 +123,14 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         }
         final String agora = temp;
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        AlertDialog alertDialog;
+        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.MyAlertDialogStyle);
+        alertDialog = builder.create();
+        alertDialog.getWindow().setLayout(200, 400);
 
+
+
+        builder.setTitle("Μιλάς ή Σκας");
         //Start setting up the builder
         builder.setMessage("Είσαι σίγουρος ότι θες να αγοράσεις την κατηγορία "+koumbi.getText()+" ? Έχεις " +Integer.toString(paliaLefta)+ " και κοστίζει 2");
 
@@ -167,9 +175,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
             }
         });
         dialog.show();
-        //TODO EDO einai afto pou vrika gia to pos na pirazeis ta koubia alla borei na einai kai allou...
-        dialog.getButton(dialog.BUTTON_NEGATIVE).setBackgroundColor(Color.GREEN);
-        dialog.getButton(dialog.BUTTON_POSITIVE).setBackgroundColor(Color.GREEN);
+        dialog.show();
     }
 
     private void buttonDisabler(){
