@@ -65,9 +65,6 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
         }
 
 
-
-
-
         home = new Button(this);
         home.setBackgroundResource(R.drawable.btn_bg);
         home.setText("ΑΡΧΙΚΗ");

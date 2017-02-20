@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         starter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                startActivity(new Intent(getApplicationContext(), MainGame.class));
+                startActivity(new Intent(getApplicationContext(), TimePicker.class));
             }
         });
 

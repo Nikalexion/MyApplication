@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Ending extends AppCompatActivity {
 
-    //testaki git epitixi
+
     private Button neoGame;
     private Button home;
 

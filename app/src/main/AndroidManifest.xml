@@ -42,6 +42,10 @@
         <activity
             android:name=".Shop"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimePicker"
+            android:screenOrientation="portrait" />
+
         <!-- This meta-data tag is required to use Google Play Services. -->
         <meta-data
             android:name="com.google.android.gms.version"
@@ -62,6 +66,7 @@
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
             android:hardwareAccelerated="false"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
     </application>
 
 </manifest>

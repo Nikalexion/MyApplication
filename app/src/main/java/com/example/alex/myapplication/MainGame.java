@@ -41,10 +41,11 @@ public class MainGame extends AppCompatActivity {
     //i diafimisi
     private InterstitialAd mInterstitialAd;
 
-    private int min = 50;
-    private int max = 80;
-    private int gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
-    private final int startTime = gameTime;
+
+    private int min;
+    private int max;
+    private int gameTime;
+    private int startTime;
     LinearLayout layclick;
     private boolean stillPlaying = true;
 
@@ -75,6 +76,11 @@ public class MainGame extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
+
+        min = getSharedPreferences(PREF_EPILOGES, 0).getInt("minTime",60);
+        max = getSharedPreferences(PREF_EPILOGES, 0).getInt("maxTime",80);
+        gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
+        startTime = gameTime;
 
         mp = MediaPlayer.create(this, R.raw.beep);
         mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
