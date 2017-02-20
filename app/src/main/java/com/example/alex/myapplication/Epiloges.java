@@ -20,19 +20,6 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
 
     public static final String PREF_EPILOGES = "EPILOGES";
     public static final String PREF_AGORES = "AGORES";
-    private CheckBox random;
-    private CheckBox tainiesENG;
-    private CheckBox parimies;
-    private CheckBox tainiesGR;
-    private CheckBox paidika;
-    private CheckBox tvGR;
-    private CheckBox tvENG;
-    private CheckBox myths;
-    private CheckBox food;
-    private CheckBox animals;
-    private CheckBox new1;
-    private CheckBox new2;
-    private CheckBox new3;
 
     private Button home;
 
@@ -50,7 +37,7 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
 
         LinearLayout my_layout = (LinearLayout)findViewById(R.id.activity_epiloges);
         for (int i = 0; i < Array_Count; i++) {
-            TableRow row =new TableRow(this);
+            TableRow row = new TableRow(this);
             row.setId(i);
             row.setLayoutParams(new ScrollView.LayoutParams(ScrollView.LayoutParams.MATCH_PARENT,ScrollView.LayoutParams.WRAP_CONTENT,3));
             CheckBox checkBox = new CheckBox(this);

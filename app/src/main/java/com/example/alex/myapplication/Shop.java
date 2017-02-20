@@ -3,6 +3,7 @@ package com.example.alex.myapplication;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -105,7 +106,6 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
 
     public void alert(final Button koumbi,final SharedPreferences lefta,final SharedPreferences agorasmena){
 
-
         final int paliaLefta = lefta.getInt("lefta", 0);
         String temp = "gamithike";
         switch (koumbi.getId()){
@@ -167,6 +167,9 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
             }
         });
         dialog.show();
+        //TODO EDO einai afto pou vrika gia to pos na pirazeis ta koubia alla borei na einai kai allou...
+        dialog.getButton(dialog.BUTTON_NEGATIVE).setBackgroundColor(Color.GREEN);
+        dialog.getButton(dialog.BUTTON_POSITIVE).setBackgroundColor(Color.GREEN);
     }
 
     private void buttonDisabler(){
