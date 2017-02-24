@@ -17,9 +17,6 @@ public class MainActivity extends AppCompatActivity {
     public static final String PREF_AGORES = "AGORES";
     public static final String PREF_EPILOGES = "EPILOGES";
 
-    private Button starter;
-    private Button guidelines;
-    private Button epiloges;
     private Button shop;
     private TextView leftakia;
 
@@ -67,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        starter = (Button) findViewById(R.id.starter);
-        guidelines = (Button) findViewById(R.id.guidelines);
-        epiloges = (Button) findViewById(R.id.epiloges);
+        Button starter = (Button) findViewById(R.id.starter);
+        Button guidelines = (Button) findViewById(R.id.guidelines);
+        Button epiloges = (Button) findViewById(R.id.epiloges);
         shop = (Button) findViewById(R.id.shop);
         leftakia = (TextView) findViewById(R.id.leftakia);
 

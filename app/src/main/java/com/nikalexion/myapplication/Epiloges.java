@@ -17,8 +17,6 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
     public static final String PREF_EPILOGES = "EPILOGES";
     public static final String PREF_AGORES = "AGORES";
 
-    private Button home;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +46,7 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
         }
 
 
-        home = new Button(this);
+        Button home = new Button(this);
         home.setBackgroundResource(R.drawable.btn_bg);
         home.setText("ΑΡΧΙΚΗ");
         home.setTextSize(30);

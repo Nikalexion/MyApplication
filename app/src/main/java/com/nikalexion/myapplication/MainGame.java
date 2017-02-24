@@ -33,7 +33,6 @@ public class MainGame extends AppCompatActivity {
     private static final Random rgenerator = new Random();
     private String tixeaLeksi;
     private CountDownTimer xronos;
-    private CountDownTimer telosXronou;
     private MediaPlayer mp;
     private MediaPlayer expl;
     private int ligosXronos = 0;
@@ -41,8 +40,6 @@ public class MainGame extends AppCompatActivity {
     private InterstitialAd mInterstitialAd;
 
 
-    private int min;
-    private int max;
     private int gameTime;
     private int startTime;
     LinearLayout layclick;
@@ -57,9 +54,8 @@ public class MainGame extends AppCompatActivity {
             super.onBackPressed();
             return;
         }
-        //TODO keimeno sta ellinika
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Πατήστε ξανά το κουμπί πίσω για έξοδο απο το παιχνίδι", Toast.LENGTH_SHORT).show();
 
         new Handler().postDelayed(new Runnable() {
 
@@ -76,8 +72,8 @@ public class MainGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
 
-        min = getSharedPreferences(PREF_EPILOGES, 0).getInt("minTime",60);
-        max = getSharedPreferences(PREF_EPILOGES, 0).getInt("maxTime",80);
+        int min = getSharedPreferences(PREF_EPILOGES, 0).getInt("minTime", 60);
+        int max = getSharedPreferences(PREF_EPILOGES, 0).getInt("maxTime", 80);
         gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
         startTime = gameTime;
 
@@ -184,7 +180,6 @@ public class MainGame extends AppCompatActivity {
             }
         }
 
-        //TODO prosorino fix asfalias min ksekinisei to paixnidi xoris pinaka
         if (pinakasL == null) {
             pinakasL = getResources().getStringArray(R.array.random);
         }

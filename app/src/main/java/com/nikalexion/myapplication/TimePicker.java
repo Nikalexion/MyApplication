@@ -11,16 +11,13 @@ public class TimePicker extends AppCompatActivity {
 
     public static final String PREF_EPILOGES = "EPILOGES";
 
-    private Button normal;
-    private Button extended;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_picker);
 
         //To koumbi gia normal diarkia (60-80)
-        normal = (Button) findViewById(R.id.normalTime);
+        Button normal = (Button) findViewById(R.id.normalTime);
         normal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
@@ -29,7 +26,7 @@ public class TimePicker extends AppCompatActivity {
         });
 
         //To koumbi gia extended diarkia (120-140)
-        extended = (Button) findViewById(R.id.extendedTime);
+        Button extended = (Button) findViewById(R.id.extendedTime);
         extended.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){

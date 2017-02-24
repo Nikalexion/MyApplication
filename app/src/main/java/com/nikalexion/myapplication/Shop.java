@@ -16,6 +16,9 @@ import com.google.android.gms.ads.reward.RewardedVideoAd;
 import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 
+import static com.unity3d.ads.properties.ClientProperties.getActivity;
+
+
 public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
 
     public static final String PREF_LEFTA = "LEFTA";
@@ -24,7 +27,6 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     private Button new1;
     private Button new2;
     private Button new3;
-    private Button home;
     private Button moneyPlus;
     private RewardedVideoAd mAd;
 
@@ -69,7 +71,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         });
 
         //to Koumbi gia epistrofi
-        home = (Button) findViewById(R.id.arxiki);
+        Button home = (Button) findViewById(R.id.arxiki);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){

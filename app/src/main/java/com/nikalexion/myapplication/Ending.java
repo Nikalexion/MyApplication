@@ -10,16 +10,13 @@ import android.widget.Button;
 public class Ending extends AppCompatActivity {
 
 
-    private Button neoGame;
-    private Button home;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ending);
 
         //To koumbi gia epanekinisi paixnidiou
-        neoGame = (Button) findViewById(R.id.neoGame);
+        Button neoGame = (Button) findViewById(R.id.neoGame);
         neoGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
@@ -29,7 +26,7 @@ public class Ending extends AppCompatActivity {
         });
 
         //To koumbi gia epistrofi sto arxiko menou
-        home = (Button) findViewById(R.id.arxiki);
+        Button home = (Button) findViewById(R.id.arxiki);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
