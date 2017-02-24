@@ -14,20 +14,21 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.alex.myapplication.Guide"
+    tools:context="com.nikalexion.myapplication.Guide"
     android:background="@drawable/bc"
     android:layout_centerInParent="true">
 
     <TextView
-        android:text="epana dokimi Εδώ θα έχει κείμενο που εξιγεί τους κανόνες του παιχνιδιού"
+        android:text="@string/kanones_paixnidiou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/guideText"
-        android:textSize="36sp"
+        android:textSize="25sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textAlignment="textStart" />
 
     <Button
         android:text="ΑΡΧΙΚΉ"
