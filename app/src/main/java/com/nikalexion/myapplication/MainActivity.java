@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         }
         //TODO keimeno sta ellinika
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Πατήστε ξανά το κουμπί πίσω για έξοδο απο την εφαρμογή", Toast.LENGTH_SHORT).show();
 
         new Handler().postDelayed(new Runnable() {
 
