@@ -9,6 +9,7 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -71,6 +72,7 @@ public class MainGame extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         int min = getSharedPreferences(PREF_EPILOGES, 0).getInt("minTime", 60);
         int max = getSharedPreferences(PREF_EPILOGES, 0).getInt("maxTime", 80);
@@ -269,7 +271,12 @@ public class MainGame extends AppCompatActivity {
                     counter = counter + 5;
                     SharedPreferences.Editor lefta_editor = lefta.edit();
                     lefta_editor.putInt("lefta", counter);
+
+                    int counter2 = lefta.getInt("games", 0);
+                    counter2 = counter2 + 1;
+                    lefta_editor.putInt("games", counter2);
                     lefta_editor.apply();
+
                     showInterstitial(); //emberiexei to goToNextLevel me ta intent
                     xronos.cancel();
                     finish();   //psofaei otan telionei o xronos
