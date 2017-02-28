@@ -39,4 +39,8 @@
 
     </style>
 
+    <style name="testing5555" parent="android:Theme">
+
+    </style>
+
 </resources>
