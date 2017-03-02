@@ -15,23 +15,6 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
-#Unity ads START
-# Keep filenames and line numbers for stack traces
--keepattributes SourceFile,LineNumberTable
-
-# Keep JavascriptInterface for WebView bridge
--keepattributes JavascriptInterface
-
-# Sometimes keepattributes is not enough to keep annotations
--keep class android.webkit.JavascriptInterface {
-   *;
-}
-
-# Keep all classes in Unity Ads package
--keep class com.unity3d.ads.** {
-   *;
-}
-#Uniti ads END
 
 #na min anisixei gia to picasso giati doulevei kirile mono tou
 -dontwarn com.squareup.picasso.**

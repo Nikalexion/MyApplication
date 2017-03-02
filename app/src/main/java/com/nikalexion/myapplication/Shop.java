@@ -15,24 +15,14 @@ import android.widget.ScrollView;
 import android.widget.TableRow;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.reward.RewardItem;
-import com.google.android.gms.ads.reward.RewardedVideoAd;
-import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 
-import static com.unity3d.ads.properties.ClientProperties.getActivity;
 
-
-public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
+public class Shop extends AppCompatActivity {
 
     public static final String PREF_LEFTA = "LEFTA";
     public static final String PREF_AGORES = "AGORES";
 
-
-    private Button moneyPlus;
-    private RewardedVideoAd mAd;
 
 
 
@@ -41,14 +31,12 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
-        //TODO na kano tis diafimiseis ksana na doulevoun
-        //mAd = MobileAds.getRewardedVideoAdInstance(this);
-        //mAd.setRewardedVideoAdListener(this);
 
-
+        //TODO na xrisimopoiountai ta "lefta" gia na vafei prassino/gri ta koumbia
         SharedPreferences lefta = getApplicationContext().getSharedPreferences(PREF_LEFTA, 0);
         SharedPreferences agorasmena = getApplicationContext().getSharedPreferences(PREF_AGORES, 0);
 
+        String[] kostiKatigorion = getResources().getStringArray(R.array.costs);
         String[] onomataKatigorion = getResources().getStringArray(R.array.category_names);
         String[] katigories = getResources().getStringArray(R.array.categories);
         final int Array_Count = katigories.length;
@@ -57,6 +45,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
 
         for (int i = 0; i < Array_Count-6; i++) {
             final String kat = katigories[i+6];
+            final String cost = kostiKatigorion[i+6];
             TableRow row = new TableRow(this);
             row.setId(i);
             row.setLayoutParams(new ScrollView.LayoutParams(ScrollView.LayoutParams.MATCH_PARENT,ScrollView.LayoutParams.WRAP_CONTENT,3));
@@ -69,7 +58,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
             }
             buyButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    alert(buyButton,kat,Array_Count-6);
+                    alert(buyButton,kat,Array_Count-6,cost);
                 }
             });
             buyButton.setId(i);
@@ -92,16 +81,13 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
                 finish();
             }
         });
-        //TODO meros ton diafimiseon
-        //loadRewardedVideoAd();
+
 
         /*
         final SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
         final SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
 
 
-        mAd = MobileAds.getRewardedVideoAdInstance(this);
-        mAd.setRewardedVideoAdListener(this);
 
 
         new1 = (Button) findViewById(R.id.new1);
@@ -137,16 +123,6 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
             }
         });
 
-        //koumbi gia ta lefta
-        moneyPlus = (Button) findViewById(R.id.moneyPlus);
-        moneyPlus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                if (mAd.isLoaded()){
-                    mAd.show();
-                }
-            }
-        });
 
         //xromatismos se prasino otan exei ta lefta gia agora
         if(!agorasmena.getBoolean("new1",false)&& (lefta.getInt("lefta",0) > 1)) {
@@ -162,8 +138,8 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         */
     }
 
-    public void alert(final Button koumbi, final String onomaAgoras, final int plithosKoumbion){
-
+    public void alert(final Button koumbi, final String onomaAgoras, final int plithosKoumbion, final String cost){
+        final int costInt = Integer.parseInt(cost);
         final SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
         final SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
 
@@ -172,7 +148,6 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         AlertDialog alertDialog;
         ContextThemeWrapper ctw = new ContextThemeWrapper(this, R.style.MyAlertDialogStyle);
         AlertDialog.Builder builder = new AlertDialog.Builder(ctw);
-        //AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.testing));
         alertDialog = builder.create();
         alertDialog.getWindow().setLayout(200, 400);
 
@@ -180,7 +155,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         //TODO sovaro titlo kai genika olo afto allagi me sostes times ktlp
         builder.setTitle("Αγορά");
         //Start setting up the builder
-        builder.setMessage("Είσαι σίγουρος ότι θες να αγοράσεις την κατηγορία "+koumbi.getText()+" ? Έχεις " +Integer.toString(paliaLefta)+ " και κοστίζει 2");
+        builder.setMessage("Είσαι σίγουρος ότι θες να αγοράσεις την κατηγορία "+koumbi.getText()+" ? Έχεις " +Integer.toString(paliaLefta)+ " και κοστίζει "+cost);
 
         // Add the buttons
         builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
@@ -189,8 +164,8 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
                 koumbi.setEnabled(false);
                 koumbi.setBackgroundResource(R.drawable.shop_btn);
 
-                //TODO min ksexasoume na allaksoume times
-                int neaLefta = paliaLefta - 2;
+                //TODO min ksexasoume na allaksoume times sto arrays
+                int neaLefta = paliaLefta - costInt;
                 SharedPreferences.Editor lefta_editor = lefta.edit();
                 lefta_editor.putInt("lefta", neaLefta);
                 lefta_editor.apply();
@@ -200,7 +175,8 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
                 editor.apply();
 
                 //TODO edo einai gia dinamiko ksevapsimo ton koumpion apo prassino alla den vrisko pos na vrisko ta koumbia
-                if(lefta.getInt("lefta",0) < 2) {
+                //ase pou me dinamikes times thelei ligi douleia vsk
+                if(lefta.getInt("lefta",0) < 8) {
                     for (int i = 0; i < plithosKoumbion; i++) {
 
                     }
@@ -225,63 +201,6 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
             }
         });
         dialog.show();
-    }
-
-
-    private void loadRewardedVideoAd() {
-        if(!mAd.isLoaded()){
-            mAd.loadAd("ca-app-pub-5861682469694178/2306813044", new AdRequest.Builder().build());
-        }else{
-            moneyPlus.setEnabled(true);
-            moneyPlus.setText("Bonus Money");
-        }
-    }
-
-    @Override
-    public void onRewarded(RewardItem reward) {
-        Toast.makeText(this, "onRewarded! currency: " + reward.getType() + "  amount: " +
-                reward.getAmount(), Toast.LENGTH_SHORT).show();
-
-        SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
-        //etoimazo to editor
-        SharedPreferences.Editor lefta_editor = lefta.edit();
-        //ta getType einai "lefta" kai to getAmount einai int posou rithmismeno apo to admob
-        lefta_editor.putInt(reward.getType(), lefta.getInt(reward.getType(), 0) + reward.getAmount());
-        lefta_editor.apply();
-    }
-
-    @Override
-    public void onRewardedVideoAdLeftApplication() {
-        Toast.makeText(this, "onRewardedVideoAdLeftApplication",
-                Toast.LENGTH_SHORT).show();
-        //den to ipostirizei to unity
-    }
-
-    @Override
-    public void onRewardedVideoAdClosed() {
-        Toast.makeText(this, "onRewardedVideoAdClosed", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onRewardedVideoAdFailedToLoad(int errorCode) {
-        Toast.makeText(this, "onRewardedVideoAdFailedToLoad", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onRewardedVideoAdLoaded() {
-        Toast.makeText(this, "onRewardedVideoAdLoaded", Toast.LENGTH_SHORT).show();
-        moneyPlus.setEnabled(true);
-        moneyPlus.setText("Bonus Money");
-    }
-
-    @Override
-    public void onRewardedVideoAdOpened() {
-        Toast.makeText(this, "onRewardedVideoAdOpened", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onRewardedVideoStarted() {
-        Toast.makeText(this, "onRewardedVideoStarted", Toast.LENGTH_SHORT).show();
     }
 
 }
