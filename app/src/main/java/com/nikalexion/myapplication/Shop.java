@@ -54,20 +54,24 @@ public class Shop extends AppCompatActivity {
                 buyButton.setBackgroundResource(R.drawable.shop_prasino);
             }
             else{
-                buyButton.setBackgroundResource(R.drawable.btn_bg);
+                buyButton.setBackgroundResource(R.drawable.shop_btn);
             }
+            buyButton.setId(i);
+            buyButton.setText(onomataKatigorion[i+6]);
+            buyButton.setTextSize(26);
+            buyButton.setEnabled(!agorasmena.getBoolean(katigories[i+6],false));
+            ScrollView.LayoutParams params = new ScrollView.LayoutParams(ScrollView.LayoutParams.FILL_PARENT, ScrollView.LayoutParams.WRAP_CONTENT);
+            params.setMargins(0,0,0,25);
+            row.setLayoutParams(params);
+            row.addView(buyButton);
+            my_layout.addView(row);
             buyButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
                     alert(buyButton,kat,Array_Count-6,cost);
                 }
             });
-            buyButton.setId(i);
-            buyButton.setText(onomataKatigorion[i+6]);
-            buyButton.setTextSize(26);
-            buyButton.setEnabled(!agorasmena.getBoolean(katigories[i+6],false));
-            row.addView(buyButton);
-            my_layout.addView(row);
         }
+
 
         Button home = new Button(this);
         home.setBackgroundResource(R.drawable.btn_bg);
@@ -177,7 +181,7 @@ public class Shop extends AppCompatActivity {
                 //TODO edo einai gia dinamiko ksevapsimo ton koumpion apo prassino alla den vrisko pos na vrisko ta koumbia
                 //ase pou me dinamikes times thelei ligi douleia vsk
                 if(lefta.getInt("lefta",0) < 8) {
-                    for (int i = 0; i < plithosKoumbion; i++) {
+                    for (int i = 0; i < 5; i++) {
 
                     }
                 }
