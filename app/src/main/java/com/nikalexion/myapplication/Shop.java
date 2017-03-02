@@ -50,7 +50,7 @@ public class Shop extends AppCompatActivity {
             row.setId(i);
             row.setLayoutParams(new ScrollView.LayoutParams(ScrollView.LayoutParams.MATCH_PARENT,ScrollView.LayoutParams.WRAP_CONTENT,3));
             final Button buyButton = new Button(this);
-            if(!agorasmena.getBoolean(katigories[i+6],false)&& (lefta.getInt("lefta",0) > 1)) {
+            if(!agorasmena.getBoolean(katigories[i+6],false)&& (lefta.getInt("lefta",0) >= Integer.parseInt(cost))) {
                 buyButton.setBackgroundResource(R.drawable.shop_prasino);
             }
             else{
@@ -199,8 +199,8 @@ public class Shop extends AppCompatActivity {
         dialog.setOnShowListener(new DialogInterface.OnShowListener() {
             @Override
             public void onShow(DialogInterface dialog) {
-                //TODO kai edo allagi noumeron
-                if(paliaLefta < 2)
+
+                if(paliaLefta < costInt)
                     ((AlertDialog)dialog).getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
             }
         });
