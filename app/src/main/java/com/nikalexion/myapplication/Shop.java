@@ -7,24 +7,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.ContextThemeWrapper;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TableRow;
-import android.widget.Toast;
-
-
 
 
 public class Shop extends AppCompatActivity {
 
     public static final String PREF_LEFTA = "LEFTA";
     public static final String PREF_AGORES = "AGORES";
-
-
-
+    private int plithosKatigorion;
+    //pfk = plithos free katigorion
+    private int pfk = 6;
 
 
     @Override
@@ -32,7 +27,6 @@ public class Shop extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
 
-        //TODO na xrisimopoiountai ta "lefta" gia na vafei prassino/gri ta koumbia
         SharedPreferences lefta = getApplicationContext().getSharedPreferences(PREF_LEFTA, 0);
         SharedPreferences agorasmena = getApplicationContext().getSharedPreferences(PREF_AGORES, 0);
 
@@ -40,26 +34,26 @@ public class Shop extends AppCompatActivity {
         String[] onomataKatigorion = getResources().getStringArray(R.array.category_names);
         String[] katigories = getResources().getStringArray(R.array.categories);
         final int Array_Count = katigories.length;
-
+        plithosKatigorion = Array_Count;
         LinearLayout my_layout = (LinearLayout)findViewById(R.id.activity_shop);
 
-        for (int i = 0; i < Array_Count-6; i++) {
-            final String kat = katigories[i+6];
-            final String cost = kostiKatigorion[i+6];
+        for (int i = 0; i < plithosKatigorion-pfk; i++) {
+            final String kat = katigories[i+pfk];
+            final String cost = kostiKatigorion[i+pfk];
             TableRow row = new TableRow(this);
-            row.setId(i);
+            row.setId(i+200);
             row.setLayoutParams(new ScrollView.LayoutParams(ScrollView.LayoutParams.MATCH_PARENT,ScrollView.LayoutParams.WRAP_CONTENT,3));
             final Button buyButton = new Button(this);
-            if(!agorasmena.getBoolean(katigories[i+6],false)&& (lefta.getInt("lefta",0) >= Integer.parseInt(cost))) {
+            if(!agorasmena.getBoolean(katigories[i+ pfk],false)&& (lefta.getInt("lefta",0) >= Integer.parseInt(cost))) {
                 buyButton.setBackgroundResource(R.drawable.shop_prasino);
             }
             else{
                 buyButton.setBackgroundResource(R.drawable.shop_btn);
             }
             buyButton.setId(i);
-            buyButton.setText(onomataKatigorion[i+6]);
+            buyButton.setText(onomataKatigorion[i+pfk]);
             buyButton.setTextSize(26);
-            buyButton.setEnabled(!agorasmena.getBoolean(katigories[i+6],false));
+            buyButton.setEnabled(!agorasmena.getBoolean(katigories[i+pfk],false));
             ScrollView.LayoutParams params = new ScrollView.LayoutParams(ScrollView.LayoutParams.FILL_PARENT, ScrollView.LayoutParams.WRAP_CONTENT);
             params.setMargins(0,0,0,25);
             row.setLayoutParams(params);
@@ -67,7 +61,7 @@ public class Shop extends AppCompatActivity {
             my_layout.addView(row);
             buyButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    alert(buyButton,kat,Array_Count-6,cost);
+                    alert(buyButton,kat,plithosKatigorion-pfk,cost);
                 }
             });
         }
@@ -178,11 +172,12 @@ public class Shop extends AppCompatActivity {
                 editor.putBoolean(onomaAgoras, true);
                 editor.apply();
 
-                //TODO edo einai gia dinamiko ksevapsimo ton koumpion apo prassino alla den vrisko pos na vrisko ta koumbia
-                //ase pou me dinamikes times thelei ligi douleia vsk
-                if(lefta.getInt("lefta",0) < 8) {
-                    for (int i = 0; i < 5; i++) {
-
+                String[] kostiKatigorion = getResources().getStringArray(R.array.costs);
+                for (int i = 0; i < plithosKatigorion-pfk; i++) {
+                    if (Integer.parseInt(kostiKatigorion[i+pfk]) > neaLefta) {
+                        Button tstbtn;
+                        tstbtn = (Button) findViewById(i);
+                        tstbtn.setBackgroundResource(R.drawable.shop_btn);
                     }
                 }
             }
