@@ -15,12 +15,9 @@
         <item>food</item>
 
         <item>animals</item>
-        <item>new1</item>
-        <item>new2</item>
-
-        <item>new3</item>
         <item>books</item>
     </string-array>
+
     <string-array name="category_names">
         <item>Τυχαίες λέξεις</item>
         <item>Ελληνικές ταινίες</item>
@@ -35,11 +32,24 @@
         <item>Φαγώσιμα</item>
 
         <item>Ζώα</item>
-        <item>new1</item>
-        <item>new2</item>
-
-        <item>new3</item>
         <item>Τίτλοι βιβλίων</item>
+    </string-array>
+
+    <string-array name="costs">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+
+        <item>6</item>
+        <item>8</item>
     </string-array>
 
     <string-array name="random">
