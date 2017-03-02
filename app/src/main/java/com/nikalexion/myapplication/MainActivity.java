@@ -29,9 +29,8 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
             return;
         }
-        //TODO keimeno sta ellinika
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Πατήστε ξανά το κουμπί πίσω για έξοδο απο την εφαρμογή", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Πατήστε ξανά για έξοδο απο την εφαρμογή", Toast.LENGTH_SHORT).show();
 
         new Handler().postDelayed(new Runnable() {
 
@@ -55,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             defaultEpiloges.apply();
 
             String[] katigories = getResources().getStringArray(R.array.categories);
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 6; i++) {
                 defaultAgores.putBoolean(katigories[i], true);
                 defaultAgores.apply();
                 defaultEpiloges.putBoolean(katigories[i], true);
@@ -108,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         leftakia.setText(Integer.toString(counter));
         leftakia.setTextColor(Color.YELLOW);
         SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
+        //TODO exeis kani malakia edo kanto dinamiko giati atm an agoraseis ta new1-2-3 stamatei na kitirinzei to koumbi
         if(!(agorasmena.getBoolean("new1",false))&& (counter > 1)) {
             shop.setBackgroundResource(R.drawable.shop_purchasable);
         }

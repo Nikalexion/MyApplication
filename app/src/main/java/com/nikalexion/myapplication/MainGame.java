@@ -56,7 +56,7 @@ public class MainGame extends AppCompatActivity {
             return;
         }
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Πατήστε ξανά το κουμπί πίσω για έξοδο απο το παιχνίδι", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Πατήστε ξανά για έξοδο απο το παιχνίδι", Toast.LENGTH_SHORT).show();
 
         new Handler().postDelayed(new Runnable() {
 
