@@ -61,6 +61,12 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
             row.setId(i);
             row.setLayoutParams(new ScrollView.LayoutParams(ScrollView.LayoutParams.MATCH_PARENT,ScrollView.LayoutParams.WRAP_CONTENT,3));
             final Button buyButton = new Button(this);
+            if(!agorasmena.getBoolean(katigories[i+6],false)&& (lefta.getInt("lefta",0) > 1)) {
+                buyButton.setBackgroundResource(R.drawable.shop_prasino);
+            }
+            else{
+                buyButton.setBackgroundResource(R.drawable.btn_bg);
+            }
             buyButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
                     alert(buyButton,kat,Array_Count-6);
@@ -172,7 +178,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
 
 
         //TODO sovaro titlo kai genika olo afto allagi me sostes times ktlp
-        builder.setTitle("Αγορά κατηγορίας");
+        builder.setTitle("Αγορά");
         //Start setting up the builder
         builder.setMessage("Είσαι σίγουρος ότι θες να αγοράσεις την κατηγορία "+koumbi.getText()+" ? Έχεις " +Integer.toString(paliaLefta)+ " και κοστίζει 2");
 
