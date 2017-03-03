@@ -1488,18 +1488,6 @@
         <item>Σαλαμάνδρα</item>
     </string-array>
 
-    <string-array name="new1">
-        <item>test</item>
-    </string-array>
-
-    <string-array name="new2">
-        <item>test</item>
-    </string-array>
-
-    <string-array name="new3">
-        <item>test</item>
-    </string-array>
-
 <!-- //TODO edo koita ta -->
     <string-array name="books">
         <item>Έγκλημα στο Νείλο</item>
