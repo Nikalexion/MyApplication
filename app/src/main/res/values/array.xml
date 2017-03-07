@@ -19,6 +19,7 @@
         <item>podosfairistes</item>
 
         <item>tragoudistes</item>
+        <item>games</item>
     </string-array>
 
     <string-array name="category_names">
@@ -39,8 +40,10 @@
         <item>Ποδοσφαιριστές</item>
 
         <item>Τραγουδιστές</item>
+        <item>Βιντεοπαιχνίδια</item>
     </string-array>
 
+<!-- //Todo min ksexasoume na valoume sostes times edo -->
     <string-array name="costs">
         <item>0</item>
         <item>0</item>
@@ -59,6 +62,7 @@
         <item>0</item>
 
         <item>0</item>
+        <item>1</item>
     </string-array>
 
     <string-array name="random">
@@ -512,7 +516,7 @@
         <item>Ρένα τα ρέστα σου</item>
         <item>Τρελός είμαι ότι θέλω κάνω </item>
         <item>Ψηλός λιγνός και ψεύταρος</item>
-        <item>Το ξύλο βγήκε απ` τον Παράδεισο</item>
+        <item>Το ξύλο βγήκε απ’ τον Παράδεισο</item>
         <item>Κλοτσοσκούφι</item>
         <item>Η κυρά μας η Μαμή</item>
         <item>Καπετάν Φάντης Μπαστούνι</item>
@@ -769,7 +773,7 @@
         <item>Αλλού παπάς, κι αλλού τα ράσα του</item>
         <item>Ανεμομαζώματα, ανεμοσκορπίσματα</item>
         <item>Άνθρωπος αγράμματος, ξύλο απελέκητο</item>
-        <item>Απ` αγκάθι βγαίνει ρόδο κι από ρόδο βγαίνει αγκάθι</item>
+        <item>Απ’ αγκάθι βγαίνει ρόδο κι από ρόδο βγαίνει αγκάθι</item>
         <item>Βουνό με βουνό δεν σμίγει</item>
         <item>Για χάρη του βασιλικού ποτίζεται και η γλάστρα</item>
         <item>Γιάννης κερνά, Γιάννης πίνει</item>
@@ -788,7 +792,7 @@
         <item>Μοναχός σου ούτε στον παράδεισο</item>
         <item>Τάζει λαγούς με πετραχήλια</item>
         <item>Δώσε τόπο στην οργή</item>
-        <item>Ήρθαν τ` άγρια να διώξουν τα ήμερα</item>
+        <item>Ήρθαν τ’άγρια να διώξουν τα ήμερα</item>
         <item>Λείπει ο γάτος, χορεύουν τα ποντίκια</item>
         <item>Δύσκολα νιάτα, καλά γεράματα</item>
         <item>Μαθημένα τα βουνά απ΄τα χιόνια</item>
@@ -859,11 +863,11 @@
         <item>Έμεινε στα κρύα του λουτρού</item>
         <item>Κουβαλάει νερό με το κόσκινο</item>
         <item>Μοιάζουν σαν δυο σταγόνες νερό</item>
-        <item>Μπήκε το νερό στ`αυλάκι</item>
+        <item>Μπήκε το νερό στ’αυλάκι</item>
         <item>Αν δεν παινέψεις το σπίτι σου θα πέσει να σε πλακώσει</item>
         <item>Η ομόνοια χτίζει σπίτι κι η διχόνοια το γκρεμίζει</item>
         <item>Τα κακά νέα ταξιδεύουν γρήγορα</item>
-        <item>Μου `βγαλε το λάδι</item>
+        <item>Μου ’βγαλε το λάδι</item>
         <item>Έχει κι αλλού πορτοκαλιές που κάνουν πορτοκάλια</item>
         <item>Το ψάρι βρωμάει από το κεφάλι</item>
         <item>Θέλει και την πίτα ολόκληρη και τον σκύλο χορτάτο</item>
@@ -892,7 +896,7 @@
         <item>Δέκα μικροί Μήτσοι</item>
         <item>Εργαζόμενη γυναίκα</item>
         <item>Μάμα μία</item>
-        <item>Σ`αγαπώ μ`αγαπάς</item>
+        <item>Σ’αγαπώ μ’αγαπάς</item>
         <item>Βέρα στο δεξί</item>
         <item>10η εντολή</item>
         <item>Και οι παντρεμένοι έχουν ψυχή</item>
@@ -1024,7 +1028,7 @@
         <item>Σεφ στον Αέρα</item>
         <item>Μαγειρεύουμε Παρέα </item>
         <item>Ρεπορτάζ χωρίς σύνορα</item>
-        <item>Ό,τι νά`ναι</item>
+        <item>Ό,τι νά’ναι</item>
         <item>Στο δρόμο</item>
         <item>Ηρωίδες</item>
         <item>Ανατροπή</item>
@@ -1769,7 +1773,7 @@
         <item>Δόκτωρ Ζιβάγκο</item>
         <item>Το άρωμα</item>
         <item>Ο φύλακας στη σίκαλη</item>
-        <item>Οι κερασιές θ` ανθίσουν και φέτος</item>
+        <item>Οι κερασιές θ’ ανθίσουν και φέτος</item>
         <item>Το ρολόι του κόσμου χτυπά μεσάνυχτα</item>
         <item>Σιωπή για ν΄ακούγεσαι</item>
         <item>Κυριακή απόγευμα στη Βιένη</item>
@@ -2368,5 +2372,425 @@
         <item>Μιχάλης Ρακιντζής</item>
         <item>Πασχάλης Τερζής</item>
         <item>Eric Clapton</item>
+    </string-array>
+
+    <string-array name="games">
+        <item>The Legend of Zelda: Ocarina of Time</item>
+        <item>Tony Hawk’s Pro Skater</item>
+        <item>Grand Theft Auto</item>
+        <item>The Legend of Zelda: Breath of the Wild</item>
+        <item>SoulCalibur</item>
+        <item>Super Mario Galaxy</item>
+        <item>Perfect Dark</item>
+        <item>Metroid Prime</item>
+        <item>Halo</item>
+        <item>Half-Life</item>
+        <item>BioShock</item>
+        <item>GoldenEye 007</item>
+        <item>Uncharted</item>
+        <item>Resident Evil</item>
+        <item>Tekken</item>
+        <item>Mass Effect</item>
+        <item>The Legend of Zelda: Twilight Princess</item>
+        <item>The Elder Scrolls V: Skyrim</item>
+        <item>The Legend of Zelda: The Wind Waker</item>
+        <item>Gran Turismo</item>
+        <item>Metal Gear Solid</item>
+        <item>Baldur’s Gate</item>
+        <item>LittleBigPlanet</item>
+        <item>Red Dead Redemption</item>
+        <item>The Legend of Zelda: A Link to the Past</item>
+        <item>The Legend of Zelda: Majora’s Mask</item>
+        <item>The Last of Us</item>
+        <item>Portal</item>
+        <item>World of Goo</item>
+        <item>Final Fantasy</item>
+        <item>Call of Duty</item>
+        <item>Devil May Cry</item>
+        <item>Chrono Cross</item>
+        <item>Gears of War</item>
+        <item>Quake</item>
+        <item>Ninja Gaiden</item>
+        <item>The Elder Scrolls IV: Oblivion</item>
+        <item>Street Fighter</item>
+        <item>Super Mario</item>
+        <item>Grim Fandango</item>
+        <item>Burnout</item>
+        <item>Diablo</item>
+        <item>God of War</item>
+        <item>Sid Meier’s Civilization</item>
+        <item>Super Mario 64</item>
+        <item>Super Smash Bros. Brawl</item>
+        <item>Company of Heroes</item>
+        <item>Pac-Man</item>
+        <item>Unreal Tournament</item>
+        <item>Braid</item>
+        <item>Starcraft</item>
+        <item>Minecraft</item>
+        <item>Persona</item>
+        <item>Homeworld</item>
+        <item>Okami</item>
+        <item>Fallout</item>
+        <item>SoulCalibur</item>
+        <item>Skies of Arcadia</item>
+        <item>The Legend of Zelda: Skyward Sword</item>
+        <item>Mario Kart</item>
+        <item>Rock Band</item>
+        <item>Castlevania</item>
+        <item>Paper Mario</item>
+        <item>World of Warcraft</item>
+        <item>Prince of Persia</item>
+        <item>Guitar Hero</item>
+        <item>Bloodborne</item>
+        <item>Eternal Darkness</item>
+        <item>The Sims</item>
+        <item>Banjo-Kazooie</item>
+        <item>Forza</item>
+        <item>Advance Wars</item>
+        <item>Team Fortress 2</item>
+        <item>Super Smash Bros. Melee</item>
+        <item>Rome: Total War</item>
+        <item>Undertale</item>
+        <item>Super Mario Sunshine</item>
+        <item>Thief</item>
+        <item>Fire Emblem</item>
+        <item>Age of Empires</item>
+        <item>The Walking Dead</item>
+        <item>Wave Race 64</item>
+        <item>Super Smash Bros.</item>
+        <item>Chrono Trigger</item>
+        <item>Xenoblade Chronicles</item>
+        <item>Conker’s Bad Fur Day</item>
+        <item>Medal of Honor</item>
+        <item>PaRappa the Rapper</item>
+        <item>Shadow of the Colossus</item>
+        <item>Rayman Origins</item>
+        <item>Metroid Fusion</item>
+        <item>Rayman Legends</item>
+        <item>Dishonored</item>
+        <item>Myth: The Fallen Lords</item>
+        <item>World of Warcraft: Wrath of the Lich King</item>
+        <item>Bayonetta</item>
+        <item>Overwatch</item>
+        <item>The Witcher 3: Wild Hunt</item>
+        <item>Klonoa</item>
+        <item>Mario Tennis</item>
+        <item>Colony Wars</item>
+        <item>Ratchet &amp; Clank</item>
+        <item>Resident Evil</item>
+        <item>FIFA Soccer</item>
+        <item>Assassin’s Creed</item>
+        <item>Spyro: Year of the Dragon</item>
+        <item>Tomb Raider</item>
+        <item>Borderlands</item>
+        <item>Crysis</item>
+        <item>World of Warcraft: The Burning Crusade</item>
+        <item>Yoshi’s Island</item>
+        <item>Battlefield</item>
+        <item>Killzone</item>
+        <item>Neverwinter Nights</item>
+        <item>Legacy of Kain</item>
+        <item>Dragon Age: Origins</item>
+        <item>Golden Sun</item>
+        <item>Mark of the Ninja</item>
+        <item>The Legend of Zelda: A Link Between Worlds</item>
+        <item>Mario Golf</item>
+        <item>Crash Bandicoot 3: Warped</item>
+        <item>World of Warcraft: Cataclysm</item>
+        <item>Far Cry</item>
+        <item>World of Goo</item>
+        <item>Mario &amp; Luigi: Superstar Saga</item>
+        <item>Shovel Knight</item>
+        <item>Marvel vs. Capcom</item>
+        <item>Ape Escape</item>
+        <item>Syphon Filter</item>
+        <item>Spelunky</item>
+        <item>Pokemon Black &amp; White</item>
+        <item>The Legend of Zelda: Phantom Hourglass</item>
+        <item>Dance Dance Revolution</item>
+        <item>Jak and Daxter</item>
+        <item>Deus Ex</item>
+        <item>Donkey Kong 64</item>
+        <item>Panzer Dragoon Orta</item>
+        <item>Fez</item>
+        <item>Blast Corps</item>
+        <item>LIMBO</item>
+        <item>Super Meat Boy</item>
+        <item>Dead Space</item>
+        <item>Pikmin</item>
+        <item>Geometry Wars</item>
+        <item>Brothers: A Tale of Two Sons</item>
+        <item>Dota 2</item>
+        <item>League of Legends</item>
+        <item>Heroes of the Storm</item>
+        <item>TimeSplitters</item>
+        <item>Guild Wars</item>
+        <item>Command &amp; Conquer</item>
+        <item>Wipeout</item>
+        <item>XCOM: Enemy Unknown</item>
+        <item>Dragon Quest</item>
+        <item>Skylanders</item>
+        <item>Age of Mythology</item>
+        <item>Samba de Amigo</item>
+        <item>Plants vs. Zombies</item>
+        <item>Rez</item>
+        <item>Demon’s Souls</item>
+        <item>Pillars of Eternity</item>
+        <item>Fable</item>
+        <item>Axiom Verge</item>
+        <item>Titanfall</item>
+        <item>Jade Empire</item>
+        <item>Need for Speed</item>
+        <item>F-Zero</item>
+        <item>The Legend of Zelda: The Minish Cap</item>
+        <item>Cave Story</item>
+        <item>Max Payne</item>
+        <item>World in Conflict</item>
+        <item>Sonic Adventure 2</item>
+        <item>Duke Nukem</item>
+        <item>L.A. Noire</item>
+        <item>Bastion</item>
+        <item>Rise of Nations</item>
+        <item>Dragon Age: Inquisition</item>
+        <item>New Super Mario Bros.</item>
+        <item>Silent Hill</item>
+        <item>WarioWare</item>
+        <item>Railroad Tycoon</item>
+        <item>Stardew Valley</item>
+        <item>Medieval: Total War</item>
+        <item>Excitebike 64</item>
+        <item>Shadow Complex</item>
+        <item>Mafia</item>
+        <item>Brothers in Arms</item>
+        <item>Nuclear Throne</item>
+        <item>Crash Team Racing</item>
+        <item>DJ Hero</item>
+        <item>Super Mario Maker</item>
+        <item>Divinity: Original Sin</item>
+        <item>F.E.A.R.</item>
+        <item>Psychonauts</item>
+        <item>The Binding of Isaac</item>
+        <item>Kerbal Space Program</item>
+        <item>Ori and the Blind Forest</item>
+        <item>Diddy Kong Racing</item>
+        <item>Star Fox 64</item>
+        <item>Warcraft III: The Frozen Throne</item>
+        <item>The World Ends with You</item>
+        <item>Torchlight</item>
+        <item>XCOM: Enemy Within</item>
+        <item>JSRF: Jet Set Radio Future</item>
+        <item>Final Fantasy Tactics</item>
+        <item>Wario Land</item>
+        <item>Pokemon X &amp; Y</item>
+        <item>Hearthstone: Heroes of Warcraft</item>
+        <item>Sly 2: Band of Thieves</item>
+        <item>Doom</item>
+        <item>The Stanley Parable</item>
+        <item>Counter-Strike: Source</item>
+        <item>Oddworld</item>
+        <item>EVE Online</item>
+        <item>World of Warcraft: Legion</item>
+        <item>Keep Talking and Nobody Explodes</item>
+        <item>Crimson Skies</item>
+        <item>Dark Age of Camelot</item>
+        <item>Owlboy</item>
+        <item>The Talos Principle</item>
+        <item>Animal Crossing</item>
+        <item>Middle-earth: Shadow of Mordor</item>
+        <item>The Witness</item>
+        <item>BlazBlue</item>
+        <item>Europa Universalis</item>
+        <item>Steins;Gate</item>
+        <item>Crypt of the NecroDancer</item>
+        <item>Sins of a Solar Empire</item>
+        <item>Heavy Rain</item>
+        <item>Super Monkey Ball</item>
+        <item>Pokemon SoulSilver &amp; HeartGold</item>
+        <item>Hitman</item>
+        <item>Dead or Alive</item>
+        <item>Paper Mario: The Thousand-Year Door</item>
+        <item>Pokemon Sun &amp; Moon</item>
+        <item>TowerFall</item>
+        <item>Mario Kart: Double Dash!!</item>
+        <item>Donkey Kong Country</item>
+        <item>Bully</item>
+        <item>Rocket League</item>
+        <item>Sonic the Hedgehog</item>
+        <item>Hotline Miami</item>
+        <item>The Legend of Zelda: Spirit Tracks</item>
+        <item>Disgaea</item>
+        <item>Diablo III: Reaper of Souls</item>
+        <item>Shogun: Total War</item>
+        <item>Serious Sam</item>
+        <item>Velocity</item>
+        <item>Zeus: Master of Olympus</item>
+        <item>Driver</item>
+        <item>Night in the Woods</item>
+        <item>Puzzle Quest</item>
+        <item>Hex: Shards of Fate</item>
+        <item>World of Warcraft: Warlords of Draenor</item>
+        <item>Warhammer 40,000</item>
+        <item>Kingdom Hearts</item>
+        <item>MotoGP</item>
+        <item>Guilty Gear</item>
+        <item>Sonic Advance</item>
+        <item>Kirby’s Epic Yarn</item>
+        <item>Bomberman</item>
+        <item>Startopia</item>
+        <item>Killer Instinct</item>
+        <item>Black Mesa</item>
+        <item>EverQuest</item>
+        <item>Monster Hunter</item>
+        <item>Fluidity</item>
+        <item>Tribes: Ascend</item>
+        <item>Alundra</item>
+        <item>Punch-Out!!</item>
+        <item>Dungeon Siege</item>
+        <item>Mortal Kombat</item>
+        <item>DmC: Devil May Cry</item>
+        <item>Dino Crisis</item>
+        <item>Professor Layton</item>
+        <item>Katamari</item>
+        <item>Dance Central</item>
+        <item>Sly Cooper and the Thievius Raccoonus</item>
+        <item>Age of Wonders</item>
+        <item>The Lord of the Rings Online</item>
+        <item>Luigi’s Mansion</item>
+        <item>Turok</item>
+        <item>Path of Exile</item>
+        <item>Tetris</item>
+        <item>Cities: Skylines</item>
+        <item>DiRT Rally</item>
+        <item>Ni no Kuni</item>
+        <item>The Wolf Among Us</item>
+        <item>Castle Crashers</item>
+        <item>Pokemon Pearl &amp; Diamond</item>
+        <item>Lara Croft</item>
+        <item>Life is Strange</item>
+        <item>Metal Slug</item>
+        <item>Tropico</item>
+        <item>LocoRoco</item>
+        <item>Amnesia: The Dark Descent</item>
+        <item>Rogue Legacy</item>
+        <item>South Park: The Stick of Truth</item>
+        <item>The Legend of Zelda: Four Swords</item>
+        <item>Super Paper Mario</item>
+        <item>Mega Man</item>
+        <item>AudioSurf</item>
+        <item>Super Mario 64</item>
+        <item>Dead Rising</item>
+        <item>Darksiders</item>
+        <item>Trine</item>
+        <item>Terraria</item>
+        <item>inFamous</item>
+        <item>Papers, Please</item>
+        <item>Space Invaders</item>
+        <item>Saints Row</item>
+        <item>PlanetSide</item>
+        <item>Might &amp; Magic: Clash of Heroes</item>
+        <item>Darkest Dungeon</item>
+        <item>No More Heroes</item>
+        <item>Spore</item>
+        <item>Time Gentlemen, Please!</item>
+        <item>Yakuza</item>
+        <item>Stacking</item>
+        <item>Just Cause</item>
+        <item>Enter the Gungeon</item>
+        <item>Worms</item>
+        <item>Child of Light</item>
+        <item>Bit.Trip</item>
+        <item>Microsoft Train Simulator</item>
+        <item>Bulletstorm</item>
+        <item>Hyper Light Drifter</item>
+        <item>NASCAR</item>
+        <item>Half-Minute Hero</item>
+        <item>Rift</item>
+        <item>SpeedRunners</item>
+        <item>ChuChu Rocket!</item>
+        <item>Grim Dawn</item>
+        <item>Kid Icarus</item>
+        <item>Gunpoint</item>
+        <item>Sly 3: Honor Among Thieves</item>
+        <item>Anno</item>
+        <item>SMITE</item>
+        <item>Orcs Must Die!</item>
+        <item>Bushido Blade</item>
+        <item>Danganronpa</item>
+        <item>Transistor</item>
+        <item>Magic: Duels of the Planeswalkers</item>
+        <item>Card Hunter</item>
+        <item>This War of Mine</item>
+        <item>Alan Wake</item>
+        <item>Monaco: What’s Yours Is Mine</item>
+        <item>Nintendogs</item>
+        <item>Helldivers</item>
+        <item>Pokemon Omega Ruby &amp; Alpha Sapphire</item>
+        <item>SUPERHOT</item>
+        <item>VVVVVV</item>
+        <item>BROFORCE</item>
+        <item>Counter-Strike: Global Offensive</item>
+        <item>Harvest Moon</item>
+        <item>Pokemon Platinum Version</item>
+        <item>Invisible, Inc.</item>
+        <item>Lovers in a Dangerous Spacetime</item>
+        <item>Watch Dogs</item>
+        <item>Pokemon Ruby &amp; Sapphire</item>
+        <item>Bejeweled</item>
+        <item>Antichamber</item>
+        <item>The Darkness</item>
+        <item>Hacknet</item>
+        <item>Mega Man Zero</item>
+        <item>Mega Man X</item>
+        <item>Skullgirls</item>
+        <item>10 Second Ninja X</item>
+        <item>Crazy Taxi</item>
+        <item>World of Warcraft: Mists of Pandaria</item>
+        <item>Duelyst</item>
+        <item>Sniper Elite</item>
+        <item>Nine Hours, Nine Persons, Nine Doors</item>
+        <item>Catherine</item>
+        <item>WildStar</item>
+        <item>Starbound</item>
+        <item>Injustice: Gods Among Us</item>
+        <item>Nidhogg</item>
+        <item>War Thunder</item>
+        <item>Splatoon</item>
+        <item>From Dust</item>
+        <item>Phoenix Wright: Ace Attorney</item>
+        <item>Overlord</item>
+        <item>Awesomenauts</item>
+        <item>Naruto Shippuden: Ultimate Ninja Storm</item>
+        <item>Overcooked</item>
+        <item>Mirror’s Edge</item>
+        <item>TrackMania</item>
+        <item>Pokemon FireRed &amp; LeafGreen</item>
+        <item>Dungeon Defenders</item>
+        <item>Garry’s Mod</item>
+        <item>RollerCoaster Tycoon</item>
+        <item>Theme Park</item>
+        <item>DayZ</item>
+        <item>Rust</item>
+        <item>Warcraft III: Reign of Chaos</item>
+        <item>Magicka</item>
+        <item>Euro Truck Simulator</item>
+        <item>SimCity</item>
+        <item>Monopoly</item>
+        <item>Prison Architect</item>
+        <item>Warhammer Online</item>
+        <item>Ark: Survival Evolved</item>
+        <item>Empire Earth</item>
+        <item>Frogger</item>
+        <item>Microsoft Flight Simulator</item>
+        <item>Dark Souls</item>
+        <item>The Last Guardian</item>
+        <item>Tom Clancy’s Rainbow Six</item>
+        <item>Tom Clancy’s Ghost Recon</item>
+        <item>Tom Clancy’s Splinter Cell</item>
+        <item>Tom Clancy’s The Division</item>
+        <item>Bloody Roar 2</item>
+        <item>Point Blank</item>
+        <item>Spyro the dragon</item>
+        <item>Dustforce</item>
+        <item>Don’t Starve</item>
     </string-array>
 </resources>
