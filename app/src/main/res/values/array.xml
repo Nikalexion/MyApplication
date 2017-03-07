@@ -16,6 +16,9 @@
 
         <item>animals</item>
         <item>books</item>
+        <item>podosfairistes</item>
+
+        <item>tragoudistes</item>
     </string-array>
 
     <string-array name="category_names">
@@ -27,12 +30,15 @@
         <item>Παιδικά</item>
         <item>Ελληνική τηλεόραση</item>
 
-        <item>Γνωστοί Ξένοι</item>
+        <item>Διάσημα Ξένα Πρόσωπα (Ηθοποιοί,Πολιτικοί κλπ)</item>
         <item>Μυθολογία</item>
         <item>Φαγώσιμα</item>
 
         <item>Ζώα</item>
         <item>Τίτλοι βιβλίων</item>
+        <item>Ποδοσφαιριστές</item>
+
+        <item>Τραγουδιστές</item>
     </string-array>
 
     <string-array name="costs">
@@ -50,6 +56,9 @@
 
         <item>6</item>
         <item>8</item>
+        <item>0</item>
+
+        <item>0</item>
     </string-array>
 
     <string-array name="random">
@@ -1121,6 +1130,164 @@
         <item>John Travolta</item>
         <item>Ben Affleck</item>
         <item>Jennifer Aniston</item>
+        <item>Tom Hanks</item>
+        <item>Denzel Washington</item>
+        <item>Dustin Hoffman</item>
+        <item>Sean Penn</item>
+        <item>Christian Bale</item>
+        <item>Harrison Ford</item>
+        <item>Spencer Tracy</item>
+        <item>George Clooney</item>
+        <item>Anthony Hopkins</item>
+        <item>Russell Crowe</item>
+        <item>Meryl Streep</item>
+        <item>Marilyn Monroe</item>
+        <item>Jennifer Lawrence</item>
+        <item>Elizabeth Taylor</item>
+        <item>Nicole Kidman</item>
+        <item>Sandra Bullock</item>
+        <item>Natalie Portman</item>
+        <item>Julia Roberts</item>
+        <item>Charlize Theron</item>
+        <item>Matt Damon</item>
+        <item>James Dean</item>
+        <item>Robin Williams</item>
+        <item>Heath Ledger</item>
+        <item>Sean Connery</item>
+        <item>Kevin Spacey</item>
+        <item>Liam Neeson</item>
+        <item>Bruce Willis</item>
+        <item>Will Smith</item>
+        <item>Angelina Jolie</item>
+        <item>Sophia Loren</item>
+        <item>Doris Day</item>
+        <item>Natalie Wood</item>
+        <item>Morgan Freeman</item>
+        <item>John Travolta</item>
+        <item>Matthew McConaughey</item>
+        <item>Robert Downey Jr.</item>
+        <item>Kevin Costner</item>
+        <item>Sharon Stone</item>
+        <item>Demi Moore</item>
+        <item>Charles Chaplin</item>
+        <item>Woody Allen</item>
+        <item>Christopher Nolan</item>
+        <item>Jim Carrey</item>
+        <item>Javier Bardem</item>
+        <item>Sylvester Stallone</item>
+        <item>Christopher Lee</item>
+        <item>Richard Burton</item>
+        <item>Ben Stiller</item>
+        <item>Uma Thurman</item>
+        <item>Julianne Moore</item>
+        <item>Kevin Bacon</item>
+        <item>Bradley Cooper</item>
+        <item>Jude Law</item>
+        <item>Robert Pattinson</item>
+        <item>Jared Leto</item>
+        <item>Michael Fassbender</item>
+        <item>Cameron Diaz</item>
+        <item>Rita Hayworth</item>
+        <item>Emma Watson</item>
+        <item>Benedict Cumberbatch</item>
+        <item>Tom Hardy</item>
+        <item>Jamie Foxx</item>
+        <item>Keira Knightley</item>
+        <item>Scarlett Johansson</item>
+        <item>Mila Kunis</item>
+        <item>Jennifer Lopez</item>
+        <item>Jessica Alba</item>
+        <item>Kristen Stewart</item>
+        <item>Kurt Russell</item>
+        <item>Selena Gomez</item>
+        <item>Liv Tyler</item>
+        <item>Megan Fox</item>
+        <item>Penélope Cruz</item>
+        <item>Frank Sinatra</item>
+        <item>David Bowie</item>
+        <item>Keanu Reeves</item>
+        <item>Hugh Jackman</item>
+        <item>Daniel Radcliffe</item>
+        <item>Daniel Craig</item>
+        <item>Ryan Gosling</item>
+        <item>Vin Diesel</item>
+        <item>Andrew Garfield</item>
+        <item>Ryan Reynolds</item>
+        <item>Jason Statham</item>
+        <item>Justin Timberlake</item>
+        <item>Gerard Butler</item>
+        <item>Paul Walker</item>
+        <item>Peter Dinklage</item>
+        <item>Natalie Dormer</item>
+        <item>Gérard Depardieu</item>
+        <item>Whitney Houston</item>
+        <item>J.K. Simmons</item>
+        <item>Antonio Banderas</item>
+        <item>Eddie Murphy</item>
+        <item>Bruce Lee</item>
+        <item>Jet Li</item>
+        <item>Chuck Norris</item>
+        <item>Jean-Claude Van Damme</item>
+        <item>Alan Rickman</item>
+        <item>Margot Robbie</item>
+        <item>Casey Affleck</item>
+        <item>Emilia Clarke</item>
+        <item>Charlie Sheen</item>
+        <item>Orlando Bloom</item>
+        <item>Elijah Wood</item>
+        <item>Sofía Vergara</item>
+        <item>Jack Black</item>
+        <item>Sean Bean</item>
+        <item>Jackie Chan</item>
+        <item>Channing Tatum</item>
+        <item>PewDiePie</item>
+        <item>Kim Kardashian</item>
+        <item>Barack Obama</item>
+        <item>Donald Trump</item>
+        <item>Bill Clinton</item>
+        <item>Hillary Clinton</item>
+        <item>John Cena</item>
+        <item>Kylie Jenner</item>
+        <item>Khloe Kardasian</item>
+        <item>Paris Hilton</item>
+        <item>Cara Delevigne</item>
+        <item>Kate Upton</item>
+        <item>Irina Shayk</item>
+        <item>Emily Ratajkowski</item>
+        <item>Stanley Kubrick</item>
+        <item>Alfred Hitchcock</item>
+        <item>Quentin Tarantino</item>
+        <item>Steven Spielberg</item>
+        <item>Martin Scorsese</item>
+        <item>James Cameron	</item>
+        <item>Fyodor Dostoevsky</item>
+        <item>Leo Tolstoy</item>
+        <item>Charles Dickens</item>
+        <item>Edgar Allan Poe</item>
+        <item>J. R. R. Tolkien</item>
+        <item>George Orwell</item>
+        <item>Victor Hugo</item>
+        <item>Oscar Wilde</item>
+        <item>Franz Kafka</item>
+        <item>Ernest Hemingway</item>
+        <item>Friedrich Nietzsche</item>
+        <item>Charles Bukowski</item>
+        <item>Marie Curie</item>
+        <item>Charles Darwin</item>
+        <item>Alexander Fleming</item>
+        <item>Isaac Newton</item>
+        <item>Vladimir Putin</item>
+        <item>Ronald Reagan</item>
+        <item>Abraham Lincoln</item>
+        <item>George Washington</item>
+        <item>George Bush</item>
+        <item>Richard Nixon</item>
+        <item>Nelson Mandela</item>
+        <item>Angela Merkel</item>
+        <item>Vladimir Lenin</item>
+        <item>Fidel Castro</item>
+        <item>Nicolas Sarkozy</item>
+        <item>Silvio Berlusconi</item>
     </string-array>
 
     <string-array name="myths">
@@ -1746,7 +1913,460 @@
         <item>Οι κόρες της λησμονιάς</item>
         <item>Βαθιά στο σκοτεινό δάσος</item>
         <item>Μην πυροβολείτε τη νύφη</item>
-
+        <item>Γυναίκες</item>
+        <item>Χόλλιγουντ</item>
+        <item>Ο παίκτης</item>
+        <item>Τοστ Ζαμπόν</item>
+        <item>Η χαρούμενη επιστήμη</item>
+        <item>Οι Άθλιοι</item>
+        <item>Το Όνομα του Ρόδου</item>
+        <item>Το κοιμητήριο της Πράγας</item>
+        <item>Η Δίκη</item>
+        <item>Ο πύργος</item>
+        <item>Inferno</item>
+        <item>Illuminati</item>
     </string-array>
 
+    <string-array name="podosfairistes">
+        <item>Cristiano Ronaldo</item>
+        <item>Lionel Messi</item>
+        <item>Luis Suárez</item>
+        <item>Antoine Griezmann</item>
+        <item>Neymar</item>
+        <item>Gareth Bale</item>
+        <item>Robert Lewandowski</item>
+        <item>Alexis Sánchez</item>
+        <item>Riyad Mahrez</item>
+        <item>Sergio Agüero</item>
+        <item>Luka Modric</item>
+        <item>Kevin De Bruyne</item>
+        <item>Gonzalo Higuaín</item>
+        <item>Andrés Iniesta</item>
+        <item>N Golo Kanté</item>
+        <item>Paul Pogba</item>
+        <item>Manuel Neuer</item>
+        <item>Jamie Vardy</item>
+        <item>Zlatan Ibrahimovic</item>
+        <item>Toni Kroos</item>
+        <item>Gianluigi Buffon</item>
+        <item>Mesut Özil</item>
+        <item>Diego Godín</item>
+        <item>Sergio Ramos</item>
+        <item>Leonardo Bonucci</item>
+        <item>Dimitri Payet</item>
+        <item>Philippe Coutinho</item>
+        <item>David de Gea</item>
+        <item>Pepe</item>
+        <item>Thomas Müller</item>
+        <item>Arturo Vidal</item>
+        <item>Harry Kane</item>
+        <item>Ivan Rakitić</item>
+        <item>Eden Hazard</item>
+        <item>Paulo Dybala</item>
+        <item>Gerard Piqué</item>
+        <item>Sergio Busquets</item>
+        <item>Hugo Lloris</item>
+        <item>Koke</item>
+        <item>Ángel di María</item>
+        <item>David Silva</item>
+        <item>Marco Verratti</item>
+        <item>Diego Costa</item>
+        <item>Edinson Cavani</item>
+        <item>Marcelo</item>
+        <item>Mauro Icardi</item>
+        <item>Karim Benzema</item>
+        <item>Thiago Silva</item>
+        <item>Casemiro</item>
+        <item>Renato Sanches</item>
+        <item>Keylor Navas</item>
+        <item>Philipp Lahm</item>
+        <item>Henrikh Mkhitaryan</item>
+        <item>David Alaba</item>
+        <item>Javier Mascherano</item>
+        <item>Douglas Costa</item>
+        <item>Gabriel Jesus</item>
+        <item>Mohamed Salah</item>
+        <item>Sadio Mané</item>
+        <item>Álvaro Morata</item>
+        <item>Aaron Ramsey</item>
+        <item>Rui Patrício</item>
+        <item>Roberto Firmino</item>
+        <item>Yannick Carrasco</item>
+        <item>Dani Alves</item>
+        <item>Nani</item>
+        <item>Gianluigi Donnarumma</item>
+        <item>Claudio Bravo</item>
+        <item>Blaise Matuidi</item>
+        <item>Juan Mata</item>
+        <item>James Rodríguez</item>
+        <item>Raheem Sterling</item>
+        <item>Arjen Robben</item>
+        <item>Dele Alli</item>
+        <item>Thibaut Courtois</item>
+        <item>Fernandinho</item>
+        <item>Francesco Totti</item>
+        <item>Thiago Alcântara</item>
+        <item>Christian Eriksen</item>
+        <item>Christian Benteke</item>
+        <item>José Holebas</item>
+        <item>James Milner</item>
+        <item>John Stones</item>
+        <item>Nicolas Otamendi</item>
+        <item>Vincent Kompany</item>
+        <item>Pablo Zabaleta</item>
+        <item>Yaya Toure</item>
+        <item>Nolito</item>
+        <item>Jesus Navas</item>
+        <item>David Luiz</item>
+        <item>Gary Cahill</item>
+        <item>John Terry</item>
+        <item>Marcos Alonso</item>
+        <item>Cesc Fabregas</item>
+        <item>Willian</item>
+        <item>Pedro</item>
+        <item>David Ospina</item>
+        <item>Hector Bellerin</item>
+        <item>Theo Walcott</item>
+        <item>Olivier Giroud</item>
+        <item>Lucas Perez</item>
+        <item>Danny Welbeck</item>
+        <item>Sergio Romero</item>
+        <item>Chris Smalling</item>
+        <item>Marcos Rojo</item>
+        <item>Luke Shaw</item>
+        <item>Antonio Valencia</item>
+        <item>Bastian Schweinsteiger</item>
+        <item>Marcus Rashford</item>
+        <item>Wayne Rooney</item>
+        <item>Loris Karius</item>
+        <item>Dejan Lovren</item>
+        <item>Alberto Moreno</item>
+        <item>Daniel Sturridge</item>
+        <item>Kevin Mirallas</item>
+        <item>Romelu Lukaku</item>
+        <item>Islam Slimani</item>
+        <item>Joe Allen</item>
+        <item>Peter Crouch</item>
+        <item>Raphael Varane</item>
+        <item>Danilo</item>
+        <item>Isco</item>
+        <item>Kevin Prince Boateng</item>
+        <item>Samuel Umtiti</item>
+        <item>Jordi Alba</item>
+        <item>Sergi Roberto</item>
+        <item>Andre Gomes</item>
+        <item>Arda Turan</item>
+        <item>Rafinha</item>
+        <item>Filipe Luis</item>
+        <item>Juanfran</item>
+        <item>Gabi</item>
+        <item>Nico Gaitan</item>
+        <item>Fernardo Torres</item>
+        <item>Ganso</item>
+        <item>Vitolo</item>
+        <item>Vieirinha</item>
+        <item>Iker Muniain</item>
+        <item>Inaki Williams</item>
+        <item>Aduriz</item>
+        <item>Alex Sandro</item>
+        <item>Sami Khedira</item>
+        <item>Mario Mandzukic</item>
+        <item>Pepe Reina</item>
+        <item>Raul Albiol</item>
+        <item>Miranda</item>
+        <item>Gary Medel</item>
+        <item>Ivan Perisic</item>
+        <item>Alessandro Florenzi</item>
+        <item>Kevin Strootman</item>
+        <item>Stephan El Shaarawy</item>
+        <item>Joe Hart</item>
+        <item>Suso</item>
+        <item>Gerard Deulofeu</item>
+        <item>Carlos Bacca</item>
+        <item>Jerome Boateng</item>
+        <item>Xabi Alonso</item>
+        <item>Philipp Lahm</item>
+        <item>Franck Ribery</item>
+        <item>Marco Reus</item>
+        <item>Arjen Robben</item>
+        <item>Julian Draxler</item>
+        <item>Σωκράτης Παπασταθόπουλος</item>
+        <item>Marc Bartra</item>
+        <item>Mario Gotze</item>
+        <item>Κώστας Μήτρογλου</item>
+        <item>Kevin Trapp</item>
+        <item>Marquinhos</item>
+        <item>Maxwell</item>
+        <item>Javier Pastore</item>
+        <item>Lucas Moura</item>
+        <item>Edinson Cavani</item>
+        <item>Παναγιώτης Γλύκος</item>
+        <item>Leonardo Matos</item>
+        <item>Στέλιος Μαλεζάς</item>
+        <item>Στέλιος Κίτσιου</item>
+        <item>Χάρης Χαρίσης</item>
+        <item>Pedro Henrique</item>
+        <item>Diego Biseswar</item>
+        <item>Ergys Kace</item>
+        <item>Evgen Shakhov</item>
+        <item>Δημήτρης Πέλκας</item>
+        <item>Jose Canas</item>
+        <item>Aleksandar Privojic</item>
+        <item>Djalma Campos</item>
+        <item>Γιάννης Μυστακίδης</item>
+        <item>Στέφανος Αθανασιάδης</item>
+        <item>Manuel Da Costa</item>
+        <item>Κώστας Φορτούνης</item>
+        <item>Seba</item>
+        <item>Karim Ansarifard</item>
+        <item>Aly Cissokho</item>
+        <item>Στέφανος Καπίνο</item>
+        <item>Alberto Botia</item>
+        <item>Oscar Cardozo</item>
+        <item>Luke Steele</item>
+        <item>Γιώργος Κουτρουμπής</item>
+        <item>Marcus Berg</item>
+        <item>Sebastian Leto</item>
+        <item>Γιώργος Σαμαράς</item>
+        <item>Γιάννης Ανέστης</item>
+        <item>Villa Didac</item>
+        <item>Λάζαρος Χριστοδουλόπουλος</item>
+        <item>Πέτρος Μάνταλος</item>
+        <item>Sergio Araujo</item>
+        <item>Χρήστος Αραβίδης</item>
+        <item>Τάσος Μπακασέτας</item>
+        <item>Ορέστης Καρνέζης</item>
+        <item>Βασίλης Τοροσίδης</item>
+        <item>Κώστας Μανωλάς</item>
+        <item>Γιώργος Τζαβέλας</item>
+        <item>Κυριάκος Παπαδόπουλος</item>
+        <item>Κώστας Σταφυλίδης</item>
+        <item>Αλέξανδρος Τζιόλης</item>
+        <item>Ανδρέας Σάμαρης</item>
+        <item>Νίκος Καρέλης</item>
+        <item>Απόστολος Βέλλιος</item>
+    </string-array>
+
+    <string-array name="tragoudistes">
+        <item>Talking Heads</item>
+        <item>R.E.M.</item>
+        <item>Lynyrd Skynyrd</item>
+        <item>Nine Inch Nails</item>
+        <item>Guns n Roses</item>
+        <item>Carlos Santana</item>
+        <item>Jay-Z</item>
+        <item>Tupac Shakur</item>
+        <item>Black Sabbath</item>
+        <item>Eminem</item>
+        <item>Creedence Clearwater Revival</item>
+        <item>The Stooges</item>
+        <item>Eagles</item>
+        <item>Radiohead</item>
+        <item>Muse</item>
+        <item>AC/DC</item>
+        <item>The Police</item>
+        <item>The Kinks</item>
+        <item>Metallica</item>
+        <item>Sex Pistols</item>
+        <item>Judas Priest</item>
+        <item>Motorhead</item>
+        <item>Arctic Monkeys</item>
+        <item>The Last Shadow Puppets</item>
+        <item>Miles Kanes</item>
+        <item>Bruce Dickinson</item>
+        <item>The Beatles</item>
+        <item>John Lennon</item>
+        <item>Aerosmith</item>
+        <item>Ozzy Osbourne</item>
+        <item>Dr. Dre</item>
+        <item>50 Cent</item>
+        <item>Eric Clapton</item>
+        <item>Queen</item>
+        <item>Pink Floyd</item>
+        <item>Janis Joplin</item>
+        <item>Jimi Hendrix</item>
+        <item>The Doors</item>
+        <item>David Bowie</item>
+        <item>Madonna</item>
+        <item>Pitbull</item>
+        <item>Shakira</item>
+        <item>Michael Jackson</item>
+        <item>Johnny Cash</item>
+        <item>Nirvana</item>
+        <item>Pearl Jam</item>
+        <item>Smashing Pumpkins</item>
+        <item>The Who</item>
+        <item>The Clash</item>
+        <item>Prince</item>
+        <item>The Ramones</item>
+        <item>Parov Stelar</item>
+        <item>Gramatik</item>
+        <item>Bruce Springsteen</item>
+        <item>U2</item>
+        <item>The Velvet Underground</item>
+        <item>Kadebostany</item>
+        <item>LP</item>
+        <item>The Pixies</item>
+        <item>Placebo</item>
+        <item>Evanescence</item>
+        <item>Stevie Wonder</item>
+        <item>Led Zeppelin</item>
+        <item>Bob Marley</item>
+        <item>The Rolling Stones</item>
+        <item>Elvis Presley</item>
+        <item>Bob Dylan</item>
+        <item>Dio</item>
+        <item>Rainbow</item>
+        <item>Amy Winehouse</item>
+        <item>Misfits</item>
+        <item>Frank Sinatra</item>
+        <item>Adele</item>
+        <item>Florence and The Machine</item>
+        <item>Rage Against the Machine</item>
+        <item>Lucian Pavarotti</item>
+        <item>Phil Collins</item>
+        <item>Bee Gees</item>
+        <item>Abba</item>
+        <item>George Michael</item>
+        <item>Wham!</item>
+        <item>Louis Armostrong</item>
+        <item>Fleetwood Mac</item>
+        <item>Bon Jovi</item>
+        <item>Bruno Mars</item>
+        <item>Biggie</item>
+        <item>Snoop Dogg</item>
+        <item>Lady Gaga</item>
+        <item>Beyonce</item>
+        <item>Tracy Chapman</item>
+        <item>Robbie Williams</item>
+        <item>Ed Sheeran</item>
+        <item>Taylor Swift</item>
+        <item>Leonard Cohen</item>
+        <item>Rihanna</item>
+        <item>Bill Withers</item>
+        <item>Passenger</item>
+        <item>Iggy Pop</item>
+        <item>Ariana Grande</item>
+        <item>Iggy Azalea</item>
+        <item>Lana Del Rey</item>
+        <item>Red Hot Chili Peppers</item>
+        <item>Oasis</item>
+        <item>Rick Astley</item>
+        <item>The Weeknd</item>
+        <item>Chris Brown</item>
+        <item>Nicki Minaj</item>
+        <item>The Kooks</item>
+        <item>Kaleo</item>
+        <item>Imagine Dragons</item>
+        <item>One Republic</item>
+        <item>Iron Maiden</item>
+        <item>Slayer</item>
+        <item>Megadeth</item>
+        <item>Pantera</item>
+        <item>KISS</item>
+        <item>The Cure</item>
+        <item>ZZ Top</item>
+        <item>Wu-Tang Clan</item>
+        <item>Blondie</item>
+        <item>Green Day</item>
+        <item>Linkin Park</item>
+        <item>The White Stripes</item>
+        <item>The Jackson 5</item>
+        <item>James</item>
+        <item>Coldplay</item>
+        <item>Foo Fighters</item>
+        <item>30 seconds to Mars</item>
+        <item>The Smiths</item>
+        <item>3 Doors Down</item>
+        <item>Nickelback</item>
+        <item>Joy Division</item>
+        <item>The Offspring</item>
+        <item>Depeche Mode</item>
+        <item>Gorillaz</item>
+        <item>Twenty One Pilots</item>
+        <item>Slipknot</item>
+        <item>Kasabian</item>
+        <item>Black Keys</item>
+        <item>Ice Cube</item>
+        <item>Marilyn Manson</item>
+        <item>Maroon 5</item>
+        <item>Παύλος Σιδηρόπουλος</item>
+        <item>Τρύπες</item>
+        <item>Ξύλινα Σπαθιά</item>
+        <item>Δυτικές Συνοικίες</item>
+        <item>Ημισκούμπρια</item>
+        <item>Τζαμάλ</item>
+        <item>Light</item>
+        <item>Υποχθόνιος</item>
+        <item>Ζωντανοί Νεκροί</item>
+        <item>Kings of Leon</item>
+        <item>The Prodigy</item>
+        <item>Manu Chao</item>
+        <item>12ος Πίθηκος</item>
+        <item>Χατζηφραγκέτα</item>
+        <item>Bad Movies</item>
+        <item>Drake</item>
+        <item>Kanye West</item>
+        <item>Lil Wayne</item>
+        <item>Sia</item>
+        <item>Skylar Grey</item>
+        <item>The Chainsmokers</item>
+        <item>Calvin Hariis</item>
+        <item>System of a Down</item>
+        <item>Serj Tankian</item>
+        <item>Μωρά στη Φωτιά</item>
+        <item>Κίτρινα Ποδήλατα</item>
+        <item>Γιάννης Αγγέλακας</item>
+        <item>Τζίμης Πανούσης</item>
+        <item>Νίκος Ξυλούρης</item>
+        <item>Αντώνης Ρέμος</item>
+        <item>Δέσποινα Βανδή</item>
+        <item>Γιάννης Πλούταρχος</item>
+        <item>Σάκης Ρουβάς</item>
+        <item>Βασίλης Καρράς</item>
+        <item>Νότης Σφακιανάκης</item>
+        <item>Χάρις Αλεξίου</item>
+        <item>Παντελής Παντελίδης</item>
+        <item>Άννα Βίσση</item>
+        <item>Γιώργος Μαζωνάκης</item>
+        <item>Έλενα Παπαρίζου</item>
+        <item>Χρήστος Δάντης</item>
+        <item>Πέγκυ Ζήνα</item>
+        <item>Βασίλης Παπακωνσταντίνου</item>
+        <item>Στέλιος Καζαντζίδης</item>
+        <item>Δημήτρης Μητροπάνος</item>
+        <item>Γιώργος Νταλάρας</item>
+        <item>Νίκος Βέρτης</item>
+        <item>Λευτέρης Πανταζής</item>
+        <item>Πάνος Κιάμος</item>
+        <item>Κωνσταντίνος Αργυρός</item>
+        <item>Ελεωνόρα Ζουγανέλη</item>
+        <item>Μελίνα Ασλανίδου</item>
+        <item>Νατάσα Μποφίλιου</item>
+        <item>Γιάννης Κότσιρας</item>
+        <item>Σωκράτης Μάλαμας</item>
+        <item>Γιώργος Τσαλίκης</item>
+        <item>Στέλιος Ρόκκος</item>
+        <item>Άλκηστις Πρωτοψάλτη</item>
+        <item>Γιάννης Χαρούλης</item>
+        <item>Λεωνίδας Μπαλάφας</item>
+        <item>Locomondo</item>
+        <item>Μπλε</item>
+        <item>Κωστής Μαραβέγιας</item>
+        <item>Πάνος Μουζουράκης</item>
+        <item>Πυξ Λαξ</item>
+        <item>Φίλιππος Πλιάτσικας</item>
+        <item>Μπάμπης Στόκας</item>
+        <item>Λαυρέντης Μαχαιρίτσας</item>
+        <item>Kansas</item>
+        <item>Survivor</item>
+        <item>Κωνσταντίνος Βήτα</item>
+        <item>Μηδενιστής</item>
+        <item>Νίκος Οικονομόπουλος</item>
+        <item>Νίκος Παπάζογλου</item>
+        <item>Θανάσης Παπακωνσταντίνου</item>
+        <item>Μιχάλης Ρακιντζής</item>
+        <item>Πασχάλης Τερζής</item>
+        <item>Eric Clapton</item>
+    </string-array>
 </resources>
