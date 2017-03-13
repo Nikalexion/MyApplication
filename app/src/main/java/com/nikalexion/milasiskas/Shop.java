@@ -61,7 +61,7 @@ public class Shop extends AppCompatActivity {
             my_layout.addView(row);
             buyButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    alert(buyButton,kat,plithosKatigorion-pfk,cost);
+                    alert(buyButton,kat,cost);
                 }
             });
         }
@@ -80,63 +80,9 @@ public class Shop extends AppCompatActivity {
             }
         });
 
-
-        /*
-        final SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
-        final SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
-
-
-
-
-        new1 = (Button) findViewById(R.id.new1);
-        new1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                alert(new1,lefta,agorasmena);
-            }
-        });
-
-        new2 = (Button) findViewById(R.id.new2);
-        new2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                alert(new2,lefta,agorasmena);
-            }
-        });
-
-        new3 = (Button) findViewById(R.id.new3);
-        new3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                alert(new3,lefta,agorasmena);
-            }
-        });
-
-        //to Koumbi gia epistrofi
-        Button home = (Button) findViewById(R.id.arxiki);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                finish();
-            }
-        });
-
-
-        //xromatismos se prasino otan exei ta lefta gia agora
-        if(!agorasmena.getBoolean("new1",false)&& (lefta.getInt("lefta",0) > 1)) {
-            new1.setBackgroundResource(R.drawable.shop_prasino);
-        }
-        if (!agorasmena.getBoolean("new2",false)&& (lefta.getInt("lefta",0) > 1)) {
-            new2.setBackgroundResource(R.drawable.shop_prasino);
-        }
-        if (!agorasmena.getBoolean("new3",false)&& (lefta.getInt("lefta",0) > 1)) {
-            new3.setBackgroundResource(R.drawable.shop_prasino);
-        }
-
-        */
     }
 
-    public void alert(final Button koumbi, final String onomaAgoras, final int plithosKoumbion, final String cost){
+    public void alert(final Button koumbi, final String onomaAgoras, final String cost){
         final int costInt = Integer.parseInt(cost);
         final SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
         final SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
@@ -150,8 +96,7 @@ public class Shop extends AppCompatActivity {
         alertDialog.getWindow().setLayout(200, 400);
 
 
-        //TODO sovaro titlo kai genika olo afto allagi me sostes times ktlp
-        builder.setTitle("Αγορά");
+        builder.setTitle("Αγορά νέας κατηγορίας");
         //Start setting up the builder
         builder.setMessage("Είσαι σίγουρος ότι θες να αγοράσεις την κατηγορία "+koumbi.getText()+" ? Έχεις " +Integer.toString(paliaLefta)+ " και κοστίζει "+cost);
 
@@ -162,7 +107,6 @@ public class Shop extends AppCompatActivity {
                 koumbi.setEnabled(false);
                 koumbi.setBackgroundResource(R.drawable.shop_btn);
 
-                //TODO min ksexasoume na allaksoume times sto arrays
                 int neaLefta = paliaLefta - costInt;
                 SharedPreferences.Editor lefta_editor = lefta.edit();
                 lefta_editor.putInt("lefta", neaLefta);

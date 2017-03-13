@@ -24,8 +24,6 @@ import java.util.Random;
 public class MainGame extends AppCompatActivity {
 
 
-    // TODO Remove the below line after defining your own ad unit ID.
-    private static final String TOAST_TEXT = "Test ads are being shown.";
     public static final String PREF_LEFTA = "LEFTA";
     public static final String PREF_EPILOGES = "EPILOGES";
 
@@ -109,7 +107,7 @@ public class MainGame extends AppCompatActivity {
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
         adView.loadAd(adRq1);
 
-        // Create the InterstitialAd and set the adUnitId (defined in values/strings.xml).
+        // todo Create the InterstitialAd and set the adUnitId (defined in values/strings.xml).
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
         mInterstitialAd.setAdListener(new AdListener() {
@@ -124,9 +122,6 @@ public class MainGame extends AppCompatActivity {
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
         mInterstitialAd.loadAd(adRq2);
 
-
-        // Toasts the test ad message on the screen. Remove this after defining your own ad unit ID.
-        Toast.makeText(this, TOAST_TEXT, Toast.LENGTH_LONG).show();
 
     }
 
@@ -154,11 +149,9 @@ public class MainGame extends AppCompatActivity {
     }
 
     private void showInterstitial() {
-        // Show the ad if it's ready. Otherwise toast and reload the ad.
         if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
         } else {
-            Toast.makeText(this, "Ad did not load", Toast.LENGTH_SHORT).show();
             goToNextLevel();
         }
     }
@@ -268,6 +261,7 @@ public class MainGame extends AppCompatActivity {
                     expl.stop();
                     SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
                     int counter = lefta.getInt("lefta", 0);
+                    //TODO sosta lefta
                     counter = counter + 5;
                     SharedPreferences.Editor lefta_editor = lefta.edit();
                     lefta_editor.putInt("lefta", counter);

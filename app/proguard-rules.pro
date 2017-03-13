@@ -21,3 +21,13 @@
 
 #gia na doulevei to olo admob
 -keep class com.google.ads.**
+
+-dontskipnonpubliclibraryclasses
+-forceprocessing
+-optimizationpasses 5
+
+-keep class * extends android.app.Activity
+-assumenosideeffects class android.util.Log {
+    public static *** d(...);
+    public static *** v(...);
+}

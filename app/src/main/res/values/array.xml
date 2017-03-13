@@ -8,16 +8,16 @@
 
         <item>parimies</item>
         <item>tvGR</item>
-
         <item>famousENG</item>
+
         <item>myths</item>
         <item>food</item>
-
         <item>animals</item>
+
         <item>books</item>
         <item>podosfairistes</item>
-
         <item>tragoudistes</item>
+
         <item>games</item>
     </string-array>
 
@@ -28,16 +28,16 @@
 
         <item>Παροιμίες</item>
         <item>Ελληνική τηλεόραση</item>
-
         <item>Διάσημα Ξένα Πρόσωπα (Ηθοποιοί,Πολιτικοί κλπ)</item>
+
         <item>Μυθολογία</item>
         <item>Φαγώσιμα</item>
-
         <item>Ζώα</item>
+
         <item>Τίτλοι βιβλίων</item>
         <item>Ποδοσφαιριστές</item>
-
         <item>Τραγουδιστές</item>
+
         <item>Βιντεοπαιχνίδια</item>
     </string-array>
 
@@ -49,16 +49,16 @@
 
         <item>0</item>
         <item>0</item>
+        <item>0</item>
 
-        <item>1</item>
         <item>2</item>
         <item>4</item>
-
         <item>6</item>
-        <item>8</item>
-        <item>0</item>
 
-        <item>0</item>
+        <item>8</item>
+        <item>2</item>
+        <item>2</item>
+
         <item>1</item>
     </string-array>
 
@@ -1795,7 +1795,6 @@
         <item>Σαλαμάνδρα</item>
     </string-array>
 
-<!-- //TODO edo koita ta -->
     <string-array name="books">
         <item>Έγκλημα στο Νείλο</item>
         <item>Ο Θείος Βάνιας</item>
@@ -2510,7 +2509,6 @@
         <item>Eric Clapton</item>
     </string-array>
 
-   <!-- //Todo elenxos edo me to mati -->
     <string-array name="games">
         <item>The Legend of Zelda: Ocarina of Time</item>
         <item>Tony Hawk’s Pro Skater</item>

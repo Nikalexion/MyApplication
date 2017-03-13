@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
     //To olo "press back again to leave"
     boolean doubleBackToExitPressedOnce = false;
 
+    //pfk = plithos free katigorion
+    private int pfk = 6;
+
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -54,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             defaultEpiloges.apply();
 
             String[] katigories = getResources().getStringArray(R.array.categories);
-            for (int i = 0; i < 6; i++) {
+            for (int i = 0; i < pfk; i++) {
                 defaultAgores.putBoolean(katigories[i], true);
                 defaultAgores.apply();
                 defaultEpiloges.putBoolean(katigories[i], true);
@@ -107,20 +110,24 @@ public class MainActivity extends AppCompatActivity {
         leftakia.setText(Integer.toString(counter));
         leftakia.setTextColor(Color.YELLOW);
         SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
-        //TODO exeis kani malakia edo kanto dinamiko giati atm an agoraseis ta new1-2-3 stamatei na kitirinzei to koumbi
-        if(!(agorasmena.getBoolean("new1",false))&& (counter > 1)) {
-            shop.setBackgroundResource(R.drawable.shop_purchasable);
-        }
-        else if (!(agorasmena.getBoolean("new2",false))&& (counter > 1)) {
-            shop.setBackgroundResource(R.drawable.shop_purchasable);
-        }
-        else if (!(agorasmena.getBoolean("new3",false))&& (counter > 1)) {
-            shop.setBackgroundResource(R.drawable.shop_purchasable);
-        }
-        else{
-            shop.setBackgroundResource(R.drawable.btn_bg);
+
+        String[] kostiKatigorion = getResources().getStringArray(R.array.costs);
+        String[] katigories = getResources().getStringArray(R.array.categories);
+
+        Boolean colorFlag = false;
+        for (int i = 0; i < katigories.length - pfk; i++) {
+            final String kat = katigories[i+pfk];
+            final String cost = kostiKatigorion[i+pfk];
+            if(!(agorasmena.getBoolean(kat,false))&& (counter >= Integer.parseInt(cost))) {
+                colorFlag = true;
+            }
         }
 
+        if (colorFlag) {
+            shop.setBackgroundResource(R.drawable.shop_purchasable);
+        }else{
+            shop.setBackgroundResource(R.drawable.btn_bg);
+        }
 
         super.onStart();
     }
