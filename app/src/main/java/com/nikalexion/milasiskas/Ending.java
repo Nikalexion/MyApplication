@@ -1,4 +1,4 @@
-package com.nikalexion.myapplication;
+package com.nikalexion.milasiskas;
 
 import android.content.Intent;
 import android.os.Bundle;

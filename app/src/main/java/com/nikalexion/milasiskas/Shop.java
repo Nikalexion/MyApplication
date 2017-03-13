@@ -1,4 +1,4 @@
-package com.nikalexion.myapplication;
+package com.nikalexion.milasiskas;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;

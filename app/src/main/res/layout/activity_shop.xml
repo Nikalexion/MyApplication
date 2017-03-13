@@ -15,7 +15,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.nikalexion.myapplication.Shop"
+        tools:context="com.nikalexion.milasiskas.Shop"
         android:background="@drawable/bc"
         android:layout_centerInParent="true"
         android:orientation="vertical">
@@ -34,7 +34,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.nikalexion.myapplication.Shop">
+        tools:context="milasiskasop">
 
         <Button
             android:text="Please wait"

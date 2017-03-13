@@ -1,4 +1,4 @@
-package com.nikalexion.myapplication;
+package com.nikalexion.milasiskas;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
