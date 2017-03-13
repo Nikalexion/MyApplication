@@ -746,18 +746,94 @@
         <item>The magnificent Seven</item>
         <item>Το Σινικό Τείχος</item>
         <item>Hail, Caesar!</item>
-    </string-array>
-
-    <string-array name="paidika">
+        <item>The Godfather</item>
+        <item>Η λίστα του Σίντλερ</item>
+        <item>Καζαμπλάνκα</item>
+        <item>Ο μάγος του Οζ</item>
+        <item>Στην φωλιά του κούκου</item>
+        <item>ο Λώρενς της Αραβίας</item>
+        <item>Vertigo</item>
+        <item>Ψυχώ</item>
+        <item>Forrest Gump</item>
+        <item>12 Angry Men</item>
+        <item>It`s a Wonderful Life</item>
+        <item>Gladiator</item>
+        <item>Η Διάσωση του Στρατηγού Ράιαν</item>
+        <item>Rocky</item>
+        <item>To kill a Mockingbird</item>
+        <item>Το κουρδιστό πορτοκάλι</item>
+        <item>Τα σαγόνια του καρχαρία</item>
+        <item>Ο Καλός, ο Κακός και ο Άσχημος</item>
+        <item>Braveheart</item>
+        <item>Χορεύωντας με του Λύκους</item>
+        <item>Jurassic Park</item>
+        <item>Jurassic World</item>
+        <item>Ο Εξορκιστής</item>
+        <item>Goodfellas</item>
+        <item>Fargo</item>
+        <item>Το Πράσινο Μίλι</item>
+        <item>Pulp Fiction</item>
+        <item>Inglourious Basterds</item>
+        <item>Watchmen</item>
+        <item>Reservoir Dogs</item>
+        <item>Back to the Future</item>
+        <item>The Usual Suspects</item>
+        <item>Die Hard</item>
+        <item>The Terminator</item>
+        <item>Alien</item>
+        <item>No Country for Old Men</item>
+        <item>Scarface</item>
+        <item>The Lion King</item>
+        <item>Ghostbusters</item>
+        <item>American History</item>
+        <item>Leon: The Professional</item>
+        <item>The Breakfast Club</item>
+        <item>Kill Bill</item>
+        <item>Catch me if you can</item>
+        <item>Apollo 13</item>
+        <item>WALL-E</item>
+        <item>Finding Nemo</item>
+        <item>Finding Dory</item>
+        <item>Minions</item>
+        <item>Despicable Me</item>
+        <item>Cast Away</item>
+        <item>300</item>
+        <item>Up</item>
+        <item>The Incredibles</item>
+        <item>Home Alone</item>
+        <item>Independence Day</item>
+        <item>Η συμμορία των 11</item>
+        <item>Snatch</item>
+        <item>Top Gun</item>
+        <item>A Beautiful Mind</item>
+        <item>Requiem for a Dream</item>
+        <item>Η Πεντάμορφη και το Τέρας</item>
+        <item>City of God</item>
+        <item>Million Dollar Baby</item>
+        <item>Predator</item>
+        <item>Star Trek</item>
+        <item>Aladdin</item>
+        <item>Frozen</item>
+        <item>The Karate Kid</item>
+        <item>Pretty Woman</item>
+        <item>Τροία</item>
+        <item>The Patriot</item>
+        <item>Φονικό Όπλο</item>
         <item>Σταχτοπούτα</item>
         <item>Η Χιονάτη και οι 7 νάνοι</item>
         <item>Η κοκκινοσκουφίτσα</item>
-        <item>Ο Βασιλιάς των λιονταριών</item>
         <item>Η Πεντάμορφη και το Τέρας</item>
         <item>Πινόκιο</item>
         <item>Η ωραία κοιμωμένη</item>
-        <item>Αλαντίν</item>
         <item>Πίτερ Παν</item>
+        <item>Σπάρτακος</item>
+        <item>Sherlock Holmes</item>
+        <item>The Nightmare Before Christmas</item>
+        <item>Ματωμένο Διαμάντι</item>
+    </string-array>
+
+    <string-array name="paidika">
+
     </string-array>
 
     <string-array name="parimies">
