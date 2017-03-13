@@ -261,8 +261,7 @@ public class MainGame extends AppCompatActivity {
                     expl.stop();
                     SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
                     int counter = lefta.getInt("lefta", 0);
-                    //TODO sosta lefta
-                    counter = counter + 5;
+                    counter = counter + startTime/1000/60;
                     SharedPreferences.Editor lefta_editor = lefta.edit();
                     lefta_editor.putInt("lefta", counter);
 
