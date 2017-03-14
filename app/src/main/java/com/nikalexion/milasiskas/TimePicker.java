@@ -21,8 +21,7 @@ public class TimePicker extends AppCompatActivity {
         normal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                //TODO fix xronou
-                timeChosen(2,3);
+                timeChosen(60,80);
             }
         });
 

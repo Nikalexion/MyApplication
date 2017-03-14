@@ -20,6 +20,10 @@
 
         <item>games</item>
         <item>istoria</item>
+        <item>tvENG</item>
+
+        <item>geografia</item>
+        <item>anime</item>
     </string-array>
 
     <string-array name="category_names">
@@ -41,6 +45,10 @@
 
         <item>Βιντεοπαιχνίδια</item>
         <item>Ιστορικά Γεγονότα</item>
+        <item>Ξένες Σειρές</item>
+
+        <item>Γεωγραφία</item>
+        <item>Anime</item>
     </string-array>
 
 <!-- //Todo min ksexasoume na valoume sostes times edo -->
@@ -56,6 +64,10 @@
         <item>5</item>
         <item>5</item>
         <item>5</item>
+
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
 
         <item>10</item>
         <item>10</item>
@@ -896,6 +908,31 @@
         <item>Grand Budapest Hotel</item>
         <item>Παρασκευή και 13</item>
         <item>Highlander</item>
+        <item>Αριστόγατες</item>
+        <item>Το Φάντασμα της Όπερας</item>
+        <item>The Expendables</item>
+        <item>Death Proof</item>
+        <item>Underworld</item>
+        <item>The Incredible Hulk</item>
+        <item>The Transporter</item>
+        <item>T.M.N.T.</item>
+        <item>Machete</item>
+        <item>The Imitation Game</item>
+        <item>Cars</item>
+        <item>The Great Gatsby</item>
+        <item>World War Z</item>
+        <item>Rocky Balboa</item>
+        <item>Batman Forever</item>
+        <item>Batman Returns</item>
+        <item>Gravity</item>
+        <item>The Amazing Spider-Man</item>
+        <item>Τηλε..φονικός θάλαμος</item>
+        <item>Excalibur</item>
+        <item>Return of the Dragon</item>
+        <item>Tarzan</item>
+        <item>Fantastic Four</item>
+        <item>Hellraiser</item>
+        <item>Tron:Legacy</item>
     </string-array>
 
 
@@ -1480,7 +1517,7 @@
         <item>Odin </item>
         <item>Thor</item>
         <item>Loky</item>
-        <item>Ίκαρος και Δαίδαλος</item>
+        <item>Ίκαρος</item>
         <item>Μίνωας </item>
         <item>Πηνελόπη</item>
         <item>Κάστορας και Πολυδεύκης</item>
@@ -1497,6 +1534,46 @@
         <item>Θεός Ήλιος</item>
         <item>Fenrir</item>
         <item>Ymir</item>
+        <item>Χείρωνας</item>
+        <item>Αμαζόνες</item>
+        <item>Αίολος</item>
+        <item>Νησί των Φαιάκων</item>
+        <item>Ανδρομέδα</item>
+        <item>Αντίνοος</item>
+        <item>Αντιγόνη</item>
+        <item>Οιδίποδας</item>
+        <item>Ηλέκτρα</item>
+        <item>Μίδας</item>
+        <item>Ευρώπη</item>
+        <item>Δαίδαλος</item>
+        <item>Εκάλη</item>
+        <item>Ωραία Ελένη</item>
+        <item>Μενέλαος</item>
+        <item>Πάρις</item>
+        <item>Έκτωρας</item>
+        <item>Αγαμέμνονας</item>
+        <item>Πρίαμος</item>
+        <item>Ερμαφρόδιτος</item>
+        <item>Απόλλωνας</item>
+        <item>Ιφιγένεια</item>
+        <item>Θέτιδα</item>
+        <item>Έριδα</item>
+        <item>Κασσιόπη</item>
+        <item>Πάτροκλος</item>
+        <item>Νάρκισσος</item>
+        <item>Τάλως</item>
+        <item>Φινέας</item>
+        <item>Ψυχή</item>
+        <item>Έρως</item>
+        <item>Ζέφυρος </item>
+        <item>Τυφώνας</item>
+        <item>Κέκροπας</item>
+        <item>Κρέοντας</item>
+        <item>Ιοκάστη</item>
+        <item>Εστία</item>
+        <item>Ήβη</item>
+        <item>Θέμις</item>
+        <item>Μούσες</item>
     </string-array>
 
     <string-array name="food">
@@ -2881,42 +2958,26 @@
         <item>Horizon Zero Dawn</item>
     </string-array>
 
-    <!-- //TODO des afta -->
     <string-array name="istoria">
-        <item>Η Άλωση της Ιεριχούς</item>
-        <item>Ο Ομηρικός Κόσμος</item>
         <item>Βαβυλώνια Αιχμαλωσία</item>
         <item>Κομφούκιος και Βούδας</item>
         <item>Η μάχη του Μαραθώνα</item>
-        <item>Ο Χρυσός Αιώνας τουΠερικλή</item>
+        <item>Ο Χρυσός Αιώνας του Περικλή</item>
         <item>Ο Μέγας Αλέξανδρος</item>
-        <item>Η βασιλεία του Ασόκα</item>
-        <item>Ο Αννίβας προ των πυλών</item>
         <item>Πομπηία</item>
-        <item>Η γέννηση του Ισλάμ</item>
-        <item>Το σχίσμα των Σιιτών</item>
-        <item>Η Μάχη του Πουατιέ</item>
         <item>Καρλομάγνος</item>
         <item>Σχίσμα των Εκκλησιών</item>
         <item>Γουλιέλμος ο Κατακτητής</item>
         <item>Η Α’ Σταυροφορία</item>
         <item>Το ταξίδι του Μάρκο Πόλο</item>
         <item>Η πτώση των Ναϊτών</item>
-        <item>Η Μαύρη Πανώλης</item>
+        <item>Η Μαύρη Πανώλη</item>
         <item>Το Δυτικό Σχίσμα</item>
-        <item>Αζενκούρ</item>
-        <item>Ιωάννα της Λοραίνης</item>
         <item>Η άλωση της Κωνσταντινούπολης</item>
         <item>Χριστόφορος Κολόμβος</item>
-        <item>Αζτέκοι και Κορτές</item>
-        <item>Ο Μαγελάνος</item>
-        <item>Αγγλικανικό Σχίσμα</item>
-        <item>Ζακ Καρτιέ</item>
+        <item>Ο Μαγελάνος</item>>
         <item>Ναυμαχία Ναυπάκτου</item>
         <item>Οι Βερσαλίες</item>
-        <item>Αγία Πετρούπολ</item>
-        <item>Φωτισμένη Δεσποτεία</item>
-        <item>Η Συνθήκη του Παρισιού</item>
         <item>Ναπολέων Βοναπάρτης</item>
         <item>Βατερλώ</item>
         <item>Η Ελληνική Επανάσταση</item>
@@ -2927,19 +2988,10 @@
         <item>Η Ρωσική Επανάσταση</item>
         <item>Συνθήκη Βερσαλιών</item>
         <item>Η Μικρασιατική Καταστροφή</item>
-        <item>Η Μαύρη Πέμπτη</item>
-        <item>Η Μεγάλη Πορεία</item>
-        <item>Σταλινική τρομοκρατία</item>
         <item>Η εισβολή στην Πολωνία</item>
         <item>Η Μάχη της Αγγλίας</item>
         <item>28η Οκτωβρίου 1940</item>
         <item>Περλ Χάρμπορ</item>
-        <item>Στάλιγκραντ</item>
-        <item>Η Απελευθέρωση</item>
-        <item>Τείχος της ντροπής</item>
-        <item>Τζων Φ. Κένεντυ</item>
-        <item>Η Πολιτιστική Επανάσταση</item>
-        <item>Ο Παρισινός Μάης</item>
         <item>Η Ιρανική Επανάσταση</item>
         <item>Ο Πόλεμος του Κόλπου</item>
         <item>Βαλκανικοί Πόλεμοι</item>
@@ -2952,22 +3004,18 @@
         <item>Η Συνθήκη των Σερβών</item>
         <item>Η Συνθήκη της Λωζάνης</item>
         <item>Η Εισβολή στην Κύπρο</item>
-        <item>Ολυμπιακοί Αγώνες</item>
-        <item>Τρωϊκός Πόλεμος</item>
         <item>Η Μάχη των Θερμοπυλών</item>
         <item>Η Ναυμαχία της Σαλαμίνας</item>
         <item>Πελοπονησιακός Πόλεμος</item>
         <item>Η Εκστρατεία του Μεγάλου Αλεξάνδρου</item>
         <item>Γενοκτονία των Ποντίων</item>
         <item>Η Γενοκτονία των Αρμενίων</item>
-        <item>Η Σφαγή του Ρομανώφ</item>
         <item>Τα Δεκεμβριανά</item>
         <item>Η Δίκη της Νυρεμβέργης</item>
         <item>Η Δολοφονία του Καποδίστρια</item>
         <item>Η Διάλυση της Σοβιετικής Ένωσης</item>
         <item>Το Ολοκαύτωμα</item>
         <item>Ψυχρός Πόλεμος</item>
-        <item>Τσουνάμι</item>
         <item>Έμπολα</item>
         <item>Η γρίπη των πτηνών</item>
         <item>Η πτώση του Τείχους του Βερολίνου</item>
@@ -2981,17 +3029,12 @@
         <item>Η Συμμαχία του ΝΑΤΟ</item>
         <item>Ατομική Βόμβα της Χιροσίμα</item>
         <item>Η Στάση του Νίκα</item>
-        <item>Η Συμφωνία στη Βάρκιζα</item>
-        <item>Η Σφαγή στο Δίστομο</item>
         <item>Η Διακήρυξη της Ανεξαρτησίας των ΗΠΑ</item>
         <item>Η Δολοφονία του Βενιζέλου</item>
         <item>Δικτατορία του Πάγκαλου</item>
         <item>Η Ανατίναξη της Γέφυρας του Γοργοποτάμου</item>
-        <item>Περεστρόικα</item>
         <item>Αποστολή "APOLLO 11"</item>
         <item>Έξοδος Μεσολογγίου</item>
-        <item>Απελευθέρωση των Ιωαννίνων</item>
-        <item>Κατοχή</item>
         <item>Εθνικό Απελευθερωτικό Μέτωπο ΕΑΜ</item>
         <item>Ελληνικός Λαϊκός Απελευθερωτικός Στρατός (ΕΛ.Α.Σ.)</item>
         <item>Λασκαρίνα Μπουμπουλίνα</item>
@@ -2999,48 +3042,29 @@
         <item>Θεόδωρος Κολοκοτρώνης</item>
         <item>Αθανάσιος Διάκος</item>
         <item>Οδυσσέας Ανδρούτσος</item>
-        <item>Εθνικός Δημοκρατικός Ελληνικός Σύνδεσμος (Ε.Δ.Ε.Σ.)</item>
-        <item>Η Σφαγή στα Καλάβρυτα</item>
         <item>Πραξικόπημα Συνταγματαρχών</item>
         <item>Πόλεμος ΗΠΑ - Ισπανίας</item>
-        <item>Η σφαγή της Νανκίν</item>
-        <item>Η σφαγή του Μπάμπι Γυάρ</item>
-        <item>Η σφαγή του Αγίου Βαρθολομαίου </item>
-        <item>Η σφαγή της Θεσσαλονίκης</item>
-        <item>Η σφαγή του στρατού του Έλφινστόουν</item>
-        <item>Η σφαγή της Σάμπρα και της Σατίλα</item>
-        <item>Η σφαγή του Μπατάκ</item>
-        <item>Η σφαγή της Γρανάδας</item>
         <item>Η Φιλική Εταιρεία</item>
         <item>Παλαιών Πατρών Γερμανός</item>
-        <item>Προκήρυξη των Μπότσαρη και Τζαβέλα</item>
-        <item>Προκήρυξη Οπλαρχηγών</item>
         <item>Χαρίλαος Τρικούπης</item>
         <item>Ο χορός του Ζαλόγγου</item>
         <item>Ισθμός της Κορίνθου</item>
-        <item>Αγια Σοφιά</item>
         <item>Σχολή της Χάγης</item>
-        <item>Κρυφό Σχολιό</item>
         <item>Παλαιολιθική Εποχή</item>
         <item>Νεολιθική Εποχή</item>
         <item>Εποχή των Παγετώνων</item>
         <item>Μεσαίωνας </item>
         <item>Διαφωτισμός</item>
         <item>Βιομηχανική Επανάσταση</item>
-        <item>Σύγχρονη Ιστορία</item>
         <item>Παγκοσμιοποίηση</item>
-        <item>Κλασικοί Εποχή</item>
-        <item>Ναπολεόντιοι Πόλεμοι</item>
+        <item>Κλασσική Εποχή</item>
         <item>Σταυροφορίες</item>
         <item>Οθωμανικοί Αυτοκρατορία</item>
         <item>Βυζαντινή Αυτοκρατορία</item>
         <item>Ρωμαϊκή Αυτοκρατορία</item>
         <item>Περσική Αυτοκρατορία</item>
         <item>Μαύρος Θάνατος</item>
-        <item>Ισλαμική Χρυσή Εποχή</item>
-        <item>Σολομωνική Δυναστεία</item>
         <item>Εκατονταετής Πόλεμος</item>
-        <item>Ιβάν ο Τρομερός</item>
         <item>Χριστόφορος Κολόμβος</item>
         <item>Ανακάληψη της Αμερικής</item>
         <item>Ναπολέων Βοναπάρτης</item>
@@ -3051,11 +3075,6 @@
         <item>Ηνωμένα Έθνη</item>
         <item>Παγκοσμιοποίηση</item>
         <item>Φαινόμενο του θερμοκηπίου</item>
-        <item>Ηλιακή ενέργεια</item>
-        <item>Ηδροηλεκτρική ενέργεια</item>
-        <item>Αιολική ενέργεια</item>
-        <item>Μυκηναϊκός Πολιτισμός</item>
-        <item>Μινωϊκός Πολιτισμός</item>
         <item>Πυραμίδες της Αιγύπτου</item>
         <item>Πυραμίδα του Χέοπα</item>
         <item>Ο τάφος του Τουτανχαμών</item>
@@ -3063,7 +3082,7 @@
         <item>Μέγας Αλέξανδρος</item>
         <item>Νέλσον Μαντέλα </item>
         <item>Ιούλιος Καίσαρας</item>
-        <item>Μάο τσε Τουνγκ</item>
+        <item>Μάο</item>
         <item>Αριστοτέλης</item>
         <item>Σωκράτης</item>
         <item>Πλάτωνας</item>
@@ -3074,10 +3093,636 @@
         <item>Η δικτατορία του Μεταξά </item>
         <item>Ναυμαχία του Ναυαρίνου</item>
         <item>Το σχίσμα των Εκκλησιών</item>
-        <item>Ελευθερία ή Θάνατος</item>
         <item>Χάνι της Γραβιάς</item>
         <item>Παπαφλέσσας</item>
     </string-array>
 
+    <string-array name="tvENG">
+        <item>The Walking Dead</item>
+        <item>Legion</item>
+        <item>Game of Thrones</item>
+        <item>Taboo</item>
+        <item>The Vampire Diaries</item>
+        <item>The Flash</item>
+        <item>Vikings</item>
+        <item>Arrow</item>
+        <item>Grey`s Anatomy</item>
+        <item>The 100</item>
+        <item>Homeland</item>
+        <item>Supernatural</item>
+        <item>The Big Bang Theory</item>
+        <item>Black Sails</item>
+        <item>Stranger Things</item>
+        <item>Taken</item>
+        <item>Westworld</item>
+        <item>The Blacklist</item>
+        <item>Once Upon a Time</item>
+        <item>American Crime Story</item>
+        <item>NCIS</item>
+        <item>Breaking Bad</item>
+        <item>Legends of Tomorrow</item>
+        <item>House of Cards</item>
+        <item>The X-Files</item>
+        <item>The Magicians</item>
+        <item>Criminal Minds</item>
+        <item>Friends</item>
+        <item>Agents of S.H.I.E.L.D.</item>
+        <item>Sherlock</item>
+        <item>Elementary</item>
+        <item>How to Get Away with Murder</item>
+        <item>American Horror Story</item>
+        <item>Girls</item>
+        <item>Fargo</item>
+        <item>Orange is the New Black</item>
+        <item>Prison Break</item>
+        <item>Lost</item>
+        <item>Peaky Blinders</item>
+        <item>Gotham</item>
+        <item>Sons of Anarchy</item>
+        <item>Lucifer</item>
+        <item>Hawaii Five-0</item>
+        <item>Narcos</item>
+        <item>How I Met Your Mother</item>
+        <item>Pretty Little Liars</item>
+        <item>Dexter</item>
+        <item>Mr. Robot</item>
+        <item>Daredevil</item>
+        <item>Rick and Morty</item>
+        <item>Simpsons</item>
+        <item>Avatar: The Last Airbender</item>
+        <item>True Detective</item>
+        <item>South Park</item>
+        <item>Family Guy</item>
+        <item>The Sopranos</item>
+        <item>Boardwalk Empire</item>
+        <item>The Legend of Korra</item>
+        <item>Hannibal</item>
+        <item>Futurama</item>
+        <item>Modern Family</item>
+        <item>2 Broke Girls</item>
+        <item>The Muppet Show</item>
+        <item>Top Gear</item>
+        <item>The Young Pope</item>
+        <item>24</item>
+        <item>Person of Interest</item>
+        <item>House</item>
+        <item>Law and Order</item>
+        <item>The Fresh Prince of Bel-Air</item>
+        <item>MacGyver</item>
+        <item>Mr. Bean</item>
+        <item>CSI</item>
+        <item>MythBusters</item>
+        <item>The Mentalist</item>
+        <item>iZombie</item>
+        <item>Two and a Half Men</item>
+        <item>Sex and the City</item>
+        <item>Heroes</item>
+        <item>True Blood</item>
+        <item>Desperate Housewives</item>
+        <item>Nip/Tuck</item>
+        <item>Charmed</item>
+        <item>Planet Earth</item>
+        <item>Baywatch</item>
+        <item>Adventure Time</item>
+        <item>Californication</item>
+        <item>The Voice</item>
+        <item>Under the Dome</item>
+        <item>Ugly Betty</item>
+        <item>MTV unplugged</item>
+        <item>The Strain</item>
+        <item>Nikita</item>
+        <item>Gossip Girl</item>
+        <item>Terra Nova</item>
+        <item>S.W.A.T.</item>
+    </string-array>
+
+    <string-array name="geografia">
+        <item>Αγγλία</item>
+        <item>Άγιος Μαρίνος</item>
+        <item>Αίγυπτος</item>
+        <item>Αζερμπαϊτζάν</item>
+        <item>Αίγυπτος</item>
+        <item>Αιθιοπία</item>
+        <item>Αϊτή</item>
+        <item>Ακτή Ελεφαντοστού</item>
+        <item>Αλβανία</item>
+        <item>Αργεντινή</item>
+        <item>Αρμενία</item>
+        <item>Αυστραλία</item>
+        <item>Αυστρία</item>
+        <item>Αφγανιστάν</item>
+        <item>Βέλγιο</item>
+        <item>Βενεζουέλα</item>
+        <item>Βιετνάμ</item>
+        <item>Βολιβία</item>
+        <item>Βόρεια Κορέα</item>
+        <item>Βουλγαρία</item>
+        <item>Βραζιλία</item>
+        <item>Γαλλία</item>
+        <item>Γερμανία</item>
+        <item>Γεωργία</item>
+        <item>Γιβραλτάρ</item>
+        <item>Γκάνα</item>
+        <item>Γουατεμάλα</item>
+        <item>Γουινέα</item>
+        <item>Δανία</item>
+        <item>Ελβετία</item>
+        <item>Ελλάδα</item>
+        <item>Εσθονία</item>
+        <item>Ζάμπια</item>
+        <item>Ηνωμένο Βασίλειο</item>
+        <item>ΗΠΑ</item>
+        <item>Ιαπωνία</item>
+        <item>Ινδία</item>
+        <item>Ινδονησία</item>
+        <item>Ιορδανία</item>
+        <item>Ιράκ</item>
+        <item>Ιράν</item>
+        <item>Ιρλανδία</item>
+        <item>Ισλανδία</item>
+        <item>Ισπανία</item>
+        <item>Ισραήλ</item>
+        <item>Ιταλία</item>
+        <item>Καζακστάν</item>
+        <item>Καμερούν</item>
+        <item>Καναδάς</item>
+        <item>Κατάρ</item>
+        <item>Κένυα</item>
+        <item>Κίνα</item>
+        <item>Κολομβία</item>
+        <item>Κόστα Ρίκα</item>
+        <item>Κούβα</item>
+        <item>Κροατία</item>
+        <item>Κύπρος</item>
+        <item>Λετονία</item>
+        <item>Λευκορωσία</item>
+        <item>Λιβύη</item>
+        <item>Λίχτενσταϊν</item>
+        <item>Μαδαγασκάρη</item>
+        <item>Μάλτα</item>
+        <item>Μεξικό</item>
+        <item>Μογγολία</item>
+        <item>Μοζαμβίκη</item>
+        <item>Μονακό</item>
+        <item>Μπανγκλαντές</item>
+        <item>Μπαχάμες</item>
+        <item>Νέα Ζηλανδία</item>
+        <item>Νιγηρία</item>
+        <item>Νότια Αφρική</item>
+        <item>Ολλανδία</item>
+        <item>Ονδούρα</item>
+        <item>Ουαλία</item>
+        <item>Ουγγαρία</item>
+        <item>Ουκρανία</item>
+        <item>Ουρουγουάη</item>
+        <item>Πακιστάν</item>
+        <item>Πολωνία</item>
+        <item>Πορτογαλία</item>
+        <item>Πράσινο Ακρωτήριο</item>
+        <item>ΠΓΔΜ</item>
+        <item>Ρουμανία</item>
+        <item>Ρωσία</item>
+        <item>Σαουδική Αραβία</item>
+        <item>Σερβία</item>
+        <item>Σιγκαπούρη</item>
+        <item>Σκωτία</item>
+        <item>Σλοβακία</item>
+        <item>Σλοβενία</item>
+        <item>Σουηδία</item>
+        <item>Συρία</item>
+        <item>Ταϊλάνδη</item>
+        <item>Τανζανία</item>
+        <item>Τζαμάικα</item>
+        <item>Τουρκία</item>
+        <item>Τσεχία</item>
+        <item>Φιλιππίνες</item>
+        <item>Φινλανδία</item>
+        <item>Χιλή</item>
+        <item>Χονγκ Κονγκ</item>
+        <item>Λονδίνο</item>
+        <item>Λίβερπουλ</item>
+        <item>Μάντσεστερ</item>
+        <item>Οξφόρδη</item>
+        <item>Κέμπριτζ</item>
+        <item>Κάιρο</item>
+        <item>Τίρανα</item>
+        <item>Μπουένος Άιρες</item>
+        <item>Καμπέρα</item>
+        <item>Σίδνεϊ</item>
+        <item>Μελβούρνη</item>
+        <item>Βιέννη</item>
+        <item>Βρυξέλλες</item>
+        <item>Σόφια</item>
+        <item>Μπραζίλια</item>
+        <item>Ρίο ντε Τζανέιρο</item>
+        <item>Παρίσι</item>
+        <item>Μασσαλία</item>
+        <item>Λυών</item>
+        <item>Στρασβούργο</item>
+        <item>Βερολίνο</item>
+        <item>Μόναχο</item>
+        <item>Αμβούργο</item>
+        <item>Στουτγκάρδη</item>
+        <item>Φραγκφούρτη</item>
+        <item>Κολωνία</item>
+        <item>Τιφλίδα</item>
+        <item>Κοπεγχάγη</item>
+        <item>Άμπου Ντάμπι</item>
+        <item>Ουάσινγκτον</item>
+        <item>Νέα Υόρκη</item>
+        <item>Λος Άντζελες</item>
+        <item>Βοστώνη</item>
+        <item>Σικάγο</item>
+        <item>Σαν Φρανσίσκο</item>
+        <item>Νέα Ορλεάνη</item>
+        <item>Χονολουλού</item>
+        <item>Λας Βέγκας</item>
+        <item>Μαϊάμι</item>
+        <item>Τόκιο</item>
+        <item>Νέο Δελχί</item>
+        <item>Βαγδάτη</item>
+        <item>Δουβλίνο</item>
+        <item>Μαδρίτη</item>
+        <item>Βαρκελώνη</item>
+        <item>Γρανάδα</item>
+        <item>Σεβίλλη</item>
+        <item>Μάλαγα</item>
+        <item>Ιερουσαλήμ</item>
+        <item>Ρώμη</item>
+        <item>Μιλάνο</item>
+        <item>Τορίνο</item>
+        <item>Φλωρεντία</item>
+        <item>Βενετία</item>
+        <item>Νάπολη</item>
+        <item>Οττάβα</item>
+        <item>Πεκίνο</item>
+        <item>Αβάνα</item>
+        <item>Ζάγκρεμπ</item>
+        <item>Λευκωσία</item>
+        <item>Όσλο</item>
+        <item>Άμστερνταμ</item>
+        <item>Κάρντιφ</item>
+        <item>Βουδαπέστη</item>
+        <item>Κίεβο</item>
+        <item>Λισαβόνα</item>
+        <item>Πόρτο</item>
+        <item>Σκόπια</item>
+        <item>Βουκουρέστι</item>
+        <item>Μόσχα</item>
+        <item>Βελιγράδι</item>
+        <item>Στοκχόλμη</item>
+        <item>Κίνγκστον</item>
+        <item>Άγκυρα</item>
+        <item>Κωνσταντινούπολη</item>
+        <item>Πράγα</item>
+        <item>Ελσίνκι</item>
+        <item>Αθήνα</item>
+        <item>Θεσσαλονίκη</item>
+        <item>Πάτρα</item>
+        <item>Ηράκλειο</item>
+        <item>Χανιά</item>
+        <item>Ρέθυμνο</item>
+        <item>Σπάρτη</item>
+        <item>Τρίπολη</item>
+        <item>Ναύπλιο</item>
+        <item>Λαμία</item>
+        <item>Λάρισα</item>
+        <item>Βόλος</item>
+        <item>Ιωάννινα</item>
+        <item>Κοζάνη</item>
+        <item>Φλώρινα</item>
+        <item>Καβάλα</item>
+        <item>Ξάνθη</item>
+        <item>Δράμα</item>
+        <item>Αλεξανδρούπολη</item>
+        <item>Σέρρες</item>
+        <item>Χαλκίδα</item>
+        <item>Ρόδος</item>
+        <item>Γάβδος</item>
+        <item>Σικελία</item>
+        <item>Κως</item>
+        <item>Ίος</item>
+        <item>Σκόπελος</item>
+        <item>Σκιάθος</item>
+        <item>Μύκονος</item>
+        <item>Λέσβος</item>
+        <item>Χίος</item>
+        <item>Σύρος</item>
+        <item>Τήνος</item>
+        <item>Ζάκυνθος</item>
+        <item>Κεφαλονιά</item>
+        <item>Κέρκυρα</item>
+        <item>Ικαρία</item>
+        <item>Βεργίνα</item>
+        <item>Καστοριά</item>
+        <item>Έδεσσα</item>
+        <item>Ύδρα</item>
+        <item>Πάτμος</item>
+        <item>Πάρος</item>
+        <item>Καρπενήσι</item>
+    </string-array>
+
+    <string-array name="anime">
+        <item>Kimi no Na wa.</item>
+        <item>Fullmetal Alchemist: Brotherhood</item>
+        <item>Gintama</item>
+        <item>Steins;Gate</item>
+        <item>Hunter x Hunter</item>
+        <item>Ginga Eiyuu Densetsu</item>
+        <item>Haikyuu!!</item>
+        <item>Koe no Katachi</item>
+        <item>Code Geass: Hangyaku no Lelouch</item>
+        <item>Sen to Chihiro no Kamikakushi</item>
+        <item>Shigatsu wa Kimi no Uso</item>
+        <item>Mushishi Zoku Shou</item>
+        <item>Hajime no Ippo</item>
+        <item>Ookami Kodomo no Ame to Yuki</item>
+        <item>Cowboy Bebop</item>
+        <item>Rurouni Kenshin</item>
+        <item>Kizumonogatari</item>
+        <item>Suzumiya Haruhi no Shoushitsu</item>
+        <item>Monogatari</item>
+        <item>One Punch Man</item>
+        <item>Mushishi</item>
+        <item>Tengen Toppa Gurren Lagann</item>
+        <item>Great Teacher Onizuka</item>
+        <item>Howl`s moving castle</item>
+        <item>Natsume Yuujinchou</item>
+        <item>Bakuman.</item>
+        <item>Fate/Zero</item>
+        <item>Monster</item>
+        <item>Death Note</item>
+        <item>Ansatsu Kyoushitsu</item>
+        <item>JoJo`s Bizarre Adventure</item>
+        <item>Ping Pong The Animation</item>
+        <item>Yojouhan Shinwa Taikei</item>
+        <item>Aria The Origination</item>
+        <item>Rainbow: Nisha Rokubou no Shichinin</item>
+        <item>Boku dake ga Inai Machi</item>
+        <item>Shouwa Genroku Rakugo Shinjuu</item>
+        <item>Kuroko no Basket</item>
+        <item>Ano Hana</item>
+        <item>Hotarubi no Mori e</item>
+        <item>Shokugeki no Souma</item>
+        <item>Gintama Movie: Benizakura</item>
+        <item>Uchuu Kyoudai</item>
+        <item>Hellsing Ultimate</item>
+        <item>Major</item>
+        <item>Bakemono no Ko</item>
+        <item>Hotaru no Haka</item>
+        <item>Parasite</item>
+        <item>One Piece</item>
+        <item>Re:Zero kara Hajimeru Isekai Seikatsu</item>
+        <item>Saiki Kusuo</item>
+        <item>Kara no Kyoukai</item>
+        <item>Slam Dunk</item>
+        <item>Mob Psycho 100</item>
+        <item>Usagi Drop</item>
+        <item>Nana</item>
+        <item>Baccano!</item>
+        <item>Cross Game</item>
+        <item>Detective Conan</item>
+        <item>Girls und Panzer</item>
+        <item>Shingeki no Kyojin</item>
+        <item>Shinsekai yori</item>
+        <item>Uchuu Senkan Yamato 2199</item>
+        <item>Chihayafuru</item>
+        <item>Doukyuusei</item>
+        <item>Nichijou</item>
+        <item>Barakamon</item>
+        <item>Mahou Shoujo Madoka?Magica</item>
+        <item>Samurai Champloo</item>
+        <item>Diamond no Ace</item>
+        <item>Magi</item>
+        <item>Psycho-Pass</item>
+        <item>Katanagatari</item>
+        <item>Mononoke</item>
+        <item>Romeo no Aoi Sora</item>
+        <item>Shirobako</item>
+        <item>Ghost in the Shell</item>
+        <item>Kaze no Tani no Nausicaä</item>
+        <item>Kono Subarashii Sekai ni Shukufuku wo!</item>
+        <item>Noragami Aragoto</item>
+        <item>Sakamichi no Apollon</item>
+        <item>Tonari no Totoro</item>
+        <item>Yuu?Yuu?Hakusho</item>
+        <item>Kemono no Souja Erin</item>
+        <item>Fate/stay night: Unlimited Blade Works</item>
+        <item>Kino no Tabi</item>
+        <item>Neon Genesis Evangelion</item>
+        <item>No Game No Life</item>
+        <item>Spice and Wolf</item>
+        <item>Sword Art Online</item>
+        <item>Toradora!</item>
+        <item>Owarimonogatari</item>
+        <item>Stranger</item>
+        <item>Toki wo Kakeru Shoujo</item>
+        <item>Berserk</item>
+        <item>Beck</item>
+        <item>Kuroshitsuji</item>
+        <item>Mobile Suit Gundam: The Origin</item>
+        <item>NHK ni Youkoso!</item>
+        <item>One Outs</item>
+        <item>Rose of Versailles</item>
+        <item>Yuri!!! on ICE</item>
+        <item>Nanatsu no Taizai</item>
+        <item>Sakurasou no Pet na Kanojo</item>
+        <item>Angel Beats!</item>
+        <item>Bakemonogatari</item>
+        <item>Mobile Suit Gundam Unicorn</item>
+        <item>Ouran Koukou Host Club</item>
+        <item>Planetes</item>
+        <item>Shelter</item>
+        <item>Tenkuu no Shiro Laputa</item>
+        <item>Bungou Stray Dogs</item>
+        <item>Honey on Clover</item>
+        <item>Kaguya-hime no Monogatari</item>
+        <item>InuYasha: Kanketsu-hen</item>
+        <item>Katekyo Hitman Reborn!</item>
+        <item>Little Busters!</item>
+        <item>Boku no Hero Academia</item>
+        <item>Danshi Koukousei no Nichijou</item>
+        <item>SKET Dance</item>
+        <item>K-On!</item>
+        <item>Kotonoha no Niwa</item>
+        <item>Kyoukai no Kanata</item>
+        <item>Sennen Joyuu</item>
+        <item>Mahou Shoujo Lyrical Nanoha</item>
+        <item>Redline</item>
+        <item>Working!!!</item>
+        <item>xxxHOLiC</item>
+        <item>Dragon Ball Z</item>
+        <item>Fullmetal Alchemist</item>
+        <item>Mimi wo Sumaseba</item>
+        <item>Tokyo Godfathers</item>
+        <item>Trigun</item>
+        <item>Death Parade</item>
+        <item>Mobile Suit Gundam: Iron-Blooded Orphans</item>
+        <item>Yahari Ore no Seishun Love Comedy wa Machigatteiru.</item>
+        <item>Initial D</item>
+        <item>Kokoro ga Sakebitagatterunda.</item>
+        <item>Nagi no Asukara</item>
+        <item>Aria The Natural</item>
+        <item>Black Lagoon</item>
+        <item>Cardcaptor Sakura</item>
+        <item>Clannad</item>
+        <item>Kaiba</item>
+        <item>The world god only knows</item>
+        <item>Majo no Takkyuubin</item>
+        <item>Skip Beat!</item>
+        <item>Summer Wars</item>
+        <item>Yowamushi Pedal</item>
+        <item>Nodame Cantabile</item>
+        <item>Space?Dandy</item>
+        <item>Detroit Metal City</item>
+        <item>Maison Ikkoku</item>
+        <item>Tsumiki no Ie</item>
+        <item>Darker than Black</item>
+        <item>Eve no Jikan</item>
+        <item>Gankutsuou</item>
+        <item>Kaichou wa Maid-sama!</item>
+        <item>Non Non Biyori</item>
+        <item>Osomatsu-san</item>
+        <item>Perfect Blue</item>
+        <item>Saint Seiya</item>
+        <item>Shijou Saikyou no Deshi Kenichi</item>
+        <item>Zankyou no Terror</item>
+        <item>Fairy Tail</item>
+        <item>Kingdom</item>
+        <item>Kuragehime</item>
+        <item>Mobile Suit Gundam 00</item>
+        <item>Akatsuki no Yona</item>
+        <item>Ashita no Joe</item>
+        <item>Kaze Tachinu</item>
+        <item>Seirei no Moribito</item>
+        <item>Tsubasa</item>
+        <item>Yuusha-Ou GaoGaiGar</item>
+        <item>Durarara!!</item>
+        <item>Gekkan Shoujo Nozaki-kun</item>
+        <item>Glass no Kamen</item>
+        <item>Gosick</item>
+        <item>Kill la Kill</item>
+        <item>Lovely?Complex</item>
+        <item>Magi: Sinbad no Bouken</item>
+        <item>Princess Tutu</item>
+        <item>Sakasama no Patema</item>
+        <item>Ansatsu Kyoushitsu</item>
+        <item>Free!: Eternal Summer</item>
+        <item>Nisemonogatari</item>
+        <item>ReLIFE</item>
+        <item>Shoujo Kakumei Utena</item>
+        <item>Full Metal Panic?</item>
+        <item>Kono Sekai no Katasumi ni</item>
+        <item>Tsukimonogatari</item>
+        <item>D.Gray-man</item>
+        <item>Lupin III</item>
+        <item>Mahoutsukai no Yome</item>
+        <item>Ookiku Furikabutte</item>
+        <item>Saiunkoku Monogatari</item>
+        <item>Tokyo Magnitude 8.0</item>
+        <item>Dennou Coil</item>
+        <item>Eureka Seven</item>
+        <item>Gin no Saji</item>
+        <item>Hikaru no Go</item>
+        <item>Kimi ni Todoke</item>
+        <item>Kokoro Connect</item>
+        <item>Aria The Avvenire</item>
+        <item>ef: A Tale of Melodies.</item>
+        <item>Hachimitsu to Clover</item>
+        <item>Interstella5555: The 5tory of The 5ecret 5tar 5ystem</item>
+        <item>Kodomo no Omocha</item>
+        <item>Love Live</item>
+        <item>Noragami</item>
+        <item>Sekaiichi Hatsukoi</item>
+        <item>Dragon Ball</item>
+        <item>Final Fantasy VII: Advent Children</item>
+        <item>Hanada Shounen-shi</item>
+        <item>Hyouka</item>
+        <item>Kanon</item>
+        <item>Persona 3</item>
+        <item>Yowamushi Pedal</item>
+        <item>Zetsuen no Tempest</item>
+        <item>Akira</item>
+        <item>Aria The Origination</item>
+        <item>Higurashi no Naku Koro ni</item>
+        <item>Juuni Kokuki</item>
+        <item>Phantom: Requiem for the Phantom</item>
+        <item>Tamako Love Story</item>
+        <item>Toaru Kagaku no Railgun</item>
+        <item>Touch</item>
+        <item>Akagami no Shirayuki-hime</item>
+        <item>K-On!!</item>
+        <item>Kamisama Hajimemashita</item>
+        <item>Kyou kara Ore wa!!</item>
+        <item>Nurarihyon no Mago</item>
+        <item>Prince of Tennis</item>
+        <item>School Rumble</item>
+        <item>Slayers Next</item>
+        <item>Ginga Nagareboshi</item>
+        <item>Log Horizon</item>
+        <item>Omae Umasou da na</item>
+        <item>City Hunter</item>
+        <item>Ginga Sengoku Gunyuuden Rai</item>
+        <item>Stand By Me Doraemon</item>
+        <item>Wolf’s Rain</item>
+        <item>ef: A Tale of Memories.</item>
+        <item>Hanamonogatari</item>
+        <item>Kami nomi zo Shiru Sekai</item>
+        <item>Tiger &amp; Bunny</item>
+        <item>Ushio to Tora</item>
+        <item>Hyouge Mono</item>
+        <item>Kimi to Boku.</item>
+        <item>Ore Monogatari!!</item>
+        <item>Tekkon Kinkreet</item>
+        <item>3-gatsu no Lion</item>
+        <item>Digimon Adventure tri.</item>
+        <item>Karigurashi no Arrietty</item>
+        <item>Kuuchuu Buranko</item>
+        <item>Mahou Shoujo Lyrical Nanoha A’s</item>
+        <item>There She Is!!</item>
+        <item>Drifters</item>
+        <item>Hybrid Child</item>
+        <item>Isekai no Seikishi Monogatari</item>
+        <item>Kobato.</item>
+        <item>Macross</item>
+        <item>Tanaka-kun wa Itsumo Kedaruge</item>
+        <item>Ajin</item>
+        <item>Byousoku 5 Centimeter</item>
+        <item>Eyeshield 21</item>
+        <item>Full Moon wo Sagashite</item>
+        <item>Grisaia no Rakuen</item>
+        <item>Jigoku Shoujo Futakomori</item>
+        <item>Mawaru Penguindrum</item>
+        <item>Soul Eater</item>
+        <item>Tentai Senshi Sunred</item>
+        <item>Azumanga Daioh</item>
+        <item>Fooly cooly</item>
+        <item>Haibane Renmei</item>
+        <item>Kobayashi-san Chi no Maid Dragon</item>
+        <item>Nekomonogatari</item>
+        <item>Saiunkoku Monogatari</item>
+        <item>Saiyuuki Reload</item>
+        <item>Yume-iro Pâtissière</item>
+        <item>Colorful</item>
+        <item>Flanders no Inu</item>
+        <item>Full Metal Panic!</item>
+        <item>Golden Boy</item>
+        <item>Tokyo Ghoul</item>
+        <item>Beelzebub</item>
+        <item>Death Billiards</item>
+        <item>Hibike! Euphonium</item>
+        <item>Ie Naki Ko Remi</item>
+        <item>Kaleido Star</item>
+        <item>Lupin III vs. Detective Conan</item>
+        <item>Mirai Nikki</item>
+        <item>Overlord</item>
+        <item>Suzumiya Haruhi no Yuuutsu</item>
+        <item>Yuru Yuri</item>
+        <item>Hanasaku Iroha</item>
+        <item>Hataraku Maou-sama!</item>
+        <item>Jormungand: Perfect Order</item>
+        <item>Seto no Hanayome</item>
+        <item>Love Live! Sunshine</item>
+    </string-array>
 
 </resources>
