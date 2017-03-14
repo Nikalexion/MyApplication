@@ -101,15 +101,14 @@ public class MainGame extends AppCompatActivity {
             }
         });
 
-        // Load an ad into the AdMob banner view.
+        //todo .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) prin apo to .build test se emas
         AdView adView = (AdView) findViewById(R.id.adView);
-        AdRequest adRq1 = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        AdRequest adRq1 = new AdRequest.Builder().build();
         adView.loadAd(adRq1);
 
-        // todo Create the InterstitialAd and set the adUnitId (defined in values/strings.xml).
+        // todo bookmark gia na allazoume to ad se moufa ad sto debugging
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.setAdUnitId("ca-app-pub-5861682469694178/1479320640");
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
@@ -118,10 +117,9 @@ public class MainGame extends AppCompatActivity {
             }
         });
 
-        AdRequest adRq2 = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        //todo .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) prin apo to .build test se emas
+        AdRequest adRq2 = new AdRequest.Builder().build();
         mInterstitialAd.loadAd(adRq2);
-
 
     }
 
