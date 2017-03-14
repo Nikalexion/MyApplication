@@ -33,8 +33,7 @@ public class Shop extends AppCompatActivity {
         String[] kostiKatigorion = getResources().getStringArray(R.array.costs);
         String[] onomataKatigorion = getResources().getStringArray(R.array.category_names);
         String[] katigories = getResources().getStringArray(R.array.categories);
-        final int Array_Count = katigories.length;
-        plithosKatigorion = Array_Count;
+        plithosKatigorion = katigories.length;
         LinearLayout my_layout = (LinearLayout)findViewById(R.id.activity_shop);
 
         for (int i = 0; i < plithosKatigorion-pfk; i++) {
