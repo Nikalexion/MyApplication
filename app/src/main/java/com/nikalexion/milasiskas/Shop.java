@@ -98,7 +98,7 @@ public class Shop extends AppCompatActivity {
 
         builder.setTitle("Αγορά νέας κατηγορίας");
         //Start setting up the builder
-        builder.setMessage("Είσαι σίγουρος ότι θες να αγοράσεις την κατηγορία "+koumbi.getText()+" ? Έχεις " +Integer.toString(paliaLefta)+ " και κοστίζει "+cost);
+        builder.setMessage("Είσαι σίγουρος ότι θες να αγοράσεις την κατηγορία "+koumbi.getText()+" ? Έχεις " +Integer.toString(paliaLefta)+ " coins και κοστίζει "+cost);
 
         // Add the buttons
         builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {

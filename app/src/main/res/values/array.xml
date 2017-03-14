@@ -3,16 +3,16 @@
 
     <string-array name="categories">
         <item>random</item>
-        <item>tainiesGR</item>
-        <item>tainiesENG</item>
+        <item>food</item>
+        <item>geografia</item>
 
-        <item>parimies</item>
-        <item>tvGR</item>
+        <item>animals</item>
+        <item>tainiesENG</item>
         <item>famousENG</item>
 
         <item>myths</item>
-        <item>food</item>
-        <item>animals</item>
+        <item>tainiesGR</item>
+        <item>parimies</item>
 
         <item>books</item>
         <item>podosfairistes</item>
@@ -22,22 +22,23 @@
         <item>istoria</item>
         <item>tvENG</item>
 
-        <item>geografia</item>
+        <item>tvGR</item>
         <item>anime</item>
+        <item>texnologia</item>
     </string-array>
 
     <string-array name="category_names">
         <item>Τυχαίες λέξεις</item>
-        <item>Ελληνικές ταινίες</item>
-        <item>Ξένες Ταινίες</item>
+        <item>Τρόφιμα και Μπαχαρικά</item>
+        <item>Γεωγραφία</item>
 
-        <item>Παροιμίες</item>
-        <item>Ελληνική τηλεόραση</item>
+        <item>Ζώα</item>
+        <item>Ξένες Ταινίες</item>
         <item>Διάσημα Ξένα Πρόσωπα (Ηθοποιοί,Πολιτικοί κλπ)</item>
 
         <item>Μυθολογία</item>
-        <item>Φαγώσιμα</item>
-        <item>Ζώα</item>
+        <item>Ελληνικές ταινίες</item>
+        <item>Παροιμίες και Ρητά</item>
 
         <item>Τίτλοι βιβλίων</item>
         <item>Ποδοσφαιριστές</item>
@@ -47,11 +48,11 @@
         <item>Ιστορικά Γεγονότα</item>
         <item>Ξένες Σειρές</item>
 
-        <item>Γεωγραφία</item>
+        <item>Ελληνική τηλεόραση</item>
         <item>Anime</item>
+        <item>Τεχνολογία</item>
     </string-array>
 
-<!-- //Todo min ksexasoume na valoume sostes times edo -->
     <string-array name="costs">
         <item>0</item>
         <item>0</item>
@@ -61,20 +62,21 @@
         <item>0</item>
         <item>0</item>
 
-        <item>5</item>
-        <item>5</item>
-        <item>5</item>
+        <item>7</item>
+        <item>10</item>
+        <item>7</item>
 
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-
-        <item>10</item>
+        <item>7</item>
         <item>10</item>
         <item>10</item>
 
+        <item>15</item>
         <item>10</item>
+        <item>7</item>
+
         <item>10</item>
+        <item>15</item>
+        <item>7</item>
     </string-array>
 
     <string-array name="random">
@@ -3723,6 +3725,153 @@
         <item>Jormungand: Perfect Order</item>
         <item>Seto no Hanayome</item>
         <item>Love Live! Sunshine</item>
+    </string-array>
+
+    <string-array name="texnologia">
+        <item>Apple</item>
+        <item>Samsung</item>
+        <item>LG</item>
+        <item>Sony</item>
+        <item>Amazon</item>
+        <item>E-bay</item>
+        <item>Microsoft</item>
+        <item>HP</item>
+        <item>Dell</item>
+        <item>AMD</item>
+        <item>Intel</item>
+        <item>Google</item>
+        <item>Oracle</item>
+        <item>Motorola</item>
+        <item>Xiaomi</item>
+        <item>Huawei</item>
+        <item>Vodafone</item>
+        <item>Wind</item>
+        <item>Cosmote</item>
+        <item>Yahoo</item>
+        <item>Nexus</item>
+        <item>Nokia</item>
+        <item>Wikipedia</item>
+        <item>YouTube</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Reddit</item>
+        <item>Bing</item>
+        <item>Tinder</item>
+        <item>Spotify</item>
+        <item>Skype</item>
+        <item>Sega</item>
+        <item>Nintendo</item>
+        <item>Oculus</item>
+        <item>Electronic Arts</item>
+        <item>Firefox</item>
+        <item>Opera</item>
+        <item>Adobe</item>
+        <item>Flickr</item>
+        <item>Tumblr</item>
+        <item>MSN</item>
+        <item>WordPress</item>
+        <item>Netflix</item>
+        <item>Stack Overflow</item>
+        <item>Imgur</item>
+        <item>IMDb</item>
+        <item>GitHub</item>
+        <item>Pinterest</item>
+        <item>PayPal</item>
+        <item>Twitch</item>
+        <item>Wikia</item>
+        <item>Dropbox</item>
+        <item>AdFly</item>
+        <item>WhatsApp</item>
+        <item>Ask.com</item>
+        <item>Craigslist</item>
+        <item>Booking.com</item>
+        <item>KickassTorrents</item>
+        <item>Bitly</item>
+        <item>Admob</item>
+        <item>Unity</item>
+        <item>Steam</item>
+        <item>Valve</item>
+        <item>Riot Games</item>
+        <item>Honor</item>
+        <item>Snapchat</item>
+        <item>WhatsApp</item>
+        <item>Viber</item>
+        <item>LCD Monitor</item>
+        <item>Local Area Network (LAN)</item>
+        <item>Android</item>
+        <item>iPhone</item>
+        <item>iMac</item>
+        <item>iOs</item>
+        <item>AntiVirus</item>
+        <item>Playstation</item>
+        <item>Wii</item>
+        <item>Nintendo Switch</item>
+        <item>Game Boy</item>
+        <item>Nintendo DS</item>
+        <item>Google Drive</item>
+        <item>Google Maps</item>
+        <item>Google Translate</item>
+        <item>Google Play</item>
+        <item>iTunes</item>
+        <item>Cloud</item>
+        <item>Browser</item>
+        <item>Google Chrome</item>
+        <item>Internet Explorer</item>
+        <item>Discord</item>
+        <item>PSP</item>
+        <item>PSVita</item>
+        <item>Xbox</item>
+        <item>GMail</item>
+        <item>Excel</item>
+        <item>Office</item>
+        <item>PowerPoint</item>
+        <item>Word</item>
+        <item>Java</item>
+        <item>JavaScript</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>C#</item>
+        <item>Python</item>
+        <item>Dos</item>
+        <item>Command Prompt</item>
+        <item>Visual Basic</item>
+        <item>Pascal</item>
+        <item>Assembly</item>
+        <item>USB</item>
+        <item>CD</item>
+        <item>DVD</item>
+        <item>Adobe PhotoShop</item>
+        <item>Tesla</item>
+        <item>Adoble After Effects</item>
+        <item>Adobe Lightroom</item>
+        <item>Rooter</item>
+        <item>Jpeg</item>
+        <item>Png</item>
+        <item>Gif</item>
+        <item>Mp3</item>
+        <item>Mp4</item>
+        <item>Επεξεργαστής</item>
+        <item>Κάρτα Γραφικών</item>
+        <item>Μνήμη RAM</item>
+        <item>Μνήμη ROM</item>
+        <item>Σκληρός Δίσκος</item>
+        <item>Τροφοδοτικό</item>
+        <item>Nvidia</item>
+        <item>Wi-Fi</item>
+        <item>Βάση Δεδομένων</item>
+        <item>Αλγόριθμος</item>
+        <item>iPad</item>
+        <item>Tablet</item>
+        <item>Google Store</item>
+        <item>App Store</item>
+        <item>Server</item>
+        <item>Λογισμικό</item>
+        <item>Εφαρμογή</item>
+        <item>Πρόγραμμα</item>
+        <item>Email</item>
+        <item>Linux</item>
+        <item>Windows</item>
+        <item>Ubuntu</item>
     </string-array>
 
 </resources>
