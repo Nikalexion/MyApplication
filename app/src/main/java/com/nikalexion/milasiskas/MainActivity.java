@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.MobileAds;
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String PREF_LEFTA = "LEFTA";
@@ -48,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-5861682469694178~7665455042");
 
         if(getSharedPreferences(PREF_EPILOGES, 0).getBoolean("protiFora",true)) {
             SharedPreferences.Editor defaultAgores = getSharedPreferences(PREF_AGORES, 0).edit();
