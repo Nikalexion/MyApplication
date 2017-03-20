@@ -54,7 +54,7 @@
         <item>Anime</item>
         <item>Τεχνολογία</item>
 
-        <item>Πόκεμον</item>
+        <item>Pokemon 1ης γενιάς</item>
     </string-array>
 
     <string-array name="costs">
@@ -66,7 +66,7 @@
         <item>0</item>
         <item>0</item>
 
-        <item>7</item>
+        <item>5</item>
         <item>10</item>
         <item>7</item>
 

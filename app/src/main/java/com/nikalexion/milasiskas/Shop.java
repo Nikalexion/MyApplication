@@ -17,6 +17,7 @@ public class Shop extends AppCompatActivity {
 
     public static final String PREF_LEFTA = "LEFTA";
     public static final String PREF_AGORES = "AGORES";
+    public static final String PREF_EPILOGES = "EPILOGES";
     private int plithosKatigorion;
     //pfk = plithos free katigorion
     private int pfk = 6;
@@ -85,6 +86,7 @@ public class Shop extends AppCompatActivity {
         final int costInt = Integer.parseInt(cost);
         final SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
         final SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
+        final SharedPreferences epiloges = getSharedPreferences(PREF_EPILOGES, 0);
 
         final int paliaLefta = lefta.getInt("lefta", 0);
 
@@ -97,7 +99,7 @@ public class Shop extends AppCompatActivity {
 
         builder.setTitle("Αγορά νέας κατηγορίας");
         //Start setting up the builder
-        builder.setMessage("Είσαι σίγουρος ότι θες να αγοράσεις την κατηγορία "+koumbi.getText()+" ? Έχεις " +Integer.toString(paliaLefta)+ " coins και κοστίζει "+cost);
+        builder.setMessage("Είσαι σίγουρος ότι θες να αγοράσεις την κατηγορία "+koumbi.getText()+"?\n\nΈχεις " +Integer.toString(paliaLefta)+ " νομίσματα και η κατηγορία κοστίζει "+cost);
 
         // Add the buttons
         builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
@@ -114,6 +116,10 @@ public class Shop extends AppCompatActivity {
                 SharedPreferences.Editor editor = agorasmena.edit();
                 editor.putBoolean(onomaAgoras, true);
                 editor.apply();
+
+                SharedPreferences.Editor epiloges_editor = epiloges.edit();
+                epiloges_editor.putBoolean(onomaAgoras, true);
+                epiloges_editor.apply();
 
                 String[] kostiKatigorion = getResources().getStringArray(R.array.costs);
                 for (int i = 0; i < plithosKatigorion-pfk; i++) {

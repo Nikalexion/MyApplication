@@ -14,7 +14,7 @@
     android:layout_centerInParent="true">
 
     <Button
-        android:text="ΑΡΧΙΚΉ"
+        android:text="ΑΡΧΙΚΗ"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/arxiki"
@@ -25,7 +25,7 @@
         android:background="@drawable/btn_bg" />
 
     <Button
-        android:text="νεος γυρος"
+        android:text="ΝΕΟΣ ΓΥΡΟΣ"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/neoGame"
