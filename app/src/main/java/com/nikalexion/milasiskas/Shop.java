@@ -12,6 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TableRow;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 
 public class Shop extends AppCompatActivity {
 
@@ -21,6 +23,9 @@ public class Shop extends AppCompatActivity {
     private int plithosKatigorion;
     //pfk = plithos free katigorion
     private int pfk = 6;
+    private FirebaseAnalytics mFirebaseAnalytics;
+
+
 
 
     @Override
@@ -36,6 +41,8 @@ public class Shop extends AppCompatActivity {
         String[] katigories = getResources().getStringArray(R.array.categories);
         plithosKatigorion = katigories.length;
         LinearLayout my_layout = (LinearLayout)findViewById(R.id.activity_shop);
+
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         for (int i = 0; i < plithosKatigorion-pfk; i++) {
             final String kat = katigories[i+pfk];
@@ -120,6 +127,11 @@ public class Shop extends AppCompatActivity {
                 SharedPreferences.Editor epiloges_editor = epiloges.edit();
                 epiloges_editor.putBoolean(onomaAgoras, true);
                 epiloges_editor.apply();
+
+                Bundle bundle = new Bundle();
+                bundle.putString(FirebaseAnalytics.Param.ITEM_ID, onomaAgoras);
+                bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "katigoria");
+                mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
 
                 String[] kostiKatigorion = getResources().getStringArray(R.array.costs);
                 for (int i = 0; i < plithosKatigorion-pfk; i++) {

@@ -101,12 +101,15 @@ public class MainGame extends AppCompatActivity {
             }
         });
 
-        //todo .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) prin apo to .build test se emas
+
         AdView adView = (AdView) findViewById(R.id.adView);
-        AdRequest adRq1 = new AdRequest.Builder().build();
+        AdRequest adRq1 = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("C29EE19EA0561C4586ADCA4FBE4BFC9E")
+                .build();
         adView.loadAd(adRq1);
 
-        // todo bookmark gia na allazoume to ad se moufa ad sto debugging
+
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-5861682469694178/1479320640");
         mInterstitialAd.setAdListener(new AdListener() {
@@ -117,8 +120,10 @@ public class MainGame extends AppCompatActivity {
             }
         });
 
-        //todo .addTestDevice(AdRequest.DEVICE_ID_EMULATOR) prin apo to .build test se emas
-        AdRequest adRq2 = new AdRequest.Builder().build();
+
+        AdRequest adRq2 = new AdRequest.Builder()
+                .addTestDevice("C29EE19EA0561C4586ADCA4FBE4BFC9E")
+                .build();
         mInterstitialAd.loadAd(adRq2);
 
     }
