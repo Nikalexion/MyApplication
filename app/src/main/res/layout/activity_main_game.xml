@@ -32,7 +32,7 @@
         android:text="ληξη παιχνιδιου"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/starter"
+        android:id="@+id/lathos"
         android:background="@drawable/btn_bg"
         android:textSize="30sp"
         android:layout_marginTop="10dp"

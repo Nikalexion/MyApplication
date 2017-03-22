@@ -22,7 +22,7 @@ public class Promotion extends AppCompatActivity {
 
         final SharedPreferences rater = getSharedPreferences(PREF_EPILOGES, 0);
 
-        //To koumbi gia epanekinisi paixnidiou
+
         final Button rate = (Button) findViewById(R.id.rating);
         rate.setEnabled(!rater.getBoolean("rated",false));
 
@@ -62,12 +62,12 @@ public class Promotion extends AppCompatActivity {
     {
         try
         {
-            Intent rateIntent = rateIntentForUrl(("market://details?id=com.nikalexion.milasiskas"));
+            Intent rateIntent = rateIntentForUrl(("market://details"));
             startActivity(rateIntent);
         }
         catch (ActivityNotFoundException e)
         {
-            Intent rateIntent = rateIntentForUrl("https://play.google.com/store/apps/details?id=com.nikalexion.milasiskas");
+            Intent rateIntent = rateIntentForUrl("https://play.google.com/store/apps/details");
             startActivity(rateIntent);
         }
     }

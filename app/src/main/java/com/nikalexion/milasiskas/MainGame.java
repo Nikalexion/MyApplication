@@ -1,5 +1,6 @@
 package com.nikalexion.milasiskas;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
@@ -10,6 +11,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,7 +40,7 @@ public class MainGame extends AppCompatActivity {
     //i diafimisi
     private InterstitialAd mInterstitialAd;
 
-
+    private boolean mistake = false;
     private int gameTime;
     private int startTime;
     LinearLayout layclick;
@@ -98,6 +100,15 @@ public class MainGame extends AppCompatActivity {
             public void onClick(View view) {
                 tixeaLeksi = pinakasL[rgenerator.nextInt(pinakasL.length)];
                 leksi.setText(tixeaLeksi);
+            }
+        });
+
+        Button lathos = (Button) findViewById(R.id.lathos);
+        lathos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                mistake = true;
+                endGame();
             }
         });
 
@@ -199,7 +210,11 @@ public class MainGame extends AppCompatActivity {
     @Override
     protected void onResume() {
         hideSystemUI();
-        timeCreator(gameTime);
+        if (stillPlaying){
+            timeCreator(gameTime);
+        }else{
+            lastClock(gameTime);
+        }
         super.onResume();
     }
 
@@ -224,9 +239,8 @@ public class MainGame extends AppCompatActivity {
         xronos = new CountDownTimer(timeToFinish, ticker) {
             public void onTick(long millisUntilFinished) {
                 gameTime = (int) millisUntilFinished;
-                if (stillPlaying){
-                    mp.start();
-                }
+                mp.start();
+
                 if (gameTime < startTime/4){
                     if (ligosXronos == 2) {
                         xronos.cancel();
@@ -251,32 +265,8 @@ public class MainGame extends AppCompatActivity {
             }
 
             public void onFinish() {
-                if (stillPlaying) {
-                    xronos.cancel();
-                    mp.stop();
-                    expl.start();
-                    layclick.setClickable(false);
-                    leksi.setText("Τέλος Χρόνου! Η Ομάδα σου έχασε!");
-                    stillPlaying = false;
-                    gameTime = 3 * 1000;
-                    timeCreator(gameTime);
-                } else {
-                    expl.stop();
-                    SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
-                    int counter = lefta.getInt("lefta", 0);
-                    counter = counter + startTime/1000/60;
-                    SharedPreferences.Editor lefta_editor = lefta.edit();
-                    lefta_editor.putInt("lefta", counter);
-
-                    int counter2 = lefta.getInt("games", 0);
-                    counter2 = counter2 + 1;
-                    lefta_editor.putInt("games", counter2);
-                    lefta_editor.apply();
-
-                    showInterstitial(); //emberiexei to goToNextLevel me ta intent
-                    xronos.cancel();
-                    finish();   //psofaei otan telionei o xronos
-                }
+                gameTime = 0;
+                endGame();
             }
         }.start();
     }
@@ -292,6 +282,51 @@ public class MainGame extends AppCompatActivity {
                             | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                             | View.SYSTEM_UI_FLAG_FULLSCREEN
                             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);}
+    }
+
+    public void endGame(){
+        xronos.cancel();
+        mp.stop();
+        expl.start();
+        layclick.setClickable(false);
+        stillPlaying = false;
+        if (mistake){
+            leksi.setText("Η Ομάδα σου έχασε!");
+        }else{
+            leksi.setText("Τέλος Χρόνου! Η Ομάδα σου έχασε!");
+        }
+
+        SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
+        int counter = lefta.getInt("lefta", 0);
+        counter = counter + (startTime-gameTime)/1000/60;
+        SharedPreferences.Editor lefta_editor = lefta.edit();
+        lefta_editor.putInt("lefta", counter);
+
+        int counter2 = lefta.getInt("games", 0);
+        counter2 = counter2 + 1;
+        lefta_editor.putInt("games", counter2);
+        lefta_editor.apply();
+
+        gameTime = 3 * 1000;
+        lastClock(gameTime);
+    }
+
+    private void lastClock(final int timeToFinish) {
+        int ticker = 1000;
+        xronos = new CountDownTimer(timeToFinish, ticker) {
+            public void onTick(long millisUntilFinished) {
+            }
+            public void onFinish() {
+                afterEnd();
+            }
+        }.start();
+    }
+
+    public void afterEnd(){
+        expl.stop();
+        xronos.cancel();
+        showInterstitial(); //emberiexei to goToNextLevel me ta intent
+        finish();   //psofaei otan telionei o xronos
     }
 
 }

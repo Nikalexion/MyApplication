@@ -13,16 +13,16 @@
     android:background="@drawable/bc"
     android:layout_centerInParent="true">
 
-    <Button
-        android:text="ΑΡΧΙΚΗ"
-        android:layout_width="fill_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/arxiki"
-        android:textSize="30sp"
-        android:layout_marginBottom="26dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/btn_bg" />
+        android:layout_marginLeft="10dp"
+        android:minHeight="90dp"
+        android:minWidth="200dp"
+        android:src="@drawable/logo2"
+        android:id="@+id/imageView"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="ΝΕΟΣ ΓΥΡΟΣ"
@@ -30,8 +30,19 @@
         android:layout_height="wrap_content"
         android:id="@+id/neoGame"
         android:textSize="30sp"
-        android:layout_marginBottom="36dp"
-        android:layout_above="@+id/arxiki"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:background="@drawable/btn_bg" />
+
+    <Button
+        android:text="ΑΡΧΙΚΗ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/arxiki"
+        android:textSize="30sp"
+        android:layout_below="@+id/neoGame"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_bg" />
+
 </RelativeLayout>

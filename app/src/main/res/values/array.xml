@@ -29,6 +29,8 @@
         <item>pokemon</item>
         <item>lolChamps</item>
         <item>dotaChamps</item>
+
+        <item>famousGR</item>
     </string-array>
 
     <string-array name="category_names">
@@ -38,7 +40,7 @@
 
         <item>Ζώα</item>
         <item>Ξένες Ταινίες</item>
-        <item>Διάσημα Ξένα Πρόσωπα (Ηθοποιοί,Πολιτικοί κλπ)</item>
+        <item>Διάσημα Ξένα Πρόσωπα</item>
 
         <item>Μυθολογία</item>
         <item>Ελληνικές ταινίες</item>
@@ -59,6 +61,7 @@
         <item>Pokemon 1ης γενιάς</item>
         <item>League of Legends Champions</item>
         <item>Dota Heroes</item>
+        <item>Διάσημα Ελληνικά Πρόσωπα</item>
     </string-array>
 
     <string-array name="costs">
@@ -89,6 +92,7 @@
         <item>7</item>
         <item>5</item>
         <item>5</item>
+        <item>7</item>
     </string-array>
 
     <string-array name="random">
@@ -1261,7 +1265,6 @@
         <item>Πήρα κόκκινα γυαλιά</item>
         <item>Σφηνάκια</item>
         <item>Υπέροχα πλάσματα</item>
-
     </string-array>
 
     <string-array name="famousENG">
@@ -4281,6 +4284,193 @@
         <item>Arc Warden</item>
         <item>Underlord</item>
         <item>Monkey King</item>
+    </string-array>
+
+    <string-array name="famousGR">
+        <item>Πραξιτέλης</item>
+        <item>Θαλής ο Μιλήσιος</item>
+        <item>Λασκαρίνα Μπουμπουλίνα</item>
+        <item>Δημήτρης Χορν</item>
+        <item>Φίλιππος Β'</item>
+        <item>Μανώλης Γλέζος</item>
+        <item>Μάνος Λοϊζος</item>
+        <item>Πύρος Δήμας</item>
+        <item>Βασίλης Τσιτσάνης</item>
+        <item>Γρηγόρης Λαμπράκης</item>
+        <item>Μάρκος Βαμβακάρης</item>
+        <item>Αλίκη Βουγιουκλάκη</item>
+        <item>Κατίνα Παξινού</item>
+        <item>Δημήτρης Παπαμιχαήλ</item>
+        <item>Ρένα Βλαχοπούλου</item>
+        <item>Τζένη Καρέζη</item>
+        <item>Λάμπρος Κωσταντάρας</item>
+        <item>Θανάσης Βέγγος</item>
+        <item>Ηρόδοτος</item>
+        <item>Λάκης Λαζόπουλος</item>
+        <item>Κάρολος Κουν</item>
+        <item>Ευριπίδης</item>
+        <item>Αισχύλος</item>
+        <item>Σοφοκλής</item>
+        <item>Χαρίλαος Φλωράκης</item>
+        <item>Στέλιος Καζαντζίδης</item>
+        <item>Νίκος Ξυλούρης</item>
+        <item>Θεόδωρος Αγγελόπουλος</item>
+        <item>Νικόλαος Πλαστήρας</item>
+        <item>Κώστας Σημίτης</item>
+        <item>Ίωνας Δραγούμης</item>
+        <item>Μέγας Κωνσταντίνος ο Α'</item>
+        <item>Κλεισθένης</item>
+        <item>Σόλων</item>
+        <item>Βαγγέλης Παπαθανασίου</item>
+        <item>Όθωνας</item>
+        <item>Αλέξανδρος Παπαδιαμάντης</item>
+        <item>Επίκουρος</item>
+        <item>Γεώργιος Παπαδόπουλος</item>
+        <item>Αλέξανδρος Παναγούλης</item>
+        <item>Πατακός</item>
+        <item>Γεώργιος Παπανδρέου</item>
+        <item>Κοσμάς ο Αιτωλός</item>
+        <item>Κωστής Παλαμάς</item>
+        <item>Αριστοφάνης</item>
+        <item>Φειδίας</item>
+        <item>ʼγνωστος Στρατιώτης</item>
+        <item>Θοδωρής Ζαγοράκης</item>
+        <item>Αθανάσιος Διάκος</item>
+        <item>Χριστόδουλος</item>
+        <item>Παύλος Μελάς</item>
+        <item>Ευκλείδης</item>
+        <item>Θουκιδίδης</item>
+        <item>Ηράκλειτος</item>
+        <item>Θεμιστοκλής</item>
+        <item>Γιάννης Ρίτσος</item>
+        <item>Αδαμάντιος Κοραής</item>
+        <item>Διονύσιος Σολωμός</item>
+        <item>Δημόκριτος</item>
+        <item>Γεώργιος Καραϊσκάκης</item>
+        <item>Νίκος Γκάλης</item>
+        <item>Άρης Βελουχιώτης</item>
+        <item>Ρήγας Φεραίος</item>
+        <item>Γιώργος Σεφέρης</item>
+        <item>Κων/νος Παλαιολόγος</item>
+        <item>Δομίνικος Θεοτοκόπουλος</item>
+        <item>Χαρίλαος Τρικούπης</item>
+        <item>Αριστοτέλης Ωνάσης</item>
+        <item>Αρχιμήδης</item>
+        <item>Μαρία Κάλλας</item>
+        <item>Κωνσταντίνος Καβάφης</item>
+        <item>Πυθαγόρας</item>
+        <item>Ιπποκράτης</item>
+        <item>Λεωνίδας</item>
+        <item>Μάνος Χατζιδάκης</item>
+        <item>Όμηρος</item>
+        <item>Οδυσσέας Ελύτης</item>
+        <item>Νίκος Καζαντζάκης</item>
+        <item>Ανδρέας Παπανδρέου</item>
+        <item>Μελίνα Μερκούρη</item>
+        <item>Μίκης Θεοδωράκης</item>
+        <item>Αριστοτέλης</item>
+        <item>Ελευθέριος Βενιζέλος</item>
+        <item>Καποδίστριας</item>
+        <item>Κωνσταντίνος Καραμανλής</item>
+        <item>Θεόδωρος Κολοκοτρώνης</item>
+        <item>Γεώργιος Παπανικολάου</item>
+        <item>Περικλής</item>
+        <item>Πλάτων</item>
+        <item>Σωκράτης</item>
+        <item>Αντώνης Σαμαράς</item>
+        <item>Αλέξης Τσίπρας</item>
+        <item>Κωστής Στεφανόπουλος</item>
+        <item>Αλέκα Παπαρίγα</item>
+        <item>Παναγιώτης Γιαννάκης</item>
+        <item>Παναγιώτης Φασούλας</item>
+        <item>Σπύρος Λούης</item>
+        <item>Βούλα Πατουλίδου</item>
+        <item>Κώστας Κεντέρης</item>
+        <item>Δημοσθένης Ταμπάκος</item>
+        <item>Λευτέρης Πετρούνιας</item>
+        <item>Άννα Κορακάκη</item>
+        <item>Κατερίνα Στεφανίδη</item>
+        <item>Σπύρος Γιαννιώτης</item>
+        <item>Σοφία Βέμπο</item>
+        <item>Αλέκος Αλεξανδράκης</item>
+        <item>Γιάννης Βόγλης</item>
+        <item>Μίμης Φωτόπουλος</item>
+        <item>Νίκος Κούρκουλος</item>
+        <item>Ζωή Λάσκαρη</item>
+        <item>Σωτήρης Μουστάκας</item>
+        <item>Χάρυ Κλυνν</item>
+        <item>Στάθης Ψάλτης</item>
+        <item>Αλέκος Σακελλάριος</item>
+        <item>Νίκος Φώσκολος</item>
+        <item>Γιάννης Μπέζος</item>
+        <item>Σαπφώ Νοταρά</item>
+        <item>Τέρενς Κουίκ</item>
+        <item>Όλγα Τρέμη</item>
+        <item>Φρέντυ Γερμανός</item>
+        <item>Λευτέρης Παπαδόπουλος</item>
+        <item>Νίκος Χατζηνικολάου</item>
+        <item>Λιάνα Κανέλη</item>
+        <item>Πάνος Καμμένος</item>
+        <item>Πηνελόπη Δέλτα</item>
+        <item>Κωνταντίνος Μητσοτάκης</item>
+        <item>Ντόρα Μπακογιάνη</item>
+        <item>Κώστας Χατζηχρήστος</item>
+        <item>Έκτορας Μποτρίνι</item>
+        <item>Λευτέρης Λαζάρου</item>
+        <item>Δημήτρης Σκαρμούτσος</item>
+        <item>Ιωάννης Μεταξάς</item>
+        <item>Ελένη Μενεγάκη</item>
+        <item>Αρναούτογλου</item>
+        <item>Ηλίας Ψηνάκης</item>
+        <item>Παρλιάρος</item>
+        <item>Γιώργος Καπουτζίδης</item>
+        <item>Χρήστος Φερεντίνος</item>
+        <item>Άδωνις Γεωργιάδης</item>
+        <item>Φώφη Γενηματά</item>
+        <item>Γιώργος Λιάγκας</item>
+        <item>Δημήτρης Ουγγαρέζος</item>
+        <item>Μαριάννα Βαρδινογιάννη</item>
+        <item>Μαίρη Συνατσάκη</item>
+        <item>Μαρία Μπεκατώρου</item>
+        <item>Αννίτα Πάνια</item>
+        <item>Σεφερλής</item>
+        <item>Μίμης Πλέσσας</item>
+        <item>Σταύρος Ξαρχάκος</item>
+        <item>Μάνος Χατζιδάκις</item>
+        <item>Διδώ Σωτηρίου</item>
+        <item>Μιμή Ντενίση</item>
+        <item>Σμαράγδα Καρύδη</item>
+        <item>Βασίλης Χαραλαμπόπουλος</item>
+        <item>Ειρήνη Παππά</item>
+        <item>Θοδωρής Αθερίδης</item>
+        <item>Σταμάτης Φασουλής</item>
+        <item>Ζωζώ Σαπουντζάκη</item>
+        <item>Χριστόφορος Παπακαλιάτης</item>
+        <item>Κατερίνα Στικούδη</item>
+        <item>Χάρης Ρώμας</item>
+        <item>Σπύρος Παπαδόπουλος</item>
+        <item>Γιάνης Βαρουφάκης</item>
+        <item>Ζωή Κωνσταντοπούλου</item>
+        <item>Ευάγγελος Μεϊμαράκης</item>
+        <item>Άννα Μπενάκη-Ψαρούδα</item>
+        <item>Ευκλείδης Τσακαλώτος</item>
+        <item>Νίκος Μουρατίδης</item>
+        <item>Φάνης Μουρατίδης</item>
+        <item>Ζέτα Μακρυπούλια</item>
+        <item>Εβελίνα Παπούλια</item>
+        <item>Κώστας Βουτσάς</item>
+        <item>Ντέμης Ρούσος</item>
+        <item>Αντώνης Κανάκης</item>
+        <item>Γιάννης Σερβετάς</item>
+        <item>Ιεροκλής Μιχαηλίδης</item>
+        <item>Δημήτρης Σταρόβας</item>
+        <item>Οικουμενικός Πατριάρχης Βαρθολομαίος</item>
+        <item>Απόστολος Τότσικας</item>
+        <item>Άκης Πετρετζίκης</item>
+        <item>Η κυρά της Ρω</item>
+        <item>Αλέξανδρος Υψηλάντης</item>
+        <item>Μάνος Κατράκης</item>
+        <item>Αλέξης Γεωργούλης</item>
     </string-array>
 
 </resources>
