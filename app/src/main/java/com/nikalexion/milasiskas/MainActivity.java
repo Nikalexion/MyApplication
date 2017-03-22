@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         Button guidelines = (Button) findViewById(R.id.guidelines);
         Button epiloges = (Button) findViewById(R.id.epiloges);
         shop = (Button) findViewById(R.id.shop);
+        Button promotion = (Button) findViewById(R.id.promotion);
         leftakia = (TextView) findViewById(R.id.leftakia);
 
 
@@ -102,6 +103,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 startActivity(new Intent(getApplicationContext(), Shop.class));
+            }
+        });
+
+        promotion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(getApplicationContext(), Promotion.class));
             }
         });
 

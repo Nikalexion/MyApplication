@@ -27,6 +27,8 @@
         <item>texnologia</item>
 
         <item>pokemon</item>
+        <item>lolChamps</item>
+        <item>dotaChamps</item>
     </string-array>
 
     <string-array name="category_names">
@@ -55,6 +57,8 @@
         <item>Τεχνολογία</item>
 
         <item>Pokemon 1ης γενιάς</item>
+        <item>League of Legends Champions</item>
+        <item>Dota Heroes</item>
     </string-array>
 
     <string-array name="costs">
@@ -83,6 +87,8 @@
         <item>7</item>
 
         <item>7</item>
+        <item>5</item>
+        <item>5</item>
     </string-array>
 
     <string-array name="random">
@@ -1801,7 +1807,7 @@
         <item>Πάνθηρας</item>
         <item>Τσιτάχ</item>
         <item>Καμήλα</item>
-        <item>Ζέρβα</item>
+        <item>Ζέβρα</item>
         <item>Ιπποπόταμος</item>
         <item>Ρινόκερος</item>
         <item>Κροκόδειλος</item>
@@ -2970,7 +2976,6 @@
         <item>Κομφούκιος και Βούδας</item>
         <item>Η μάχη του Μαραθώνα</item>
         <item>Ο Χρυσός Αιώνας του Περικλή</item>
-        <item>Ο Μέγας Αλέξανδρος</item>
         <item>Πομπηία</item>
         <item>Καρλομάγνος</item>
         <item>Σχίσμα των Εκκλησιών</item>
@@ -3066,7 +3071,7 @@
         <item>Παγκοσμιοποίηση</item>
         <item>Κλασσική Εποχή</item>
         <item>Σταυροφορίες</item>
-        <item>Οθωμανικοί Αυτοκρατορία</item>
+        <item>Οθωμανική Αυτοκρατορία</item>
         <item>Βυζαντινή Αυτοκρατορία</item>
         <item>Ρωμαϊκή Αυτοκρατορία</item>
         <item>Περσική Αυτοκρατορία</item>
@@ -4031,6 +4036,251 @@
         <item>Dragonite</item>
         <item>Mewtwo</item>
         <item>Mew</item>
+    </string-array>
+
+    <string-array name="lolChamps">
+        <item>Aatrox</item>
+        <item>Ahri</item>
+        <item>Akali</item>
+        <item>Alistar</item>
+        <item>Amumu</item>
+        <item>Anivia</item>
+        <item>Annie</item>
+        <item>Ashe</item>
+        <item>Azir</item>
+        <item>Blitzcrank</item>
+        <item>Brand</item>
+        <item>Braum</item>
+        <item>Caitlyn</item>
+        <item>Cassiopeia</item>
+        <item>Cho’Gath</item>
+        <item>Corki</item>
+        <item>Darius</item>
+        <item>Diana</item>
+        <item>Dr. Mundo</item>
+        <item>Draven</item>
+        <item>Elise</item>
+        <item>Evelynn</item>
+        <item>Ezreal</item>
+        <item>Fiddlesticks</item>
+        <item>Fiora</item>
+        <item>Fizz</item>
+        <item>Galio</item>
+        <item>Gangplank</item>
+        <item>Garen</item>
+        <item>Gnar</item>
+        <item>Gragas</item>
+        <item>Graves</item>
+        <item>Hecarim</item>
+        <item>Heimerdinger</item>
+        <item>Irelia</item>
+        <item>Janna</item>
+        <item>Jarvan IV</item>
+        <item>Jax</item>
+        <item>Jayce</item>
+        <item>Jinx</item>
+        <item>Kalista</item>
+        <item>Karma</item>
+        <item>Karthus</item>
+        <item>Kassadin</item>
+        <item>Katarina</item>
+        <item>Kayle</item>
+        <item>Kennen</item>
+        <item>Kha’Zix</item>
+        <item>Kog’Maw</item>
+        <item>LeBlanc</item>
+        <item>Lee Sin</item>
+        <item>Leona</item>
+        <item>Lissandra</item>
+        <item>Lucian</item>
+        <item>Lulu</item>
+        <item>Lux</item>
+        <item>Malphite</item>
+        <item>Malzahar</item>
+        <item>Maoki</item>
+        <item>Master Yi</item>
+        <item>Miss Fortune</item>
+        <item>Mordekaiser</item>
+        <item>Morgana</item>
+        <item>Nami</item>
+        <item>Nasus</item>
+        <item>Nautilus</item>
+        <item>Nidalee</item>
+        <item>Nocturne</item>
+        <item>Nunu</item>
+        <item>Olaf</item>
+        <item>Orianna</item>
+        <item>Pantheon</item>
+        <item>Poppy</item>
+        <item>Quinn</item>
+        <item>Rammus</item>
+        <item>Rek’Sai</item>
+        <item>Renekton</item>
+        <item>Rengar</item>
+        <item>Riven</item>
+        <item>Rumble</item>
+        <item>Ryze</item>
+        <item>Sejuani</item>
+        <item>Shaco</item>
+        <item>Shen</item>
+        <item>Shyvana</item>
+        <item>Singed</item>
+        <item>Sion</item>
+        <item>Sivir</item>
+        <item>Skarner</item>
+        <item>Sona</item>
+        <item>Soraka</item>
+        <item>Swain</item>
+        <item>Syndra</item>
+        <item>Talon</item>
+        <item>Taric</item>
+        <item>Teemo</item>
+        <item>Thresh</item>
+        <item>Tristana</item>
+        <item>Trundle</item>
+        <item>Tryndamere</item>
+        <item>Twisted Fate</item>
+        <item>Twitch</item>
+        <item>Udyr</item>
+        <item>Urgot</item>
+        <item>Varus</item>
+        <item>Vayne</item>
+        <item>Veigar</item>
+        <item>Vel’Koz</item>
+        <item>Vi</item>
+        <item>Viktor</item>
+        <item>Vladimir</item>
+        <item>Volibear</item>
+        <item>Warwick</item>
+        <item>Wukong</item>
+        <item>Xerath</item>
+        <item>Xin Zhao</item>
+        <item>Yasuo</item>
+        <item>Yorick</item>
+        <item>Zac</item>
+        <item>Zed</item>
+        <item>Ziggs</item>
+        <item>Zilean</item>
+        <item>Zyra</item>
+        <item>Kled</item>
+        <item>Ivern</item>
+        <item>Camille</item>
+    </string-array>
+    
+    <string-array name="dotaChamps">
+        <item>Anti-Mage</item>
+        <item>Axe</item>
+        <item>Crystal Maiden</item>
+        <item>Dazzle</item>
+        <item>Drow Ranger</item>
+        <item>Earthshaker</item>
+        <item>Lich</item>
+        <item>Lina</item>
+        <item>Lion</item>
+        <item>Mirana</item>
+        <item>Morphling</item>
+        <item>Necrophos</item>
+        <item>Puck</item>
+        <item>Pudge</item>
+        <item>Razor</item>
+        <item>Sand King</item>
+        <item>Shadow Shaman</item>
+        <item>Storm Spirit</item>
+        <item>Sven</item>
+        <item>Tidehunter</item>
+        <item>Vengeful Spirit</item>
+        <item>Windranger</item>
+        <item>Witch Doctor</item>
+        <item>Zeus</item>
+        <item>Slardar</item>
+        <item>Enigma</item>
+        <item>Faceless Void</item>
+        <item>Tiny</item>
+        <item>Viper</item>
+        <item>Venomancer</item>
+        <item>Clockwerk</item>
+        <item>Nature’s Prophet</item>
+        <item>Dark Seer</item>
+        <item>Sniper</item>
+        <item>Pugna</item>
+        <item>Beastmaster</item>
+        <item>Enchantress</item>
+        <item>Leshrac</item>
+        <item>Shadow Fiend</item>
+        <item>Tinker</item>
+        <item>Weaver</item>
+        <item>Night Stalker</item>
+        <item>Ancient Apparition</item>
+        <item>Spectre</item>
+        <item>Doom</item>
+        <item>Chen</item>
+        <item>Juggernaut</item>
+        <item>Bloodseeker</item>
+        <item>Kunkka</item>
+        <item>Riki</item>
+        <item>Queen of Pain</item>
+        <item>Wraith King</item>
+        <item>Broodmother</item>
+        <item>Huskar</item>
+        <item>Jakiro</item>
+        <item>Batrider</item>
+        <item>Omniknight</item>
+        <item>Dragon Knight</item>
+        <item>Warlock</item>
+        <item>Alchemist</item>
+        <item>Lifestealer</item>
+        <item>Death Prophet</item>
+        <item>Ursa</item>
+        <item>Bounty Hunter</item>
+        <item>Silencer</item>
+        <item>Spirit Breaker</item>
+        <item>Invoker</item>
+        <item>Clinkz</item>
+        <item>Outworld Devourer</item>
+        <item>Bane</item>
+        <item>Shadow Demon</item>
+        <item>Lycan</item>
+        <item>Lone Druid</item>
+        <item>Brewmaster</item>
+        <item>Phantom Lancer</item>
+        <item>Treant Protector</item>
+        <item>Ogre Magi</item>
+        <item>Gyrocopter</item>
+        <item>Chaos Knight</item>
+        <item>Phantom Assassin</item>
+        <item>Rubick</item>
+        <item>Luna</item>
+        <item>Io</item>
+        <item>Undying</item>
+        <item>Disruptor</item>
+        <item>Templar Assassin</item>
+        <item>Naga Siren</item>
+        <item>Nyx Assassin</item>
+        <item>Keeper of the Light</item>
+        <item>Visage</item>
+        <item>Meepo</item>
+        <item>Magnus</item>
+        <item>Centaur Warrunner</item>
+        <item>Slark</item>
+        <item>Timbersaw</item>
+        <item>Medusa</item>
+        <item>Troll Warlord</item>
+        <item>Tusk</item>
+        <item>Bristleback</item>
+        <item>Skywrath Mage</item>
+        <item>Elder Titan</item>
+        <item>Abaddon</item>
+        <item>Ember Spirit</item>
+        <item>Earth Spirit</item>
+        <item>Legion Commander</item>
+        <item>Phoenix</item>
+        <item>Terrorblade</item>
+        <item>Techies</item>
+        <item>Oracle</item>
+        <item>Winter Wyvern</item>
+        <item>Arc Warden</item>
+        <item>Underlord</item>
+        <item>Monkey King</item>
     </string-array>
 
 </resources>

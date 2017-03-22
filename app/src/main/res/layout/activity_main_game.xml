@@ -6,8 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="16dp"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
     tools:context="com.nikalexion.milasiskas.MainGame"
     android:background="@drawable/bc"
@@ -29,6 +27,17 @@
         android:layout_marginBottom="20dp"
         android:textSize="35sp"
         android:textAlignment="center" />
+
+    <Button
+        android:text="ληξη παιχνιδιου"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/starter"
+        android:background="@drawable/btn_bg"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>
 
     <LinearLayout
         android:orientation="vertical"

@@ -94,6 +94,16 @@
             android:layout_below="@+id/shop"
             android:layout_marginTop="15dp"/>
 
+        <Button
+            android:text="Bonus Νομισματα"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/promotion"
+            android:background="@drawable/btn_bg"
+            android:textSize="30sp"
+            android:layout_below="@+id/guidelines"
+            android:layout_marginTop="15dp"/>
+
 
     </RelativeLayout>
 </ScrollView>
