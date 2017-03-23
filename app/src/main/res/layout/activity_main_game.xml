@@ -28,17 +28,6 @@
         android:textSize="35sp"
         android:textAlignment="center" />
 
-    <Button
-        android:text="ληξη\n γυρου"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/lathos"
-        android:background="@drawable/btn_liksi"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:padding="20dp"/>
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -58,4 +47,16 @@
         android:layout_centerHorizontal="true"
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-5861682469694178/6049121043" />
+
+    <Button
+        android:text="ληξη\n γυρου"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lathos"
+        android:background="@drawable/btn_liksi"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/adView"
+        android:padding="20dp"/>
 </RelativeLayout>
