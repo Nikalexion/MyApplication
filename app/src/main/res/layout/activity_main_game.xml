@@ -29,15 +29,15 @@
         android:textAlignment="center" />
 
     <Button
-        android:text="ληξη παιχνιδιου"
+        android:text="ληξη\n γυρου"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lathos"
         android:background="@drawable/btn_liksi"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
-        android:padding="10dp"/>
+        android:padding="20dp"/>
 
     <LinearLayout
         android:orientation="vertical"

@@ -45,6 +45,7 @@ public class MainGame extends AppCompatActivity {
     private int startTime;
     LinearLayout layclick;
     private boolean stillPlaying = true;
+    private Button lathos;
 
     boolean doubleBackToExitPressedOnce = false;
 
@@ -103,7 +104,7 @@ public class MainGame extends AppCompatActivity {
             }
         });
 
-        Button lathos = (Button) findViewById(R.id.lathos);
+        lathos = (Button) findViewById(R.id.lathos);
         lathos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
@@ -133,6 +134,7 @@ public class MainGame extends AppCompatActivity {
 
 
         AdRequest adRq2 = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .addTestDevice("C29EE19EA0561C4586ADCA4FBE4BFC9E")
                 .build();
         mInterstitialAd.loadAd(adRq2);
@@ -285,6 +287,8 @@ public class MainGame extends AppCompatActivity {
     }
 
     public void endGame(){
+        lathos.setEnabled(false);
+        lathos.setVisibility(View.INVISIBLE);
         xronos.cancel();
         mp.stop();
         expl.start();
