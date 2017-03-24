@@ -1,6 +1,5 @@
 package com.nikalexion.milasiskas;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
@@ -20,6 +19,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.Random;
 
@@ -46,6 +46,9 @@ public class MainGame extends AppCompatActivity {
     LinearLayout layclick;
     private boolean stillPlaying = true;
     private Button lathos;
+
+    private FirebaseAnalytics mFirebaseAnalytics;
+
 
     boolean doubleBackToExitPressedOnce = false;
 
@@ -74,6 +77,7 @@ public class MainGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         int min = getSharedPreferences(PREF_EPILOGES, 0).getInt("minTime", 60);
         int max = getSharedPreferences(PREF_EPILOGES, 0).getInt("maxTime", 80);
@@ -299,17 +303,26 @@ public class MainGame extends AppCompatActivity {
         }else{
             leksi.setText("Τέλος Χρόνου! Η Ομάδα σου έχασε!");
         }
-
+        //prosthiki xrimaton
         SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
         int counter = lefta.getInt("lefta", 0);
         counter = counter + (startTime-gameTime)/1000/60;
         SharedPreferences.Editor lefta_editor = lefta.edit();
         lefta_editor.putInt("lefta", counter);
 
+        //prosthiki ton poson game epaikse o sigekrimenos xristis
         int counter2 = lefta.getInt("games", 0);
         counter2 = counter2 + 1;
         lefta_editor.putInt("games", counter2);
         lefta_editor.apply();
+
+        //katagrafi telous game
+        Bundle params = new Bundle();
+        params.putInt("time_played",getSharedPreferences(PREF_EPILOGES, 0).getInt("minTime", 60));
+        params.putInt("games_played", counter2);
+        params.putBoolean("mistake_was_made",mistake);
+        params.putInt("lefta", counter);
+        mFirebaseAnalytics.logEvent("round_ended", params);
 
         gameTime = 3 * 1000;
         lastClock(gameTime);

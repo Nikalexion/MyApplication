@@ -10,15 +10,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 public class Promotion extends AppCompatActivity {
 
     public static final String PREF_EPILOGES = "EPILOGES";
     public static final String PREF_LEFTA = "LEFTA";
 
+    private FirebaseAnalytics mFirebaseAnalytics;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_promotion);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         final SharedPreferences rater = getSharedPreferences(PREF_EPILOGES, 0);
 
@@ -41,8 +46,12 @@ public class Promotion extends AppCompatActivity {
                 lefta_editor.putInt("lefta", counter);
                 lefta_editor.apply();
 
-                rate.setEnabled(false);
+                Bundle params = new Bundle();
+                params.putInt("games_played",lefta.getInt("games", 0));
+                params.putInt("lefta", counter);
+                mFirebaseAnalytics.logEvent("rated_app", params);
 
+                rate.setEnabled(false);
 
                 rateApp();
             }

@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.MobileAds;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button shop;
     private TextView leftakia;
+    private FirebaseAnalytics mFirebaseAnalytics;
+
 
     //To olo "press back again to leave"
     boolean doubleBackToExitPressedOnce = false;
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-5861682469694178~7665455042");
 
@@ -81,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         starter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                fireLog("start_new_round");
                 startActivity(new Intent(getApplicationContext(), TimePicker.class));
             }
         });
@@ -88,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
         guidelines.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                fireLog("read_rules");
                 startActivity(new Intent(getApplicationContext(), Guide.class));
             }
         });
@@ -95,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
         epiloges.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                fireLog("go_to_epiloges");
                 startActivity(new Intent(getApplicationContext(), Epiloges.class));
             }
         });
@@ -102,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
         shop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                fireLog("go_to_shop");
                 startActivity(new Intent(getApplicationContext(), Shop.class));
             }
         });
@@ -109,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         promotion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                fireLog("go_to_promo");
                 startActivity(new Intent(getApplicationContext(), Promotion.class));
             }
         });
@@ -142,6 +151,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
         super.onStart();
+    }
+
+    public void fireLog(String epilogi){
+        SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
+        int counter = lefta.getInt("lefta", 0);
+
+        Bundle params = new Bundle();
+        params.putString("lefta", Integer.toString(counter));
+        mFirebaseAnalytics.logEvent(epilogi, params);
     }
 
 }

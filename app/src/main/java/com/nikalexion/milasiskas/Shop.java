@@ -32,6 +32,7 @@ public class Shop extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         SharedPreferences lefta = getApplicationContext().getSharedPreferences(PREF_LEFTA, 0);
         SharedPreferences agorasmena = getApplicationContext().getSharedPreferences(PREF_AGORES, 0);
@@ -42,7 +43,7 @@ public class Shop extends AppCompatActivity {
         plithosKatigorion = katigories.length;
         LinearLayout my_layout = (LinearLayout)findViewById(R.id.activity_shop);
 
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
 
         for (int i = 0; i < plithosKatigorion-pfk; i++) {
             final String kat = katigories[i+pfk];
