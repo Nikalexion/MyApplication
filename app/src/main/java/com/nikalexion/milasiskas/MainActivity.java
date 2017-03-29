@@ -1,11 +1,17 @@
 package com.nikalexion.milasiskas;
 
+import android.app.AlertDialog;
+import android.content.ActivityNotFoundException;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -24,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView leftakia;
     private FirebaseAnalytics mFirebaseAnalytics;
 
+
+    String versionName = BuildConfig.VERSION_NAME;
 
     //To olo "press back again to leave"
     boolean doubleBackToExitPressedOnce = false;
@@ -56,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-5861682469694178~7665455042");
+
+        vChecker();
 
         if(getSharedPreferences(PREF_EPILOGES, 0).getBoolean("protiFora",true)) {
             SharedPreferences.Editor defaultAgores = getSharedPreferences(PREF_AGORES, 0).edit();
@@ -160,6 +170,72 @@ public class MainActivity extends AppCompatActivity {
         Bundle params = new Bundle();
         params.putString("lefta", Integer.toString(counter));
         mFirebaseAnalytics.logEvent(epilogi, params);
+    }
+
+    protected void vChecker () {
+        if (versionName != "1.3"){
+            AlertDialog alertDialog;
+            ContextThemeWrapper ctw = new ContextThemeWrapper(this, R.style.MyAlertDialogStyle);
+            AlertDialog.Builder builder = new AlertDialog.Builder(ctw);
+            alertDialog = builder.create();
+            alertDialog.getWindow().setLayout(200, 400);
+
+
+            builder.setTitle("Νέο Update");
+            //Start setting up the builder
+            builder.setMessage("Ένα νέο update είναι διαθέσιμο στο google play. Θέλετε να το κατεβάσετε;");
+
+            // Add the buttons
+            builder.setPositiveButton("Ναι", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    try
+                    {
+                        Intent rateIntent = rateIntentForUrl(("market://details"));
+                        startActivity(rateIntent);
+                    }
+                    catch (ActivityNotFoundException e)
+                    {
+                        Intent rateIntent = rateIntentForUrl("https://play.google.com/store/apps/details");
+                        startActivity(rateIntent);
+                    }
+
+                }
+            });
+            builder.setNegativeButton("Όχι", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    // User cancelled the dialog
+                }
+            });
+            // Set other dialog properties
+
+            // Create the AlertDialog
+            AlertDialog dialog = builder.create();
+            dialog.setOnShowListener(new DialogInterface.OnShowListener() {
+                @Override
+                public void onShow(DialogInterface dialog) {
+
+
+                }
+            });
+            dialog.show();
+        }
+    }
+
+    protected Intent rateIntentForUrl(String url)
+    {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format("%s?id=%s", url, getPackageName())));
+        int flags = Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_MULTIPLE_TASK;
+        if (Build.VERSION.SDK_INT >= 21)
+        {
+            flags |= Intent.FLAG_ACTIVITY_NEW_DOCUMENT;
+        }
+        else
+        {
+            //noinspection deprecation
+            flags |= Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET;
+        }
+        intent.addFlags(flags);
+        return intent;
     }
 
 }
