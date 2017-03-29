@@ -218,7 +218,7 @@ public class MainActivity extends AppCompatActivity {
             alertDialog.getWindow().setLayout(200, 400);
 
 
-            builder.setTitle("Νέα διαθέσημη έκδοση");
+            builder.setTitle("Νέα διαθέσιμη έκδοση");
             //Start setting up the builder
             builder.setMessage("Μία νέα έκδοση είναι διαθέσιμη στο play store. Θέλετε να την κατεβάσετε;");
 
