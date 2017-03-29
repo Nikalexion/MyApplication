@@ -7,10 +7,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +21,11 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
+import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -173,7 +180,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void vChecker () {
-        if (versionName != "1.3"){
+
+        new GetLatestVersion();
+
+        String tag = "LOG_TAG";
+
+        String latestVersion = "";
+        String currentVersion = versionName;
+        Log.d(tag, "Current version = " + currentVersion);
+        try {
+            latestVersion = new GetLatestVersion().execute().get();
+            Log.d(tag, "Latest version = " + latestVersion);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        if(!currentVersion.equals(latestVersion)) {
             AlertDialog alertDialog;
             ContextThemeWrapper ctw = new ContextThemeWrapper(this, R.style.MyAlertDialogStyle);
             AlertDialog.Builder builder = new AlertDialog.Builder(ctw);
@@ -188,13 +212,10 @@ public class MainActivity extends AppCompatActivity {
             // Add the buttons
             builder.setPositiveButton("Ναι", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
-                    try
-                    {
+                    try {
                         Intent rateIntent = rateIntentForUrl(("market://details"));
                         startActivity(rateIntent);
-                    }
-                    catch (ActivityNotFoundException e)
-                    {
+                    } catch (ActivityNotFoundException e) {
                         Intent rateIntent = rateIntentForUrl("https://play.google.com/store/apps/details");
                         startActivity(rateIntent);
                     }
@@ -236,6 +257,31 @@ public class MainActivity extends AppCompatActivity {
         }
         intent.addFlags(flags);
         return intent;
+    }
+
+    private class GetLatestVersion extends AsyncTask<String, String, String> {
+        String latestVersion;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+            try {
+                //It retrieves the latest version by scraping the content of current version from play store at runtime
+                String urlOfAppFromPlayStore = "https://play.google.com/store/apps/details?id=" + getPackageName();
+                Document doc = Jsoup.connect(urlOfAppFromPlayStore).get();
+                latestVersion = doc.getElementsByAttributeValue("itemprop","softwareVersion").first().text();
+
+            }catch (Exception e){
+                e.printStackTrace();
+
+            }
+
+            return latestVersion;
+        }
     }
 
 }
