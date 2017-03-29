@@ -9,8 +9,8 @@ android {
         applicationId "com.nikalexion.milasiskas"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 9
-        versionName "1.5c"
+        versionCode 10
+        versionName "1.6"
         vectorDrawables.useSupportLibrary = true
     }
 
