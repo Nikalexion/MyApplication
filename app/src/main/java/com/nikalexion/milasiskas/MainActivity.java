@@ -2,10 +2,13 @@ package com.nikalexion.milasiskas;
 
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -40,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
     String versionName = BuildConfig.VERSION_NAME;
 
+    public boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
+
+
     //To olo "press back again to leave"
     boolean doubleBackToExitPressedOnce = false;
 
@@ -72,7 +83,9 @@ public class MainActivity extends AppCompatActivity {
 
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-5861682469694178~7665455042");
 
-        vChecker();
+        if (Build.VERSION.SDK_INT > 19 && isNetworkAvailable()) {
+            vChecker();
+        }
 
         if(getSharedPreferences(PREF_EPILOGES, 0).getBoolean("protiFora",true)) {
             SharedPreferences.Editor defaultAgores = getSharedPreferences(PREF_AGORES, 0).edit();
