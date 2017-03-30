@@ -31,3 +31,7 @@
     public static *** d(...);
     public static *** v(...);
 }
+
+-keep public class org.jsoup.** {
+public *;
+}
