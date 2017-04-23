@@ -800,7 +800,7 @@
         <item>Τα σαγόνια του καρχαρία</item>
         <item>Ο Καλός, ο Κακός και ο Άσχημος</item>
         <item>Braveheart</item>
-        <item>Χορεύωντας με του Λύκους</item>
+        <item>Χορεύοντας με τους Λύκους</item>
         <item>Jurassic Park</item>
         <item>Jurassic World</item>
         <item>Ο Εξορκιστής</item>
@@ -961,7 +961,6 @@
 
     <string-array name="parimies">
         <item>Ο διάβολος έχει πολλά ποδάρια</item>
-        <item>Καλιο 5 και στο χέρι παρά 10 και καρτέρει</item>
         <item>Η καλή η μέρα από το πρωΐ φαίνεται</item>
         <item>Στου κουφού την πόρτα όσο θέλεις βρόντα</item>
         <item>Το καλό το παλικάρι ξέρει κι άλλο μονοπάτι</item>
@@ -1234,7 +1233,7 @@
         <item>Στο δρόμο</item>
         <item>Ηρωίδες</item>
         <item>Ανατροπή</item>
-        <item>Μάνα x ουρανού</item>
+        <item>Μάνα εξ ουρανού</item>
         <item>Τα ψάθινα καπέλλα </item>
         <item>Ο Χριστός ξανασταυρώνεται</item>
         <item>Η φόνισσα</item>
@@ -1920,7 +1919,6 @@
         <item>Τρίτο στεφάνι</item>
         <item>Ματωμένα χώματα</item>
         <item>Πάπισσα Ιωάννα</item>
-        <item>όσα πέρνει ο άνεμος</item>
         <item>Τερέζα</item>
         <item>Ο μεγάλος θυμός</item>
         <item>Η φόνισσα</item>
@@ -2140,7 +2138,7 @@
         <item>Η ψυχή του πέτρινου σπιτιού</item>
         <item>Μια ιστορία λυπητερή</item>
         <item>Ο Χάρυ Πότερ και το καταραμένο παιδί</item>
-        <item>Το ημερολόγιο ενός Σπασίκλα 11</item>
+        <item>Το ημερολόγιο ενός Σπασίκλα</item>
         <item>Η κατάσκοπος</item>
         <item>Η υπέροχη φίλη μου</item>
         <item>Πριν έρθεις εσύ</item>
@@ -3445,24 +3443,23 @@
     </string-array>
 
     <string-array name="anime">
-        <item>Kimi no Na wa.</item>
+        <item>Kimi no Na wa. (Your Name)</item>
         <item>Fullmetal Alchemist: Brotherhood</item>
         <item>Gintama</item>
         <item>Steins;Gate</item>
         <item>Hunter x Hunter</item>
-        <item>Ginga Eiyuu Densetsu</item>
+        <item>Ginga Eiyuu Densetsu (Legend of the Galactic Heroes)</item>
         <item>Haikyuu!!</item>
-        <item>Koe no Katachi</item>
-        <item>Code Geass: Hangyaku no Lelouch</item>
-        <item>Sen to Chihiro no Kamikakushi</item>
-        <item>Shigatsu wa Kimi no Uso</item>
-        <item>Mushishi Zoku Shou</item>
-        <item>Hajime no Ippo</item>
-        <item>Ookami Kodomo no Ame to Yuki</item>
+        <item>Koe no Katachi (A Silent Voice)</item>
+        <item>Code Geass</item>
+        <item>Sen to Chihiro no Kamikakushi (Spirited Away)</item>
+        <item>Shigatsu wa Kimi no Uso (Your Lie in April)</item>
+        <item>Mushishi Zoku Shou (MUSHI-SHI -Next Passage-)</item>
+        <item>Hajime no Ippo (Fighting Spirit)</item>
+        <item>Ookami Kodomo no Ame to Yuki (Wolf Children)</item>
         <item>Cowboy Bebop</item>
         <item>Rurouni Kenshin</item>
-        <item>Kizumonogatari</item>
-        <item>Suzumiya Haruhi no Shoushitsu</item>
+        <item>Suzumiya Haruhi no Shoushitsu (The Disappearance of Haruhi Suzumiya)</item>
         <item>Monogatari</item>
         <item>One Punch Man</item>
         <item>Mushishi</item>
@@ -3536,7 +3533,6 @@
         <item>Spice and Wolf</item>
         <item>Sword Art Online</item>
         <item>Toradora!</item>
-        <item>Owarimonogatari</item>
         <item>Stranger</item>
         <item>Toki wo Kakeru Shoujo</item>
         <item>Berserk</item>
@@ -3550,7 +3546,6 @@
         <item>Nanatsu no Taizai</item>
         <item>Sakurasou no Pet na Kanojo</item>
         <item>Angel Beats!</item>
-        <item>Bakemonogatari</item>
         <item>Mobile Suit Gundam Unicorn</item>
         <item>Ouran Koukou Host Club</item>
         <item>Planetes</item>
@@ -3630,12 +3625,10 @@
         <item>Sakasama no Patema</item>
         <item>Ansatsu Kyoushitsu</item>
         <item>Free!: Eternal Summer</item>
-        <item>Nisemonogatari</item>
         <item>ReLIFE</item>
         <item>Shoujo Kakumei Utena</item>
         <item>Full Metal Panic?</item>
         <item>Kono Sekai no Katasumi ni</item>
-        <item>Tsukimonogatari</item>
         <item>D.Gray-man</item>
         <item>Lupin III</item>
         <item>Mahoutsukai no Yome</item>
@@ -3688,7 +3681,6 @@
         <item>Stand By Me Doraemon</item>
         <item>Wolf’s Rain</item>
         <item>ef: A Tale of Memories.</item>
-        <item>Hanamonogatari</item>
         <item>Kami nomi zo Shiru Sekai</item>
         <item>Tiger &amp; Bunny</item>
         <item>Ushio to Tora</item>
@@ -3721,7 +3713,6 @@
         <item>Fooly cooly</item>
         <item>Haibane Renmei</item>
         <item>Kobayashi-san Chi no Maid Dragon</item>
-        <item>Nekomonogatari</item>
         <item>Saiunkoku Monogatari</item>
         <item>Saiyuuki Reload</item>
         <item>Yume-iro Pâtissière</item>
@@ -3738,7 +3729,7 @@
         <item>Lupin III vs. Detective Conan</item>
         <item>Mirai Nikki</item>
         <item>Overlord</item>
-        <item>Suzumiya Haruhi no Yuuutsu</item>
+        <item>Suzumiya Haruhi no Yuuutsu (The Melancholy of Haruhi Suzumiya)</item>
         <item>Yuru Yuri</item>
         <item>Hanasaku Iroha</item>
         <item>Hataraku Maou-sama!</item>
@@ -3862,7 +3853,7 @@
         <item>DVD</item>
         <item>Adobe PhotoShop</item>
         <item>Tesla</item>
-        <item>Adoble After Effects</item>
+        <item>Adobe After Effects</item>
         <item>Adobe Lightroom</item>
         <item>Rooter</item>
         <item>Jpeg</item>
@@ -4442,7 +4433,7 @@
         <item>Κωστής Παλαμάς</item>
         <item>Αριστοφάνης</item>
         <item>Φειδίας</item>
-        <item>ʼγνωστος Στρατιώτης</item>
+        <item>Άγνωστος Στρατιώτης</item>
         <item>Θοδωρής Ζαγοράκης</item>
         <item>Αθανάσιος Διάκος</item>
         <item>Χριστόδουλος</item>
@@ -4479,7 +4470,7 @@
         <item>Μίκης Θεοδωράκης</item>
         <item>Αριστοτέλης</item>
         <item>Ελευθέριος Βενιζέλος</item>
-        <item>Καποδίστριας</item>
+        <item>Ιωάννης Καποδίστριας</item>
         <item>Κωνσταντίνος Καραμανλής</item>
         <item>Θεόδωρος Κολοκοτρώνης</item>
         <item>Γεώργιος Παπανικολάου</item>
