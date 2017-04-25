@@ -653,37 +653,37 @@
     </string-array>
 
     <string-array name="tainiesENG">
-        <item>The Revenant</item>
+        <item>The Revenant (Η επιστροφή)</item>
         <item>Kung fu panda</item>
-        <item>Raiders of the Lost Ark</item>
-        <item>The Martian</item>
-        <item>Terminator</item>
-        <item>Django Unchained</item>
+        <item>Raiders of the Lost Ark (Οι κυνηγοί της χαμένης κιβωτού)</item>
+        <item>The Martian (Η διάσωση)</item>
+        <item>Terminator (Ο Εξολοθρευτής)</item>
+        <item>Django Unchained (Django, Ο τιμωρός)</item>
         <item>Gravity</item>
         <item>Avatar</item>
-        <item>Ο Τιτανικός</item>
-        <item>The Avengers</item>
-        <item>Fast and Furious</item>
-        <item>Avengers: Age of Ultron</item>
-        <item>Frozen</item>
+        <item>Ο Τιτανικός (Titanic)</item>
+        <item>The Avengers (Οι Εκδικητές)</item>
+        <item>Fast and Furious (Οι Μαχητές των Δρόμων)</item>
+        <item>Avengers: Age of Ultron (Εκδικητές: Η εποχή του Ultron)</item>
+        <item>Frozen (Ψυχρά κι ανάποδα)</item>
         <item>Iron Man</item>
         <item>Minions</item>
-        <item>Captain America: Civil War</item>
+        <item>Captain America: Civil War (Captain America: Εμφύλιος πόλεμος)</item>
         <item>Skyfall</item>
         <item>Transformers</item>
         <item>Toy Story</item>
         <item>Jurassic Park</item>
-        <item>Zootopia</item>
-        <item>The Dark Knight</item>
-        <item>Despicable Me</item>
+        <item>Zootopia (Ζωούπολη)</item>
+        <item>The Dark Knight (Ο σκοτεινός ιππότης)</item>
+        <item>Despicable Me (Εγώ ο Απαισιότατος)</item>
         <item>The Jungle Book</item>
         <item>The Hobbit</item>
         <item>Shrek</item>
-        <item>The Secret Life of Pets</item>
-        <item>Batman vs Superman: Dawn of Justice</item>
+        <item>The Secret Life of Pets (Μπάτε σκύλοι αλέστε)</item>
+        <item>Batman vs Superman: Dawn of Justice (Η αυγή της δικαιοσύνης)</item>
         <item>Spider-Man</item>
         <item>Spectre</item>
-        <item>Star Wars</item>
+        <item>Star Wars (Ο πόλεμος των άστρων)</item>
         <item>Rogue One</item>
         <item>Ο Χάρι Πότερ και η Φιλοσοφική Λίθος</item>
         <item>Ο Χάρι Πότερ και η Κάμαρα με τα Μυστικά </item>
@@ -700,258 +700,230 @@
         <item>The Matrix Revolutions</item>
         <item>10.000 π.Χ.</item>
         <item>2012</item>
-        <item>Εφιάλτης στο δρόμο με τις λεύκες</item>
-        <item>Η Αλίκη στη χώρα των θαυμάτων</item>
+        <item>Nightmare on Elm Street (Εφιάλτης στο δρόμο με τις λεύκες)</item>
+        <item>Alice in Wonderland (Η Αλίκη στη χώρα των θαυμάτων)</item>
         <item>American Beauty</item>
         <item>American Pie</item>
-        <item>American Pie: Beta House</item>
-        <item>American Pie: The Naked Mile</item>
+        <item>American Pie: Beta House (Λέσχη… οργίων)</item>
+        <item>American Pie: The Naked Mile (Ένα τρελό τρελό Σαββατοκύριακο)</item>
         <item>American Psycho</item>
         <item>Batman Begins</item>
         <item>Casino Royale</item>
-        <item>Η πόλη του Θεού</item>
+        <item>City of God (Η πόλη του Θεού)</item>
         <item>Crazy, Stupid, Love</item>
         <item>District 9</item>
         <item>EuroTrip</item>
-        <item>Μάτια ερμητικά κλειστά</item>
-        <item>Βλέπω το θάνατό σου</item>
-        <item>Ψάχνοντας τον Νέμο</item>
-        <item>Finding Dory</item>
-        <item>Παρασκευή και 13</item>
+        <item>Eyes Wide Shut (Μάτια ερμητικά κλειστά)</item>
+        <item>Final Destination (Βλέπω το θάνατό σου)</item>
+        <item>Finding Nemo (Ψάχνοντας τον Νέμο)</item>
+        <item>Finding Dory (Ψάχνοντας την Ντόρι)</item>
+        <item>Friday the 13th (Παρασκευή και 13)</item>
         <item>Get Smart</item>
         <item>Hancock</item>
         <item>Hannibal</item>
-        <item>Hitman: Εκτελεστής 47</item>
+        <item>Hitman:Agent 47 (Εκτελεστής 47)</item>
         <item>Hostel</item>
-        <item>Το Σπίτι του Θανάτου</item>
+        <item>House Of Wax (Το Σπίτι του Θανάτου)</item>
         <item>Inception</item>
-        <item>Ημέρα ανεξαρτησίας</item>
+        <item>Independence Day (Ημέρα ανεξαρτησίας)</item>
         <item>Killer Elite</item>
-        <item>Κινγκ Κονγκ</item>
+        <item>King Kong</item>
         <item>Memento</item>
-        <item>Οι άνδρες με τα μαύρα</item>
-        <item>Mirrors</item>
-        <item>Mission: Impossible</item>
-        <item>New York</item>
-        <item>Μια νύχτα στο μουσείο</item>
-        <item>Το άρωμα: Η ιστορία ενός δολοφόνου</item>
-        <item>Οι πειρατές της Καραϊβικής</item>
-        <item>Population 436</item>
-        <item>Δημόσιος κίνδυνος</item>
-        <item>Ο πλανήτης των πιθήκων</item>
+        <item>Men in Black (Οι άνδρες με τα μαύρα)</item>
+        <item>Mirrors (Μέσα από τον καθρέφτη)</item>
+        <item>Mission: Impossible (Επικίνδυνη αποστολή)</item>
+        <item>Night At The Museum (Μια νύχτα στο μουσείο)</item>
+        <item>Perfume: The Story Of A Murderer (Το άρωμα: Η ιστορία ενός δολοφόνου)</item>
+        <item>Pirates of the Caribbean (Οι πειρατές της Καραϊβικής)</item>
+        <item>Population 436 (Πληθυσμός 436)</item>
+        <item>Public Enemies (Δημόσιος κίνδυνος)</item>
+        <item>Planet of the Apes (Ο πλανήτης των πιθήκων)</item>
         <item>RocknRolla</item>
         <item>Scream</item>
-        <item>Ο Γιος του Τσάκι</item>
-        <item>Ο εκτελεστής</item>
-        <item>Shutter Island</item>
+        <item>Seed of Chucky (Ο Γιος του Τσάκι)</item>
+        <item>Shooter (Ο εκτελεστής)</item>
+        <item>Shutter Island (Το Νησί των Καταραμένων)</item>
         <item>Silent Hill</item>
-        <item>Ice Age</item>
-        <item>Ο μύθος του ακέφαλου καβαλάρη</item>
-        <item>The Bank Job: Το μεγάλο κόλπο</item>
-        <item>Χωρίς ταυτότητα</item>
+        <item>Ice Age (Η εποχή των παγετώνων)</item>
+        <item>Sleepy Hollow (Ο μύθος του ακέφαλου καβαλάρη)</item>
+        <item>The Bank Job (Το μεγάλο κόλπο)</item>
+        <item>The Bourne Identity (Χωρίς ταυτότητα)</item>
         <item>Κώδικας Da Vinci</item>
-        <item>The Day After Tomorrow</item>
-        <item>The Departed</item>
-        <item>Η Κάθοδος</item>
+        <item>The Day After Tomorrow (Μετά την Επόμενη Μέρα)</item>
+        <item>The Departed (Ο Πληροφοριοδότης)</item>
+        <item>The Descent (Η Κάθοδος)</item>
         <item>The Dirty Picture</item>
-        <item>Ο εξορκιστής</item>
-        <item>Οι αναλώσιμοι</item>
-        <item>Fast and Furious: Tokyo Drift</item>
-        <item>Η κατάρα</item>
-        <item>The Grudge</item>
+        <item>The Exorcist (Ο εξορκιστής)</item>
+        <item>The Expendables (Οι αναλώσιμοι)</item>
+        <item>Fast and Furious: Tokyo Drift (Οι μαχητές των δρόμων: Tokyo Drift)</item>
+        <item>The Grudge(Η κατάρα)</item>
         <item>The Hangover</item>
-        <item>Η μούμια</item>
-        <item>Το ημερολόγιο</item>
-        <item>The Others</item>
+        <item>Mummy (Η μούμια)</item>
+        <item>The Notebook (Το ημερολόγιο)</item>
+        <item>The Others (Οι Άλλοι)</item>
         <item>The Prestige</item>
-        <item>The Ring</item>
-        <item>The Ruins</item>
-        <item>Τελευταία έξοδος: Ρίτα Χέιγουορθ</item>
-        <item>The Shining</item>
-        <item>Η σιωπή των αμνών</item>
+        <item>The Ring (Σήμα Κινδύνου)</item>
+        <item>The Ruins (Τα ερείπια)</item>
+        <item>The Shawshank Redemption (Τελευταία έξοδος: Ρίτα Χέιγουορθ)</item>
+        <item>The Shining (Η Λάμψη)</item>
+        <item>The Silence of the Lambs (Η σιωπή των αμνών)</item>
         <item>The Social Network</item>
-        <item>Αδιέξοδο</item>
+        <item>Vacancy (Αδιέξοδο)</item>
         <item>X-Men</item>
-        <item>X-Men: First Class</item>
-        <item>Η βασίλισσα του χιονιού</item>
-        <item>Ο Λύκος της Wall Street</item>
-        <item>12 Χρόνια Σκλάβος</item>
-        <item>Όσα Παίρνει ο Άνεμος</item>
-        <item>Η γέφυρα των κατασκόπων</item>
-        <item>The magnificent Seven</item>
-        <item>Το Σινικό Τείχος</item>
-        <item>Hail, Caesar!</item>
-        <item>The Godfather</item>
-        <item>Η λίστα του Σίντλερ</item>
+        <item>X-Men: First Class (X-Men: Η πρώτη γενιά)</item>
+        <item>Snow Queen (Η βασίλισσα του χιονιού)</item>
+        <item>The Wolf of Wall Street (Ο Λύκος της Wall Street)</item>
+        <item>12 Years a Slave (12 Χρόνια Σκλάβος)</item>
+        <item>Gone with the Wind (Όσα Παίρνει ο Άνεμος)</item>
+        <item>Bridge of Spies (Η γέφυρα των κατασκόπων)</item>
+        <item>The Magnificent Seven (Και οι 7 ήταν υπέροχοι)</item>
+        <item>The Great Wall (Το Σινικό Τείχος)</item>
+        <item>Hail, Caesar! (Χαίρε, Καίσαρ!)</item>
+        <item>The Godfather (Ο Νονός)</item>
+        <item>Schindler's List (Η λίστα του Σίντλερ)</item>
         <item>Καζαμπλάνκα</item>
-        <item>Ο μάγος του Οζ</item>
-        <item>Στην φωλιά του κούκου</item>
-        <item>ο Λώρενς της Αραβίας</item>
-        <item>Vertigo</item>
-        <item>Ψυχώ</item>
+        <item>The Wizard of Oz (Ο μάγος του Οζ)</item>
+        <item>One Flew Over the Cuckoo's Nest (Στην φωλιά του κούκου)</item>
+        <item>Lawrence of Arabia (Ο Λώρενς της Αραβίας)</item>
+        <item>Vertigo (Δεσμώτης του Ιλίγγου)</item>
+        <item>Psycho (Ψυχώ)</item>
         <item>Forrest Gump</item>
-        <item>12 Angry Men</item>
-        <item>It`s a Wonderful Life</item>
-        <item>Gladiator</item>
-        <item>Η Διάσωση του Στρατιώτη Ράιαν</item>
+        <item>12 Angry Men (Οι δώδεκα ένορκοι)</item>
+        <item>It`s a Wonderful Life (Μια Υπέροχη Ζωή)</item>
+        <item>Gladiator (Μονομάχος)</item>
+        <item>Saving Private Ryan (Η Διάσωση του Στρατιώτη Ράιαν)</item>
         <item>Rocky</item>
-        <item>To kill a Mockingbird</item>
-        <item>Το κουρδιστό πορτοκάλι</item>
-        <item>Τα σαγόνια του καρχαρία</item>
-        <item>Ο Καλός, ο Κακός και ο Άσχημος</item>
+        <item>To Κill a Mockingbird (Σκιές και σιωπή)</item>
+        <item>A Clockwork Orange (Το κουρδιστό πορτοκάλι)</item>
+        <item>Jaws (Τα σαγόνια του καρχαρία)</item>
+        <item>The Good, the Bad and the Ugly (Ο Καλός, ο Κακός και ο Άσχημος)</item>
         <item>Braveheart</item>
-        <item>Χορεύοντας με τους Λύκους</item>
-        <item>Jurassic Park</item>
+        <item>Dances with Wolves (Χορεύοντας με τους Λύκους)</item>
         <item>Jurassic World</item>
-        <item>Ο Εξορκιστής</item>
-        <item>Goodfellas</item>
+        <item>Goodfellas (Τα Καλά Παιδιά)</item>
         <item>Fargo</item>
-        <item>Το Πράσινο Μίλι</item>
+        <item>The Green Mile (Το Πράσινο Μίλι)</item>
         <item>Pulp Fiction</item>
-        <item>Inglourious Basterds</item>
+        <item>Inglourious Basterds (Άδωξοι Μπάσταρδη)</item>
         <item>Watchmen</item>
         <item>Reservoir Dogs</item>
-        <item>Back to the Future</item>
-        <item>The Usual Suspects</item>
-        <item>Die Hard</item>
-        <item>The Terminator</item>
+        <item>Back to the Future (Επιστροφή στο Μέλλον)</item>
+        <item>The Usual Suspects (Συνήθεις ύποπτοι)</item>
+        <item>Die Hard (Πολύ σκληρός για να πεθάνει)</item>
         <item>Alien</item>
-        <item>No Country for Old Men</item>
-        <item>Scarface</item>
-        <item>The Lion King</item>
+        <item>No Country for Old Men (Καμιά Πατρίδα για τους Μελλοθάνατους)</item>
+        <item>Scarface (Ο Σημαδεμένος)</item>
+        <item>The Lion King (Ο Βασιλιάς των Λιονταριών)</item>
         <item>Ghostbusters</item>
-        <item>American History</item>
+        <item>American History X (Μαθήματα Αμερικανικής Ιστορίας)</item>
         <item>Leon: The Professional</item>
         <item>The Breakfast Club</item>
         <item>Kill Bill</item>
-        <item>Catch me if you can</item>
+        <item>Catch me if you can (Η Πλεκτάνη)</item>
         <item>Apollo 13</item>
         <item>WALL-E</item>
-        <item>Finding Nemo</item>
-        <item>Finding Dory</item>
-        <item>Minions</item>
-        <item>Despicable Me</item>
-        <item>Cast Away</item>
+        <item>Cast Away (Ναυαγός)</item>
         <item>300</item>
-        <item>Up</item>
-        <item>The Incredibles</item>
-        <item>Home Alone</item>
-        <item>Independence Day</item>
-        <item>Η συμμορία των 11</item>
-        <item>Snatch</item>
+        <item>Up (Ψηλά στον Ουρανό)</item>
+        <item>The Incredibles (Οι Απίθανοι)</item>
+        <item>Home Alone (Μόνος στο σπίτι)</item>
+        <item>Ocean's Eleven (Η συμμορία των 11)</item>
+        <item>Snatch (Η αρπαχτή)</item>
         <item>Top Gun</item>
-        <item>A Beautiful Mind</item>
-        <item>Requiem for a Dream</item>
-        <item>Η Πεντάμορφη και το Τέρας</item>
-        <item>City of God</item>
+        <item>A Beautiful Mind (Ένας υπέροχος άνθρωπος)</item>
+        <item>Requiem for a Dream (Ρέκβιεμ για ένα όνειρο)</item>
+        <item>Beauty and the Beast (Η Πεντάμορφη και το Τέρας)</item>
         <item>Million Dollar Baby</item>
-        <item>Predator</item>
+        <item>Predator (Ο Κυνηγός)</item>
         <item>Star Trek</item>
         <item>Aladdin</item>
-        <item>Frozen</item>
         <item>The Karate Kid</item>
         <item>Pretty Woman</item>
-        <item>Τροία</item>
-        <item>The Patriot</item>
-        <item>Φονικό Όπλο</item>
-        <item>Σταχτοπούτα</item>
-        <item>Η Χιονάτη και οι 7 νάνοι</item>
-        <item>Η κοκκινοσκουφίτσα</item>
-        <item>Η Πεντάμορφη και το Τέρας</item>
+        <item>Troy (Τροία)</item>
+        <item>The Patriot (Ο πατριώτης)</item>
+        <item>Lethal Weapon (Φονικό Όπλο)</item>
+        <item>Cinderella (Σταχτοπούτα)</item>
+        <item>Snow White (Η Χιονάτη και οι 7 νάνοι)</item>
+        <item>Red Riding Hood (Η κοκκινοσκουφίτσα)</item>
         <item>Πινόκιο</item>
-        <item>Η ωραία κοιμωμένη</item>
+        <item>Sleeping Beauty (Η ωραία κοιμωμένη)</item>
         <item>Πίτερ Παν</item>
-        <item>Σπάρτακος</item>
+        <item>Spartacus (Σπάρτακος)</item>
         <item>Sherlock Holmes</item>
-        <item>The Nightmare Before Christmas</item>
-        <item>Ματωμένο Διαμάντι</item>
-        <item>How to Train your Dragon</item>
-        <item>Into The Wild</item>
-        <item>Modern Times</item>
-        <item>I am Legend</item>
+        <item>The Nightmare Before Christmas (Χριστουγεννιάτικος εφιάλτης)</item>
+        <item>Blood Diamond (Ματωμένο Διαμάντι)</item>
+        <item>How to Train your Dragon (Πώς να εκπαιδεύσετε το δράκο σας)</item>
+        <item>Into The Wild (Ταξίδι στην άγρια φύση)</item>
+        <item>Modern Times (Μοντέρνοι Καιροί)</item>
+        <item>I am Legend (Ζωντανός θρύλος)</item>
         <item>Speed</item>
-        <item>Mission: Impossible</item>
-        <item>The Notebook</item>
-        <item>School of Rock</item>
-        <item>Life of Pi</item>
+        <item>School of Rock (Ένα σχολείο πολύ ροκ)</item>
+        <item>Life of Pi (Η ζωή του Πι)</item>
         <item>Gremlins</item>
         <item>Thor</item>
-        <item>The Italian Job</item>
-        <item>Ice Age</item>
-        <item>The Hunger Games</item>
-        <item>The Wolf of Wall Street</item>
+        <item>The Italian Job (Ληστεία αλά Ιταλικά)</item>
+        <item>The Hunger Games (Αγώνες Πείνας)</item>
         <item>Goal</item>
         <item>Mad Max</item>
         <item>8 Mile</item>
-        <item>Rush Hour</item>
+        <item>Rush Hour (Αλεξίσφαιροι ντετέκτιβ)</item>
         <item>Moonlight</item>
         <item>La La Land</item>
-        <item>Hacksaw Ridge</item>
+        <item>Hacksaw Ridge (Αντιρρησίας συνείδησης)</item>
         <item>Nosferatu</item>
-        <item>Μάτια Ερμητικά Κλειστά</item>
-        <item>Planet of the Apes</item>
-        <item>Η Μάσκα</item>
+        <item>The Mask (Η Μάσκα)</item>
         <item>Interstellar</item>
-        <item>The Machinist</item>
-        <item>Black Swan</item>
+        <item>The Machinist (Άγρυπνος)</item>
+        <item>Black Swan (Μαύρος Κύκνος)</item>
         <item>Wanted</item>
         <item>Kick-Ass</item>
-        <item>Shrek</item>
-        <item>A Hard Day`s Night</item>
-        <item>Το φαινόμενο της Πεταλούδας</item>
+        <item>A Hard Day`s Night (Ξεφάντωμα με τους Μπιτλς)</item>
+        <item>The Butterfly Effect (Το φαινόμενο της Πεταλούδας)</item>
         <item>Drive</item>
-        <item>Zoolander</item>
+        <item>Zoolander (Ο άρχοντας της πασαρέλας)</item>
         <item>Rambo</item>
-        <item>Saw</item>
-        <item>Η Αλίκη στην Χώρα των θαυμάτων</item>
-        <item>Kung Fu Panda</item>
-        <item>Men in Black</item>
-        <item>Guardians of the Galaxy</item>
+        <item>Saw (Σε βλέπω)</item>
+        <item>Guardians of the Galaxy (Φύλακες του Γαλαξία)</item>
         <item>Logan</item>
-        <item>Suicide Squad</item>
-        <item>Midnight in Paris</item>
-        <item>Annie Hall</item>
-        <item>12 Χρόνια Σκλάβος</item>
+        <item>Suicide Squad (Ομάδα αυτοκτονίας)</item>
+        <item>Midnight in Paris (Μεσάνυχτα στο Παρίσι)</item>
+        <item>Annie Hall (Ο Νευρικός Εραστής)</item>
         <item>Ted</item>
-        <item>Η Μούμια</item>
         <item>Μαδαγασκάρη</item>
         <item>Argo</item>
-        <item>Prometheus</item>
+        <item>Prometheus (Προμηθέας)</item>
         <item>X-Men Origins: Wolverine</item>
-        <item>The Perks of being a Wallflower</item>
-        <item>The Great Dictator</item>
-        <item>Blade</item>
+        <item>The Perks of being a Wallflower (Τα Πλεονεκτήματα του να Είσαι στο Περιθώριο)</item>
+        <item>The Great Dictator (Ο Μεγάλος Δικτάτωρ)</item>
+        <item>Blade (Σκοτεινή δύναμη)</item>
         <item>Desperado</item>
         <item>Μουλάν</item>
         <item>Hellboy</item>
         <item>Birdman</item>
         <item>Van Helsing</item>
-        <item>Space Jam</item>
-        <item>The Big Lebowski</item>
-        <item>Grand Budapest Hotel</item>
-        <item>Παρασκευή και 13</item>
+        <item>Space Jam (Διαστημικά καλάθια)</item>
+        <item>The Big Lebowski (Ο μεγάλος Λεμπόφσκι)</item>
+        <item>Grand Budapest Hotel (Ξενοδοχείο Grand Budapest)</item>
         <item>Highlander</item>
         <item>Αριστόγατες</item>
-        <item>Το Φάντασμα της Όπερας</item>
-        <item>The Expendables</item>
+        <item>The Phantom of the Opera (Το Φάντασμα της Όπερας)</item>
         <item>Death Proof</item>
         <item>Underworld</item>
-        <item>The Incredible Hulk</item>
+        <item>The Incredible Hulk (Ο Απίθανος Hulk)</item>
         <item>The Transporter</item>
         <item>T.M.N.T.</item>
         <item>Machete</item>
-        <item>The Imitation Game</item>
-        <item>Cars</item>
-        <item>The Great Gatsby</item>
-        <item>World War Z</item>
+        <item>The Imitation Game (Το παιχνίδι της μίμησης)</item>
+        <item>Cars (Αυτοκίνητα)</item>
+        <item>The Great Gatsby (Ο Υπέροχος Γκάτσμπυ)</item>
+        <item>World War Z (Παγκόσμιος Πόλεμος Ζ)</item>
         <item>Rocky Balboa</item>
-        <item>Batman Forever</item>
-        <item>Batman Returns</item>
-        <item>Gravity</item>
+        <item>Batman Forever (Μπάτμαν για πάντα)</item>
+        <item>Batman Returns (Ο Μπάτμαν επιστρέφει)</item>
         <item>The Amazing Spider-Man</item>
-        <item>Τηλε..φονικός θάλαμος</item>
+        <item>Phone Booth (Τηλε..φονικός θάλαμος)</item>
         <item>Excalibur</item>
-        <item>Return of the Dragon</item>
+        <item>Return of the Dragon (Ο Κίτρινος Πράκτωρ Εναντίον της Μαφίας)</item>
         <item>Tarzan</item>
         <item>Fantastic Four</item>
         <item>Hellraiser</item>
