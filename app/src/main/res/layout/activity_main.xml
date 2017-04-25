@@ -75,7 +75,7 @@
             android:layout_marginTop="15dp"/>
 
         <Button
-            android:text="shop"
+            android:text="Νεες κατηγοριεσ"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/shop"
