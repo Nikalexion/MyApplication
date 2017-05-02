@@ -10,28 +10,28 @@
         <item>tainiesENG</item>
         <item>famousENG</item>
 
-        <item>myths</item>
-        <item>tainiesGR</item>
-        <item>parimies</item>
-
-        <item>books</item>
+        <item>famousGR</item>
         <item>podosfairistes</item>
         <item>tragoudistes</item>
 
-        <item>games</item>
+        <item>myths</item>
         <item>istoria</item>
-        <item>tvENG</item>
+        <item>parimies</item>
 
+        <item>books</item>
+        <item>tainiesGR</item>
         <item>tvGR</item>
+
+        <item>tvENG</item>
         <item>anime</item>
         <item>texnologia</item>
 
+        <item>games</item>
         <item>pokemon</item>
         <item>pokemon2</item>
-        <item>lolChamps</item>
 
+        <item>lolChamps</item>
         <item>dotaChamps</item>
-        <item>famousGR</item>
     </string-array>
 
     <string-array name="category_names">
@@ -43,28 +43,28 @@
         <item>Ξένες Ταινίες</item>
         <item>Διάσημα Ξένα Πρόσωπα</item>
 
-        <item>Μυθολογία</item>
-        <item>Ελληνικές ταινίες</item>
-        <item>Παροιμίες και Ρητά</item>
-
-        <item>Τίτλοι βιβλίων</item>
+        <item>Διάσημα Ελληνικά Πρόσωπα</item>
         <item>Ποδοσφαιριστές</item>
         <item>Τραγουδιστές</item>
 
-        <item>Βιντεοπαιχνίδια</item>
+        <item>Μυθολογία</item>
         <item>Ιστορικά Γεγονότα</item>
-        <item>Ξένες Σειρές</item>
+        <item>Παροιμίες και Ρητά</item>
 
+        <item>Τίτλοι βιβλίων</item>
+        <item>Ελληνικές ταινίες</item>
         <item>Ελληνική τηλεόραση</item>
+
+        <item>Ξένες Σειρές</item>
         <item>Anime</item>
         <item>Τεχνολογία</item>
 
+        <item>Βιντεοπαιχνίδια</item>
         <item>Pokemon 1ης γενιάς</item>
         <item>Pokemon 2ης γενιάς</item>
-        <item>League of Legends Champions</item>
 
+        <item>League of Legends Champions</item>
         <item>Dota Heroes</item>
-        <item>Διάσημα Ελληνικά Πρόσωπα</item>
     </string-array>
 
     <string-array name="costs">
@@ -76,28 +76,28 @@
         <item>0</item>
         <item>0</item>
 
-        <item>5</item>
+        <item>7</item>
         <item>10</item>
+        <item>10</item>
+
+        <item>5</item>
+        <item>5</item>
         <item>7</item>
 
         <item>7</item>
-        <item>10</item>
+        <item>7</item>
+        <item>7</item>
+
+        <item>7</item>
+        <item>12</item>
         <item>10</item>
 
         <item>12</item>
-        <item>10</item>
-        <item>7</item>
-
-        <item>10</item>
-        <item>12</item>
-        <item>7</item>
-
-        <item>7</item>
         <item>5</item>
         <item>5</item>
 
         <item>5</item>
-        <item>7</item>
+        <item>5</item>
     </string-array>
 
     <string-array name="random">
