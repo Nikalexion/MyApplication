@@ -16,20 +16,21 @@
 
         <item>myths</item>
         <item>istoria</item>
-        <item>parimies</item>
+        <item>epistimi</item>
 
+        <item>parimies</item>
         <item>books</item>
         <item>tainiesGR</item>
-        <item>tvGR</item>
 
+        <item>tvGR</item>
         <item>tvENG</item>
         <item>anime</item>
-        <item>texnologia</item>
 
+        <item>texnologia</item>
         <item>games</item>
         <item>pokemon</item>
-        <item>pokemon2</item>
 
+        <item>pokemon2</item>
         <item>lolChamps</item>
         <item>dotaChamps</item>
     </string-array>
@@ -49,20 +50,21 @@
 
         <item>Μυθολογία</item>
         <item>Ιστορικά Γεγονότα</item>
-        <item>Παροιμίες και Ρητά</item>
+        <item>Επιστήμη</item>
 
+        <item>Παροιμίες και Ρητά</item>
         <item>Τίτλοι βιβλίων</item>
         <item>Ελληνικές ταινίες</item>
-        <item>Ελληνική τηλεόραση</item>
 
+        <item>Ελληνική τηλεόραση</item>
         <item>Ξένες Σειρές</item>
         <item>Anime</item>
-        <item>Τεχνολογία</item>
 
+        <item>Τεχνολογία</item>
         <item>Βιντεοπαιχνίδια</item>
         <item>Pokemon 1ης γενιάς</item>
-        <item>Pokemon 2ης γενιάς</item>
 
+        <item>Pokemon 2ης γενιάς</item>
         <item>League of Legends Champions</item>
         <item>Dota Heroes</item>
     </string-array>
@@ -89,13 +91,14 @@
         <item>7</item>
 
         <item>7</item>
+        <item>7</item>
         <item>12</item>
+
         <item>10</item>
-
         <item>12</item>
         <item>5</item>
-        <item>5</item>
 
+        <item>5</item>
         <item>5</item>
         <item>5</item>
     </string-array>
@@ -4536,6 +4539,284 @@
         <item>Αλέξανδρος Υψηλάντης</item>
         <item>Μάνος Κατράκης</item>
         <item>Αλέξης Γεωργούλης</item>
+    </string-array>
+
+    <string-array name="epistimi">
+        <item>Μαθηματικά</item>
+        <item>Φυσική</item>
+        <item>Χημεία</item>
+        <item>Βιολογία</item>
+        <item>Ισοσκελές τρίγωνο</item>
+        <item>Ορθογώνιο τρίγωνο</item>
+        <item>Σκαληνό τρίγωνο</item>
+        <item>Ισόπλευρο τρίγωνο</item>
+        <item>Δεοξυριβονουκλεϊκό οξύ (DNA)</item>
+        <item>Πυθαγόρειο Θεώρημα</item>
+        <item>Τριβή</item>
+        <item>Στροφορμή</item>
+        <item>Μαγνητικό πεδίο</item>
+        <item>Ηλεκτρικό πηνείο</item>
+        <item>Δοκιμαστικός σωλήνας</item>
+        <item>Μικροσκόπιο</item>
+        <item>Πιπέτα</item>
+        <item>Χημική αντίδραση</item>
+        <item>1ος Νόμος του Νεύτωνα</item>
+        <item>2ος Νόμος του Νεύτωνα</item>
+        <item>3ος Νόμος του Νεύτωνα</item>
+        <item>Φαινόμενο Doppler</item>
+        <item>Πρώτη παράγωγος</item>
+        <item>Einstein</item>
+        <item>Κάρολος Δαρβίνος</item>
+        <item>Ζαν Μπατίστ Λαμάρκ</item>
+        <item>Αμβλεία γωνία</item>
+        <item>Ορθή γωνία</item>
+        <item>Οξεία γωνία</item>
+        <item>Gregor Mendel</item>
+        <item>Πρόβατο Dolly</item>
+        <item>tRNA</item>
+        <item>mRNA</item>
+        <item>rRNA</item>
+        <item>Ριβόσωμα</item>
+        <item>Αμινοξύ</item>
+        <item>Υδατάνθρακας</item>
+        <item>Λιπίδιο</item>
+        <item>Πρωτεϊνη</item>
+        <item>Σύστημα Golgi</item>
+        <item>Μιτοχόνδριο</item>
+        <item>Χλωροπλάστης</item>
+        <item>Σχετική συχνότητα</item>
+        <item>Διάμεσος</item>
+        <item>Διχοτόμος</item>
+        <item>Διάμετρος</item>
+        <item>Ακτίνα</item>
+        <item>Τραπέζιο</item>
+        <item>Εξαναγκασμένη ταλάντωση</item>
+        <item>Φθίνουσα ταλάντωση</item>
+        <item>Συμβολή κυμάτων</item>
+        <item>Στάσιμο κύμα</item>
+        <item>Χυμοτόπιο</item>
+        <item>Γονίδιο</item>
+        <item>Τετραγωνική ρίζα</item>
+        <item>Κυβική ρίζα</item>
+        <item>Απόλυτη τιμή</item>
+        <item>Παραβολή</item>
+        <item>Υπερβολή</item>
+        <item>Ευθεία</item>
+        <item>Υποτείνουσα</item>
+        <item>Επιμεριστική ιδιότητα</item>
+        <item>Προσεταιριστική ιδιότητα</item>
+        <item>Αποικοδομητές</item>
+        <item>Άλγεβρα</item>
+        <item>Γεωμετρία</item>
+        <item>Μικροοργανισμός</item>
+        <item>Βακτήριο</item>
+        <item>Ιός</item>
+        <item>Πρωτόζωο</item>
+        <item>Μύκητας</item>
+        <item>Σύνολο πραγματικών αριθμών (R)</item>
+        <item>Σύνολο ρητών αριθμών (Q)</item>
+        <item>Σύνολο φυσικών αριθμών (Ν)</item>
+        <item>Σύνολο ακεραίων αριθμών (Ζ)</item>
+        <item>Σύνολο φανταστικών αριθμών (Ι)</item>
+        <item>Γουανίνη (G)</item>
+        <item>θυμίνη (Τ)</item>
+        <item>Αδενίνη (Α)</item>
+        <item>Κυτοσίνη (C)</item>
+        <item>Ουρακίλη (U)</item>
+        <item>Ομοιοπολικός δεσμός</item>
+        <item>Ιοντικός δεσμός</item>
+        <item>Πρωτόνιο</item>
+        <item>Νετρόνιο</item>
+        <item>Ηλεκτρόνιο</item>
+        <item>Άτομο</item>
+        <item>Μόριο</item>
+        <item>Πυρήνας</item>
+        <item>Περιοδικός Πίνακας</item>
+        <item>Αλκάλια</item>
+        <item>Αλκαλικές γαίες</item>
+        <item>Ευγενή αέρια</item>
+        <item>Στοιχεία μετάπτωσης</item>
+        <item>Λανθανίδες</item>
+        <item>Ακτινίδες</item>
+        <item>Dmitri Mendeleev</item>
+        <item>Αστρονομία</item>
+        <item>Αναγωγή</item>
+        <item>Οξείδωση</item>
+        <item>Εξίσωση</item>
+        <item>Βάρος</item>
+        <item>Μάζα</item>
+        <item>Ταχύτητα</item>
+        <item>Επιτάχυνση</item>
+        <item>Περίοδος</item>
+        <item>Συχνότητα</item>
+        <item>Δύναμη</item>
+        <item>Ισορροπία</item>
+        <item>Γεωλογία</item>
+        <item>Βενζόλιο-αρωματικός δεσμός</item>
+        <item>Κώνος</item>
+        <item>Περίμετρος</item>
+        <item>Εμβαδόν</item>
+        <item>Γραφική παράσταση</item>
+        <item>Μιγαδικός αριθμός</item>
+        <item>Επίπεδο</item>
+        <item>Αριθμός οξείδωσης</item>
+        <item>Καύση</item>
+        <item>Αλκοόλη</item>
+        <item>Πολυμερισμός</item>
+        <item>Αλδεΰδη</item>
+        <item>Κετόνη</item>
+        <item>Αιθέρας</item>
+        <item>Εστέρας</item>
+        <item>Διπλός δεσμός</item>
+        <item>Τριπλός δεσμός</item>
+        <item>Μίτωση</item>
+        <item>Μείωση</item>
+        <item>Πλασματική μεμβράνη</item>
+        <item>Κυτταρικό τοίχωμα</item>
+        <item>Φωτοσύνθεση</item>
+        <item>Κυτταρική αναπνοή</item>
+        <item>Αντιγραφή του DNA</item>
+        <item>Μεταγραφή</item>
+        <item>Μετάφραση</item>
+        <item>Χρωμόσωμα</item>
+        <item>Μετάλλαξη</item>
+        <item>Κύτταρο</item>
+        <item>Μετουσίωση</item>
+        <item>Μοντέλο διπλής έλικας</item>
+        <item>Ευκαρυώτης</item>
+        <item>Προκαρυώτης</item>
+        <item>Ώσμωση</item>
+        <item>Ενδοπλασματικό δίκτυο</item>
+        <item>Ένζυμο</item>
+        <item>Υπόστρωμα</item>
+        <item>Κωδικόνιο</item>
+        <item>Μεθειονίνη</item>
+        <item>Οικολογία</item>
+        <item>Κλωνοποίηση</item>
+        <item>Γενεαλογικό δέντρο</item>
+        <item>Ομάδα αίματος</item>
+        <item>Πλασμίδιο</item>
+        <item>Ανίσωση</item>
+        <item>Πολυώνυμο</item>
+        <item>Γινόμενο</item>
+        <item>Πηλίκο</item>
+        <item>Άθροισμα</item>
+        <item>Αριθμητική πρόοδος</item>
+        <item>Γεωμετρική πρόοδος</item>
+        <item>Πρόσημο</item>
+        <item>Συνάρτηση</item>
+        <item>Ακρότατα</item>
+        <item>Διακρίνουσα</item>
+        <item>Ακολουθία</item>
+        <item>Άξονας x’x</item>
+        <item>Άξονας y’y</item>
+        <item>Πεδίο ορισμού</item>
+        <item>Ορμή</item>
+        <item>Έργο</item>
+        <item>Κεντρομόλος δύναμη</item>
+        <item>Ισχύς</item>
+        <item>Ενέργεια</item>
+        <item>Δυναμική ενέργεια</item>
+        <item>Κινητική ενέργεια</item>
+        <item>Γωνιακή ταχύτητα</item>
+        <item>Θεώρημα Μεταβολής Κινητικής Ενέργειας (Θ.Μ.Κ.Ε.)</item>
+        <item>Κλάσμα</item>
+        <item>Αιμοπετάλια</item>
+        <item>Πολικό σωμάτιο</item>
+        <item>RNA</item>
+        <item>Πρωταμίνες</item>
+        <item>Ινσουλίνη</item>
+        <item>Πρωτεΐνη</item>
+        <item>Σακχαρώδης διαβήτης</item>
+        <item>Ένζυμα</item>
+        <item>Τριφωσφορική αδενοσίνη  (ATP)</item>
+        <item>Λεμφοκύτταρα</item>
+        <item>Αποικοδόμηση</item>
+        <item>Φαγοκυττάρωση</item>
+        <item>Βακτήρια</item>
+        <item>Μύκητες</item>
+        <item>Ενδοσπόριο</item>
+        <item>Χαρτογράφηση γονιδίων</item>
+        <item>Γονίδια</item>
+        <item>Ετερότροφοι οργανισμοί</item>
+        <item>Βλαστοκύτταρα</item>
+        <item>Αλφισμός</item>
+        <item>Μετάλλαξη</item>
+        <item>Τεστοστερόνη</item>
+        <item>Οιστρογόνα</item>
+        <item>Χρωμοσώματα</item>
+        <item>Επιχιασμός</item>
+        <item>Παθογόνοι μικροοργανισμοί</item>
+        <item>Μεταθετά στοιχεία</item>
+        <item>Ζυγωτό</item>
+        <item>Αμνιακός σάκος</item>
+        <item>Κυτταρική μεμβράνη</item>
+        <item>Προκαριωτικά κύτταρα</item>
+        <item>Κυτταρικό τοίχωμα</item>
+        <item>Ντοπαμίνη</item>
+        <item>Πρωτεϊνοσύνθεση</item>
+        <item>Αδρεναλίνη</item>
+        <item>Πεπτιδικός δεσμός</item>
+        <item>Ερμαφρόδιτος οργανισμός</item>
+        <item>Ευκαριωτικό κύτταρο</item>
+        <item>Σύνδρομο down</item>
+        <item>Ορμόνες</item>
+        <item>Νευροδιαβιβαστές</item>
+        <item>Νόσος Πάρκινσον</item>
+        <item>Ανοσία</item>
+        <item>Γονιδιακή θεραπεία</item>
+        <item>Ακετυλοχολίνη</item>
+        <item>Νουκλεοτίδια</item>
+        <item>Κυτταρόπλασμα</item>
+        <item>Κυτταρική πλάκα</item>
+        <item>Αιμοσφαιρίνη</item>
+        <item>Ανοσοποιητικό σύστημα</item>
+        <item>Εκβλάστηση</item>
+        <item>Αντισώματα</item>
+        <item>Διχοτόμηση</item>
+        <item>Μειωτική διαίρεση</item>
+        <item>Θερμοδυναμική</item>
+        <item>Αντιγόνο</item>
+        <item>Ογκογονίδια</item>
+        <item>Αμνιοπαρακέντρηση</item>
+        <item>Πίνακας ζωής</item>
+        <item>Αιμορροφιλία</item>
+        <item>Μοριακό ρολόι</item>
+        <item>Χλωροπλάστες</item>
+        <item>Αυξίνη</item>
+        <item>Κλωνοποίηση</item>
+        <item>Φυσική επιλογή</item>
+        <item>Χρωμοπλάστες</item>
+        <item>Μικροσωλινίσκοι</item>
+        <item>Ρετροϊός</item>
+        <item>Αντιτετανικός ορός</item>
+        <item>Ηλεκτρονικό μικροσκόπιο</item>
+        <item>Κυτταρικός σκελετός</item>
+        <item>Οπτικό μικροσκόπιο</item>
+        <item>Λιπίδια</item>
+        <item>Μικροβιολογία</item>
+        <item>DNA δεσμάση</item>
+        <item>Γαμετικά κύτταρα</item>
+        <item>Ομοιόσταση</item>
+        <item>Μεταγραφικοί παράγοντες</item>
+        <item>Φαινότυπος</item>
+        <item>Γονότυπος</item>
+        <item>Βιογεωχημικοί κύκλοι</item>
+        <item>Πλασμοδέσμες</item>
+        <item>Γιββερελλίνη</item>
+        <item>Κυτταρίνη(πολυσακχαρίτης)</item>
+        <item>Μονοκύτταρος οργανισμός</item>
+        <item>Μεταβολισμός</item>
+        <item>Νευρικές συνάψεις</item>
+        <item>Ιστόνες</item>
+        <item>Νουκλεοσώματα</item>
+        <item>Εξόνια</item>
+        <item>Ιντρόνια</item>
+        <item>Περιοριστικές ενδονουκλεάσες</item>
+        <item>Ανασυνδιασμένο DNA</item>
+        <item>Νόσος Alzheimer</item>
+        <item>Βλαστομερίδια</item>
+        <item>Προνύμφη</item>
     </string-array>
 
 </resources>
