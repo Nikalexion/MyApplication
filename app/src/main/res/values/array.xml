@@ -4607,11 +4607,11 @@
         <item>Ιός</item>
         <item>Πρωτόζωο</item>
         <item>Μύκητας</item>
-        <item>Σύνολο πραγματικών αριθμών (R)</item>
-        <item>Σύνολο ρητών αριθμών (Q)</item>
-        <item>Σύνολο φυσικών αριθμών (Ν)</item>
-        <item>Σύνολο ακεραίων αριθμών (Ζ)</item>
-        <item>Σύνολο φανταστικών αριθμών (Ι)</item>
+        <item>Σύνολο πραγματικών αριθμών: R</item>
+        <item>Σύνολο ρητών αριθμών: Q</item>
+        <item>Σύνολο φυσικών αριθμών: Ν</item>
+        <item>Σύνολο ακεραίων αριθμών: Ζ</item>
+        <item>Σύνολο φανταστικών αριθμών: I</item>
         <item>Ομοιοπολικός δεσμός</item>
         <item>Ιοντικός δεσμός</item>
         <item>Πρωτόνιο</item>
@@ -4764,6 +4764,18 @@
         <item>Νόσος Alzheimer</item>
         <item>Βλαστομερίδια</item>
         <item>Προνύμφη</item>
+        <item>Gregor Mendel</item>
+        <item>Dmitri Mendeleev</item>
+        <item>Φαγοκυττάρωση</item>
+        <item>Ενδοσπόριο</item>
+        <item>Προκαριωτικά κύτταρα</item>
+        <item>Ευκαριωτικά κύτταρα</item>
+        <item>Κυτταρικό τοίχωμα</item>
+        <item>Νουκλεοτίδια</item>
+        <item>Εκβλάστηση</item>
+        <item>Ρετροϊός</item>
+        <item>Ομοιόσταση</item>
+        <item>Νουκλεοσώματα</item>
     </string-array>
 
 </resources>
