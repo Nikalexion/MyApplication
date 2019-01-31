@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAnalytics mFirebaseAnalytics;
 
 
-    String versionName = BuildConfig.VERSION_NAME;
+    //String versionName = BuildConfig.VERSION_NAME;
 
     public boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager
@@ -83,9 +83,9 @@ public class MainActivity extends AppCompatActivity {
 
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-5861682469694178~7665455042");
 
-        if (Build.VERSION.SDK_INT > 19 && isNetworkAvailable()) {
+        /*if (Build.VERSION.SDK_INT > 19 && isNetworkAvailable()) {
             vChecker();
-        }
+        }*/
 
         if(getSharedPreferences(PREF_EPILOGES, 0).getBoolean("protiFora",true)) {
             SharedPreferences.Editor defaultAgores = getSharedPreferences(PREF_AGORES, 0).edit();
@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
         mFirebaseAnalytics.logEvent(epilogi, params);
     }
 
-    protected void vChecker () {
+    /*protected void vChecker () {
 
         new GetLatestVersion();
 
@@ -295,6 +295,6 @@ public class MainActivity extends AppCompatActivity {
 
             return latestVersion;
         }
-    }
+    }*/
 
 }

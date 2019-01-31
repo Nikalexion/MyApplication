@@ -54,7 +54,7 @@
             android:layout_centerHorizontal="true" />
 
         <Button
-            android:text="Start"
+            android:text="Εναρξη"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/starter"
@@ -75,7 +75,7 @@
             android:layout_marginTop="15dp"/>
 
         <Button
-            android:text="Νεες κατηγοριεσ"
+            android:text="Νεες κατηγοριες"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/shop"
@@ -95,7 +95,7 @@
             android:layout_marginTop="15dp"/>
 
         <Button
-            android:text="Bonus Νομισματα"
+            android:text="Λοιπες επιλογες"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/promotion"

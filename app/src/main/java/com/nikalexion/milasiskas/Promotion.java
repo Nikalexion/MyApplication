@@ -61,6 +61,14 @@ public class Promotion extends AppCompatActivity {
             }
         });
 
+        Button privacy = (Button) findViewById(R.id.privacy);
+        privacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                goPrivacy();
+            }
+        });
+
         //To koumbi gia epistrofi sto arxiko menou
         Button home = (Button) findViewById(R.id.arxiki);
         home.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +77,11 @@ public class Promotion extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    public void goPrivacy(){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://sites.google.com/view/milashskasprivacy"));
+        startActivity(browserIntent);
     }
 
     public void rateApp()
