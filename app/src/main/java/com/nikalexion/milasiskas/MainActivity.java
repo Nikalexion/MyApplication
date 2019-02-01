@@ -83,9 +83,6 @@ public class MainActivity extends AppCompatActivity {
 
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-5861682469694178~7665455042");
 
-        /*if (Build.VERSION.SDK_INT > 19 && isNetworkAvailable()) {
-            vChecker();
-        }*/
 
         if(getSharedPreferences(PREF_EPILOGES, 0).getBoolean("protiFora",true)) {
             SharedPreferences.Editor defaultAgores = getSharedPreferences(PREF_AGORES, 0).edit();
@@ -191,110 +188,5 @@ public class MainActivity extends AppCompatActivity {
         params.putString("lefta", Integer.toString(counter));
         mFirebaseAnalytics.logEvent(epilogi, params);
     }
-
-    /*protected void vChecker () {
-
-        new GetLatestVersion();
-
-        String tag = "LOG_TAG";
-
-        String latestVersion = "";
-        String currentVersion = versionName;
-        Log.d(tag, "Current version = " + currentVersion);
-        try {
-            latestVersion = new GetLatestVersion().execute().get();
-            Log.d(tag, "Latest version = " + latestVersion);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
-
-        if(!currentVersion.equals(latestVersion)) {
-            AlertDialog alertDialog;
-            ContextThemeWrapper ctw = new ContextThemeWrapper(this, R.style.MyAlertDialogStyle);
-            AlertDialog.Builder builder = new AlertDialog.Builder(ctw);
-            alertDialog = builder.create();
-            alertDialog.getWindow().setLayout(200, 400);
-
-
-            builder.setTitle("Νέα διαθέσιμη έκδοση");
-            //Start setting up the builder
-            builder.setMessage("Μία νέα έκδοση είναι διαθέσιμη στο play store. Θέλετε να την κατεβάσετε;");
-
-            // Add the buttons
-            builder.setPositiveButton("Ναι", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    try {
-                        Intent rateIntent = rateIntentForUrl(("market://details"));
-                        startActivity(rateIntent);
-                    } catch (ActivityNotFoundException e) {
-                        Intent rateIntent = rateIntentForUrl("https://play.google.com/store/apps/details");
-                        startActivity(rateIntent);
-                    }
-
-                }
-            });
-            builder.setNegativeButton("Όχι", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    // User cancelled the dialog
-                }
-            });
-            // Set other dialog properties
-
-            // Create the AlertDialog
-            AlertDialog dialog = builder.create();
-            dialog.setOnShowListener(new DialogInterface.OnShowListener() {
-                @Override
-                public void onShow(DialogInterface dialog) {
-
-
-                }
-            });
-            dialog.show();
-        }
-    }
-
-    protected Intent rateIntentForUrl(String url)
-    {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(String.format("%s?id=%s", url, getPackageName())));
-        int flags = Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_MULTIPLE_TASK;
-        if (Build.VERSION.SDK_INT >= 21)
-        {
-            flags |= Intent.FLAG_ACTIVITY_NEW_DOCUMENT;
-        }
-        else
-        {
-            //noinspection deprecation
-            flags |= Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET;
-        }
-        intent.addFlags(flags);
-        return intent;
-    }
-
-    private class GetLatestVersion extends AsyncTask<String, String, String> {
-        String latestVersion;
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
-        @Override
-        protected String doInBackground(String... params) {
-            try {
-                //It retrieves the latest version by scraping the content of current version from play store at runtime
-                String urlOfAppFromPlayStore = "https://play.google.com/store/apps/details?id=" + getPackageName();
-                Document doc = Jsoup.connect(urlOfAppFromPlayStore).get();
-                latestVersion = doc.getElementsByAttributeValue("itemprop","softwareVersion").first().text();
-
-            }catch (Exception e){
-                e.printStackTrace();
-
-            }
-
-            return latestVersion;
-        }
-    }*/
 
 }
