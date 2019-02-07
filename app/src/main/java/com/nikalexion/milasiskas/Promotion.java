@@ -14,53 +14,23 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class Promotion extends AppCompatActivity {
 
-    public static final String PREF_EPILOGES = "EPILOGES";
-    public static final String PREF_LEFTA = "LEFTA";
-
-    private FirebaseAnalytics mFirebaseAnalytics;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_promotion);
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-
-        final SharedPreferences rater = getSharedPreferences(PREF_EPILOGES, 0);
 
         final Button rate = (Button) findViewById(R.id.rating);
-        if (rater.getBoolean("rated",false)) {
-            rate.setText("RATE US");
-        }
 
 
         rate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
-
-                if (!rater.getBoolean("rated",false)) {
-                    int counter = lefta.getInt("lefta", 0);
-                    counter = counter + 10;
-                    SharedPreferences.Editor lefta_editor = lefta.edit();
-                    lefta_editor.putInt("lefta", counter);
-                    lefta_editor.apply();
-
-                    SharedPreferences.Editor rate_editor = rater.edit();
-                    rate_editor.putBoolean("rated", true);
-                    rate_editor.apply();
-                }
-
-                Bundle params = new Bundle();
-                params.putInt("games_played",lefta.getInt("games", 0));
-                params.putInt("lefta", lefta.getInt("lefta", 0));
-                mFirebaseAnalytics.logEvent("rated_app", params);
-
-                rate.setText("RATE US");
 
                 rateApp();
             }
         });
 
+        //To koumbi poy se metaferei sta privacy
         Button privacy = (Button) findViewById(R.id.privacy);
         privacy.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -32,12 +32,10 @@ import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String PREF_LEFTA = "LEFTA";
     public static final String PREF_AGORES = "AGORES";
     public static final String PREF_EPILOGES = "EPILOGES";
 
     private Button shop;
-    private TextView leftakia;
     private FirebaseAnalytics mFirebaseAnalytics;
 
 
@@ -106,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
         Button epiloges = (Button) findViewById(R.id.epiloges);
         shop = (Button) findViewById(R.id.shop);
         Button promotion = (Button) findViewById(R.id.promotion);
-        leftakia = (TextView) findViewById(R.id.leftakia);
 
 
         starter.setOnClickListener(new View.OnClickListener() {
@@ -153,20 +150,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onStart() {
-        SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
-        int counter = lefta.getInt("lefta", 0);
-        leftakia.setText(Integer.toString(counter));
-        leftakia.setTextColor(Color.YELLOW);
         SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
 
-        String[] kostiKatigorion = getResources().getStringArray(R.array.costs);
         String[] katigories = getResources().getStringArray(R.array.categories);
 
         Boolean colorFlag = false;
         for (int i = 0; i < katigories.length - pfk; i++) {
             final String kat = katigories[i+pfk];
-            final String cost = kostiKatigorion[i+pfk];
-            if(!(agorasmena.getBoolean(kat,false))&& (counter >= Integer.parseInt(cost))) {
+            if(!(agorasmena.getBoolean(kat,false))) {
                 colorFlag = true;
             }
         }
@@ -181,11 +172,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fireLog(String epilogi){
-        SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
-        int counter = lefta.getInt("lefta", 0);
 
         Bundle params = new Bundle();
-        params.putString("lefta", Integer.toString(counter));
+        params.putString("epilogh xrhsth", "apo_menu");
         mFirebaseAnalytics.logEvent(epilogi, params);
     }
 

@@ -305,23 +305,19 @@ public class MainGame extends AppCompatActivity {
         }
         //prosthiki xrimaton
         SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
-        int counter = lefta.getInt("lefta", 0);
-        counter = counter + (startTime-gameTime)/1000/60;
         SharedPreferences.Editor lefta_editor = lefta.edit();
-        lefta_editor.putInt("lefta", counter);
 
         //prosthiki ton poson game epaikse o sigekrimenos xristis
-        int counter2 = lefta.getInt("games", 0);
-        counter2 = counter2 + 1;
-        lefta_editor.putInt("games", counter2);
+        int counter = lefta.getInt("games", 0);
+        counter = counter + 1;
+        lefta_editor.putInt("games", counter);
         lefta_editor.apply();
 
         //katagrafi telous game
         Bundle params = new Bundle();
         params.putInt("time_played",getSharedPreferences(PREF_EPILOGES, 0).getInt("minTime", 60));
-        params.putInt("games_played", counter2);
+        params.putInt("games_played", counter);
         params.putBoolean("mistake_was_made",mistake);
-        params.putInt("lefta", counter);
         mFirebaseAnalytics.logEvent("round_ended", params);
 
         gameTime = 3 * 1000;

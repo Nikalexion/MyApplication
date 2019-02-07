@@ -25,7 +25,7 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="Rate Us \n(+10 νομισματα)"
+        android:text="Rate Us"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rating"
