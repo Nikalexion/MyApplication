@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TableRow;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
@@ -31,7 +30,10 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     private int pfk = 6;
     private FirebaseAnalytics mFirebaseAnalytics;
     private RewardedVideoAd myRewardAd;
+    //global metavlites gia kseklidoma katigorion
     String unlockName;
+    Button unlockButton;
+
 
 
 
@@ -153,6 +155,11 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     }
 
     public void alert(final Button koumbi, final String onomaAgoras, final String cost){
+
+        //protetimasia metavliton gia kseklidoma katigorias kai disable koubiou
+        unlockName = onomaAgoras;
+        unlockButton = koumbi;
+
         final int costInt = Integer.parseInt(cost);
         final SharedPreferences lefta = getSharedPreferences(PREF_LEFTA, 0);
         final SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
@@ -167,6 +174,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         alertDialog.getWindow().setLayout(200, 400);
 
 
+
         builder.setTitle("Αγορά νέας κατηγορίας");
         //Start setting up the builder
         builder.setMessage("Είσαι σίγουρος ότι θες να αγοράσεις την κατηγορία "+koumbi.getText()+"?\n\nΈχεις " +Integer.toString(paliaLefta)+ " νομίσματα και η κατηγορία κοστίζει "+cost);
@@ -175,14 +183,13 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
 
             public void onClick(DialogInterface dialog, int id) {
-                unlockName = onomaAgoras;
-                
+
                 // User clicked OK button
                 if(myRewardAd.isLoaded()) {
                     myRewardAd.show();
                 }
 
-                //TODO afto edo thelei metafora meta to reward
+                /*
                 koumbi.setEnabled(false);
                 koumbi.setBackgroundResource(R.drawable.shop_btn);
 
@@ -259,7 +266,10 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         epiloges_editor.putBoolean(onomaUnlock, true);
         epiloges_editor.apply();
 
-        /*
+        unlockButton.setEnabled(false);
+        unlockButton.setBackgroundResource(R.drawable.shop_btn);
+
+        /* FIREBASE STUFF
         Bundle bundle = new Bundle();
         bundle.putString(FirebaseAnalytics.Param.ITEM_ID, onomaUnlock);
         bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "katigoria");
