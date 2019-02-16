@@ -179,6 +179,7 @@ public class MainGame extends AppCompatActivity {
     private void goToNextLevel() {
         // An patiseis X sto ad i den fortisei se paei sto epomeno activity
         startActivity(new Intent(getApplicationContext(), Ending.class));
+        finish();
     }
 
     private void arrayBuilder() {
