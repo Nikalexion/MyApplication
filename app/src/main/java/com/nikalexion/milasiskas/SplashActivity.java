@@ -15,3 +15,15 @@ public class SplashActivity extends AppCompatActivity {
         finish();
     }
 }
+
+/*TODO na vroume ola ta shared preferences ti exoun mesa tous
+to "EPILOGES" exei:
+scoreTime int
+scorePasa int
+protiFora bool
+str[i] bool (enas pinakas apo strings pou ola einai boolean)
+
+to "AGORES" exei:
+str[i] bool (enas pinakas apo strings pou ola einai boolean)
+
+*/
