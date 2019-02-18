@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TableRow;
@@ -47,7 +48,7 @@ public class Epiloges extends AppCompatActivity implements OnCheckedChangeListen
 
 
         Button home = new Button(this);
-        home.setBackgroundResource(R.drawable.btn_bg);
+        home.setBackgroundResource(R.drawable.button);
         home.setText("ΑΡΧΙΚΗ");
         home.setTextSize(30);
         home.setLayoutParams(new ScrollView.LayoutParams(ScrollView.LayoutParams.MATCH_PARENT,ScrollView.LayoutParams.WRAP_CONTENT,0));

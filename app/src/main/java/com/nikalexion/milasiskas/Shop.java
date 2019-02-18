@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TableRow;
+import android.widget.ToggleButton;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
@@ -26,19 +27,23 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     public static final String PREF_EPILOGES = "EPILOGES";
     private int plithosKatigorion;
     //pfk = plithos free katigorion
-    private int pfk = 6;
+    private int pfk = 0;
     private FirebaseAnalytics mFirebaseAnalytics;
     private RewardedVideoAd myRewardAd;
     //global metavlites gia kseklidoma katigorion
     String unlockName;
-    Button unlockButton;
+    ToggleButton unlockButton;
     AlertDialog alertBox;
+
 
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        SharedPreferences epiloges = getApplicationContext().getSharedPreferences(PREF_EPILOGES, 0);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
@@ -66,32 +71,54 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
             TableRow row = new TableRow(this);
             row.setId(i+200);
             row.setLayoutParams(new ScrollView.LayoutParams(ScrollView.LayoutParams.MATCH_PARENT,ScrollView.LayoutParams.WRAP_CONTENT,3));
-            final Button buyButton = new Button(this);
+            final ToggleButton buyButton = new ToggleButton(this);
+            buyButton.setTextOff(onomataKatigorion[i]);
+            buyButton.setTextOn(onomataKatigorion[i]);
+
             if(!agorasmena.getBoolean(katigories[i+ pfk],false)) {
-                buyButton.setBackgroundResource(R.drawable.shop_prasino);
+                buyButton.setBackgroundResource(R.drawable.locked);
+                buyButton.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View view) {
+                        alertBox = alert(buyButton,kat);
+                    }
+                });
             }
             else{
-                buyButton.setBackgroundResource(R.drawable.shop_btn);
+                if (epiloges.getBoolean(katigories[i],false)) {
+
+                    buyButton.setBackgroundResource(R.drawable.active);
+                }
+                else{
+                    buyButton.setBackgroundResource(R.drawable.epilogi);
+                }
+                buyButton.setChecked(epiloges.getBoolean(katigories[i],false));
+                buyButton.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View view) {
+                        saveInSp(getResources().getStringArray(R.array.categories)[buyButton.getId()],buyButton.isChecked());
+                        if (buyButton.isChecked()) {
+
+                            buyButton.setBackgroundResource(R.drawable.active);
+                        }
+                        else{
+                            buyButton.setBackgroundResource(R.drawable.epilogi);
+                        }
+                    }
+                });
             }
             buyButton.setId(i);
             buyButton.setText(onomataKatigorion[i+pfk]);
             buyButton.setTextSize(26);
-            buyButton.setEnabled(!agorasmena.getBoolean(katigories[i+pfk],false));
+            //buyButton.setEnabled(!agorasmena.getBoolean(katigories[i+pfk],false));
             ScrollView.LayoutParams params = new ScrollView.LayoutParams(ScrollView.LayoutParams.FILL_PARENT, ScrollView.LayoutParams.WRAP_CONTENT);
             params.setMargins(0,0,0,25);
             row.setLayoutParams(params);
             row.addView(buyButton);
             my_layout.addView(row);
-            buyButton.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    alertBox = alert(buyButton,kat);
-                }
-            });
         }
 
 
         Button home = new Button(this);
-        home.setBackgroundResource(R.drawable.btn_bg);
+        home.setBackgroundResource(R.drawable.button);
         home.setText("ΑΡΧΙΚΗ");
         home.setTextSize(30);
         home.setLayoutParams(new ScrollView.LayoutParams(ScrollView.LayoutParams.MATCH_PARENT,ScrollView.LayoutParams.WRAP_CONTENT,0));
@@ -151,7 +178,14 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
 
     }
 
-    public AlertDialog alert(final Button koumbi, final String onomaAgoras){
+    private void saveInSp(String key, boolean value) {
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences(PREF_EPILOGES, 0);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean(key, value);
+        editor.apply();
+    }
+
+    public AlertDialog alert(final ToggleButton koumbi, final String onomaAgoras){
 
         //protetimasia metavliton gia kseklidoma katigorias kai disable koubiou
         unlockName = onomaAgoras;
@@ -222,8 +256,20 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         epiloges_editor.putBoolean(unlockName, true);
         epiloges_editor.apply();
 
-        unlockButton.setEnabled(false);
-        unlockButton.setBackgroundResource(R.drawable.shop_btn);
+        unlockButton.setEnabled(true);
+        unlockButton.setBackgroundResource(R.drawable.active);
+        unlockButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                saveInSp(getResources().getStringArray(R.array.categories)[unlockButton.getId()],unlockButton.isChecked());
+                if (unlockButton.isChecked()) {
+
+                    unlockButton.setBackgroundResource(R.drawable.active);
+                }
+                else{
+                    unlockButton.setBackgroundResource(R.drawable.epilogi);
+                }
+            }
+        });
 
         /* FIREBASE STUFF
         Bundle bundle = new Bundle();
@@ -242,5 +288,6 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
                 .build();
         myRewardAd.loadAd("ca-app-pub-3940256099942544/5224354917",adRq);
     }
+
 
 }

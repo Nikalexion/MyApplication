@@ -16,7 +16,7 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.nikalexion.milasiskas.Epiloges"
-        android:background="@drawable/bc"
+        android:background="@drawable/bg"
         android:layout_centerInParent="true"
         android:orientation="vertical">
 

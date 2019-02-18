@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         Button starter = (Button) findViewById(R.id.starter);
         Button guidelines = (Button) findViewById(R.id.guidelines);
         Button epiloges = (Button) findViewById(R.id.epiloges);
-        shop = (Button) findViewById(R.id.shop);
+        Button shop = (Button) findViewById(R.id.shop);
         Button promotion = (Button) findViewById(R.id.promotion);
 
 
@@ -144,11 +144,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        if (colorFlag) {
-            shop.setBackgroundResource(R.drawable.shop_purchasable);
-        }else{
-            shop.setBackgroundResource(R.drawable.btn_bg);
-        }
 
         super.onStart();
     }

@@ -8,7 +8,7 @@
     android:paddingBottom="16dp"
     android:paddingTop="16dp"
     tools:context="com.nikalexion.milasiskas.MainGame"
-    android:background="@drawable/bc"
+    android:background="@drawable/bg"
     android:layout_centerInParent="true">
 
     <View
