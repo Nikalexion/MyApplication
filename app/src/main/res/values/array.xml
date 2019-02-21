@@ -33,6 +33,10 @@
         <item>pokemon2</item>
         <item>lolChamps</item>
         <item>dotaChamps</item>
+
+        <item>site</item>
+        <item>texnh</item>
+        <item>atakes</item>
     </string-array>
 
     <string-array name="category_names">
@@ -67,6 +71,10 @@
         <item>Pokemon 2ης γενιάς</item>
         <item>League of Legends Champions</item>
         <item>Dota Heroes</item>
+
+        <item>Ιστοσελίδες</item>
+        <item>Ζωγράφοι-Πίνακες</item>
+        <item>Διάσημες Ατάκες</item>
     </string-array>
 
     <string-array name="costs">
@@ -101,6 +109,10 @@
         <item>5</item>
         <item>5</item>
         <item>5</item>
+
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
     </string-array>
 
     <string-array name="random">
@@ -977,7 +989,7 @@
         <item>Δυο γάιδαροι μαλώνανε σε ξένο αχυρώνα</item>
         <item>Τρώγοντας έρχεται η όρεξη</item>
         <item>Γυρεύεις ψύλλους στα άχυρα</item>
-        <item>Φάγαμε το βόδι κι έμεινε η ουρά</item>
+        <item>Φάγαμε το γάιδαρο κι έμεινε η ουρά</item>
         <item>Η φτώχεια θέλει καλοπέραση</item>
         <item>Ένα μήλο την ημέρα τον γιατρό τον κάνει πέρα</item>
         <item>Ό,τι λάμπει δεν είναι χρυσός</item>
@@ -4776,6 +4788,232 @@
         <item>Ρετροϊός</item>
         <item>Ομοιόσταση</item>
         <item>Νουκλεοσώματα</item>
+    </string-array>
+
+    <string-array name="site">
+        <item>Google</item>
+        <item>YouTube</item>
+        <item>Facebook</item>
+        <item>Wikipedia</item>
+        <item>Yahoo!</item>
+        <item>Amazon</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Reddit</item>
+        <item>LinkedIn</item>
+        <item>Tmall</item>
+        <item>360 Safeguard</item>
+        <item>eBay</item>
+        <item>Bing</item>
+        <item>MSN</item>
+        <item>WordPress.com</item>
+        <item>Microsoft</item>
+        <item>Tumblr</item>
+        <item>AliExpress</item>
+        <item>Blogspot</item>
+        <item>Netflix</item>
+        <item>Stack Overflow</item>
+        <item>Imgur</item>
+        <item>Apple Inc.</item>
+        <item>Naver</item>
+        <item>Mail.ru</item>
+        <item>IMDb</item>
+        <item>PopAds</item>
+        <item>Onclickads</item>
+        <item>Microsoft Office</item>
+        <item>GitHub</item>
+        <item>Pinterest</item>
+        <item>PayPal</item>
+        <item>Amazon Germany</item>
+        <item>Microsoft Online Services</item>
+        <item>Onclckds</item>
+        <item>Twitch</item>
+        <item>Adobe Systems</item>
+        <item>Wikia</item>
+        <item>360 Search</item>
+        <item>FC2 Portal</item>
+        <item>Pixnet</item>
+        <item>Dropbox</item>
+        <item>AdFly</item>
+        <item>WhatsApp</item>
+        <item>Ask.com</item>
+        <item>BBC Online</item>
+        <item>SaveFrom.net</item>
+        <item>BBC</item>
+        <item>New York Times</item>
+        <item>Rakuten</item>
+        <item>Nicovideo</item>
+        <item>ESPN</item>
+        <item>CNN</item>
+        <item>Craigslist</item>
+        <item>Booking.com</item>
+        <item>Walmart</item>
+        <item>Daily Mail</item>
+        <item>Grupo Globo</item>
+        <item>Avito</item>
+        <item>DoubleClick</item>
+        <item>Samsung</item>
+        <item>AccuWeather</item>
+        <item>Bitly</item>
+    </string-array>
+
+    <string-array name="texnh">
+        <item>Leonardo Da Vinci</item>
+        <item>Vincent Van Gogh</item>
+        <item>Rembrandt</item>
+        <item>Michelangelo</item>
+        <item>Claude Monet</item>
+        <item>Pablo Picasso</item>
+        <item>Edvard Munch</item>
+        <item>Diego Velazquez</item>
+        <item>Wassily Kadinsky</item>
+        <item>William Turner</item>
+        <item>Jackson Pollock</item>
+        <item>Mark Rothko</item>
+        <item>Andy Warhol</item>
+        <item>Gustav Klimt</item>
+        <item>Eugene Delacroix</item>
+        <item>El Greco</item>
+        <item>Frida Kahlo</item>
+        <item>Salvador Dali</item>
+        <item>Max Ernst</item>
+        <item>Sandro Botticelli</item>
+        <item>Rene Magritte</item>
+        <item>Giorgio De Chirico</item>
+        <item>Γκερνικα (Picasso)</item>
+        <item>Αυτοπροσωπογραφία χωρίς γένια (Van Gogh)</item>
+        <item>Νυχτερινή περίπολος (Rembrandt)</item>
+        <item>Το Κορίτσι με το Μαργαριταρένιο Σκουλαρίκι (Vermeer)</item>
+        <item>Η εμμονή της μνήμης (Dali)</item>
+        <item>Η Κραυγή (Munch)</item>
+        <item>Έναστρη Νύχτα (Van Gogh)</item>
+        <item>Η δημιουργία του Αδάμ (Michelangelo)</item>
+        <item>Ο Μυστικός Δείπνος (Da Vinci)</item>
+        <item>Μόνα Λίζα (Da Vinci)</item>
+        <item>Τα κόκκινα πλοία (Monet)</item>
+        <item>Νούφαρα και ιτιές (Monet)</item>
+        <item>Εντύπωση, ανατολή του ήλιου (Monet)</item>
+        <item>Η Γέννηση της Αφροδίτης (Botticelli)</item>
+        <item>Ο Ναπολέων διασχίζει τις Άλπεις (Jacques- Luis David)</item>
+        <item>Το φιλί (Klimt)</item>
+        <item>Υπνοδωμάτιο (Van Gogh)</item>
+        <item>Αυτοπροσωπογραφία με επίδεσμο στο αυτί (Van Gogh)</item>
+        <item>Βάζο με δεκαπέντε ηλιοτρόπια (Van Gogh)</item>
+        <item>Γυναίκα καθιστή (Picasso)</item>
+        <item>Ανησυχία (Munch)</item>
+        <item>Madonna (Munch)</item>
+        <item>Πορτοκαλί και Κίτρινο (Rothko)</item>
+        <item>Eight Elvises (Warhol)</item>
+        <item>Τιρκουάζ Μέρλιν (Warhol)</item>
+        <item>Το Άγαλμα της Ελευθερίας (Warhol)</item>
+        <item>Τοματόσουπα Campbell (Warhol)</item>
+        <item>Η σφαγή της Χίου (Delacroix)</item>
+        <item>Η Ελευθερία οδηγεί το Λαό (Delacroix)</item>
+        <item>Ο Ντιέγκο και εγώ (Frida Kahlo)</item>
+        <item>Αυτοπροσωπογραφία με μαϊμού (Frida Kahlo)</item>
+        <item>Η φλεγόμενη καμηλοπάρδαλη (Dali)</item>
+        <item>Οι ελέφαντες (Dali)</item>
+        <item>Κορίτσι στο παράθυρο (Dali)</item>
+        <item>Η προδοσία των εικόνων (Magritte)</item>
+        <item>Ο γιός του ανθρώπου (Magritte)</item>
+        <item>Οι εραστές (Magritte)</item>
+        <item>Ο μάντης (De Chirico)</item>
+        <item>Το αίνιγμα ενός φθινοπωρινού απογεύματος (De Chirico)</item>
+        <item>Έκτορας και Ανδρομάχη (De Chirico)</item>
+        <item>Οι αρχαιολόγοι (De Chirico)</item>
+    </string-array>
+
+    <string-array name="atakes">
+        <item>Θέλω να τ΄ακούω</item>
+        <item>Το χάσαμε το κορμί πατριώτη</item>
+        <item>Tragic</item>
+        <item>Τυχαίο? Δε νομίζω</item>
+        <item>Να φύγετε να πάτε αλλού</item>
+        <item>Στη μάνα σου το ΄πες?</item>
+        <item>Σαράντα χρόνια φούρναρης, έχω ψήσει...</item>
+        <item>Πού πας ρε Καραμήτρο?</item>
+        <item>Γκαρσόν, λεκιάστηκα!!</item>
+        <item>Ψεκάστε, σκουπίστε, τελειώσατε</item>
+        <item>Δεν θέλει κόπο θέλει τρόπο</item>
+        <item>Για την φουκαριάρα την μάνα μου</item>
+        <item>Ομορφαίνει, δεν παχαίνει..</item>
+        <item>φστ...μπόινγκ</item>
+        <item>Έχω και κότερο, πάμε μια βόλτα?</item>
+        <item>Τί έγινε Κωστάκη? Σε γουστάρει η χωριάτισσα?</item>
+        <item>ʼστα λα βίστα μπέιμπυ</item>
+        <item>Εγώπότε θα γίνω μάνα?</item>
+        <item>χούφτωστη... χούφτωστη!</item>
+        <item>Εδώ μέσα γίνονται Σόδομα και Γόμορα!</item>
+        <item>Είναι πολλά τα λεφτά Χάρη!</item>
+        <item>Σούζη τρως! Και ψεύδεσαι και τρως!</item>
+        <item>Στάσου.... μύγδαλα!!!!</item>
+        <item>Κάτινα, σαλαμάκι</item>
+        <item>Πορτοκαλάδα θέτε? Από πορτοκάλια?</item>
+        <item>Πέφτω απo τα σύννεφα</item>
+        <item>Θα γελάσει κάθε πικραμένος</item>
+        <item>Μόνος ούτε στον Παράδεισο</item>
+        <item>Έλα δεν το πιστεύω</item>
+        <item>Διασταύρωση ασβού με μυρμηγκοφάγο</item>
+        <item>Κόβεται το σεξ;</item>
+        <item>Τι έγινε ρε παιδιά</item>
+        <item>Τί λες τώρα!</item>
+        <item>Θα πηδηχτώ απo το παράθυρο</item>
+        <item>Πατέρα βάλε άλλες 100 , ο νιός είναι λεβέντης!</item>
+        <item>Διονύση πιάσε μια μπύρα</item>
+        <item>Τρώμε κάτι και συνεχίζουμε;</item>
+        <item>Λυσσάρες</item>
+        <item>ʼτε να χαθείς</item>
+        <item>Με ένα φρούτο είμαι από το πρωί. Ένα καρπούζι</item>
+        <item>Το φαγκρί βγαίνει και σε άλλα χρώματα; Φαμπέζ, φαμώβ;</item>
+        <item>Λουκουμάκι μου</item>
+        <item>Ξύστα με γκασμά, η τσουγκράνα αφήνει κενά</item>
+        <item>Ξέρεις από Βέσπα?</item>
+        <item>Θα σας εξαφανίσομεν</item>
+        <item>Φάγανε φάγανε φάγανε</item>
+        <item>Μπουρλότο!</item>
+        <item>Στέλλα φύγε κρατάω μαχαίρι</item>
+        <item>Όχι άλλο κάρβουνο</item>
+        <item>Το νου σας ρεμάλια</item>
+        <item>Γυρίσατε?</item>
+        <item>Τρία πουλάκια κάθονται</item>
+        <item>Αυτή μέχρι και μουστάκι θα σε βάλει να ξυρίσεις</item>
+        <item>Οι Γερμανοί ξανάρχονται</item>
+        <item>Οι Γερμανοί είναι φίλοι μας</item>
+        <item>Πνεύμα και ηθική</item>
+        <item>Και μετά, θα κάαααθεσαι</item>
+        <item>Του Θεμιστοκλέους, βεβαίως, βεβαίως.</item>
+        <item>Λοιπόν δεν ξέρω αν το προσέξατε, αλλά σήμερα είμαστε μια ωραία ατμόσφαιρα!</item>
+        <item>Στρίβειν δια του αρραβώνος</item>
+        <item>Αμάρτησα για το παιδί μου </item>
+        <item>Σας χαιρέτησα; Δε σας χαιρέτησα! Χαίρετε, τι κάνετε, καλά ευχαριστώ! </item>
+        <item>Παίρνω το καπελλάκι μου και φεύγω! </item>
+        <item>Τι τραβάμε κι εμείς οι χορεύτριες</item>
+        <item>Στη μάνα σου το είπες?</item>
+        <item>Πουτ δε κοτς νταουν σλοουλι</item>
+        <item>Παλιοχιμπατζή Νεάντερταλ</item>
+        <item>A this? Last year!</item>
+        <item>Ο Αγαπούλας</item>
+        <item>Σήμα καμπάνα!</item>
+        <item>Μα ποιός είσαι? Η Δομή?</item>
+        <item>Μεταξύ μας Metaxa</item>
+        <item>Αυτήν ξέρετε αυτήν εμπιστεύεστε</item>
+        <item>Ψεκάστε, σκουπίστε, τελειώσατε</item>
+        <item>Και ο παππούς με το φανελάκι?</item>
+        <item>Πελάατες μου!</item>
+        <item>Μην το πιείτε, λουστείτε</item>
+        <item>Γκαρσόν, λεκιάστηκα</item>
+        <item>Όλες οι άλλες είναι απλώς οδοντόκρεμες.</item>
+        <item>Η θεία Όλγα ξέρει.</item>
+        <item>Είδες η ΔΕΗ?</item>
+        <item>Κάνει τα πιάτα να τρίζουν από καθαριότητα</item>
+        <item>Αυτά είναι λεφτά</item>
+        <item>Σαράντα χρόνια φούρναρης </item>
+        <item>Ο χρυσός μας φέρνει πιο κοντά</item>
+        <item>Ντεν έκω αυτοκίνητο καρντιά μου! </item>
+        <item>Έτσι μ΄αρέσει!</item>
+        <item>Αν το δηλώσεις, μπορείς να το σώσεις</item>
+        <item>Δώστε και σώστε</item>
+        <item>Τραγουδάτε στο μπάνιο?</item>
     </string-array>
 
 </resources>

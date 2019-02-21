@@ -18,30 +18,30 @@
         android:layout_marginLeft="10dp"
         android:minHeight="90dp"
         android:minWidth="200dp"
-        android:src="@drawable/logo2"
+        android:src="@drawable/logara"
         android:id="@+id/imageView"
         android:layout_marginTop="120dp"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:text="κανονικη διαρκεια"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/normalTime"
-        android:textSize="30sp"
+        android:textSize="15sp"
         android:layout_marginTop="300dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@drawable/btn_bg" />
+        android:layout_centerInParent="true"
+        android:background="@drawable/button" />
 
     <Button
         android:text="Μεγαλη διαρκεια"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/extendedTime"
-        android:textSize="30sp"
+        android:textSize="15sp"
         android:layout_below="@+id/normalTime"
         android:layout_marginTop="40dp"
-        android:background="@drawable/btn_bg" />
+        android:layout_centerInParent="true"
+        android:background="@drawable/button" />
 
 </RelativeLayout>

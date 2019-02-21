@@ -29,7 +29,7 @@
             android:layout_marginTop="120dp"
             android:minWidth="200dp"
             android:minHeight="90dp"
-            android:src="@drawable/logo2" />
+            android:src="@drawable/logara" />
 
         <Button
             android:id="@+id/starter"
