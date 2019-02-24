@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class ScoreGame extends AppCompatActivity {
+public class LivesGame extends AppCompatActivity {
 
     public static final String PREF_EPILOGES = "EPILOGES";
 
@@ -24,7 +24,7 @@ public class ScoreGame extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_score_game);
+        setContentView(R.layout.activity_lives_game);
 
         scoreText = findViewById(R.id.scoreText);
         teamsText = findViewById(R.id.teamsText);
@@ -36,7 +36,7 @@ public class ScoreGame extends AppCompatActivity {
         timeValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTime", 120);
         pasaValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModePasa", 3);
 
-        scoreText.setText(String.valueOf(scoreValue) + " πόντους για νίκη");
+        scoreText.setText(String.valueOf(scoreValue) + " ζωές απομένουν");
         teamsText.setText(String.valueOf(teamsValue) + " ομάδες");
         timeText.setText(String.valueOf(timeValue) + " δευτερόλεπτα παιχνιδιού");
         if (pasaValue <=5){

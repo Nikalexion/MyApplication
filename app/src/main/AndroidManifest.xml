@@ -12,7 +12,9 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ScoreGame"></activity>
+        <activity android:name=".LivesGame"></activity>
+        <activity android:name=".TeamNames" />
+        <activity android:name=".ScoreGame" />
         <activity android:name=".OptionPicker" />
         <activity android:name=".ModePicker" />
         <activity
