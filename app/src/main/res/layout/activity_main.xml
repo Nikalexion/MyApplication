@@ -42,21 +42,10 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/epiloges"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/starter"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/button"
-            android:text="Κατηγοριες"
-            android:textSize="20sp" />
-
-        <Button
             android:id="@+id/shop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/epiloges"
+            android:layout_below="@+id/starter"
             android:layout_centerInParent="true"
             android:layout_marginTop="15dp"
             android:background="@drawable/button"

@@ -41,9 +41,6 @@
             android:name=".Guide"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Epiloges"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".Shop"
             android:screenOrientation="portrait" />
         <activity

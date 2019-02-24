@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button starter = (Button) findViewById(R.id.starter);
         Button guidelines = (Button) findViewById(R.id.guidelines);
-        Button epiloges = (Button) findViewById(R.id.epiloges);
         Button shop = (Button) findViewById(R.id.shop);
         Button promotion = (Button) findViewById(R.id.promotion);
 
@@ -90,14 +89,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 fireLog("read_rules");
                 startActivity(new Intent(getApplicationContext(), Guide.class));
-            }
-        });
-
-        epiloges.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                fireLog("go_to_epiloges");
-                startActivity(new Intent(getApplicationContext(), Epiloges.class));
             }
         });
 
