@@ -49,11 +49,10 @@
         ads:adUnitId="ca-app-pub-5861682469694178/6049121043" />
 
     <Button
-        android:text="ληξη\n γυρου"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
         android:id="@+id/lathos"
-        android:background="@drawable/btn_liksi"
+        android:background="@drawable/bomba"
         android:textSize="20sp"
         android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true"

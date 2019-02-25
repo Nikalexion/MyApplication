@@ -107,7 +107,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
             }
             buyButton.setId(i);
             buyButton.setText(onomataKatigorion[i+pfk]);
-            buyButton.setTextSize(26);
+            buyButton.setTextSize(21);
             //buyButton.setEnabled(!agorasmena.getBoolean(katigories[i+pfk],false));
             ScrollView.LayoutParams params = new ScrollView.LayoutParams(ScrollView.LayoutParams.FILL_PARENT, ScrollView.LayoutParams.WRAP_CONTENT);
             params.setMargins(0,0,0,25);
