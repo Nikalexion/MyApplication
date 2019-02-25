@@ -46,21 +46,31 @@
         android:spinnerMode="dropdown"
         android:popupBackground="#FFFFFF"/>
 
-    <SeekBar
-        android:id="@+id/scoreBar"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/modeSwitchSpinner"
-        android:layout_marginTop="30dp"
-        android:progressDrawable="@drawable/seekbar_style"
-        android:thumb="@drawable/custom_thumb"/>
-
     <TextView
         android:id="@+id/scoreText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/scoreBar"
+        android:layout_below="@+id/modeSwitchSpinner"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <SeekBar
+        android:id="@+id/scoreBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreText"
         android:layout_marginTop="7dp"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/custom_thumb"/>
+
+    <TextView
+        android:id="@+id/teamsText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreBar"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -69,17 +79,17 @@
         android:id="@+id/teamsBar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/scoreText"
-        android:layout_marginTop="20dp"
+        android:layout_below="@+id/teamsText"
+        android:layout_marginTop="7dp"
         android:progressDrawable="@drawable/seekbar_style"
         android:thumb="@drawable/custom_thumb"/>
 
     <TextView
-        android:id="@+id/teamsText"
+        android:id="@+id/timeText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/teamsBar"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -88,17 +98,17 @@
         android:id="@+id/timeBar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/teamsText"
-        android:layout_marginTop="20dp"
+        android:layout_below="@+id/timeText"
+        android:layout_marginTop="7dp"
         android:progressDrawable="@drawable/seekbar_style"
         android:thumb="@drawable/custom_thumb"/>
 
     <TextView
-        android:id="@+id/timeText"
+        android:id="@+id/pasaText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/timeBar"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -107,20 +117,10 @@
         android:id="@+id/pasaBar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/timeText"
-        android:layout_marginTop="20dp"
+        android:layout_below="@+id/pasaText"
+        android:layout_marginTop="7dp"
         android:progressDrawable="@drawable/seekbar_style"
         android:thumb="@drawable/custom_thumb"/>
-
-    <TextView
-        android:id="@+id/pasaText"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/pasaBar"
-        android:layout_marginTop="7dp"
-        android:layout_marginLeft="15dp"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
 
     <Button
         android:text="play score mode"
@@ -128,7 +128,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/launchScoreModeButton"
         android:textSize="13sp"
-        android:layout_below="@+id/pasaText"
+        android:layout_below="@+id/pasaBar"
         android:layout_marginTop="40dp"
         android:layout_centerHorizontal = "true"
         android:background="@drawable/button" />
