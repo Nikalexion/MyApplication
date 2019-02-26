@@ -56,6 +56,6 @@
         android:textSize="20sp"
         android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/adView"
-        android:padding="20dp"/>
+        android:layout_above="@id/adView" />
+
 </RelativeLayout>

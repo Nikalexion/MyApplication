@@ -297,6 +297,8 @@ public class MainGame extends AppCompatActivity {
         lathos.setVisibility(View.INVISIBLE);
         xronos.cancel();
         mp.stop();
+        mp.release();
+        mp = null;
         expl.start();
         layclick.setClickable(false);
         stillPlaying = false;
@@ -339,6 +341,8 @@ public class MainGame extends AppCompatActivity {
 
     public void afterEnd(){
         expl.stop();
+        expl.release();
+        expl = null;
         xronos.cancel();
         showInterstitial(); //emberiexei to goToNextLevel me ta intent
         finish();   //psofaei otan telionei o xronos
