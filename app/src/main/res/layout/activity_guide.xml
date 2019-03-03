@@ -32,7 +32,6 @@
         android:gravity="start"
         android:textColor="#FFFFFF"
         android:fontFamily="@font/acsofticecream"/>
-    <!-- //TODO des mia edo ti paizei me to textAlignment kai to API -->
     <Button
         android:text="ΑΡΧΙΚΗ"
         android:layout_width="wrap_content"

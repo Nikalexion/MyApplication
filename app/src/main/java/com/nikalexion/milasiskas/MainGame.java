@@ -56,6 +56,8 @@ public class MainGame extends AppCompatActivity {
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
             mp.stop();
+            mp.release();
+            mp = null;
             super.onBackPressed();
             return;
         }
@@ -132,8 +134,7 @@ public class MainGame extends AppCompatActivity {
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
-                // Proceed to the next level on X.
-                goToNextLevel();
+
             }
         });
 
@@ -172,8 +173,6 @@ public class MainGame extends AppCompatActivity {
     private void showInterstitial() {
         if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
-        } else {
-            goToNextLevel();
         }
     }
 
@@ -344,8 +343,8 @@ public class MainGame extends AppCompatActivity {
         expl.release();
         expl = null;
         xronos.cancel();
-        showInterstitial(); //emberiexei to goToNextLevel me ta intent
-        finish();   //psofaei otan telionei o xronos
+        goToNextLevel();    //paei sto ending PRIN tin diafimisi gia na min fenete periergo
+        showInterstitial(); //dixnei tin diafimisi
     }
 
 }

@@ -18,7 +18,7 @@ public class OptionPicker extends AppCompatActivity {
     public static final String PREF_EPILOGES = "EPILOGES";
 
 
-    Button launchGame;
+    Button teamNamesButton;
     Spinner modeSelector;
 
     //metavlites gia to score seekbar
@@ -70,22 +70,23 @@ public class OptionPicker extends AppCompatActivity {
         pasaBarController();
 
         //dilono ta buttons gia na boro na ta xrisimopoieiso
-        launchGame = findViewById(R.id.launchScoreModeButton);
+        teamNamesButton = findViewById(R.id.goToTeamNamesButton);
 
         //vres to spinner
         modeSelector = findViewById(R.id.modeSwitchSpinner);
         //oi epiloges tou spinner se string
         String[] modes = new String[]{"Score mode", "Lives mode", "Last man standing"};
-        //dimiourgia tou adapter gia to pos na emfanistoun TODO (to simple_spinner_item borei na alaxtei)
+        //dimiourgia tou adapter gia to pos na emfanistoun TODO (to simple_spinner_item borei na alaxtei se kati diko mas)
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, modes);
 
-        // Epilogi tou layout gia to dropdown menu TODO (to simple_spinner_dropdown_item borei na alaxtei)
+        // Epilogi tou layout gia to dropdown menu tou spinner TODO (to simple_spinner_dropdown_item borei na alaxtei se kati diko mas)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //allagei tou paliou (adiou) adapter ston neo etoimo adapter
         modeSelector.setAdapter(adapter);
         modeSelector.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                launchGame.setText("Start " + parent.getSelectedItem().toString());
+                //allazei to text tou lanchbutton
+                teamNamesButton.setText("Start " + parent.getSelectedItem().toString());
                 if (position == 1){
                     scoreText.setText("Κάθε ομάδα έχει " + String.valueOf(scoreValue) + " ζωές");
                 }else{
@@ -99,8 +100,8 @@ public class OptionPicker extends AppCompatActivity {
         });
 
 
-        //to launchGame button trexei to game analogos tou mode pou exei epilexthei kai stelenei se preferences ta options
-        launchGame.setOnClickListener(new View.OnClickListener() {
+        //to teamNamesButton button trexei to game analogos tou mode pou exei epilexthei kai stelenei se preferences ta options
+        teamNamesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
                 SharedPreferences sp = getSharedPreferences(PREF_EPILOGES, 0);

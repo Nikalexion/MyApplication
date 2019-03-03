@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true">
 
-    <LinearLayout
 
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/activity_team_names"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,9 +16,301 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.nikalexion.milasiskas.TeamNames"
-        android:background="@drawable/bg"
-        android:orientation="vertical">
+        android:background="@drawable/bg">
 
-    </LinearLayout>
+        <EditText
+            android:id="@+id/onomaOmadas1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Όνονα ομάδας 1"
+            android:inputType="textPersonName"
+            android:text="Ομαδα 1" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/onomaOmadas1"
+            android:id="@+id/groupXromaton1"
+            android:checkedButton="@+id/xroma11"
+            android:orientation="horizontal" >
+
+            <RadioButton
+            android:id="@+id/xroma11"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="11" />
+
+            <RadioButton
+            android:id="@+id/xroma12"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="12" />
+
+            <RadioButton
+            android:id="@+id/xroma13"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="13" />
+
+            <RadioButton
+            android:id="@+id/xroma14"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="14" />
+
+            <RadioButton
+            android:id="@+id/xroma15"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="15" />
+
+            <RadioButton
+            android:id="@+id/xroma16"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="16" />
+
+            <RadioButton
+            android:id="@+id/xroma17"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="17" />
+
+            <RadioButton
+            android:id="@+id/xroma18"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="18" />
+        </RadioGroup>
+
+
+
+
+        <EditText
+            android:id="@+id/onomaOmadas2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Όνονα ομάδας 2"
+            android:inputType="textPersonName"
+            android:layout_below= "@+id/groupXromaton1"
+            android:text="Ομαδα 2" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/onomaOmadas2"
+            android:id="@+id/groupXromaton2"
+            android:checkedButton="@+id/xroma22"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/xroma21"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="21" />
+
+            <RadioButton
+                android:id="@+id/xroma22"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="22" />
+
+            <RadioButton
+                android:id="@+id/xroma23"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="23" />
+
+            <RadioButton
+                android:id="@+id/xroma24"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="24" />
+
+            <RadioButton
+                android:id="@+id/xroma25"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="25" />
+
+            <RadioButton
+                android:id="@+id/xroma26"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="26" />
+
+            <RadioButton
+                android:id="@+id/xroma27"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="27" />
+
+            <RadioButton
+                android:id="@+id/xroma28"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="28" />
+        </RadioGroup>
+
+
+
+
+        <EditText
+            android:id="@+id/onomaOmadas3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Όνονα ομάδας 3"
+            android:inputType="textPersonName"
+            android:layout_below= "@+id/groupXromaton2"
+            android:text="Ομαδα 3" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/onomaOmadas3"
+            android:id="@+id/groupXromaton3"
+            android:checkedButton="@+id/xroma33"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/xroma31"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="31" />
+
+            <RadioButton
+                android:id="@+id/xroma32"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="32" />
+
+            <RadioButton
+                android:id="@+id/xroma33"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="33" />
+
+            <RadioButton
+                android:id="@+id/xroma34"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="34" />
+
+            <RadioButton
+                android:id="@+id/xroma35"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="35" />
+
+            <RadioButton
+                android:id="@+id/xroma36"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="36" />
+
+            <RadioButton
+                android:id="@+id/xroma37"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="37" />
+
+            <RadioButton
+                android:id="@+id/xroma38"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="38" />
+        </RadioGroup>
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/onomaOmadas4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Όνονα ομάδας 4"
+            android:inputType="textPersonName"
+            android:layout_below= "@+id/groupXromaton3"
+            android:text="Ομαδα 4" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/onomaOmadas4"
+            android:id="@+id/groupXromaton4"
+            android:checkedButton="@+id/xroma44"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/xroma41"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="41" />
+
+            <RadioButton
+                android:id="@+id/xroma42"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="42" />
+
+            <RadioButton
+                android:id="@+id/xroma43"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="43" />
+
+            <RadioButton
+                android:id="@+id/xroma44"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="44" />
+
+            <RadioButton
+                android:id="@+id/xroma45"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="45" />
+
+            <RadioButton
+                android:id="@+id/xroma46"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="46" />
+
+            <RadioButton
+                android:id="@+id/xroma47"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="47" />
+
+            <RadioButton
+                android:id="@+id/xroma48"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="48" />
+        </RadioGroup>
+
+        <Button
+            android:text="Lez GO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/launchScoreModeButton"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button" />
+
+
+    </RelativeLayout>
 
 </ScrollView>

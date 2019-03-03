@@ -126,7 +126,7 @@
         android:text="play score mode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/launchScoreModeButton"
+        android:id="@+id/goToTeamNamesButton"
         android:textSize="13sp"
         android:layout_below="@+id/pasaBar"
         android:layout_marginTop="40dp"

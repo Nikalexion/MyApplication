@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_score_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.nikalexion.milasiskas.ScoreScreen"
+    android:background="@drawable/bg"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:minHeight="90dp"
+        android:minWidth="200dp"
+        android:src="@drawable/logara"
+        android:id="@+id/imageView"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Does"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/neoGame"
+        android:textSize="25sp"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal = "true"
+        android:background="@drawable/button" />
+
+    <Button
+        android:text="Nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/arxiki"
+        android:textSize="30sp"
+        android:layout_below="@+id/neoGame"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal = "true"
+        android:background="@drawable/button" />
+
+</RelativeLayout>
