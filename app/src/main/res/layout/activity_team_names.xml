@@ -38,50 +38,73 @@
 
             <RadioButton
             android:id="@+id/xroma11"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
-            android:text="11" />
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:text="11"
+                android:background="@drawable/box"
+                android:backgroundTint="#33FF00"/>
 
             <RadioButton
             android:id="@+id/xroma12"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/box"
+                android:backgroundTint="#FF0E00"
             android:text="12" />
 
             <RadioButton
             android:id="@+id/xroma13"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/box"
+                android:backgroundTint="#0027FF"
             android:text="13" />
 
             <RadioButton
             android:id="@+id/xroma14"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/box"
+                android:backgroundTint="#DA00FF"
             android:text="14" />
 
             <RadioButton
             android:id="@+id/xroma15"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/box"
+                android:backgroundTint="#FFF200"
             android:text="15" />
 
             <RadioButton
             android:id="@+id/xroma16"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/box"
+                android:backgroundTint="#B7FFFFFF"
             android:text="16" />
 
             <RadioButton
             android:id="@+id/xroma17"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/box"
+                android:backgroundTint="#FF9800"
             android:text="17" />
 
             <RadioButton
             android:id="@+id/xroma18"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/box"
+                android:backgroundTint="#7C4100"
             android:text="18" />
         </RadioGroup>
 
