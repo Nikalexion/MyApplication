@@ -1,5 +1,8 @@
 package com.nikalexion.milasiskas;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -16,6 +19,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
+
+import static com.nikalexion.milasiskas.R.color.xrwma1;
+import static com.nikalexion.milasiskas.R.color.xrwma2;
 
 public class TeamNames extends AppCompatActivity {
 
@@ -48,6 +54,7 @@ public class TeamNames extends AppCompatActivity {
                 //TODO edo tha prepei na travaei kati allo (oxi to text string) gia na travaei xroma apo kathe koumbi
                 xroma1 = checkedRadioButton.getText().toString();
             }
+
         });
 
         RadioGroup groupXromaton2 = findViewById(R.id.groupXromaton2);

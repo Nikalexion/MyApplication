@@ -5,6 +5,13 @@
     <color name="colorAccent">#FF4081</color>
     <color name="main_btn">#166cb7</color>
     <color name="holo_purple">#166cb7</color>
-
+    <color name="xrwma1">#00E5FF</color>
+    <color name="xrwma2">#FF0E00</color>
+    <color name="xrwma3">#0027FF</color>
+    <color name="xrwma4">#DA00FF</color>
+    <color name="xrwma5">#FFF200</color>
+    <color name="xrwma6">#B7FFFFFF</color>
+    <color name="xrwma7">#FF9800</color>
+    <color name="xrwma8">#7C4100</color>
     <color name="black_overlay">#66000000</color>
 </resources>
