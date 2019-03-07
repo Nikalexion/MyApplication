@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.content.SharedPreferences;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -34,6 +35,13 @@ public class TeamNames extends AppCompatActivity {
     String xroma3 = "33";
     String xroma4 = "44";
 
+    int spliter1;
+    int spliter2;
+    int spliter;
+
+    RadioButton arrayRadio[][] = new RadioButton[4][8];
+    boolean xrwmata[][] = new boolean[4][8];
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +49,50 @@ public class TeamNames extends AppCompatActivity {
 
         plithosOmadon = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTeams", 2);
 
+
+        //TODO an vrw pws passareis variable se R.id ayto tha ginei me for loop
+        arrayRadio[0][0] = findViewById(R.id.xroma11);
+        arrayRadio[0][1] = findViewById(R.id.xroma12);
+        arrayRadio[0][2] = findViewById(R.id.xroma13);
+        arrayRadio[0][3] = findViewById(R.id.xroma14);
+        arrayRadio[0][4] = findViewById(R.id.xroma15);
+        arrayRadio[0][5] = findViewById(R.id.xroma16);
+        arrayRadio[0][6] = findViewById(R.id.xroma17);
+        arrayRadio[0][7] = findViewById(R.id.xroma18);
+        arrayRadio[1][0] = findViewById(R.id.xroma21);
+        arrayRadio[1][1] = findViewById(R.id.xroma22);
+        arrayRadio[1][2] = findViewById(R.id.xroma23);
+        arrayRadio[1][3] = findViewById(R.id.xroma24);
+        arrayRadio[1][4] = findViewById(R.id.xroma25);
+        arrayRadio[1][5] = findViewById(R.id.xroma26);
+        arrayRadio[1][6] = findViewById(R.id.xroma27);
+        arrayRadio[1][7] = findViewById(R.id.xroma28);
+        arrayRadio[2][0] = findViewById(R.id.xroma31);
+        arrayRadio[2][1] = findViewById(R.id.xroma32);
+        arrayRadio[2][2] = findViewById(R.id.xroma33);
+        arrayRadio[2][3] = findViewById(R.id.xroma34);
+        arrayRadio[2][4] = findViewById(R.id.xroma35);
+        arrayRadio[2][5] = findViewById(R.id.xroma36);
+        arrayRadio[2][6] = findViewById(R.id.xroma37);
+        arrayRadio[2][7] = findViewById(R.id.xroma38);
+        arrayRadio[3][0] = findViewById(R.id.xroma41);
+        arrayRadio[3][1] = findViewById(R.id.xroma42);
+        arrayRadio[3][2] = findViewById(R.id.xroma43);
+        arrayRadio[3][3] = findViewById(R.id.xroma44);
+        arrayRadio[3][4] = findViewById(R.id.xroma45);
+        arrayRadio[3][5] = findViewById(R.id.xroma46);
+        arrayRadio[3][6] = findViewById(R.id.xroma47);
+        arrayRadio[3][7] = findViewById(R.id.xroma48);
+
+        //ksexwrizei ta epilegmena Radio otan anoigei to screen
+        for (int i = 0; i < plithosOmadon; i++){
+            for (int j = 0; j < 8; j++){
+                if (i == j){
+                    xrwmata[i][j] = true;
+                    radioDisable(i,j);
+                }
+            }
+        }
 
 
         //TODO lipei to kathe koumbi na apokliei ta alla koumbia tou idiou xromatos
@@ -52,7 +104,17 @@ public class TeamNames extends AppCompatActivity {
             {
                 RadioButton checkedRadioButton = findViewById(checkedId);
                 //TODO edo tha prepei na travaei kati allo (oxi to text string) gia na travaei xroma apo kathe koumbi
+                //pairnei to id kai
                 xroma1 = checkedRadioButton.getText().toString();
+
+                //vriskei tis diastaseis toy koympioy poy ekanes enable
+                spliter = Integer.parseInt((String) checkedRadioButton.getTag());
+                spliter1 = spliter /10;
+                spliter2 = spliter % 10;
+
+
+                radioDisable(spliter1,spliter2);
+
             }
 
         });
@@ -65,6 +127,14 @@ public class TeamNames extends AppCompatActivity {
             {
                 RadioButton checkedRadioButton = findViewById(checkedId);
                 xroma2 = checkedRadioButton.getText().toString();
+
+                //vriskei tis diastaseis toy koympioy poy ekanes enable
+                spliter = Integer.parseInt((String) checkedRadioButton.getTag());
+                spliter1 = spliter /10;
+                spliter2 = spliter % 10;
+
+
+                radioDisable(spliter1,spliter2);
             }
         });
 
@@ -77,6 +147,14 @@ public class TeamNames extends AppCompatActivity {
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
                     RadioButton checkedRadioButton = findViewById(checkedId);
                     xroma3 = checkedRadioButton.getText().toString();
+
+                    //vriskei tis diastaseis toy koympioy poy ekanes enable
+                    spliter = Integer.parseInt((String) checkedRadioButton.getTag());
+                    spliter1 = spliter /10;
+                    spliter2 = spliter % 10;
+
+
+                    radioDisable(spliter1,spliter2);
                 }
             });
         }else{
@@ -95,6 +173,14 @@ public class TeamNames extends AppCompatActivity {
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
                     RadioButton checkedRadioButton = findViewById(checkedId);
                     xroma4 = checkedRadioButton.getText().toString();
+
+                    //vriskei tis diastaseis toy koympioy poy ekanes enable
+                    spliter = Integer.parseInt((String) checkedRadioButton.getTag());
+                    spliter1 = spliter /10;
+                    spliter2 = spliter % 10;
+
+
+                    radioDisable(spliter1,spliter2);
                 }
             });
         }else{
@@ -177,5 +263,25 @@ public class TeamNames extends AppCompatActivity {
         });
 */
 
+    }
+
+    void radioDisable(int x, int y){
+
+        //vriskei to palio poy htan enabled kai kanei enable ta koympia poy htan disable
+            for (int l =0; l < 8; l++){
+                if (xrwmata[x][l] == true){
+                    for (int k =0; k < plithosOmadon; k++){
+                        arrayRadio[k][l].setEnabled(true);
+                    }
+                    xrwmata[x][l] = false;
+                }
+            }
+            xrwmata[x][y] = true;
+         //kanei disable ta kainoyrgia
+        for (int i = 0; i < plithosOmadon; i++){
+            if (i != x){
+                arrayRadio[i][y].setEnabled(false);
+            }
+        }
     }
 }

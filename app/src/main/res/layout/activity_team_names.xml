@@ -44,7 +44,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
                 android:background="@drawable/radio_bg"
-                android:backgroundTint="@color/xrwma1" />
+                android:backgroundTint="@color/xrwma1"
+                android:tag = "00" />
 
             <RadioButton
             android:id="@+id/xroma12"
@@ -52,7 +53,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/radio_bg"
-                android:backgroundTint="@color/xrwma2" />
+                android:backgroundTint="@color/xrwma2"
+                android:tag = "01" />
 
             <RadioButton
             android:id="@+id/xroma13"
@@ -60,7 +62,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/radio_bg"
-                android:backgroundTint="@color/xrwma3" />
+                android:backgroundTint="@color/xrwma3"
+                android:tag = "02" />
 
             <RadioButton
             android:id="@+id/xroma14"
@@ -68,7 +71,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/radio_bg"
-                android:backgroundTint="@color/xrwma4" />
+                android:backgroundTint="@color/xrwma4"
+                android:tag = "03" />
 
             <RadioButton
             android:id="@+id/xroma15"
@@ -76,7 +80,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/radio_bg"
-                android:backgroundTint="@color/xrwma5" />
+                android:backgroundTint="@color/xrwma5"
+                android:tag = "04" />
 
             <RadioButton
             android:id="@+id/xroma16"
@@ -84,7 +89,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/radio_bg"
-                android:backgroundTint="@color/xrwma6" />
+                android:backgroundTint="@color/xrwma6"
+                android:tag = "05" />
 
             <RadioButton
             android:id="@+id/xroma17"
@@ -92,7 +98,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/radio_bg"
-                android:backgroundTint="@color/xrwma7" />
+                android:backgroundTint="@color/xrwma7"
+                android:tag = "06" />
 
             <RadioButton
             android:id="@+id/xroma18"
@@ -100,7 +107,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/radio_bg"
-                android:backgroundTint="@color/xrwma8" />
+                android:backgroundTint="@color/xrwma8"
+                android:tag = "07" />
         </RadioGroup>
 
 
@@ -129,49 +137,57 @@
                 android:id="@+id/xroma21"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="21" />
+                android:text="21"
+                android:tag = "10" />
 
             <RadioButton
                 android:id="@+id/xroma22"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="22" />
+                android:text="22"
+                android:tag = "11" />
 
             <RadioButton
                 android:id="@+id/xroma23"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="23" />
+                android:text="23"
+                android:tag = "12"/>
 
             <RadioButton
                 android:id="@+id/xroma24"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="24" />
+                android:text="24"
+                android:tag = "13" />
 
             <RadioButton
                 android:id="@+id/xroma25"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="25" />
+                android:text="25"
+                android:tag = "14" />
 
             <RadioButton
                 android:id="@+id/xroma26"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="26" />
+                android:text="26"
+                android:tag = "15" />
 
             <RadioButton
                 android:id="@+id/xroma27"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="27" />
+                android:text="27"
+                android:tag = "16" />
 
             <RadioButton
                 android:id="@+id/xroma28"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="28" />
+                android:text="28"
+                android:tag = "17" />
         </RadioGroup>
 
 
@@ -200,49 +216,57 @@
                 android:id="@+id/xroma31"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="31" />
+                android:text="31"
+                android:tag = "20" />
 
             <RadioButton
                 android:id="@+id/xroma32"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="32" />
+                android:text="32"
+                android:tag = "21" />
 
             <RadioButton
                 android:id="@+id/xroma33"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="33" />
+                android:text="33"
+                android:tag = "22" />
 
             <RadioButton
                 android:id="@+id/xroma34"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="34" />
+                android:text="34"
+                android:tag = "23" />
 
             <RadioButton
                 android:id="@+id/xroma35"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="35" />
+                android:text="35"
+                android:tag = "24" />
 
             <RadioButton
                 android:id="@+id/xroma36"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="36" />
+                android:text="36"
+                android:tag = "25" />
 
             <RadioButton
                 android:id="@+id/xroma37"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="37" />
+                android:text="37"
+                android:tag = "26" />
 
             <RadioButton
                 android:id="@+id/xroma38"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="38" />
+                android:text="38"
+                android:tag = "27" />
         </RadioGroup>
 
 
@@ -267,55 +291,63 @@
             android:layout_below="@+id/onomaOmadas4"
             android:id="@+id/groupXromaton4"
             android:checkedButton="@+id/xroma44"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/xroma41"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="41" />
+                android:text="41"
+                android:tag = "30" />
 
             <RadioButton
                 android:id="@+id/xroma42"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="42" />
+                android:text="42"
+                android:tag = "31" />
 
             <RadioButton
                 android:id="@+id/xroma43"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="43" />
+                android:text="43"
+                android:tag = "32" />
 
             <RadioButton
                 android:id="@+id/xroma44"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="44" />
+                android:text="44"
+                android:tag = "33" />
 
             <RadioButton
                 android:id="@+id/xroma45"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="45" />
+                android:text="45"
+                android:tag = "34" />
 
             <RadioButton
                 android:id="@+id/xroma46"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="46" />
+                android:text="46"
+                android:tag = "35" />
 
             <RadioButton
                 android:id="@+id/xroma47"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="47" />
+                android:text="47"
+                android:tag = "36" />
 
             <RadioButton
                 android:id="@+id/xroma48"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="48" />
+                android:text="48"
+                android:tag = "37"/>
         </RadioGroup>
 
         <Button
