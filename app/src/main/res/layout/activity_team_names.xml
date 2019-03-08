@@ -37,7 +37,8 @@
             android:layout_marginTop="7dp"
             android:id="@+id/groupXromaton1"
             android:checkedButton="@+id/xroma11"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            >
 
             <RadioButton
             android:id="@+id/xroma11"
@@ -51,7 +52,7 @@
             android:id="@+id/xroma12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg"
                 android:backgroundTint="@color/xrwma2"
                 android:tag = "01" />
@@ -60,7 +61,7 @@
             android:id="@+id/xroma13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg"
                 android:backgroundTint="@color/xrwma3"
                 android:tag = "02" />
@@ -69,7 +70,7 @@
             android:id="@+id/xroma14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg"
                 android:backgroundTint="@color/xrwma4"
                 android:tag = "03" />
@@ -78,7 +79,7 @@
             android:id="@+id/xroma15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg"
                 android:backgroundTint="@color/xrwma5"
                 android:tag = "04" />
@@ -87,7 +88,7 @@
             android:id="@+id/xroma16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg"
                 android:backgroundTint="@color/xrwma6"
                 android:tag = "05" />
@@ -96,7 +97,7 @@
             android:id="@+id/xroma17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg"
                 android:backgroundTint="@color/xrwma7"
                 android:tag = "06" />
@@ -105,7 +106,7 @@
             android:id="@+id/xroma18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg"
                 android:backgroundTint="@color/xrwma8"
                 android:tag = "07" />
@@ -137,57 +138,66 @@
                 android:id="@+id/xroma21"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="21"
-                android:tag = "10" />
+                android:tag = "10"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg"
+                android:backgroundTint="@color/xrwma1"/>
 
             <RadioButton
                 android:id="@+id/xroma22"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="22"
-                android:tag = "11" />
+                android:tag = "11"
+                android:background="@drawable/radio_bg"
+                android:backgroundTint="@color/xrwma2"/>
 
             <RadioButton
                 android:id="@+id/xroma23"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="23"
-                android:tag = "12"/>
+                android:tag = "12"
+                android:background="@drawable/radio_bg"
+                android:backgroundTint="@color/xrwma3"/>
 
             <RadioButton
                 android:id="@+id/xroma24"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="24"
-                android:tag = "13" />
+                android:tag = "13"
+                android:background="@drawable/radio_bg"
+                android:backgroundTint="@color/xrwma4"/>
 
             <RadioButton
                 android:id="@+id/xroma25"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="25"
-                android:tag = "14" />
+                android:tag = "14"
+                android:background="@drawable/radio_bg"
+                android:backgroundTint="@color/xrwma5"/>
 
             <RadioButton
                 android:id="@+id/xroma26"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="26"
-                android:tag = "15" />
+                android:tag = "15"
+                android:background="@drawable/radio_bg"
+                android:backgroundTint="@color/xrwma6"/>
 
             <RadioButton
                 android:id="@+id/xroma27"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="27"
-                android:tag = "16" />
+                android:tag = "16"
+                android:background="@drawable/radio_bg"
+                android:backgroundTint="@color/xrwma7"/>
 
             <RadioButton
                 android:id="@+id/xroma28"
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:text="28"
-                android:tag = "17" />
+                android:tag = "17"
+                android:background="@drawable/radio_bg"
+                android:backgroundTint="@color/xrwma8"/>
         </RadioGroup>
 
 

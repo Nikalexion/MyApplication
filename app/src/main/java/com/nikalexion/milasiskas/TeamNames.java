@@ -1,5 +1,6 @@
 package com.nikalexion.milasiskas;
 
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
@@ -27,10 +28,10 @@ public class TeamNames extends AppCompatActivity {
 
     int plithosOmadon;
     Button teamNamesButton;
-    String xroma1 = "11";
-    String xroma2 = "22";
-    String xroma3 = "33";
-    String xroma4 = "44";
+    int xroma1;
+    int xroma2;
+    int xroma3;
+    int xroma4;
 
     int spliter1;
     int spliter2;
@@ -80,6 +81,14 @@ public class TeamNames extends AppCompatActivity {
         arrayRadio[3][5] = findViewById(R.id.xroma46);
         arrayRadio[3][6] = findViewById(R.id.xroma47);
         arrayRadio[3][7] = findViewById(R.id.xroma48);
+        xroma1 = arrayRadio[0][0].getBackgroundTintList().getDefaultColor();
+        xroma2 = arrayRadio[1][1].getBackgroundTintList().getDefaultColor();
+        if (plithosOmadon >= 3){
+            xroma3 = arrayRadio[2][2].getBackgroundTintList().getDefaultColor();
+        }
+        if (plithosOmadon == 4){
+            xroma4 = arrayRadio[3][3].getBackgroundTintList().getDefaultColor();
+        }
 
         //ksexwrizei ta epilegmena Radio otan anoigei to screen
         for (int i = 0; i < plithosOmadon; i++){
@@ -98,7 +107,7 @@ public class TeamNames extends AppCompatActivity {
                 RadioButton checkedRadioButton = findViewById(checkedId);
                 //TODO edo tha prepei na travaei kati allo (oxi to text string) gia na travaei xroma apo kathe koumbi
                 //pairnei to id kai
-                xroma1 = checkedRadioButton.getTag().toString();
+                xroma1 = checkedRadioButton.getBackgroundTintList().getDefaultColor();
 
                 //vriskei tis diastaseis toy koympioy poy ekanes enable
                 spliter = Integer.parseInt((String) checkedRadioButton.getTag());
@@ -119,7 +128,7 @@ public class TeamNames extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId)
             {
                 RadioButton checkedRadioButton = findViewById(checkedId);
-                xroma2 = checkedRadioButton.getTag().toString();
+                xroma2 = checkedRadioButton.getBackgroundTintList().getDefaultColor();
 
                 //vriskei tis diastaseis toy koympioy poy ekanes enable
                 spliter = Integer.parseInt((String) checkedRadioButton.getTag());
@@ -139,7 +148,7 @@ public class TeamNames extends AppCompatActivity {
                 @Override
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
                     RadioButton checkedRadioButton = findViewById(checkedId);
-                    xroma3 = checkedRadioButton.getTag().toString();
+                    xroma3 = checkedRadioButton.getBackgroundTintList().getDefaultColor();
 
                     //vriskei tis diastaseis toy koympioy poy ekanes enable
                     spliter = Integer.parseInt((String) checkedRadioButton.getTag());
@@ -165,7 +174,7 @@ public class TeamNames extends AppCompatActivity {
                 @Override
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
                     RadioButton checkedRadioButton = findViewById(checkedId);
-                    xroma4 = checkedRadioButton.getTag().toString();
+                    xroma4 = checkedRadioButton.getBackgroundTintList().getDefaultColor();
 
                     //vriskei tis diastaseis toy koympioy poy ekanes enable
                     spliter = Integer.parseInt((String) checkedRadioButton.getTag());
@@ -195,17 +204,17 @@ public class TeamNames extends AppCompatActivity {
 
                 //TODO edo dinamika onomata anti gia "onoma1 xroma1" gia na ta ftiaxnei kai dinamika sto game (pane scoreGame na katalaveis)
                 editor.putString("onoma1", ((EditText)findViewById(R.id.onomaOmadas1)).getText().toString());
-                editor.putString("xroma1", xroma1);
+                editor.putInt("xroma1", xroma1);
 
                 editor.putString("onoma2", ((EditText)findViewById(R.id.onomaOmadas2)).getText().toString());
-                editor.putString("xroma2", xroma2);
+                editor.putInt("xroma2", xroma2);
                 if (plithosOmadon >= 3) {
                     editor.putString("onoma3", ((EditText)findViewById(R.id.onomaOmadas3)).getText().toString());
-                    editor.putString("xroma3", xroma3);
+                    editor.putInt("xroma3", xroma3);
                 }
                 if (plithosOmadon >= 4) {
                     editor.putString("onoma4", ((EditText)findViewById(R.id.onomaOmadas4)).getText().toString());
-                    editor.putString("xroma4", xroma4);
+                    editor.putInt("xroma4", xroma4);
                 }
 
                 editor.apply();

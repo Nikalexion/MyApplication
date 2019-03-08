@@ -2,6 +2,7 @@ package com.nikalexion.milasiskas;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -11,7 +12,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +27,7 @@ import java.util.Random;
 import java.util.StringTokenizer;
 
 public class ScoreGame extends AppCompatActivity {
+    //RelativeLayout bg;
 
 
     public static final String PREF_EPILOGES = "EPILOGES";
@@ -53,11 +57,11 @@ public class ScoreGame extends AppCompatActivity {
     int arithmosPaso;   //prosorinos arithmos paso pou exei o kathe paiktis
 
     String[] onomataOmadon;
-    String[] xromataOmadon;
+    int[] xromataOmadon;
     int[] scoreOmadon;
 
     TextView teamName;
-    TextView teamColor; //TODO opou xrisimopoio to teamcolor einai na allazei to xroma kanonika, DES pou to xrisimopoio
+    //TextView teamColor; //TODO opou xrisimopoio to teamcolor einai na allazei to xroma kanonika, DES pou to xrisimopoio
 
 
 
@@ -87,6 +91,7 @@ public class ScoreGame extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //bg = findViewById(R.id.bg);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_game);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -96,7 +101,7 @@ public class ScoreGame extends AppCompatActivity {
         pasaValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModePasa", 3);
 
         onomataOmadon = new String[teamsValue];
-        xromataOmadon = new String[teamsValue];
+        xromataOmadon = new int[teamsValue];
         scoreOmadon = new int[teamsValue];
 
         for (int i = 0; i < teamsValue; i++){
@@ -107,23 +112,24 @@ public class ScoreGame extends AppCompatActivity {
         // kai na ta ftiaxnei kai edo dinamika me paromoio tropo (sto for pou exo pano)
 
         onomataOmadon[0] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma1", "omada 1");
-        xromataOmadon[0] = getSharedPreferences(PREF_EPILOGES, 0).getString("xroma1", "11");
+        xromataOmadon[0] = getSharedPreferences(PREF_EPILOGES, 0).getInt("xroma1", 0);
         onomataOmadon[1] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma2", "omada 2");
-        xromataOmadon[1] = getSharedPreferences(PREF_EPILOGES, 0).getString("xroma2", "22");
+        xromataOmadon[1] = getSharedPreferences(PREF_EPILOGES, 0).getInt("xroma2", 0);
 
         if (teamsValue >= 3) {
             onomataOmadon[2] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma3", "omada 3");
-            xromataOmadon[2] = getSharedPreferences(PREF_EPILOGES, 0).getString("xroma3", "33");
+            xromataOmadon[2] = getSharedPreferences(PREF_EPILOGES, 0).getInt("xroma3", 0);
         }
         if (teamsValue >= 4) {
             onomataOmadon[3] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma4", "omada 4");
-            xromataOmadon[3] = getSharedPreferences(PREF_EPILOGES, 0).getString("xroma4", "44");
+            xromataOmadon[3] = getSharedPreferences(PREF_EPILOGES, 0).getInt("xroma4", 0);
         }
 
         teamName = findViewById(R.id.onomaActiveOmadas);
         teamName.setText(onomataOmadon[0]);
-        teamColor = findViewById(R.id.xromaActiveOmadas);
-        teamColor.setText(xromataOmadon[0]);
+        //teamColor = findViewById(R.id.xromaActiveOmadas);
+        //teamColor.setText(xromataOmadon[0]);
+        // TODO bg.setBackgroundColor(Color.GREEN);
 
 
 
@@ -157,7 +163,7 @@ public class ScoreGame extends AppCompatActivity {
                 }
 
                 teamName.setText(onomataOmadon[activeTeam]);
-                teamColor.setText(xromataOmadon[activeTeam]);
+                //teamColor.setText(xromataOmadon[activeTeam]);
 
                 //refresh paso
                 if (pasaValue > 0){
