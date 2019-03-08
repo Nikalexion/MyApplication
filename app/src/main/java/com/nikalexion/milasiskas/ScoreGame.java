@@ -21,6 +21,7 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Random;
+import java.util.StringTokenizer;
 
 public class ScoreGame extends AppCompatActivity {
 
@@ -44,8 +45,7 @@ public class ScoreGame extends AppCompatActivity {
     private Button lathos;
     Button nextButton;
     Button pasoButton;
-    //arithmos tou  maxScore, arithmos omadon, diarkia paixnidiou, arithmos paso
-    int maxScoreValue;  //to scor gia liksi tou paixnidiou
+    //arithmos tou  arithmos omadon, diarkia paixnidiou, arithmos paso
     int teamsValue;     //arithmos omadon
     int activeTeam = 0;     //arithmos omadas pou paizei
     int timeValue;
@@ -54,6 +54,7 @@ public class ScoreGame extends AppCompatActivity {
 
     String[] onomataOmadon;
     String[] xromataOmadon;
+    int[] scoreOmadon;
 
     TextView teamName;
     TextView teamColor; //TODO opou xrisimopoio to teamcolor einai na allazei to xroma kanonika, DES pou to xrisimopoio
@@ -90,15 +91,20 @@ public class ScoreGame extends AppCompatActivity {
         setContentView(R.layout.activity_score_game);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        maxScoreValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeScore", 3);
         teamsValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTeams", 2);
         timeValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTime", 120);
         pasaValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModePasa", 3);
 
         onomataOmadon = new String[teamsValue];
         xromataOmadon = new String[teamsValue];
+        scoreOmadon = new int[teamsValue];
 
-        //TODO edo thelei dinamika onomata idi ftiagmena apo to teamNames (diavase ekei se poio simio) kai na ta ftiaxnei kai edo dinamika me paromoio tropo
+        for (int i = 0; i < teamsValue; i++){
+            scoreOmadon[i]=0;
+        }
+
+        //TODO edo thelei dinamika onomata idi ftiagmena apo to teamNames (diavase ekei se poio simio)
+        // kai na ta ftiaxnei kai edo dinamika me paromoio tropo (sto for pou exo pano)
 
         onomataOmadon[0] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma1", "omada 1");
         xromataOmadon[0] = getSharedPreferences(PREF_EPILOGES, 0).getString("xroma1", "11");
@@ -144,6 +150,7 @@ public class ScoreGame extends AppCompatActivity {
             public void onClick(View view) {
                 neaLeksi();
                 //alagi omadas
+                scoreOmadon[activeTeam]++;
                 activeTeam = activeTeam +1;
                 if (activeTeam == teamsValue){
                     activeTeam = 0;
@@ -245,8 +252,22 @@ public class ScoreGame extends AppCompatActivity {
         }
     }
 
+    // Apothikevei to score kai paei sto ScoreScreen
     private void goToNextLevel() {
-        // An patiseis X sto ad i den fortisei se paei sto epomeno activity
+
+        StringBuilder scoreGiaMetafora = new StringBuilder();
+        String savedString = getSharedPreferences(PREF_EPILOGES, 0).getString("teamModeScoreOmadon", "0,0,0,0,");
+        StringTokenizer st = new StringTokenizer(savedString, ",");
+        for (int i = 0; i < teamsValue; i++) {
+            scoreOmadon[i] = scoreOmadon[i] + Integer.parseInt(st.nextToken());
+            scoreGiaMetafora.append(scoreOmadon[i]).append(",");
+        }
+
+        SharedPreferences sp = getSharedPreferences(PREF_EPILOGES, 0);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString("teamModeScoreOmadon", scoreGiaMetafora.toString());
+        editor.apply();
+
         startActivity(new Intent(getApplicationContext(), ScoreScreen.class));
         finish();
     }
@@ -377,7 +398,7 @@ public class ScoreGame extends AppCompatActivity {
         }else{
             leksi.setText("Τέλος Χρόνου! Η Ομάδα σου έχασε!");
         }
-
+        scoreOmadon[activeTeam] = 0;
         gameTime = 3 * 1000;
         lastClock(gameTime);
     }

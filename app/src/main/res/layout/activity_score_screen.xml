@@ -24,25 +24,55 @@
         android:layout_marginTop="120dp"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:text="Does"
+
+    <TextView
+        android:id="@+id/score1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/neoGame"
         android:textSize="25sp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="300dp"
         android:layout_centerHorizontal = "true"
-        android:background="@drawable/button" />
+        android:text="score omada 1" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/score1"
+        android:layout_centerHorizontal = "true"
+        android:text="score omada 2" />
+
+    <TextView
+        android:id="@+id/score3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/score2"
+        android:layout_centerHorizontal = "true"
+        android:text="score omada 3" />
+
+    <TextView
+        android:id="@+id/score4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/score3"
+        android:layout_centerHorizontal = "true"
+        android:text="score omada 4" />
 
     <Button
-        android:text="Nothing"
+        android:text="Next Round"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/arxiki"
-        android:textSize="30sp"
-        android:layout_below="@+id/neoGame"
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal = "true"
+        android:id="@+id/nextRoundButton"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/button" />
 
 </RelativeLayout>

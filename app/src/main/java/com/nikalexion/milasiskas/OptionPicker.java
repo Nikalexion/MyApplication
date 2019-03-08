@@ -24,10 +24,10 @@ public class OptionPicker extends AppCompatActivity {
     //metavlites gia to score seekbar
     SeekBar scoreSeekBar;
     TextView scoreText;
-    int scoreStep = 1;
-    int scoreMax = 5;
-    int scoreMin = 1;
-    int scoreValue = 3;
+    int scoreStep = 10;
+    int scoreMax = 50;
+    int scoreMin = 10;
+    int scoreValue = 30;
 
     //metavlites gia to teams seekbar
     SeekBar teamsSeekBar;
@@ -44,7 +44,7 @@ public class OptionPicker extends AppCompatActivity {
     int timeStep = 10;
     int timeMax = 180;
     int timeMin = 60;
-    int timeValue;
+    int timeValue = 120;
 
     //metavlites gia to pasa seekbar
     SeekBar pasaSeekBar;
@@ -52,7 +52,7 @@ public class OptionPicker extends AppCompatActivity {
     int pasaStep = 1;
     int pasaMax = 6;
     int pasaMin = 0;
-    int pasaValue;
+    int pasaValue = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +75,7 @@ public class OptionPicker extends AppCompatActivity {
         //vres to spinner
         modeSelector = findViewById(R.id.modeSwitchSpinner);
         //oi epiloges tou spinner se string
-        String[] modes = new String[]{"Score mode", "Lives mode", "Last man standing"};
+        String[] modes = new String[]{"Score mode", "Lives mode"};
         //dimiourgia tou adapter gia to pos na emfanistoun TODO (to simple_spinner_item borei na alaxtei se kati diko mas)
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, modes);
 
@@ -87,10 +87,20 @@ public class OptionPicker extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 //allazei to text tou lanchbutton
                 teamNamesButton.setText("Start " + parent.getSelectedItem().toString());
-                if (position == 1){
-                    scoreText.setText("Κάθε ομάδα έχει " + String.valueOf(scoreValue) + " ζωές");
-                }else{
+                if (position == 0){
+                    scoreStep = 10;
+                    scoreMax = 50;
+                    scoreMin = 10;
+                    scoreValue = 30;
+                    scoreBarController();
                     scoreText.setText("Στους " + String.valueOf(scoreValue) + " πόντους");
+                }else{
+                    scoreStep = 1;
+                    scoreMax = 10;
+                    scoreMin = 1;
+                    scoreValue = 3;
+                    scoreBarController();
+                    scoreText.setText("Κάθε ομάδα έχει " + String.valueOf(scoreValue) + " ζωές");
                 }
             }
 
@@ -110,11 +120,15 @@ public class OptionPicker extends AppCompatActivity {
                 editor.putInt("teamModeTeams", teamsValue);
                 editor.putInt("teamModeTime", timeValue);
                 editor.putInt("teamModePasa", pasaValue);
-                if (modeSelector.getSelectedItemPosition()==1){
-                    editor.putInt("teamModeMode", 1);
-                }else{
+                if (modeSelector.getSelectedItemPosition()==0){
                     editor.putInt("teamModeMode", 0);
+                }else{
+                    editor.putInt("teamModeMode", 1);
                 }
+
+                //midenismos ton score
+                editor.putString("teamModeScoreOmadon", "0,0,0,0,");
+
                 editor.apply();
                 startActivity(new Intent(getApplicationContext(), TeamNames.class));
                 finish();
@@ -128,8 +142,10 @@ public class OptionPicker extends AppCompatActivity {
         scoreText = findViewById(R.id.scoreText);
 
         //prosoxi i praksi na vgainei panta int arithmos!
-        scoreSeekBar.setMax( (scoreMax - scoreMin) / scoreStep);
+        //TODO edo afto ginete anapoda apoti tharepe alla doulevei (an to kano me sosti seira tote allazontas to max epireazete to scoreValue)
         scoreSeekBar.setProgress( (scoreValue - scoreMin) / scoreStep);
+        scoreSeekBar.setMax( (scoreMax - scoreMin) / scoreStep);
+
         scoreText.setText("Στους " + String.valueOf(scoreValue) + " πόντους");
 
         // otan allazei to to seekerBar ginete apefthias ananeosi tou ti grafei apo kato
@@ -214,7 +230,7 @@ public class OptionPicker extends AppCompatActivity {
 
         //prosoxi i praksi na vgainei panta int arithmos!
         pasaSeekBar.setMax( (pasaMax - pasaMin) / pasaStep);
-        pasaSeekBar.setProgress(pasaValue);
+        pasaSeekBar.setProgress( (pasaValue - pasaMin) / pasaStep);
         pasaText.setText(arithmosPason(pasaValue));
 
         // otan allazei to to seekerBar ginete apefthias ananeosi tou ti grafei apo kato

@@ -21,9 +21,6 @@ import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import static com.nikalexion.milasiskas.R.color.xrwma1;
-import static com.nikalexion.milasiskas.R.color.xrwma2;
-
 public class TeamNames extends AppCompatActivity {
 
     public static final String PREF_EPILOGES = "EPILOGES";
@@ -86,12 +83,8 @@ public class TeamNames extends AppCompatActivity {
 
         //ksexwrizei ta epilegmena Radio otan anoigei to screen
         for (int i = 0; i < plithosOmadon; i++){
-            for (int j = 0; j < 8; j++){
-                if (i == j){
-                    xrwmata[i][j] = true;
-                    radioDisable(i,j);
-                }
-            }
+            xrwmata[i][i] = true;
+            radioDisable(i,i);
         }
 
 
@@ -105,7 +98,7 @@ public class TeamNames extends AppCompatActivity {
                 RadioButton checkedRadioButton = findViewById(checkedId);
                 //TODO edo tha prepei na travaei kati allo (oxi to text string) gia na travaei xroma apo kathe koumbi
                 //pairnei to id kai
-                xroma1 = checkedRadioButton.getText().toString();
+                xroma1 = checkedRadioButton.getTag().toString();
 
                 //vriskei tis diastaseis toy koympioy poy ekanes enable
                 spliter = Integer.parseInt((String) checkedRadioButton.getTag());
@@ -126,7 +119,7 @@ public class TeamNames extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId)
             {
                 RadioButton checkedRadioButton = findViewById(checkedId);
-                xroma2 = checkedRadioButton.getText().toString();
+                xroma2 = checkedRadioButton.getTag().toString();
 
                 //vriskei tis diastaseis toy koympioy poy ekanes enable
                 spliter = Integer.parseInt((String) checkedRadioButton.getTag());
@@ -146,7 +139,7 @@ public class TeamNames extends AppCompatActivity {
                 @Override
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
                     RadioButton checkedRadioButton = findViewById(checkedId);
-                    xroma3 = checkedRadioButton.getText().toString();
+                    xroma3 = checkedRadioButton.getTag().toString();
 
                     //vriskei tis diastaseis toy koympioy poy ekanes enable
                     spliter = Integer.parseInt((String) checkedRadioButton.getTag());
@@ -172,7 +165,7 @@ public class TeamNames extends AppCompatActivity {
                 @Override
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
                     RadioButton checkedRadioButton = findViewById(checkedId);
-                    xroma4 = checkedRadioButton.getText().toString();
+                    xroma4 = checkedRadioButton.getTag().toString();
 
                     //vriskei tis diastaseis toy koympioy poy ekanes enable
                     spliter = Integer.parseInt((String) checkedRadioButton.getTag());
