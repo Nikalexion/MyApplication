@@ -4,6 +4,7 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.StateListDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -81,13 +82,13 @@ public class TeamNames extends AppCompatActivity {
         arrayRadio[3][5] = findViewById(R.id.xroma46);
         arrayRadio[3][6] = findViewById(R.id.xroma47);
         arrayRadio[3][7] = findViewById(R.id.xroma48);
-        xroma1 = arrayRadio[0][0].getBackgroundTintList().getDefaultColor();
-        xroma2 = arrayRadio[1][1].getBackgroundTintList().getDefaultColor();
+        xroma1 = arrayRadio[0][0].getSolidColor();
+        xroma2 = arrayRadio[1][1].getSolidColor();
         if (plithosOmadon >= 3){
-            xroma3 = arrayRadio[2][2].getBackgroundTintList().getDefaultColor();
+            xroma3 = arrayRadio[2][2].getSolidColor();
         }
         if (plithosOmadon == 4){
-            xroma4 = arrayRadio[3][3].getBackgroundTintList().getDefaultColor();
+            xroma4 = arrayRadio[3][3].getSolidColor();
         }
 
         //ksexwrizei ta epilegmena Radio otan anoigei to screen
@@ -97,7 +98,6 @@ public class TeamNames extends AppCompatActivity {
         }
 
 
-        //TODO lipei to kathe koumbi na apokliei ta alla koumbia tou idiou xromatos
         RadioGroup groupXromaton1 = findViewById(R.id.groupXromaton1);
         groupXromaton1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
@@ -105,9 +105,9 @@ public class TeamNames extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId)
             {
                 RadioButton checkedRadioButton = findViewById(checkedId);
-                //TODO edo tha prepei na travaei kati allo (oxi to text string) gia na travaei xroma apo kathe koumbi
-                //pairnei to id kai
-                xroma1 = checkedRadioButton.getBackgroundTintList().getDefaultColor();
+
+                xroma1 = checkedRadioButton.getSolidColor();
+
 
                 //vriskei tis diastaseis toy koympioy poy ekanes enable
                 spliter = Integer.parseInt((String) checkedRadioButton.getTag());
@@ -128,7 +128,7 @@ public class TeamNames extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId)
             {
                 RadioButton checkedRadioButton = findViewById(checkedId);
-                xroma2 = checkedRadioButton.getBackgroundTintList().getDefaultColor();
+                xroma2 = checkedRadioButton.getSolidColor();
 
                 //vriskei tis diastaseis toy koympioy poy ekanes enable
                 spliter = Integer.parseInt((String) checkedRadioButton.getTag());
@@ -148,7 +148,7 @@ public class TeamNames extends AppCompatActivity {
                 @Override
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
                     RadioButton checkedRadioButton = findViewById(checkedId);
-                    xroma3 = checkedRadioButton.getBackgroundTintList().getDefaultColor();
+                    xroma3 = checkedRadioButton.getSolidColor();
 
                     //vriskei tis diastaseis toy koympioy poy ekanes enable
                     spliter = Integer.parseInt((String) checkedRadioButton.getTag());
@@ -174,7 +174,7 @@ public class TeamNames extends AppCompatActivity {
                 @Override
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
                     RadioButton checkedRadioButton = findViewById(checkedId);
-                    xroma4 = checkedRadioButton.getBackgroundTintList().getDefaultColor();
+                    xroma4 = checkedRadioButton.getSolidColor();
 
                     //vriskei tis diastaseis toy koympioy poy ekanes enable
                     spliter = Integer.parseInt((String) checkedRadioButton.getTag());

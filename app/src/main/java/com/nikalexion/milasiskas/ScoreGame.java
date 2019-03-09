@@ -27,7 +27,7 @@ import java.util.Random;
 import java.util.StringTokenizer;
 
 public class ScoreGame extends AppCompatActivity {
-    //RelativeLayout bg;
+    RelativeLayout scoreBG;
 
 
     public static final String PREF_EPILOGES = "EPILOGES";
@@ -91,7 +91,6 @@ public class ScoreGame extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //bg = findViewById(R.id.bg);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_game);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -99,6 +98,7 @@ public class ScoreGame extends AppCompatActivity {
         teamsValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTeams", 2);
         timeValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTime", 120);
         pasaValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModePasa", 3);
+        activeTeam = getSharedPreferences(PREF_EPILOGES, 0).getInt("prwtosPaiktis", 0);
 
         onomataOmadon = new String[teamsValue];
         xromataOmadon = new int[teamsValue];
@@ -129,7 +129,8 @@ public class ScoreGame extends AppCompatActivity {
         teamName.setText(onomataOmadon[0]);
         //teamColor = findViewById(R.id.xromaActiveOmadas);
         //teamColor.setText(xromataOmadon[0]);
-        // TODO bg.setBackgroundColor(Color.GREEN);
+        scoreBG = findViewById(R.id.scoreLayout);
+        scoreBG.setBackgroundColor(xromataOmadon[activeTeam]);
 
 
 
@@ -164,6 +165,7 @@ public class ScoreGame extends AppCompatActivity {
 
                 teamName.setText(onomataOmadon[activeTeam]);
                 //teamColor.setText(xromataOmadon[activeTeam]);
+                scoreBG.setBackgroundColor(xromataOmadon[activeTeam]);
 
                 //refresh paso
                 if (pasaValue > 0){
@@ -271,8 +273,10 @@ public class ScoreGame extends AppCompatActivity {
 
         SharedPreferences sp = getSharedPreferences(PREF_EPILOGES, 0);
         SharedPreferences.Editor editor = sp.edit();
+        editor.putInt("prwtosPaiktis", activeTeam);
         editor.putString("teamModeScoreOmadon", scoreGiaMetafora.toString());
         editor.apply();
+
 
         startActivity(new Intent(getApplicationContext(), ScoreScreen.class));
         finish();

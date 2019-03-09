@@ -5,6 +5,7 @@
         <shape android:shape="oval" >
             <corners android:radius="3dp" />
             <stroke android:width="3dip" android:color="#333333" />
+            <solid android:color="@color/xrwma1"/>
         </shape>
     </item>
 
@@ -12,12 +13,14 @@
         <shape android:shape="oval" >
             <corners android:radius="3dp" />
             <stroke android:width="3dip" android:color="#333333" />
+            <solid android:color="@color/xrwma1"/>
         </shape>
     </item>
 
     <item>
         <shape android:shape="oval"  >
             <corners android:radius="3dp" />
+            <solid android:color="@color/xrwma1"/>
         </shape>
     </item>
 </selector>
