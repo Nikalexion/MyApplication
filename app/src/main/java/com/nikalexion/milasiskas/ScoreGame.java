@@ -98,7 +98,7 @@ public class ScoreGame extends AppCompatActivity {
         teamsValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTeams", 2);
         timeValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTime", 120);
         pasaValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModePasa", 3);
-        activeTeam = getSharedPreferences(PREF_EPILOGES, 0).getInt("prwtosPaiktis", 0);
+        activeTeam = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeProtosPaiktis", 0);
 
         onomataOmadon = new String[teamsValue];
         xromataOmadon = new int[teamsValue];
@@ -126,9 +126,9 @@ public class ScoreGame extends AppCompatActivity {
         }
 
         teamName = findViewById(R.id.onomaActiveOmadas);
-        teamName.setText(onomataOmadon[0]);
+        teamName.setText(onomataOmadon[activeTeam]);
         //teamColor = findViewById(R.id.xromaActiveOmadas);
-        //teamColor.setText(xromataOmadon[0]);
+        //teamColor.setText(xromataOmadon[activeTeam]);
         scoreBG = findViewById(R.id.scoreLayout);
         scoreBG.setBackgroundColor(xromataOmadon[activeTeam]);
 
@@ -273,7 +273,7 @@ public class ScoreGame extends AppCompatActivity {
 
         SharedPreferences sp = getSharedPreferences(PREF_EPILOGES, 0);
         SharedPreferences.Editor editor = sp.edit();
-        editor.putInt("prwtosPaiktis", activeTeam);
+        editor.putInt("teamModeProtosPaiktis", activeTeam);
         editor.putString("teamModeScoreOmadon", scoreGiaMetafora.toString());
         editor.apply();
 

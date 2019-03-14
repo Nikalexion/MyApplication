@@ -30,49 +30,74 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imageView"
         android:layout_centerHorizontal = "true"
-        android:text="score omada 1" />
+        android:text="score omada 1"
+        android:tag = "0" />
 
     <TextView
         android:id="@+id/score2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/score1"
         android:layout_centerHorizontal = "true"
-        android:text="score omada 2" />
+        android:text="score omada 2"
+        android:tag = "1" />
 
     <TextView
         android:id="@+id/score3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/score2"
         android:layout_centerHorizontal = "true"
-        android:text="score omada 3" />
+        android:text="score omada 3"
+        android:tag = "2" />
 
     <TextView
         android:id="@+id/score4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/score3"
         android:layout_centerHorizontal = "true"
-        android:text="score omada 4" />
+        android:text="score omada 4"
+        android:tag = "3" />
+
+    <TextView
+        android:id="@+id/winnerAnnouncer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_centerInParent="true"
+        android:text="Νίκησε η ομάδα Ταδινοί ταδίστες με 57 ποντους" />
+
 
     <Button
-        android:text="Next Round"
-        android:layout_width="wrap_content"
+        android:text="ΑΡΧΙΚΟ ΜΕΝΟΥ"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/newGame"
+        android:textSize="25sp"
+        android:layout_above="@+id/nextRoundButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button" />
+
+    <Button
+        android:text="ΕΠΟΜΕΝΟΣ ΓΥΡΟΣ"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/nextRoundButton"
         android:textSize="25sp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/button" />
 
 </RelativeLayout>

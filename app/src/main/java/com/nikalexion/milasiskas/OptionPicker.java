@@ -120,6 +120,7 @@ public class OptionPicker extends AppCompatActivity {
                 editor.putInt("teamModeTeams", teamsValue);
                 editor.putInt("teamModeTime", timeValue);
                 editor.putInt("teamModePasa", pasaValue);
+                editor.putInt("teamModeProtosPaiktis", 0);
                 if (modeSelector.getSelectedItemPosition()==0){
                     editor.putInt("teamModeMode", 0);
                 }else{
