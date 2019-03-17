@@ -108,9 +108,6 @@ public class ScoreGame extends AppCompatActivity {
             scoreOmadon[i]=0;
         }
 
-        //TODO edo thelei dinamika onomata idi ftiagmena apo to teamNames (diavase ekei se poio simio)
-        // kai na ta ftiaxnei kai edo dinamika me paromoio tropo (sto for pou exo pano)
-
         onomataOmadon[0] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma1", "omada 1");
         xromataOmadon[0] = getSharedPreferences(PREF_EPILOGES, 0).getInt("xroma1", 0);
         onomataOmadon[1] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma2", "omada 2");
@@ -129,7 +126,7 @@ public class ScoreGame extends AppCompatActivity {
         teamName.setText(onomataOmadon[activeTeam]);
         //teamColor = findViewById(R.id.xromaActiveOmadas);
         //teamColor.setText(xromataOmadon[activeTeam]);
-        scoreBG = findViewById(R.id.scoreLayout);
+        scoreBG = findViewById(R.id.activity_score_game);
         scoreBG.setBackgroundColor(xromataOmadon[activeTeam]);
 
 

@@ -122,13 +122,22 @@ public class OptionPicker extends AppCompatActivity {
                 editor.putInt("teamModePasa", pasaValue);
                 editor.putInt("teamModeProtosPaiktis", 0);
                 if (modeSelector.getSelectedItemPosition()==0){
+                    //teamModeMode == 0 simaianei ScoreGame
                     editor.putInt("teamModeMode", 0);
+                    //midenismos ton score
+                    editor.putString("teamModeScoreOmadon", "0,0,0,0,");
                 }else{
+                    //teamModeMode == 1 simaianei LivesGame
                     editor.putInt("teamModeMode", 1);
+
+                    //arxikopoisi ton zoon
+                    StringBuilder str = new StringBuilder();
+                    for (int i = 0; i < teamsValue; i++) {
+                        str.append(scoreValue).append(",");
+                    }
+                    editor.putString("teamModeScoreOmadon", str.toString());
                 }
 
-                //midenismos ton score
-                editor.putString("teamModeScoreOmadon", "0,0,0,0,");
 
                 editor.apply();
                 startActivity(new Intent(getApplicationContext(), TeamNames.class));

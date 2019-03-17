@@ -6,40 +6,38 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.StringTokenizer;
 
-public class ScoreScreen extends AppCompatActivity {
+public class LivesScreen extends AppCompatActivity {
 
     public static final String PREF_EPILOGES = "EPILOGES";
 
-    int maxScoreValue;  //to score gia liksi tou paixnidiou
-    int teamsValue;     //arithmos omadon
+    int scoreValue;  //to score gia liksi tou paixnidiou
+    int teamsValue;  //arithmos omadon
+    int teamsAlive; //airthmos zontanon omadon
 
     TextView teamScoringHelper;
     String[] onomataOmadon;
     int[] scoreOmadon;
     Boolean gameStillGoing = true;
-    int highScore = 0;
     int winningTeam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_score_screen);
+        setContentView(R.layout.activity_lives_screen);
 
-        maxScoreValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeScore", 3);
+        scoreValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeScore", 3);
         teamsValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTeams", 2);
+        teamsAlive = teamsValue;
 
         onomataOmadon = new String[teamsValue];
         scoreOmadon = new int[teamsValue];
 
-
-
         /*  TODO nomizo kapos etsi ginete to dinamiko (thelei kai tags sto layout)
-        RelativeLayout parentView = findViewById(R.id.activity_score_screen);
+        RelativeLayout parentView = findViewById(R.id.activity_lives_screen);
         //teamScoringHelper = parentView.findViewWithTag(0);
         String nameHelper;
         for (int i = 0; i < teamsValue; i++) {
@@ -59,28 +57,26 @@ public class ScoreScreen extends AppCompatActivity {
             onomataOmadon[3] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma4", "omada 4");
         }
 
-        //travaei ta score apo ta preferences
-        String savedString = getSharedPreferences(PREF_EPILOGES, 0).getString("teamModeScoreOmadon", "0,0,0,0,");
+        //travaei tis zoes apo ta preferences
+        String savedString = getSharedPreferences(PREF_EPILOGES, 0).getString("teamModeScoreOmadon", "1,0,0,0,");
         StringTokenizer st = new StringTokenizer(savedString, ",");
 
 
-        //elenxos gia nikiti kai isopalies
+        //elenxos gia plithos zontanon
         for (int i = 0; i < teamsValue; i++) {
             //gemisma tou pinaka scoreOmadon[i]
             scoreOmadon[i] = Integer.parseInt(st.nextToken());
-
-            if (scoreOmadon[i]>= maxScoreValue){
-                if (scoreOmadon[i] > highScore){
-                    highScore = scoreOmadon[i];
-                    winningTeam = i;
-                    gameStillGoing = false;
-                }else if(scoreOmadon[i] == highScore){
-                    gameStillGoing = true;
-                }
+            if (scoreOmadon[i]<= 0){
+                teamsAlive = teamsAlive - 1;
+            }else{
+                winningTeam = i;
             }
         }
+        if (teamsAlive <= 1){
+            gameStillGoing = false;
+        }
 
-        //TODO afta dinamika (?) kai anti gia text na gemizoun kapoiou idous bar (2ri fora)
+        //TODO afta dinamika (?) kai anti gia text na gemizoun kapoiou idous bar
         teamScoringHelper = findViewById(R.id.score1);
         if (gameStillGoing) {
             teamScoringHelper.setText(onomataOmadon[0] + ": " + scoreOmadon[0]);
@@ -133,11 +129,8 @@ public class ScoreScreen extends AppCompatActivity {
         if (gameStillGoing) {
             arxikoMenu.setVisibility(View.INVISIBLE);
             arxikoMenu.setEnabled(false);
-            if (highScore == 0){
-                epomenosGiros.setText("ΕΠΟΜΕΝΟΣ ΓΥΡΟΣ");
-            }else{
-                epomenosGiros.setText("ΙΣΟΠΑΛΙΑ\n ΕΠΟΜΕΝΟΣ ΓΥΡΟΣ");
-            }
+            epomenosGiros.setText("ΕΠΟΜΕΝΟΣ ΓΥΡΟΣ");
+
             //eksafanizei tin anakoinosi nikiti
             teamScoringHelper = findViewById(R.id.winnerAnnouncer);
             teamScoringHelper.setVisibility(View.INVISIBLE);
@@ -151,10 +144,11 @@ public class ScoreScreen extends AppCompatActivity {
                     finish();
                 }
             });
-            epomenosGiros.setText("ΜΗΔΕΝΙΣΜΟΣ ΣΚΟΡ");
+            //TODO protasi pou na stekei gia "restart"
+            epomenosGiros.setText("ΓΕΜΙΣΜΑ ΖΩΩΝ");
 
             teamScoringHelper = findViewById(R.id.winnerAnnouncer);
-            teamScoringHelper.setText("Νίκησε η ομάδα "+ onomataOmadon[winningTeam] +" με "+ highScore +" ποντους");
+            teamScoringHelper.setText("Νίκησε η ομάδα "+ onomataOmadon[winningTeam]);
         }
 
         epomenosGiros.setOnClickListener(new View.OnClickListener() {
@@ -164,13 +158,16 @@ public class ScoreScreen extends AppCompatActivity {
                     //midenismos ton score
                     SharedPreferences sp = getSharedPreferences(PREF_EPILOGES, 0);
                     SharedPreferences.Editor editor = sp.edit();
-                    editor.putString("teamModeScoreOmadon", "0,0,0,0,");
+                    StringBuilder str = new StringBuilder();
+                    for (int i = 0; i < teamsValue; i++) {
+                        str.append(scoreValue).append(",");
+                    }
+                    editor.putString("teamModeScoreOmadon", str.toString());
                     editor.apply();
                 }
-                startActivity(new Intent(getApplicationContext(), ScoreGame.class));
+                startActivity(new Intent(getApplicationContext(), LivesGame.class));
                 finish();
             }
         });
-
     }
 }

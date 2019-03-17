@@ -7,9 +7,10 @@
     android:layout_height="match_parent"
     android:paddingBottom="16dp"
     android:paddingTop="16dp"
+    android:background="@android:color/white"
     tools:context="com.nikalexion.milasiskas.LivesGame"
-    android:background="@drawable/bg"
     android:layout_centerInParent="true">
+
 
     <View
         android:id="@+id/fakeView"
@@ -18,58 +19,37 @@
         android:layout_centerInParent="true"/>
 
     <TextView
-        android:text="Τρεις λαλούν και δυο χορεύουν (Lives Mode)"
+        android:text="Onoma Omadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/onomaActiveOmadas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="35sp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Xroma omadas (test)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xromaActiveOmadas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/onomaActiveOmadas"
+        android:textSize="35sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Τέλος Χρόνου! Η Ομάδα σου έχασε!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/leksiPaixnidiou"
         android:layout_centerHorizontal="true"
         android:layout_above="@id/fakeView"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="20dp"
         android:textSize="35sp"
         android:textAlignment="center" />
-
-    <TextView
-        android:id="@+id/scoreText"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/fakeView"
-        android:layout_marginTop="20dp"
-        android:textColor="#F8F8FF" />
-
-    <TextView
-        android:id="@+id/teamsText"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/scoreText"
-        android:layout_marginTop="20dp"
-        android:textColor="#F8F8FF" />
-
-    <TextView
-        android:id="@+id/timeText"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/teamsText"
-        android:layout_marginTop="20dp"
-        android:textColor="#F8F8FF" />
-
-    <TextView
-        android:id="@+id/pasaText"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/timeText"
-        android:layout_marginTop="20dp"
-        android:textColor="#F8F8FF" />
-
-    <Button
-        android:text="Kapse ena paso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/pasoButton"
-        android:textSize="30sp"
-        android:layout_below="@+id/pasaText"
-        android:layout_marginTop="40dp"
-        android:layout_centerInParent="true"
-        android:background="@drawable/button" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -80,5 +60,49 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         />
+
+    <!-- view for AdMob Banner Ad -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5861682469694178/6049121043" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:id="@+id/lathos"
+        android:background="@drawable/bomba"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/adView" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_above="@id/adView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/lathos"
+        android:background="@drawable/button"
+        android:text="Σωστο"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pasoButton"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_above="@id/adView"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/lathos"
+        android:background="@drawable/button"
+        android:text="ΠΑΣΟ"
+        android:textSize="20sp" />
 
 </RelativeLayout>
