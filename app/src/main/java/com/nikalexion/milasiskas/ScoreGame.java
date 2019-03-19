@@ -122,6 +122,35 @@ public class ScoreGame extends AppCompatActivity {
             xromataOmadon[3] = getSharedPreferences(PREF_EPILOGES, 0).getInt("xroma4", 0);
         }
 
+        for (int i = 0; i < teamsValue; i++){
+            switch (xromataOmadon[i]){
+                case 0:
+                    xromataOmadon[i] = Color.CYAN;
+                    break;
+                case 1:
+                    xromataOmadon[i] = Color.RED;
+                    break;
+                case 2:
+                    xromataOmadon[i] = Color.BLUE;
+                    break;
+                case 3:
+                    xromataOmadon[i] = Color.MAGENTA;
+                    break;
+                case 4:
+                    xromataOmadon[i] = Color.YELLOW;
+                    break;
+                case 5:
+                    xromataOmadon[i] = Color.WHITE;
+                    break;
+                case 6:
+                    xromataOmadon[i] = Color.rgb(255,165,0);
+                    break;
+                case 7:
+                    xromataOmadon[i] = Color.parseColor("#7C4100");
+                    break;
+            }
+        }
+
         teamName = findViewById(R.id.onomaActiveOmadas);
         teamName.setText(onomataOmadon[activeTeam]);
         //teamColor = findViewById(R.id.xromaActiveOmadas);

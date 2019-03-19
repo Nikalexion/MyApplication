@@ -82,13 +82,13 @@ public class TeamNames extends AppCompatActivity {
         arrayRadio[3][5] = findViewById(R.id.xroma46);
         arrayRadio[3][6] = findViewById(R.id.xroma47);
         arrayRadio[3][7] = findViewById(R.id.xroma48);
-        xroma1 = arrayRadio[0][0].getSolidColor();
-        xroma2 = arrayRadio[1][1].getSolidColor();
+        xroma1 = 0;
+        xroma2 = 1;
         if (plithosOmadon >= 3){
-            xroma3 = arrayRadio[2][2].getSolidColor();
+            xroma3 =2;
         }
         if (plithosOmadon == 4){
-            xroma4 = arrayRadio[3][3].getSolidColor();
+            xroma4 = 3;
         }
 
         //ksexwrizei ta epilegmena Radio otan anoigei to screen
@@ -106,13 +106,15 @@ public class TeamNames extends AppCompatActivity {
             {
                 RadioButton checkedRadioButton = findViewById(checkedId);
 
-                xroma1 = checkedRadioButton.getSolidColor();
+                //xroma1 = checkedRadioButton.getSolidColor();
 
 
                 //vriskei tis diastaseis toy koympioy poy ekanes enable
                 spliter = Integer.parseInt((String) checkedRadioButton.getTag());
                 spliter1 = spliter /10;
                 spliter2 = spliter % 10;
+
+                xroma1 = spliter2;
 
 
                 radioDisable(spliter1,spliter2);
@@ -128,12 +130,14 @@ public class TeamNames extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId)
             {
                 RadioButton checkedRadioButton = findViewById(checkedId);
-                xroma2 = checkedRadioButton.getSolidColor();
+                //xroma2 = checkedRadioButton.getSolidColor();
 
                 //vriskei tis diastaseis toy koympioy poy ekanes enable
                 spliter = Integer.parseInt((String) checkedRadioButton.getTag());
                 spliter1 = spliter /10;
                 spliter2 = spliter % 10;
+
+                xroma2 = spliter2;
 
 
                 radioDisable(spliter1,spliter2);
@@ -148,12 +152,14 @@ public class TeamNames extends AppCompatActivity {
                 @Override
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
                     RadioButton checkedRadioButton = findViewById(checkedId);
-                    xroma3 = checkedRadioButton.getSolidColor();
+                    //xroma3 = checkedRadioButton.getSolidColor();
 
                     //vriskei tis diastaseis toy koympioy poy ekanes enable
                     spliter = Integer.parseInt((String) checkedRadioButton.getTag());
                     spliter1 = spliter /10;
                     spliter2 = spliter % 10;
+
+                    xroma3 = spliter2;
 
 
                     radioDisable(spliter1,spliter2);
@@ -174,12 +180,14 @@ public class TeamNames extends AppCompatActivity {
                 @Override
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
                     RadioButton checkedRadioButton = findViewById(checkedId);
-                    xroma4 = checkedRadioButton.getSolidColor();
+                    //xroma4 = checkedRadioButton.getSolidColor();
 
                     //vriskei tis diastaseis toy koympioy poy ekanes enable
                     spliter = Integer.parseInt((String) checkedRadioButton.getTag());
                     spliter1 = spliter /10;
                     spliter2 = spliter % 10;
+
+                    xroma4 = spliter2;
 
 
                     radioDisable(spliter1,spliter2);

@@ -27,6 +27,8 @@
             android:hint="Όνονα ομάδας 1"
             android:inputType="textPersonName"
             android:text="Ομαδα 1"
+            android:padding="5dp"
+            android:textColor="@color/aspro"
             android:background="@drawable/input"/>
 
 
@@ -115,7 +117,11 @@
             android:hint="Όνονα ομάδας 2"
             android:inputType="textPersonName"
             android:layout_below= "@+id/groupXromaton1"
-            android:text="Ομαδα 2" />
+            android:layout_marginTop="10dp"
+            android:text="Ομαδα 2"
+            android:padding="5dp"
+            android:textColor="@color/aspro"
+            android:background="@drawable/input"/>
 
 
         <RadioGroup
@@ -124,63 +130,70 @@
             android:layout_below="@+id/onomaOmadas2"
             android:id="@+id/groupXromaton2"
             android:checkedButton="@+id/xroma22"
+            android:layout_marginTop="7dp"
             android:orientation="horizontal" >
 
             <RadioButton
                 android:id="@+id/xroma21"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:tag = "10"
-                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg1"
                 />
             <RadioButton
                 android:id="@+id/xroma22"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:tag = "11"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg2"
                 />
             <RadioButton
                 android:id="@+id/xroma23"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:tag = "12"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg3"
                 />
             <RadioButton
                 android:id="@+id/xroma24"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:tag = "13"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg4"
                 />
             <RadioButton
                 android:id="@+id/xroma25"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:tag = "14"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg5"
                 />
             <RadioButton
                 android:id="@+id/xroma26"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:tag = "15"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg6"
                 />
             <RadioButton
                 android:id="@+id/xroma27"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:tag = "16"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg7"
                 />
             <RadioButton
                 android:id="@+id/xroma28"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:tag = "17"
+                android:layout_marginLeft="9dp"
                 android:background="@drawable/radio_bg8"
                 />
         </RadioGroup>
@@ -196,7 +209,11 @@
             android:hint="Όνονα ομάδας 3"
             android:inputType="textPersonName"
             android:layout_below= "@+id/groupXromaton2"
-            android:text="Ομαδα 3" />
+            android:layout_marginTop="10dp"
+            android:text="Ομαδα 3"
+            android:padding="5dp"
+            android:textColor="@color/aspro"
+            android:background="@drawable/input"/>
 
 
         <RadioGroup
@@ -205,71 +222,71 @@
             android:layout_below="@+id/onomaOmadas3"
             android:id="@+id/groupXromaton3"
             android:checkedButton="@+id/xroma33"
+            android:layout_marginTop="7dp"
             android:orientation="horizontal" >
 
             <RadioButton
                 android:id="@+id/xroma31"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="31"
                 android:tag = "20"
-android:background="@drawable/radio_bg1"
+                android:background="@drawable/radio_bg1"
                 />
             <RadioButton
                 android:id="@+id/xroma32"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="32"
                 android:tag = "21"
-android:background="@drawable/radio_bg2"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg2"
                 />
             <RadioButton
                 android:id="@+id/xroma33"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="33"
                 android:tag = "22"
-android:background="@drawable/radio_bg3"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg3"
                 />
             <RadioButton
                 android:id="@+id/xroma34"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="34"
                 android:tag = "23"
-android:background="@drawable/radio_bg4"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg4"
                 />
             <RadioButton
                 android:id="@+id/xroma35"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="35"
                 android:tag = "24"
-android:background="@drawable/radio_bg5"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg5"
                 />
             <RadioButton
                 android:id="@+id/xroma36"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="36"
                 android:tag = "25"
-android:background="@drawable/radio_bg6"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg6"
                 />
             <RadioButton
                 android:id="@+id/xroma37"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="37"
                 android:tag = "26"
-android:background="@drawable/radio_bg7"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg7"
                 />
             <RadioButton
                 android:id="@+id/xroma38"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="38"
                 android:tag = "27"
-android:background="@drawable/radio_bg8"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg8"
                 />        </RadioGroup>
 
 
@@ -285,7 +302,11 @@ android:background="@drawable/radio_bg8"
             android:hint="Όνονα ομάδας 4"
             android:inputType="textPersonName"
             android:layout_below= "@+id/groupXromaton3"
-            android:text="Ομαδα 4" />
+            android:layout_marginTop="10dp"
+            android:text="Ομαδα 4"
+            android:padding="5dp"
+            android:textColor="@color/aspro"
+            android:background="@drawable/input"/>
 
 
         <RadioGroup
@@ -294,71 +315,71 @@ android:background="@drawable/radio_bg8"
             android:layout_below="@+id/onomaOmadas4"
             android:id="@+id/groupXromaton4"
             android:checkedButton="@+id/xroma44"
+            android:layout_marginTop="7dp"
             android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/xroma41"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="41"
                 android:tag = "30"
-android:background="@drawable/radio_bg1"
+                android:background="@drawable/radio_bg1"
                 />
             <RadioButton
                 android:id="@+id/xroma42"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="42"
                 android:tag = "31"
-android:background="@drawable/radio_bg2"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg2"
                 />
             <RadioButton
                 android:id="@+id/xroma43"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="43"
                 android:tag = "32"
-android:background="@drawable/radio_bg3"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg3"
                 />
             <RadioButton
                 android:id="@+id/xroma44"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="44"
                 android:tag = "33"
-android:background="@drawable/radio_bg4"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg4"
                 />
             <RadioButton
                 android:id="@+id/xroma45"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="45"
                 android:tag = "34"
-android:background="@drawable/radio_bg5"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg5"
                 />
             <RadioButton
                 android:id="@+id/xroma46"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="46"
                 android:tag = "35"
-android:background="@drawable/radio_bg6"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg6"
                 />
             <RadioButton
                 android:id="@+id/xroma47"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="47"
                 android:tag = "36"
-android:background="@drawable/radio_bg7"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg7"
                 />
             <RadioButton
                 android:id="@+id/xroma48"
-                android:layout_width="45dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="48"
                 android:tag = "37"
-android:background="@drawable/radio_bg8"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/radio_bg8"
                 />
         </RadioGroup>
 
