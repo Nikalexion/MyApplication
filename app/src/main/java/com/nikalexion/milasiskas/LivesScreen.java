@@ -2,10 +2,12 @@ package com.nikalexion.milasiskas;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.StringTokenizer;
@@ -23,6 +25,8 @@ public class LivesScreen extends AppCompatActivity {
     int[] scoreOmadon;
     Boolean gameStillGoing = true;
     int winningTeam;
+    ImageView niki;
+    private MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,10 @@ public class LivesScreen extends AppCompatActivity {
 
         onomataOmadon = new String[teamsValue];
         scoreOmadon = new int[teamsValue];
+
+        niki = findViewById(R.id.imageView);
+        niki.setVisibility(View.INVISIBLE);
+        mp = MediaPlayer.create(this, R.raw.winner);
 
         /*  TODO nomizo kapos etsi ginete to dinamiko (thelei kai tags sto layout)
         RelativeLayout parentView = findViewById(R.id.activity_lives_screen);
@@ -129,7 +137,7 @@ public class LivesScreen extends AppCompatActivity {
         if (gameStillGoing) {
             arxikoMenu.setVisibility(View.INVISIBLE);
             arxikoMenu.setEnabled(false);
-            epomenosGiros.setText("ΕΠΟΜΕΝΟΣ ΓΥΡΟΣ");
+            epomenosGiros.setText("Επομενο");
 
             //eksafanizei tin anakoinosi nikiti
             teamScoringHelper = findViewById(R.id.winnerAnnouncer);
@@ -137,6 +145,8 @@ public class LivesScreen extends AppCompatActivity {
             teamScoringHelper.setEnabled(false);
 
         }else{
+            mp.start();
+            niki.setVisibility(View.VISIBLE);
             arxikoMenu.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view){
@@ -145,7 +155,7 @@ public class LivesScreen extends AppCompatActivity {
                 }
             });
             //TODO protasi pou na stekei gia "restart"
-            epomenosGiros.setText("ΓΕΜΙΣΜΑ ΖΩΩΝ");
+            epomenosGiros.setText("Επανεκκινηση");
 
             teamScoringHelper = findViewById(R.id.winnerAnnouncer);
             teamScoringHelper.setText("Νίκησε η ομάδα "+ onomataOmadon[winningTeam]);

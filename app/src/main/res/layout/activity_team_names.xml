@@ -384,7 +384,7 @@
         </RadioGroup>
 
         <Button
-            android:text="Lez GO"
+            android:text="Εκκινηση"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/launchScoreModeButton"

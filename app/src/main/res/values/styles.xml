@@ -39,5 +39,10 @@
 
     </style>
 
+    <style name="tost" parent="@android:style/Widget.CompoundButton">
+        <item name="android:background">@drawable/radio_bg2</item>
+    <item name="android:button">@null</item>
+    </style>
+
 
 </resources>

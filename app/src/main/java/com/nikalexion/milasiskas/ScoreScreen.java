@@ -2,10 +2,12 @@ package com.nikalexion.milasiskas;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -20,10 +22,12 @@ public class ScoreScreen extends AppCompatActivity {
 
     TextView teamScoringHelper;
     String[] onomataOmadon;
+    ImageView niki;
     int[] scoreOmadon;
     Boolean gameStillGoing = true;
     int highScore = 0;
     int winningTeam;
+    private MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,10 @@ public class ScoreScreen extends AppCompatActivity {
 
         onomataOmadon = new String[teamsValue];
         scoreOmadon = new int[teamsValue];
+
+        niki = findViewById(R.id.imageView);
+        niki.setVisibility(View.INVISIBLE);
+        mp = MediaPlayer.create(this, R.raw.winner);
 
 
 
@@ -134,9 +142,9 @@ public class ScoreScreen extends AppCompatActivity {
             arxikoMenu.setVisibility(View.INVISIBLE);
             arxikoMenu.setEnabled(false);
             if (highScore == 0){
-                epomenosGiros.setText("ΕΠΟΜΕΝΟΣ ΓΥΡΟΣ");
+                epomenosGiros.setText("Επομενο");
             }else{
-                epomenosGiros.setText("ΙΣΟΠΑΛΙΑ\n ΕΠΟΜΕΝΟΣ ΓΥΡΟΣ");
+                epomenosGiros.setText("Ισοπαλια\n Επομενο");
             }
             //eksafanizei tin anakoinosi nikiti
             teamScoringHelper = findViewById(R.id.winnerAnnouncer);
@@ -144,6 +152,7 @@ public class ScoreScreen extends AppCompatActivity {
             teamScoringHelper.setEnabled(false);
 
         }else{
+            mp.start();
             arxikoMenu.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view){
@@ -151,10 +160,11 @@ public class ScoreScreen extends AppCompatActivity {
                     finish();
                 }
             });
-            epomenosGiros.setText("ΜΗΔΕΝΙΣΜΟΣ ΣΚΟΡ");
+            epomenosGiros.setText("Επανεκκινηση");
 
             teamScoringHelper = findViewById(R.id.winnerAnnouncer);
             teamScoringHelper.setText("Νίκησε η ομάδα "+ onomataOmadon[winningTeam] +" με "+ highScore +" ποντους");
+            niki.setVisibility(View.VISIBLE);
         }
 
         epomenosGiros.setOnClickListener(new View.OnClickListener() {

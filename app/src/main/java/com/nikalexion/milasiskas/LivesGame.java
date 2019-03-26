@@ -2,6 +2,7 @@ package com.nikalexion.milasiskas;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -121,6 +122,35 @@ public class LivesGame extends AppCompatActivity {
             xromataOmadon[3] = getSharedPreferences(PREF_EPILOGES, 0).getInt("xroma4", 0);
         }
 
+        for (int i = 0; i < teamsValue; i++){
+            switch (xromataOmadon[i]){
+                case 0:
+                    xromataOmadon[i] = Color.CYAN;
+                    break;
+                case 1:
+                    xromataOmadon[i] = Color.RED;
+                    break;
+                case 2:
+                    xromataOmadon[i] = Color.BLUE;
+                    break;
+                case 3:
+                    xromataOmadon[i] = Color.MAGENTA;
+                    break;
+                case 4:
+                    xromataOmadon[i] = Color.YELLOW;
+                    break;
+                case 5:
+                    xromataOmadon[i] = Color.WHITE;
+                    break;
+                case 6:
+                    xromataOmadon[i] = Color.rgb(255,165,0);
+                    break;
+                case 7:
+                    xromataOmadon[i] = Color.parseColor("#7C4100");
+                    break;
+            }
+        }
+
         teamName = findViewById(R.id.onomaActiveOmadas);
         teamName.setText(onomataOmadon[activeTeam]);
         //teamColor = findViewById(R.id.xromaActiveOmadas);
@@ -168,19 +198,19 @@ public class LivesGame extends AppCompatActivity {
                 if (pasaValue > 0){
                     arithmosPaso = pasaValue;
                     pasoButton.setEnabled(true);
-                    pasoButton.setText(String.valueOf(arithmosPaso) + " πασο");
+                    pasoButton.setText(String.valueOf(arithmosPaso));
                 }
             }
         });
 
         pasoButton = findViewById(R.id.pasoButton);
-        pasoButton.setText(String.valueOf(arithmosPaso) + " πασο");
+        pasoButton.setText(String.valueOf(arithmosPaso));
         pasoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 neaLeksi();
                 arithmosPaso = arithmosPaso - 1;
-                pasoButton.setText(String.valueOf(arithmosPaso) + " πασο");
+                pasoButton.setText(String.valueOf(arithmosPaso));
                 if (arithmosPaso <=0){
                     pasoButton.setEnabled(false);
                 }

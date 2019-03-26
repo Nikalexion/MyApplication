@@ -197,19 +197,19 @@ public class ScoreGame extends AppCompatActivity {
                 if (pasaValue > 0){
                     arithmosPaso = pasaValue;
                     pasoButton.setEnabled(true);
-                    pasoButton.setText(String.valueOf(arithmosPaso) + " πασο");
+                    pasoButton.setText(String.valueOf(arithmosPaso));
                 }
             }
         });
 
         pasoButton = findViewById(R.id.pasoButton);
-        pasoButton.setText(String.valueOf(arithmosPaso) + " πασο");
+        pasoButton.setText(String.valueOf(arithmosPaso));
         pasoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 neaLeksi();
                 arithmosPaso = arithmosPaso - 1;
-                pasoButton.setText(String.valueOf(arithmosPaso) + " πασο");
+                pasoButton.setText(String.valueOf(arithmosPaso));
                 if (arithmosPaso <=0){
                     pasoButton.setEnabled(false);
                 }

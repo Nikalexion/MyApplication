@@ -85,8 +85,6 @@ public class OptionPicker extends AppCompatActivity {
         modeSelector.setAdapter(adapter);
         modeSelector.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                //allazei to text tou lanchbutton
-                teamNamesButton.setText("Start " + parent.getSelectedItem().toString());
                 if (position == 0){
                     scoreStep = 10;
                     scoreMax = 50;

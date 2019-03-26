@@ -43,8 +43,8 @@
         android:layout_marginRight="65dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="30dp"
-        android:spinnerMode="dropdown"
-        android:popupBackground="#FFFFFF"/>
+        android:spinnerMode="dialog"
+        android:popupBackground="@color/xrwma7"/>
 
     <TextView
         android:id="@+id/scoreText"
@@ -123,11 +123,11 @@
         android:thumb="@drawable/custom_thumb"/>
 
     <Button
-        android:text="play score mode"
+        android:text="Επομενο"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/goToTeamNamesButton"
-        android:textSize="13sp"
+        android:textSize="18sp"
         android:layout_below="@+id/pasaBar"
         android:layout_marginTop="40dp"
         android:layout_centerHorizontal = "true"

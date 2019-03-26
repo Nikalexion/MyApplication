@@ -27,18 +27,9 @@
         android:layout_marginTop="40dp"
         android:textSize="35sp"
         android:layout_alignParentTop="true"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textStyle="bold"/>
 
-    <TextView
-        android:text="Xroma omadas (test)"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/xromaActiveOmadas"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/onomaActiveOmadas"
-        android:textSize="35sp"
-        android:textAlignment="center" />
 
     <TextView
         android:text="Τέλος Χρόνου! Η Ομάδα σου έχασε!"
@@ -49,7 +40,8 @@
         android:layout_above="@id/fakeView"
         android:layout_marginBottom="20dp"
         android:textSize="35sp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:orientation="vertical"
@@ -83,26 +75,22 @@
 
     <Button
         android:id="@+id/nextButton"
-        android:layout_width="100dp"
+        android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_above="@id/adView"
         android:layout_marginLeft="40dp"
         android:layout_marginBottom="10dp"
         android:layout_toRightOf="@id/lathos"
-        android:background="@drawable/button"
-        android:text="Σωστο"
-        android:textSize="20sp" />
+        android:background="@drawable/correct" />
 
     <Button
         android:id="@+id/pasoButton"
-        android:layout_width="100dp"
+        android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_above="@id/adView"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="10dp"
         android:layout_toLeftOf="@id/lathos"
-        android:background="@drawable/button"
-        android:text="ΠΑΣΟ"
-        android:textSize="20sp" />
+        android:background="@drawable/skip" />
 
 </RelativeLayout>
