@@ -142,9 +142,9 @@ public class ScoreScreen extends AppCompatActivity {
             arxikoMenu.setVisibility(View.INVISIBLE);
             arxikoMenu.setEnabled(false);
             if (highScore == 0){
-                epomenosGiros.setText("Επομενο");
+                epomenosGiros.setText("Επομενοσ Γυροσ");
             }else{
-                epomenosGiros.setText("Ισοπαλια\n Επομενο");
+                epomenosGiros.setText("Ισοπαλια\n Επομενοσ Γυροσ");
             }
             //eksafanizei tin anakoinosi nikiti
             teamScoringHelper = findViewById(R.id.winnerAnnouncer);

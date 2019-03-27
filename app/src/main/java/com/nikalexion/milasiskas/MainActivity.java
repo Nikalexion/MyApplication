@@ -10,14 +10,10 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.MobileAds;
-import com.google.firebase.analytics.FirebaseAnalytics;
 public class MainActivity extends AppCompatActivity {
 
     public static final String PREF_AGORES = "AGORES";
     public static final String PREF_EPILOGES = "EPILOGES";
-
-    private Button shop;
-    private FirebaseAnalytics mFirebaseAnalytics;
 
 
     //To olo "press back again to leave"
@@ -48,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-5861682469694178~7665455042");
 
@@ -79,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
         starter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                fireLog("start_new_round");
                 startActivity(new Intent(getApplicationContext(), ModePicker.class));
             }
         });
@@ -87,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
         guidelines.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                fireLog("read_rules");
                 startActivity(new Intent(getApplicationContext(), Guide.class));
             }
         });
@@ -95,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
         shop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                fireLog("go_to_shop");
                 startActivity(new Intent(getApplicationContext(), Shop.class));
             }
         });
@@ -103,7 +95,6 @@ public class MainActivity extends AppCompatActivity {
         promotion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                fireLog("go_to_promo");
                 startActivity(new Intent(getApplicationContext(), Promotion.class));
             }
         });
@@ -126,13 +117,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         super.onStart();
-    }
-
-    public void fireLog(String epilogi){
-
-        Bundle params = new Bundle();
-        params.putString("epilogh xrhsth", "apo_menu");
-        mFirebaseAnalytics.logEvent(epilogi, params);
     }
 
 }

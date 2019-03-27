@@ -137,7 +137,7 @@ public class LivesScreen extends AppCompatActivity {
         if (gameStillGoing) {
             arxikoMenu.setVisibility(View.INVISIBLE);
             arxikoMenu.setEnabled(false);
-            epomenosGiros.setText("Επομενο");
+            epomenosGiros.setText("Επομενοσ Γυροσ");
 
             //eksafanizei tin anakoinosi nikiti
             teamScoringHelper = findViewById(R.id.winnerAnnouncer);

@@ -96,7 +96,7 @@
         android:background="@drawable/button" />
 
     <Button
-        android:text="Επομενο"
+        android:text="Επομενοσ Γυροσ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/nextRoundButton"
