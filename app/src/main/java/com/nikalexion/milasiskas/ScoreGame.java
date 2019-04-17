@@ -455,8 +455,8 @@ public class ScoreGame extends AppCompatActivity {
         expl.release();
         expl = null;
         xronos.cancel();
-        goToNextLevel();    //paei sto ending PRIN tin diafimisi gia na min fenete periergo
         showInterstitial(); //dixnei tin diafimisi
+        goToNextLevel();    //paei sto ending PRIN tin diafimisi gia na min fenete periergo
     }
 
     public void neaLeksi(){
