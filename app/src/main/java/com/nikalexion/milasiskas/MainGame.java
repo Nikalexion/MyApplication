@@ -135,7 +135,6 @@ public class MainGame extends AppCompatActivity {
             @Override
             public void onAdFailedToLoad(int errorCode) {
                 // Code to be executed when an ad request fails.
-                goToNextLevel();
             }
 
             @Override
@@ -333,7 +332,7 @@ public class MainGame extends AppCompatActivity {
         params.putBoolean("mistake_was_made",mistake);
         mFirebaseAnalytics.logEvent("round_ended", params);
 
-        gameTime = 3 * 1000;
+        gameTime = 2 * 1000;
         lastClock(gameTime);
     }
 

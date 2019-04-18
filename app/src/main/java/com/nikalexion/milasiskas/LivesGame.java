@@ -198,21 +198,27 @@ public class LivesGame extends AppCompatActivity {
                 if (pasaValue > 0){
                     arithmosPaso = pasaValue;
                     pasoButton.setEnabled(true);
-                    pasoButton.setText(String.valueOf(arithmosPaso));
+                    if (pasaValue <= 5) {
+                        pasoButton.setText(String.valueOf(arithmosPaso));
+                    }
                 }
             }
         });
 
         pasoButton = findViewById(R.id.pasoButton);
-        pasoButton.setText(String.valueOf(arithmosPaso));
+        if (pasaValue <= 5) {
+            pasoButton.setText(String.valueOf(arithmosPaso));
+        }
         pasoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 neaLeksi();
-                arithmosPaso = arithmosPaso - 1;
-                pasoButton.setText(String.valueOf(arithmosPaso));
-                if (arithmosPaso <=0){
-                    pasoButton.setEnabled(false);
+                if (pasaValue <= 5) {
+                    arithmosPaso = arithmosPaso - 1;
+                    pasoButton.setText(String.valueOf(arithmosPaso));
+                    if (arithmosPaso <= 0) {
+                        pasoButton.setEnabled(false);
+                    }
                 }
             }
         });
@@ -246,12 +252,11 @@ public class LivesGame extends AppCompatActivity {
             @Override
             public void onAdFailedToLoad(int errorCode) {
                 // Code to be executed when an ad request fails.
-                goToNextLevel();
             }
 
             @Override
             public void onAdClosed() {
-
+                goToNextLevel();
             }
         });
 
@@ -453,7 +458,7 @@ public class LivesGame extends AppCompatActivity {
         }
         //xanei 1 zoi
         scoreOmadon[activeTeam] = scoreOmadon[activeTeam] - 1;
-        gameTime = 3 * 1000;
+        gameTime = 2 * 1000;
         lastClock(gameTime);
     }
 
