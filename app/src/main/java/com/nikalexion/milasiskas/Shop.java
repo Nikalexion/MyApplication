@@ -59,12 +59,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         myRewardAd = MobileAds.getRewardedVideoAdInstance(this);
         myRewardAd.setRewardedVideoAdListener(this);
 
-        AdRequest adRq = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("C29EE19EA0561C4586ADCA4FBE4BFC9E")
-                .build();
-        myRewardAd.loadAd("ca-app-pub-3940256099942544/5224354917",adRq);
-
+        loadNewAd();
 
         for (int i = 0; i < plithosKatigorion-pfk; i++) {
             final String kat = katigories[i+pfk];
@@ -134,6 +129,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
 
     @Override
     public void onRewarded(RewardItem reward) {
+        //an dei oli tin diafimisi kseklidonei tin katigoria pou dialekse
         unlockReward();
     }
 
@@ -243,7 +239,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
 
         return dialog;
     }
-    
+    //dinei tin antamivi
     public void unlockReward(){
         final SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
         final SharedPreferences epiloges = getSharedPreferences(PREF_EPILOGES, 0);
@@ -271,22 +267,22 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
             }
         });
 
-        /* FIREBASE STUFF
         Bundle bundle = new Bundle();
-        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, onomaUnlock);
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, unlockName);
         bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "katigoria");
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
-       */
 
 
     }
 
+    //fornonei neo add
     public void loadNewAd(){
         AdRequest adRq = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .addTestDevice("C29EE19EA0561C4586ADCA4FBE4BFC9E")
+                .addTestDevice("D735FD1E8FC5790A99D0863BA60E7780")
                 .build();
-        myRewardAd.loadAd("ca-app-pub-3940256099942544/5224354917",adRq);
+        myRewardAd.loadAd("ca-app-pub-5861682469694178/5702166200",adRq);
     }
 
 

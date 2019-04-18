@@ -252,6 +252,7 @@ public class ScoreGame extends AppCompatActivity {
         AdRequest adRq2 = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .addTestDevice("C29EE19EA0561C4586ADCA4FBE4BFC9E")
+                .addTestDevice("D735FD1E8FC5790A99D0863BA60E7780")
                 .build();
         mInterstitialAd.loadAd(adRq2);
 
