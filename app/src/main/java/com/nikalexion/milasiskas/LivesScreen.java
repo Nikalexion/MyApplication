@@ -87,7 +87,7 @@ public class LivesScreen extends AppCompatActivity {
         //TODO afta dinamika (?) kai anti gia text na gemizoun kapoiou idous bar
         teamScoringHelper = findViewById(R.id.score1);
         if (gameStillGoing) {
-            teamScoringHelper.setText(onomataOmadon[0] + ": " + scoreOmadon[0]);
+            teamScoringHelper.setText(onomataOmadon[0] + ": " + scoreOmadon[0] + "Ζωές");
         }else{
             teamScoringHelper.setVisibility(View.INVISIBLE);
             teamScoringHelper.setEnabled(false);
@@ -95,7 +95,7 @@ public class LivesScreen extends AppCompatActivity {
 
         teamScoringHelper = findViewById(R.id.score2);
         if (gameStillGoing) {
-            teamScoringHelper.setText(onomataOmadon[1] + ": " + scoreOmadon[1]);
+            teamScoringHelper.setText(onomataOmadon[1] + ": " + scoreOmadon[1] + "Ζωές");
         }else{
             teamScoringHelper.setVisibility(View.INVISIBLE);
             teamScoringHelper.setEnabled(false);
@@ -104,7 +104,7 @@ public class LivesScreen extends AppCompatActivity {
         teamScoringHelper = findViewById(R.id.score3);
         if (gameStillGoing) {
             if (teamsValue >= 3) {
-                teamScoringHelper.setText(onomataOmadon[2] + ": " + scoreOmadon[2]);
+                teamScoringHelper.setText(onomataOmadon[2] + ": " + scoreOmadon[2] + "Ζωές");
             } else {
                 teamScoringHelper.setVisibility(View.INVISIBLE);
                 teamScoringHelper.setEnabled(false);
@@ -117,7 +117,7 @@ public class LivesScreen extends AppCompatActivity {
         teamScoringHelper = findViewById(R.id.score4);
         if (gameStillGoing) {
             if (teamsValue >= 4) {
-                teamScoringHelper.setText(onomataOmadon[3] + ": " + scoreOmadon[3]);
+                teamScoringHelper.setText(onomataOmadon[3] + ": " + scoreOmadon[3] + "Ζωές");
             } else {
                 teamScoringHelper.setVisibility(View.INVISIBLE);
                 teamScoringHelper.setEnabled(false);

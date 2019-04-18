@@ -243,8 +243,14 @@ public class ScoreGame extends AppCompatActivity {
         mInterstitialAd.setAdUnitId("ca-app-pub-5861682469694178/1479320640");
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
-            public void onAdClosed() {
+            public void onAdFailedToLoad(int errorCode) {
+                // Code to be executed when an ad request fails.
+                goToNextLevel();
+            }
 
+            @Override
+            public void onAdClosed() {
+                goToNextLevel();
             }
         });
 
@@ -284,6 +290,9 @@ public class ScoreGame extends AppCompatActivity {
     private void showInterstitial() {
         if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
+        }
+        else{
+            goToNextLevel();
         }
     }
 
@@ -457,7 +466,7 @@ public class ScoreGame extends AppCompatActivity {
         expl = null;
         xronos.cancel();
         showInterstitial(); //dixnei tin diafimisi
-        goToNextLevel();    //paei sto ending PRIN tin diafimisi gia na min fenete periergo
+        //goToNextLevel();    //paei sto ending PRIN tin diafimisi gia na min fenete periergo
     }
 
     public void neaLeksi(){

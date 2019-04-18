@@ -75,7 +75,7 @@ public class OptionPicker extends AppCompatActivity {
         //vres to spinner
         modeSelector = findViewById(R.id.modeSwitchSpinner);
         //oi epiloges tou spinner se string
-        String[] modes = new String[]{"Score mode", "Lives mode"};
+        String[] modes = new String[]{"Με Σκορ", "Με ζωές"};
         //dimiourgia tou adapter gia to pos na emfanistoun TODO (to simple_spinner_item borei na alaxtei se kati diko mas)
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, modes);
 
