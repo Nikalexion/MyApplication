@@ -47,4 +47,10 @@
         Μόλις ακουστεί ο ήχος της έκρηξης και το παιχνίδι τελειώσει, η ομάδα που κρατάει το κινητό χάνει.\n\n
     </string>
 
+    <string name="credits">
+        Οι Developers:
+        Νίκος Μουρατίδης: support@oxygenxml.com
+        Αλέξανδρος Χονδρογιάννης: chondrogiannisproject@gmail.com
+    </string>
+
 </resources>

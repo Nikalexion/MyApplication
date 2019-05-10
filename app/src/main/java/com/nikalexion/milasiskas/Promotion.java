@@ -30,6 +30,15 @@ public class Promotion extends AppCompatActivity {
             }
         });
 
+        //To koumbi gia na pas sta credits
+        Button credits = (Button) findViewById(R.id.credits);
+        credits.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(getApplicationContext(), Credits.class));
+            }
+        });
+
         //To koumbi poy se metaferei sta privacy
         Button privacy = (Button) findViewById(R.id.privacy);
         privacy.setOnClickListener(new View.OnClickListener() {

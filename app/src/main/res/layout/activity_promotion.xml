@@ -40,12 +40,23 @@
         android:background="@drawable/button" />
 
     <Button
+        android:text="Credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/credits"
+        android:textSize="15sp"
+        android:layout_below="@+id/instagram"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal = "true"
+        android:background="@drawable/button" />
+
+    <Button
         android:text="Privacy Policy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/privacy"
         android:textSize="15sp"
-        android:layout_below="@+id/instagram"
+        android:layout_below="@+id/credits"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal = "true"
         android:background="@drawable/button" />

@@ -12,7 +12,8 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".LivesScreen"></activity>
+        <activity android:name=".Credits"></activity>
+        <activity android:name=".LivesScreen" />
         <activity android:name=".ScoreScreen" />
         <activity android:name=".LivesGame" />
         <activity android:name=".TeamNames" />
