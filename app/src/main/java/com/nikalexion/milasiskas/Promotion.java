@@ -47,6 +47,15 @@ public class Promotion extends AppCompatActivity {
                 finish();
             }
         });
+
+        //To koumbi gia Instagram
+        Button insta = (Button) findViewById(R.id.instagram);
+        insta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                instagram();
+            }
+        });
     }
 
     public void goPrivacy(){
@@ -83,5 +92,10 @@ public class Promotion extends AppCompatActivity {
         }
         intent.addFlags(flags);
         return intent;
+    }
+
+    public void instagram(){
+        Intent goInsta = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/milashskas/"));
+        startActivity(goInsta);
     }
 }

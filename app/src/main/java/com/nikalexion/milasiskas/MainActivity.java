@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.MobileAds;
+import com.unity3d.ads.metadata.MetaData;
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String PREF_AGORES = "AGORES";
@@ -44,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //GDPR gia unity ads
+        MetaData gdprMetaData = new MetaData(this);
+        gdprMetaData.set("gdpr.consent", true);
+        gdprMetaData.commit();
 
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-5861682469694178~7665455042");
 
