@@ -27,7 +27,7 @@ public class OptionPicker extends AppCompatActivity {
     int scoreStep = 10;
     int scoreMax = 50;
     int scoreMin = 10;
-    int scoreValue = 30;
+    int scoreValue = 20;
 
     //metavlites gia to teams seekbar
     SeekBar teamsSeekBar;
@@ -89,7 +89,7 @@ public class OptionPicker extends AppCompatActivity {
                     scoreStep = 10;
                     scoreMax = 50;
                     scoreMin = 10;
-                    scoreValue = 30;
+                    scoreValue = 20;
                     scoreBarController();
                     scoreText.setText("Στους " + String.valueOf(scoreValue) + " πόντους");
                 }else{
