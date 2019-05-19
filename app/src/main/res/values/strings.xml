@@ -48,9 +48,12 @@
     </string>
 
     <string name="credits">
-        Οι Developers:
-        Νίκος Μουρατίδης: mouratidis.n92@gmail.com
-        Αλέξανδρος Χονδρογιάννης: chondrogiannisproject@gmail.com
+        Οι Developers:\n\n
+        Νίκος Μουρατίδης:\n
+        mouratidis.n92@gmail.com\n\n
+
+        Αλέξανδρος Χονδρογιάννης:\n
+        chondrogiannisproject@gmail.com
     </string>
 
 </resources>
