@@ -14,9 +14,6 @@ import com.unity3d.ads.metadata.MetaData;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String PREF_AGORES = "AGORES";
-    public static final String PREF_EPILOGES = "EPILOGES";
-
 
     //To olo "press back again to leave"
     boolean doubleBackToExitPressedOnce = false;
@@ -55,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-5861682469694178~7665455042");
 
 
-        if(getSharedPreferences(PREF_EPILOGES, 0).getBoolean("protiFora",true)) {
-            SharedPreferences.Editor defaultAgores = getSharedPreferences(PREF_AGORES, 0).edit();
-            SharedPreferences.Editor defaultEpiloges = getSharedPreferences(PREF_EPILOGES, 0).edit();
+        if(getSharedPreferences("EPILOGES", 0).getBoolean("protiFora",true)) {
+            SharedPreferences.Editor defaultAgores = getSharedPreferences("AGORES", 0).edit();
+            SharedPreferences.Editor defaultEpiloges = getSharedPreferences("EPILOGES", 0).edit();
 
             defaultEpiloges.putBoolean("protiFora", false);
             defaultEpiloges.apply();
@@ -110,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onStart() {
-        SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
+        SharedPreferences agorasmena = getSharedPreferences("AGORES", 0);
 
         String[] katigories = getResources().getStringArray(R.array.categories);
 

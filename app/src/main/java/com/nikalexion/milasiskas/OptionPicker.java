@@ -15,8 +15,6 @@ import android.widget.TextView;
 
 public class OptionPicker extends AppCompatActivity {
 
-    public static final String PREF_EPILOGES = "EPILOGES";
-
 
     Button teamNamesButton;
     Spinner modeSelector;
@@ -60,9 +58,9 @@ public class OptionPicker extends AppCompatActivity {
         setContentView(R.layout.activity_option_picker);
 
         //travaei apo ta preferences tin arxiki timi tou timeValue, an den yparxei vazei 120
-        timeValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTime", 120);
+        timeValue = getSharedPreferences("EPILOGES", 0).getInt("teamModeTime", 120);
         //travaei apo ta preferences tin arxiki timi tou pasaValue, an den yparxei vazei 3
-        pasaValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModePasa", 3);
+        pasaValue = getSharedPreferences("EPILOGES", 0).getInt("teamModePasa", 3);
 
         scoreBarController();
         teamsBarController();
@@ -76,10 +74,10 @@ public class OptionPicker extends AppCompatActivity {
         modeSelector = findViewById(R.id.modeSwitchSpinner);
         //oi epiloges tou spinner se string
         String[] modes = new String[]{"Με Σκορ", "Με ζωές"};
-        //dimiourgia tou adapter gia to pos na emfanistoun TODO (to simple_spinner_item borei na alaxtei se kati diko mas)
+        //dimiourgia tou adapter gia to pos na emfanistoun (to simple_spinner_item borei na alaxtei)
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, modes);
 
-        // Epilogi tou layout gia to dropdown menu tou spinner TODO (to simple_spinner_dropdown_item borei na alaxtei se kati diko mas)
+        // Epilogi tou layout gia to dropdown menu tou spinner (to simple_spinner_dropdown_item borei na alaxtei)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //allagei tou paliou (adiou) adapter ston neo etoimo adapter
         modeSelector.setAdapter(adapter);
@@ -112,7 +110,7 @@ public class OptionPicker extends AppCompatActivity {
         teamNamesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                SharedPreferences sp = getSharedPreferences(PREF_EPILOGES, 0);
+                SharedPreferences sp = getSharedPreferences("EPILOGES", 0);
                 SharedPreferences.Editor editor = sp.edit();
                 editor.putInt("teamModeScore", scoreValue);
                 editor.putInt("teamModeTeams", teamsValue);
@@ -149,8 +147,9 @@ public class OptionPicker extends AppCompatActivity {
         scoreSeekBar = findViewById(R.id.scoreBar);
         scoreText = findViewById(R.id.scoreText);
 
-        //prosoxi i praksi na vgainei panta int arithmos!
-        //TODO edo afto ginete anapoda apoti tharepe alla doulevei (an to kano me sosti seira tote allazontas to max epireazete to scoreValue)
+        //prosoxi i praksi na vgainei int arithmos
+        //edo afto ginete anapoda apoti "einai logiko" alla doulevei
+        //(an to kano me "logiki" seira tote allazontas to max proto epireazete to scoreValue)
         scoreSeekBar.setProgress( (scoreValue - scoreMin) / scoreStep);
         scoreSeekBar.setMax( (scoreMax - scoreMin) / scoreStep);
 

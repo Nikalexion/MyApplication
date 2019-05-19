@@ -27,7 +27,6 @@ public class MainGame extends AppCompatActivity {
 
 
     public static final String PREF_LEFTA = "LEFTA";
-    public static final String PREF_EPILOGES = "EPILOGES";
 
     private TextView leksi;
     private String[] pinakasL;
@@ -81,8 +80,8 @@ public class MainGame extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-        int min = getSharedPreferences(PREF_EPILOGES, 0).getInt("minTime", 60);
-        int max = getSharedPreferences(PREF_EPILOGES, 0).getInt("maxTime", 80);
+        int min = getSharedPreferences("EPILOGES", 0).getInt("minTime", 60);
+        int max = getSharedPreferences("EPILOGES", 0).getInt("maxTime", 80);
         gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
         startTime = gameTime;
 
@@ -192,7 +191,7 @@ public class MainGame extends AppCompatActivity {
     }
 
     private void arrayBuilder() {
-        SharedPreferences epiloges = getSharedPreferences(PREF_EPILOGES, 0);
+        SharedPreferences epiloges = getSharedPreferences("EPILOGES", 0);
 
         String[] katigories = getResources().getStringArray(R.array.categories);
         int Array_Count = katigories.length;
@@ -327,7 +326,7 @@ public class MainGame extends AppCompatActivity {
 
         //katagrafi telous game
         Bundle params = new Bundle();
-        params.putInt("time_played",getSharedPreferences(PREF_EPILOGES, 0).getInt("minTime", 60));
+        params.putInt("time_played",getSharedPreferences("EPILOGES", 0).getInt("minTime", 60));
         params.putInt("games_played", counter);
         params.putBoolean("mistake_was_made",mistake);
         mFirebaseAnalytics.logEvent("round_ended", params);

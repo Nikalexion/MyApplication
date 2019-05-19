@@ -25,8 +25,6 @@ import android.widget.TextView;
 
 public class TeamNames extends AppCompatActivity {
 
-    public static final String PREF_EPILOGES = "EPILOGES";
-
     int plithosOmadon;
     Button teamNamesButton;
     int xroma1;
@@ -46,10 +44,11 @@ public class TeamNames extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_names);
 
-        plithosOmadon = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTeams", 2);
+        plithosOmadon = getSharedPreferences("EPILOGES", 0).getInt("teamModeTeams", 2);
 
 
-        //TODO an vrw pws passareis variable se R.id ayto tha ginei me for loop
+        //to na passareis variable se R.id me loops ktlp einai pio "vari"
+        //kai poliploko xoris logo opote kalitera manually stin prokimeni periptosi
         arrayRadio[0][0] = findViewById(R.id.xroma11);
         arrayRadio[0][1] = findViewById(R.id.xroma12);
         arrayRadio[0][2] = findViewById(R.id.xroma13);
@@ -207,10 +206,9 @@ public class TeamNames extends AppCompatActivity {
         teamNamesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                SharedPreferences sp = getSharedPreferences(PREF_EPILOGES, 0);
+                SharedPreferences sp = getSharedPreferences("EPILOGES", 0);
                 SharedPreferences.Editor editor = sp.edit();
 
-                //TODO edo dinamika onomata anti gia "onoma1 xroma1" gia na ta ftiaxnei kai dinamika sto game (pane scoreGame na katalaveis)
                 editor.putString("onoma1", ((EditText)findViewById(R.id.onomaOmadas1)).getText().toString());
                 editor.putInt("xroma1", xroma1);
 
@@ -226,7 +224,7 @@ public class TeamNames extends AppCompatActivity {
                 }
 
                 editor.apply();
-                int mode = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeMode", 0);
+                int mode = getSharedPreferences("EPILOGES", 0).getInt("teamModeMode", 0);
                 if (mode == 0){
                     startActivity(new Intent(getApplicationContext(), ScoreGame.class));
                 }else{
@@ -237,41 +235,6 @@ public class TeamNames extends AppCompatActivity {
         });
 
 
-
-
-
-
-
-
-
-        /*
-        //TODO to layout den einai pleon Linear den ksero an afto "ta gamaei ola"
-        LinearLayout my_layout = findViewById(R.id.activity_team_names);
-
-        for (int i = 0; i < plithosOmadon; i++) {
-            //TODO dinamika plaisia epilogon gia kathe omada
-        }
-
-      //TODO edo einai to koumbi gia an ginei dinamiko (den eimai sigouros an tha xrisimefsei)
-        Button home = new Button(this);
-        home.setBackgroundResource(R.drawable.button);
-        home.setText("Lez go");
-        home.setTextSize(30);
-        home.setLayoutParams(new ScrollView.LayoutParams(ScrollView.LayoutParams.MATCH_PARENT,ScrollView.LayoutParams.WRAP_CONTENT,0));
-        my_layout.addView(home);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                int mode = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeMode", 0);
-                if (mode == 0){
-                    startActivity(new Intent(getApplicationContext(), ScoreGame.class));
-                }else{
-                    startActivity(new Intent(getApplicationContext(), LivesGame.class));
-                }
-                finish();
-            }
-        });
-*/
 
     }
 

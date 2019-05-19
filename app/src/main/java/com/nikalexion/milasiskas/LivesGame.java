@@ -27,11 +27,8 @@ import java.util.StringTokenizer;
 public class LivesGame extends AppCompatActivity {
     RelativeLayout scoreBG;
 
-
-    public static final String PREF_EPILOGES = "EPILOGES";
-
     private TextView leksi;
-    private String[] pinakasL;
+    private String[] pinakasL; //pinakas lekseon
     private static final Random rgenerator = new Random();
     private CountDownTimer xronos;
     private MediaPlayer mp;
@@ -59,7 +56,6 @@ public class LivesGame extends AppCompatActivity {
     int[] scoreOmadon;
 
     TextView teamName;
-    //TextView teamColor; //TODO opou xrisimopoio to teamcolor einai na allazei to xroma kanonika, DES pou to xrisimopoio
 
 
 
@@ -93,33 +89,33 @@ public class LivesGame extends AppCompatActivity {
         setContentView(R.layout.activity_lives_game);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        teamsValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTeams", 2);
-        timeValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeTime", 120);
-        pasaValue = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModePasa", 3);
-        activeTeam = getSharedPreferences(PREF_EPILOGES, 0).getInt("teamModeProtosPaiktis", 0);
+        teamsValue = getSharedPreferences("EPILOGES", 0).getInt("teamModeTeams", 2);
+        timeValue = getSharedPreferences("EPILOGES", 0).getInt("teamModeTime", 120);
+        pasaValue = getSharedPreferences("EPILOGES", 0).getInt("teamModePasa", 3);
+        activeTeam = getSharedPreferences("EPILOGES", 0).getInt("teamModeProtosPaiktis", 0);
 
         onomataOmadon = new String[teamsValue];
         xromataOmadon = new int[teamsValue];
         scoreOmadon = new int[teamsValue];
 
-        String savedString = getSharedPreferences(PREF_EPILOGES, 0).getString("teamModeScoreOmadon", "1,1,0,0,");
+        String savedString = getSharedPreferences("EPILOGES", 0).getString("teamModeScoreOmadon", "1,1,0,0,");
         StringTokenizer st = new StringTokenizer(savedString, ",");
         for (int i = 0; i < teamsValue; i++) {
             scoreOmadon[i] = Integer.parseInt(st.nextToken());
         }
 
-        onomataOmadon[0] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma1", "omada 1");
-        xromataOmadon[0] = getSharedPreferences(PREF_EPILOGES, 0).getInt("xroma1", 0);
-        onomataOmadon[1] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma2", "omada 2");
-        xromataOmadon[1] = getSharedPreferences(PREF_EPILOGES, 0).getInt("xroma2", 0);
+        onomataOmadon[0] = getSharedPreferences("EPILOGES", 0).getString("onoma1", "omada 1");
+        xromataOmadon[0] = getSharedPreferences("EPILOGES", 0).getInt("xroma1", 0);
+        onomataOmadon[1] = getSharedPreferences("EPILOGES", 0).getString("onoma2", "omada 2");
+        xromataOmadon[1] = getSharedPreferences("EPILOGES", 0).getInt("xroma2", 0);
 
         if (teamsValue >= 3) {
-            onomataOmadon[2] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma3", "omada 3");
-            xromataOmadon[2] = getSharedPreferences(PREF_EPILOGES, 0).getInt("xroma3", 0);
+            onomataOmadon[2] = getSharedPreferences("EPILOGES", 0).getString("onoma3", "omada 3");
+            xromataOmadon[2] = getSharedPreferences("EPILOGES", 0).getInt("xroma3", 0);
         }
         if (teamsValue >= 4) {
-            onomataOmadon[3] = getSharedPreferences(PREF_EPILOGES, 0).getString("onoma4", "omada 4");
-            xromataOmadon[3] = getSharedPreferences(PREF_EPILOGES, 0).getInt("xroma4", 0);
+            onomataOmadon[3] = getSharedPreferences("EPILOGES", 0).getString("onoma4", "omada 4");
+            xromataOmadon[3] = getSharedPreferences("EPILOGES", 0).getInt("xroma4", 0);
         }
 
         for (int i = 0; i < teamsValue; i++){
@@ -153,8 +149,6 @@ public class LivesGame extends AppCompatActivity {
 
         teamName = findViewById(R.id.onomaActiveOmadas);
         teamName.setText(onomataOmadon[activeTeam]);
-        //teamColor = findViewById(R.id.xromaActiveOmadas);
-        //teamColor.setText(xromataOmadon[activeTeam]);
         scoreBG = findViewById(R.id.activity_lives_game);
         scoreBG.setBackgroundColor(xromataOmadon[activeTeam]);
 
@@ -191,7 +185,6 @@ public class LivesGame extends AppCompatActivity {
                 }while(scoreOmadon[activeTeam] <= 0);
 
                 teamName.setText(onomataOmadon[activeTeam]);
-                //teamColor.setText(xromataOmadon[activeTeam]);
                 scoreBG.setBackgroundColor(xromataOmadon[activeTeam]);
 
                 //refresh paso
@@ -311,7 +304,7 @@ public class LivesGame extends AppCompatActivity {
             scoreGiaMetafora.append(scoreOmadon[i]).append(",");
         }
 
-        SharedPreferences sp = getSharedPreferences(PREF_EPILOGES, 0);
+        SharedPreferences sp = getSharedPreferences("EPILOGES", 0);
         SharedPreferences.Editor editor = sp.edit();
         //an kapoia omada xasei vriskei tin epomeni pou akoma paizei k tis dinei tin protia
         while(scoreOmadon[activeTeam] <= 0){
@@ -331,7 +324,7 @@ public class LivesGame extends AppCompatActivity {
     }
 
     private void arrayBuilder() {
-        SharedPreferences epiloges = getSharedPreferences(PREF_EPILOGES, 0);
+        SharedPreferences epiloges = getSharedPreferences("EPILOGES", 0);
 
         String[] katigories = getResources().getStringArray(R.array.categories);
         int Array_Count = katigories.length;

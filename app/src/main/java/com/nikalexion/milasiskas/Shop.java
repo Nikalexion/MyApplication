@@ -23,8 +23,6 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
 
-    public static final String PREF_AGORES = "AGORES";
-    public static final String PREF_EPILOGES = "EPILOGES";
     private int plithosKatigorion;
     //pfk = plithos free katigorion
     private int pfk = 0;
@@ -42,13 +40,13 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        SharedPreferences epiloges = getApplicationContext().getSharedPreferences(PREF_EPILOGES, 0);
+        SharedPreferences epiloges = getApplicationContext().getSharedPreferences("EPILOGES", 0);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-        SharedPreferences agorasmena = getApplicationContext().getSharedPreferences(PREF_AGORES, 0);
+        SharedPreferences agorasmena = getApplicationContext().getSharedPreferences("AGORES", 0);
 
         String[] onomataKatigorion = getResources().getStringArray(R.array.category_names);
         String[] katigories = getResources().getStringArray(R.array.categories);
@@ -175,7 +173,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     }
 
     private void saveInSp(String key, boolean value) {
-        SharedPreferences preferences = getApplicationContext().getSharedPreferences(PREF_EPILOGES, 0);
+        SharedPreferences preferences = getApplicationContext().getSharedPreferences("EPILOGES", 0);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putBoolean(key, value);
         editor.apply();
@@ -241,8 +239,8 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
     }
     //dinei tin antamivi
     public void unlockReward(){
-        final SharedPreferences agorasmena = getSharedPreferences(PREF_AGORES, 0);
-        final SharedPreferences epiloges = getSharedPreferences(PREF_EPILOGES, 0);
+        final SharedPreferences agorasmena = getSharedPreferences("AGORES", 0);
+        final SharedPreferences epiloges = getSharedPreferences("EPILOGES", 0);
 
         SharedPreferences.Editor editor = agorasmena.edit();
         editor.putBoolean(unlockName, true);
