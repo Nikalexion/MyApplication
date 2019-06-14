@@ -61,6 +61,7 @@ public class LivesGame extends AppCompatActivity {
 
     boolean doubleBackToExitPressedOnce = false;
 
+    //elenxos gia diplo "back" gia na stamatisei to paixnidi
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -88,7 +89,7 @@ public class LivesGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lives_game);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-
+        //travaei tis rithimseis apo ta sharedPreferences
         teamsValue = getSharedPreferences("EPILOGES", 0).getInt("teamModeTeams", 2);
         timeValue = getSharedPreferences("EPILOGES", 0).getInt("teamModeTime", 120);
         pasaValue = getSharedPreferences("EPILOGES", 0).getInt("teamModePasa", 3);
@@ -97,13 +98,13 @@ public class LivesGame extends AppCompatActivity {
         onomataOmadon = new String[teamsValue];
         xromataOmadon = new int[teamsValue];
         scoreOmadon = new int[teamsValue];
-
+        //travaei poses zoes exei i kathe omada kai ta vazei sto "scoreOmadon" (score = zoes)
         String savedString = getSharedPreferences("EPILOGES", 0).getString("teamModeScoreOmadon", "1,1,0,0,");
         StringTokenizer st = new StringTokenizer(savedString, ",");
         for (int i = 0; i < teamsValue; i++) {
             scoreOmadon[i] = Integer.parseInt(st.nextToken());
         }
-
+        //Panta paizoun toulaxiston 2 omades, an einai 3 kai pano benei kai sta if kai tis ftiaxnei
         onomataOmadon[0] = getSharedPreferences("EPILOGES", 0).getString("onoma1", "omada 1");
         xromataOmadon[0] = getSharedPreferences("EPILOGES", 0).getInt("xroma1", 0);
         onomataOmadon[1] = getSharedPreferences("EPILOGES", 0).getString("onoma2", "omada 2");
@@ -117,7 +118,7 @@ public class LivesGame extends AppCompatActivity {
             onomataOmadon[3] = getSharedPreferences("EPILOGES", 0).getString("onoma4", "omada 4");
             xromataOmadon[3] = getSharedPreferences("EPILOGES", 0).getInt("xroma4", 0);
         }
-
+        //vriskei to xroma tis kathe omadas
         for (int i = 0; i < teamsValue; i++){
             switch (xromataOmadon[i]){
                 case 0:
@@ -146,31 +147,32 @@ public class LivesGame extends AppCompatActivity {
                     break;
             }
         }
-
+        //arxikopoiei to text pou grafei poia omada paizei proti
         teamName = findViewById(R.id.onomaActiveOmadas);
         teamName.setText(onomataOmadon[activeTeam]);
         scoreBG = findViewById(R.id.activity_lives_game);
         scoreBG.setBackgroundColor(xromataOmadon[activeTeam]);
 
 
-
+        //ftiaxnei ton xrono tou giro me tixea apoklisi mexri 20s gia na min borei kapoios na metraei me sigouria
         int min = timeValue;
         int max = timeValue + 20;
         gameTime = (rgenerator.nextInt(max - min + 1) + min) * 1000;
         startTime = gameTime;
 
         arithmosPaso = pasaValue;
-
+        //arxikopoiei tous media player gia tous ixous
         mp = MediaPlayer.create(this, R.raw.beep);
         mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
         expl = MediaPlayer.create(this, R.raw.explosion);
         expl.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
+        //ftiaxnei pinaka me tis lekseis
         arrayBuilder();
 
         leksi = (TextView) findViewById(R.id.leksiPaixnidiou);
-        neaLeksi();
+        neaLeksi(); //travaei mia tixaia leksi apo ton pinaka pou ftiaxtike apo to arrayBuilder
 
+        //to button gia epitiximeni leksi (kai allagi omadas)
         nextButton = findViewById(R.id.nextButton);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -197,7 +199,7 @@ public class LivesGame extends AppCompatActivity {
                 }
             }
         });
-
+        //to buttong gia paso
         pasoButton = findViewById(R.id.pasoButton);
         if (pasaValue <= 5) {
             pasoButton.setText(String.valueOf(arithmosPaso));
@@ -205,7 +207,7 @@ public class LivesGame extends AppCompatActivity {
         pasoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                neaLeksi();
+                neaLeksi(); //allazei leksi kai meta mionei ta pasa kai elenxei an exoun minei kialla
                 if (pasaValue <= 5) {
                     arithmosPaso = arithmosPaso - 1;
                     pasoButton.setText(String.valueOf(arithmosPaso));
@@ -215,11 +217,11 @@ public class LivesGame extends AppCompatActivity {
                 }
             }
         });
-
+        //apenergopoiei ta pasa an paizete xoris pasa (0 pasa)
         if (arithmosPaso <= 0){
             pasoButton.setEnabled(false);
         }
-
+        //ligei to paixnidi an kapoios kanei lathos kai patisei tin vomva gia na to liksei
         lathos = findViewById(R.id.lathos);
         lathos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -229,7 +231,7 @@ public class LivesGame extends AppCompatActivity {
             }
         });
 
-
+        //banner ad
         AdView adView = (AdView) findViewById(R.id.adView);
         AdRequest adRq1 = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
@@ -238,7 +240,7 @@ public class LivesGame extends AppCompatActivity {
                 .build();
         adView.loadAd(adRq1);
 
-
+        //etoimazei tin Interstitial ad (full screen ad) sto telous tou girou
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-5861682469694178/1479320640");
         mInterstitialAd.setAdListener(new AdListener() {
@@ -252,8 +254,7 @@ public class LivesGame extends AppCompatActivity {
                 goToNextLevel();
             }
         });
-
-
+        //sinexeia tou Interstitial ad
         AdRequest adRq2 = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .addTestDevice("C29EE19EA0561C4586ADCA4FBE4BFC9E")
@@ -278,14 +279,14 @@ public class LivesGame extends AppCompatActivity {
     }
 
     // This snippet shows the system bars. It does this by removing all the flags
-// except for the ones that make the content appear under the system bars.
+    // except for the ones that make the content appear under the system bars.
     private void showSystemUI() {
         getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                         | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
     }
-
+    //dixnei tin Interstitial ad (full screen ad) sto telos tou girou
     private void showInterstitial() {
         if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
@@ -295,10 +296,10 @@ public class LivesGame extends AppCompatActivity {
         }
     }
 
-    // Apothikevei to score kai paei sto ScoreScreen
+    // Apothikevei to score (i to xasimo mias zois) kai paei sto ScoreScreen i to LivesScreen
     private void goToNextLevel() {
 
-        //etoimazei to neo score apo tin arxi me tin omada na exei xasei 1 zoi sto endGame
+        //etoimazei to neo score apo tin arxi (overwrite) me tin omada pou exei xasei 1 zoi sto endGame
         StringBuilder scoreGiaMetafora = new StringBuilder();
         for (int i = 0; i < teamsValue; i++) {
             scoreGiaMetafora.append(scoreOmadon[i]).append(",");
@@ -306,14 +307,14 @@ public class LivesGame extends AppCompatActivity {
 
         SharedPreferences sp = getSharedPreferences("EPILOGES", 0);
         SharedPreferences.Editor editor = sp.edit();
-        //an kapoia omada xasei vriskei tin epomeni pou akoma paizei k tis dinei tin protia
+        //an kapoia omada apoklistei, vriskei tin epomeni omada stin seira, i opoia paizei proti ston anerxomeno giro
         while(scoreOmadon[activeTeam] <= 0){
             activeTeam = activeTeam +1;
             if (activeTeam >= teamsValue){
                 activeTeam = 0;
             }
         }
-
+        //pernaei ta score/zoes kai to poios paizei protos
         editor.putInt("teamModeProtosPaiktis", activeTeam);
         editor.putString("teamModeScoreOmadon", scoreGiaMetafora.toString());
         editor.apply();
@@ -322,7 +323,7 @@ public class LivesGame extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), LivesScreen.class));
         finish();
     }
-
+    //travaei lekseis se enan pinaka lekseon simfona me tis epilegmenes katigories (sto Shop activity)
     private void arrayBuilder() {
         SharedPreferences epiloges = getSharedPreferences("EPILOGES", 0);
 
@@ -336,12 +337,13 @@ public class LivesGame extends AppCompatActivity {
                 pinakasL = concat(pinakasL, concatHelper);
             }
         }
-
+        //an den exei epilexthei KAMIA katigoria, tote apla paizei me tin katigoria "tixaies lekseis"
         if (pinakasL == null) {
             pinakasL = getResources().getStringArray(R.array.random);
         }
     }
-
+    //H "concat" enonei kai epistrefei 2 pinakes pou tis dinontai
+    //an stin thesi "a" dothei kenos pinakas apla epistrefei ton pinaka b
     private String[] concat(String[] a, String[] b) {
         //fix gia ton proto pinaka pou paei na enothei
         if (a == null) {
@@ -355,6 +357,9 @@ public class LivesGame extends AppCompatActivity {
         return c;
     }
 
+    //H onResume kanei to paixnidi na sinexisei na doulevei kanonika meta to minimize tis efarmogis
+    //episeis i onResume trexei molis ksekinisei o giros, opote to "timeCreator" trexei apefthias
+    //afou to "stillPlaying" einai stin arxi true
     @Override
     protected void onResume() {
         hideSystemUI();
@@ -366,6 +371,7 @@ public class LivesGame extends AppCompatActivity {
         super.onResume();
     }
 
+    //kanei pafsi to paixnidi otan ginete minimize i efarmogi
     @Override
     protected void onPause() {
         showSystemUI();
@@ -373,6 +379,9 @@ public class LivesGame extends AppCompatActivity {
         super.onPause();
     }
 
+    //H timeCreator ftiaxnei tous diafoterikous ixous analoga me to poso xronos emeine
+    //kai kanei kai tin miosi tou xronou ftiaxnontas enan CountDownTimer
+    //oi "ticker" xrisimevoun sto na akougete pio grigora o ixos tis vomvas
     private void timeCreator(final int timeToFinish) {
         int ticker = 2000;
         if (gameTime < startTime/4){
@@ -388,7 +397,9 @@ public class LivesGame extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
                 gameTime = (int) millisUntilFinished;
                 mp.start();
-
+                //elenxei se kathe tick an exei paei sta simia allagis ixou
+                //(1/4, 2/4, 3/4, kai elenxei kai tin metavliti "ligosXronos"
+                //gia na dei an exei allaxtei o ticker, allios ton allazei
                 if (gameTime < startTime/4){
                     if (ligosXronos == 2) {
                         xronos.cancel();
@@ -411,7 +422,7 @@ public class LivesGame extends AppCompatActivity {
                     }
                 }
             }
-
+            //otan liksei o xronos ligei to paixnidi
             public void onFinish() {
                 gameTime = 0;
                 endGame();
@@ -431,7 +442,9 @@ public class LivesGame extends AppCompatActivity {
                             | View.SYSTEM_UI_FLAG_FULLSCREEN
                             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);}
     }
-
+    //ksekinaei tin liksei tou paixnidiou apenergopoiei arketa pragmata
+    //anakoinonei tin liksei tou girou kai trexei to "lastClock"
+    //to opoio einai 2 defterolepta prin to transition sto LivesScreen/ScoreScreen
     public void endGame(){
         lathos.setEnabled(false);
         lathos.setVisibility(View.INVISIBLE);
@@ -452,9 +465,9 @@ public class LivesGame extends AppCompatActivity {
         //xanei 1 zoi
         scoreOmadon[activeTeam] = scoreOmadon[activeTeam] - 1;
         gameTime = 2 * 1000;
-        lastClock(gameTime);
+        lastClock(gameTime); //2 defterolepta prin tin metavasi stin epomeni othoni
     }
-
+    //den kanei kati apla perimenei na perasei o xronos kai na fonaksei to "afterEnd"
     private void lastClock(final int timeToFinish) {
         int ticker = 1000;
         xronos = new CountDownTimer(timeToFinish, ticker) {
@@ -465,16 +478,15 @@ public class LivesGame extends AppCompatActivity {
             }
         }.start();
     }
-
+    //klinei to telefteo arxeio ixou (to expl), dixnei tin diafimisi kai paei stin epomeni othoni
     public void afterEnd(){
         expl.stop();
         expl.release();
         expl = null;
         xronos.cancel();
         showInterstitial(); //dixnei tin diafimisi
-        //goToNextLevel();    //paei sto ending PRIN tin diafimisi gia na min fenete periergo
     }
-
+    //travaei mia tixea leksei apo ton pinaka "pinakasL"
     public void neaLeksi(){
         leksi.setText(pinakasL[rgenerator.nextInt(pinakasL.length)]);
     }
