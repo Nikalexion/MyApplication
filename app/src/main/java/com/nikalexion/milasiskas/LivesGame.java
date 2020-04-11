@@ -254,6 +254,7 @@ public class LivesGame extends AppCompatActivity {
                 goToNextLevel();
             }
         });
+
         //sinexeia tou Interstitial ad
         AdRequest adRq2 = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
@@ -286,6 +287,7 @@ public class LivesGame extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
     }
+
     //dixnei tin Interstitial ad (full screen ad) sto telos tou girou
     private void showInterstitial() {
         if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
@@ -478,6 +480,7 @@ public class LivesGame extends AppCompatActivity {
             }
         }.start();
     }
+
     //klinei to telefteo arxeio ixou (to expl), dixnei tin diafimisi kai paei stin epomeni othoni
     public void afterEnd(){
         expl.stop();
@@ -486,6 +489,7 @@ public class LivesGame extends AppCompatActivity {
         xronos.cancel();
         showInterstitial(); //dixnei tin diafimisi
     }
+
     //travaei mia tixea leksei apo ton pinaka "pinakasL"
     public void neaLeksi(){
         leksi.setText(pinakasL[rgenerator.nextInt(pinakasL.length)]);

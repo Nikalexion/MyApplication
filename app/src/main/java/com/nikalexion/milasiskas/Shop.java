@@ -133,7 +133,7 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
 
     @Override
     public void onRewardedVideoAdLeftApplication() {
-       
+
     }
 
     @Override
@@ -154,7 +154,6 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     @Override
@@ -206,9 +205,6 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
                 if(myRewardAd.isLoaded()) {
                     myRewardAd.show();
                 }
-
-
-
 
             }
         });
