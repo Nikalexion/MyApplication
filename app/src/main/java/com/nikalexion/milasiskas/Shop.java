@@ -210,29 +210,29 @@ public class Shop extends AppCompatActivity implements RewardedVideoAdListener {
         });
 
         builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                // User cancelled the dialog
-            }
-        });
-        // Set other dialog properties
+        public void onClick(DialogInterface dialog, int id) {
+            // User cancelled the dialog
+        }
+    });
+    // Set other dialog properties
 
-        // Create the AlertDialog
-        AlertDialog dialog = builder.create();
+    // Create the AlertDialog
+    AlertDialog dialog = builder.create();
         dialog.setOnShowListener(new DialogInterface.OnShowListener() {
-            @Override
-            public void onShow(DialogInterface dialog) {
-                //An i diafimisi den fortose kanei disable to "ok"
-                if(!myRewardAd.isLoaded()) {
-                    ((AlertDialog) dialog).getButton(AlertDialog.BUTTON_POSITIVE).setText("Ξανα προσπάθησε σε λίγο");
-                    ((AlertDialog) dialog).getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
-                }
+        @Override
+        public void onShow(DialogInterface dialog) {
+            //An i diafimisi den fortose kanei disable to "ok"
+            if(!myRewardAd.isLoaded()) {
+                ((AlertDialog) dialog).getButton(AlertDialog.BUTTON_POSITIVE).setText("Ξανα προσπάθησε σε λίγο");
+                ((AlertDialog) dialog).getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
             }
+        }
 
-        });
+    });
         dialog.show();
 
         return dialog;
-    }
+}
     //dinei tin antamivi
     public void unlockReward(){
         final SharedPreferences agorasmena = getSharedPreferences("AGORES", 0);
